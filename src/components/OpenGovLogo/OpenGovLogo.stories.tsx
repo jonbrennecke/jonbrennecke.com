@@ -14,7 +14,7 @@ const Container = styled.div<{ logoContentStyle: OpenGovLogoContentStyle }>`
       : trueBlack};
 `;
 
-storiesOf('UI', module)
+storiesOf('Logos', module)
   .addDecorator(withKnobs)
   .add('OpenGovLogo', () => {
     const logoContentStyle = boolean('Dark Content Style', true)
