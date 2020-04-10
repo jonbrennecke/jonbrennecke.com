@@ -19,9 +19,24 @@ const Body = styled(Text)`
   color: ${trueWhite};
 `;
 
-const Container = styled.div`
+const ImageContent = styled.div`
   display: flex;
-  flex-direction: column;
+  flex: 1;
+`;
+
+const TextContent = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  row-gap: ${unit * 3}px;
+`;
+
+const Container = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: ${unit * 3}px;
+
   padding: ${unit * 3}px;
 
   & > ${Title} {
@@ -36,6 +51,8 @@ const Container = styled.div`
 interface CaseStudyCardSubComponents {
   Title: typeof Title;
   Body: typeof Body;
+  ImageContent: typeof ImageContent;
+  TextContent: typeof TextContent;
 }
 
 export const CaseStudyCard: React.FC<CaseStudyCardProps> &
@@ -48,3 +65,5 @@ export const CaseStudyCard: React.FC<CaseStudyCardProps> &
 
 CaseStudyCard.Title = Title;
 CaseStudyCard.Body = Body;
+CaseStudyCard.ImageContent = ImageContent;
+CaseStudyCard.TextContent = TextContent;

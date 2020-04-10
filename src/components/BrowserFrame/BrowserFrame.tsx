@@ -117,11 +117,20 @@ const BrowserToolBar = styled((props) => (
   padding: ${unit * 0.5}px ${unit}px;
 `;
 
+const Contents = styled.div`
+  display: flex;
+  flex: 1;
+  background-color: ${trueWhite};
+  border-top: 1px solid ${windowBorderGray};
+`;
+
 const Container = styled.div`
+  display: flex;
+  flex: 1;
+  flex-direction: column;
   background-color: ${lighten(windowBorderGray, 0.2)};
   border: 1px solid ${windowBorderGray};
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
+  border-radius: 2px;
 `;
 
 export interface BrowserFrameProps {
@@ -131,6 +140,6 @@ export interface BrowserFrameProps {
 export const BrowserFrame = ({ children }: BrowserFrameProps) => (
   <Container>
     <BrowserToolBar />
-    {children}
+    <Contents>{children}</Contents>
   </Container>
 );
