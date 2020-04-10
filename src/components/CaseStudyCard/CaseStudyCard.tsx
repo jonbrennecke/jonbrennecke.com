@@ -22,6 +22,7 @@ const Body = styled(Text)`
 const ImageContent = styled.div`
   display: flex;
   flex: 1;
+  transition: 150ms all ease-in-out;
 `;
 
 const TextContent = styled.div`
@@ -36,6 +37,11 @@ const Container = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   column-gap: ${unit * 3}px;
+  perspective: 1500px;
+
+  &:hover ${ImageContent} {
+    transform: rotateY(5deg);
+  }
 
   padding: ${unit * 3}px;
 
