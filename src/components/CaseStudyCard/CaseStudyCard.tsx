@@ -1,7 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { Heading } from '../Heading';
-import { trueWhite, unit } from '../../styles';
+import { trueWhite, unit, colorToRGBA, trueBlack } from '../../styles';
 import { Text } from '../Text';
 
 export interface CaseStudyCardProps {
@@ -19,10 +19,19 @@ const Body = styled(Text)`
   color: ${trueWhite};
 `;
 
+const borderShadowCss = css`
+  box-shadow: 0px 6px 45px ${colorToRGBA(trueBlack, 0.06)};
+`;
+
+const darkerBorderShadowCss = css`
+  box-shadow: 0px 6px 45px ${colorToRGBA(trueBlack, 0.18)};
+`;
+
 const ImageContent = styled.div`
   display: flex;
   flex: 1;
-  transition: 150ms all ease-in-out;
+  transition: 150ms transform ease-in-out, 250ms box-shadow ease-in-out;
+  ${borderShadowCss}
 `;
 
 const TextContent = styled.div`
@@ -38,12 +47,13 @@ const Container = styled.div`
   grid-template-rows: 1fr;
   column-gap: ${unit * 3}px;
   perspective: 1500px;
+  border-radius: ${unit}px;
+  padding: ${unit * 3}px;
 
   &:hover ${ImageContent} {
+    ${darkerBorderShadowCss}
     transform: rotateY(5deg);
   }
-
-  padding: ${unit * 3}px;
 
   & > ${Title} {
     margin-top: ${unit * 3}px;
