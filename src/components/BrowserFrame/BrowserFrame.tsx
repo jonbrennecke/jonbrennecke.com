@@ -1,13 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import {
-  darken,
-  lighten,
-  unit,
-  trueWhite,
-  trueBlack,
-  colorToRGBA,
-} from '../../styles';
+import { darken, lighten, unit, trueWhite } from '../../styles';
 
 const WindowControlButton = styled.div`
   width: 12px;
