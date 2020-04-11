@@ -27,15 +27,19 @@ const LaserlikeCaseStudyCard = styled(CaseStudyCard)`
   background-color: ${laserlikeBlue};
 `;
 
+const OpenGovBrowser = styled(BrowserFrame)`
+  height: 450px;
+`;
+
 storiesOf('UI', module)
   .addDecorator(withKnobs)
   .add('CaseStudyCard', () => (
     <Container>
       <OpenGovCaseStudyCard>
         <CaseStudyCard.ImageContent>
-          <BrowserFrame>
+          <OpenGovBrowser>
             <div />
-          </BrowserFrame>
+          </OpenGovBrowser>
         </CaseStudyCard.ImageContent>
         <CaseStudyCard.TextContent>
           <CaseStudyCard.Logo>

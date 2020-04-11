@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const PhoneFrame = () => (
-  <svg width="293px" height="462px" viewBox="0 0 293 462">
+  <svg viewBox="0 0 293 462">
     <defs>
       <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
         <stop stopColor="#ABB2C4" stopOpacity="0.23864923" offset="0%"></stop>

@@ -61,6 +61,10 @@ const ImageContent = styled.div`
   flex: 1;
   transition: 250ms transform ease-in-out, 250ms filter ease-in-out;
   ${borderShadowCss}
+
+  & > * {
+    width: 100%;
+  }
 `;
 
 const TextContent = styled.div`
@@ -74,6 +78,7 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
+  align-items: center;
   column-gap: ${unit * 7}px;
   perspective: 1500px;
   border-radius: ${unit}px;

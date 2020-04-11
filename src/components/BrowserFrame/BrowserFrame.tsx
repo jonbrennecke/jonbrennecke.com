@@ -135,10 +135,11 @@ const Container = styled.div`
 
 export interface BrowserFrameProps {
   children?: React.ReactChild | React.ReactChild[];
+  className?: string;
 }
 
-export const BrowserFrame = ({ children }: BrowserFrameProps) => (
-  <Container>
+export const BrowserFrame = ({ className, children }: BrowserFrameProps) => (
+  <Container className={className}>
     <BrowserToolBar />
     <Contents>{children}</Contents>
   </Container>
