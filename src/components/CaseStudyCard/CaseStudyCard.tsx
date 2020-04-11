@@ -65,6 +65,14 @@ const ImageContent = styled.div`
   & > * {
     width: 100%;
   }
+
+  &:first-child {
+    transform: rotateY(7deg) rotateX(-5deg);
+  }
+
+  &:not(:first-child) {
+    transform: rotateY(-14deg) rotateX(8deg);
+  }
 `;
 
 const TextContent = styled.div`
@@ -87,12 +95,12 @@ const Container = styled.div`
   &:hover {
     ${ImageContent}:first-child {
       ${darkerBorderShadowCss}
-      transform: rotateY(7deg) rotateX(-5deg) scale(1.02);
+      transform: rotateY(18deg) rotateX(7deg) scale(1.07);
     }
 
     ${ImageContent}:not(:first-child) {
       ${darkerBorderShadowCss}
-      transform: rotateY(-14deg) rotateX(8deg) scale(1.02);
+      transform: rotateY(-18deg) rotateX(12deg) scale(1.07);
     }
   }
 
