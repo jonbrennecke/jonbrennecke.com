@@ -50,17 +50,17 @@ const Tags = styled.div`
 const ViewCaseStudyButton = styled(ViewButton)``;
 
 const borderShadowCss = css`
-  box-shadow: 0px 6px 45px ${colorToRGBA(trueBlack, 0.06)};
+  filter: drop-shadow(0px 6px 45px ${colorToRGBA(trueBlack, 0.06)});
 `;
 
 const darkerBorderShadowCss = css`
-  box-shadow: 0px 6px 45px ${colorToRGBA(trueBlack, 0.18)};
+  filter: drop-shadow(0px 6px 45px ${colorToRGBA(trueBlack, 0.18)});
 `;
 
 const ImageContent = styled.div`
   display: flex;
   flex: 1;
-  transition: 250ms transform ease-in-out, 250ms box-shadow ease-in-out;
+  transition: 250ms transform ease-in-out, 250ms filter ease-in-out;
   ${borderShadowCss}
 `;
 
@@ -107,7 +107,7 @@ interface CaseStudyCardSubComponents {
 export const CaseStudyCard: React.FC<CaseStudyCardProps> &
   CaseStudyCardSubComponents = ({
   className,
-  children,
+  children
 }: CaseStudyCardProps) => (
   <Container className={className}>{children}</Container>
 );

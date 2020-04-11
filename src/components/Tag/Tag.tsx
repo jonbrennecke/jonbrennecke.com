@@ -11,6 +11,11 @@ const Container = styled.div`
 
 const TagText = styled(Text)`
   color: ${trueWhite};
+  display: inline-block;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 `;
 
 export interface TagProps {

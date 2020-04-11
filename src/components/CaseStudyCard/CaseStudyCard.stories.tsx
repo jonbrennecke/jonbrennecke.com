@@ -8,6 +8,7 @@ import { openGovBlue, unit, laserlikeBlue } from '../../styles';
 import { BrowserFrame } from '../BrowserFrame';
 import { Tag } from '../Tag';
 import { LaserlikeLogo } from '../LaserlikeLogo';
+import { PhoneFrame } from '../PhoneFrame';
 
 const Container = styled.div`
   display: flex;
@@ -81,9 +82,7 @@ storiesOf('UI', module)
           </CaseStudyCard.Tags>
         </CaseStudyCard.TextContent>
         <CaseStudyCard.ImageContent>
-          <BrowserFrame>
-            <div />
-          </BrowserFrame>
+          <PhoneFrame />
         </CaseStudyCard.ImageContent>
       </LaserlikeCaseStudyCard>
     </Container>

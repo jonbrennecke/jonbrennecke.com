@@ -3,14 +3,14 @@ import { Text, ITextProps } from '../Text';
 import styled from 'styled-components';
 import { trueWhite, unit } from '../../styles';
 
-const Arrow = styled((props) => (
+const Arrow = styled(props => (
   <svg viewBox="0 0 102 85" {...props}>
     <g
       id="Symbols"
       stroke="none"
-      stroke-width="1"
+      strokeWidth="1"
       fill="none"
-      fill-rule="evenodd"
+      fillRule="evenodd"
     >
       <g
         id="Artboard"

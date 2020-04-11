@@ -31,7 +31,7 @@ const WindowExitButton = makeWindowControlButton(windowControlRed);
 const WindowMinimizeButton = makeWindowControlButton(windowControlYellow);
 const WindowFullScreenButton = makeWindowControlButton(windowControlGreen);
 
-const WindowControlButtons = styled((props) => (
+const WindowControlButtons = styled(props => (
   <div {...props}>
     <WindowExitButton />
     <WindowMinimizeButton />
@@ -43,11 +43,11 @@ const WindowControlButtons = styled((props) => (
   padding: ${unit * 0.5}px 0;
 `;
 
-const ForwardArrow = (props) => (
+const ForwardArrow = props => (
   <svg width="7" height="11" viewBox="0 0 7 11" {...props}>
     <path
       fill={windowBorderGray}
-      fill-rule="evenodd"
+      fillRule="evenodd"
       d="M14.875,10.5 L14.975,10.4 L13.575,9 L13.475,9.1 L9.375,5 L8,6.375 L12.1,10.475 L8.075,14.5 L9.475,15.9 L13.5,11.875 L13.6,11.975 L14.975,10.6 L14.875,10.5 Z"
       transform="translate(-8 -5)"
     />
@@ -69,7 +69,7 @@ const browserButtonStyle = css`
   }
 `;
 
-const BackArrowButton = styled((props) => (
+const BackArrowButton = styled(props => (
   <div {...props}>
     <BackArrow />
   </div>
@@ -77,7 +77,7 @@ const BackArrowButton = styled((props) => (
   ${browserButtonStyle}
 `;
 
-const ForwardArrowButton = styled((props) => (
+const ForwardArrowButton = styled(props => (
   <div {...props}>
     <ForwardArrow />
   </div>
@@ -93,7 +93,7 @@ const SearchInput = styled.div`
   background-color: ${lighten(windowBorderGray, 0.3)};
 `;
 
-const SearchBar = styled((props) => (
+const SearchBar = styled(props => (
   <div {...props}>
     <BackArrowButton />
     <ForwardArrowButton />
@@ -106,7 +106,7 @@ const SearchBar = styled((props) => (
   margin: 0 auto;
 `;
 
-const BrowserToolBar = styled((props) => (
+const BrowserToolBar = styled(props => (
   <div {...props}>
     <WindowControlButtons />
     <SearchBar />
