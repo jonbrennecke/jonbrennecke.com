@@ -7,3 +7,6 @@ export const openGovBlue = '#155CAC';
 
 // Laserlike color theme
 export const laserlikeBlue = '#3562E3';
+
+// Barkd color theme
+export const barkdDarkBlue = '#081018';

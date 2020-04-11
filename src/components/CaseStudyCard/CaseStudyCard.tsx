@@ -100,7 +100,7 @@ const Container = styled.div`
 
     ${ImageContent}:not(:first-child) {
       ${darkerBorderShadowCss}
-      transform: rotateY(-18deg) rotateX(12deg) scale(1.08);
+      transform: rotateY(-18deg) rotateX(12deg) scale(1.10);
     }
   }
 

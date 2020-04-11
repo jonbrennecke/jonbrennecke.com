@@ -4,11 +4,12 @@ import React from 'react';
 import { OpenGovLogo } from '../';
 import { CaseStudyCard } from './CaseStudyCard';
 import styled from 'styled-components';
-import { openGovBlue, unit, laserlikeBlue } from '../../styles';
+import { openGovBlue, unit, laserlikeBlue, barkdDarkBlue } from '../../styles';
 import { BrowserFrame } from '../BrowserFrame';
 import { Tag } from '../Tag';
 import { LaserlikeLogo } from '../LaserlikeLogo';
 import { PhoneFrame } from '../PhoneFrame';
+import { BarkdLogo } from '../BarkdLogo';
 
 const Container = styled.div`
   display: flex;
@@ -25,6 +26,10 @@ const OpenGovCaseStudyCard = styled(CaseStudyCard)`
 
 const LaserlikeCaseStudyCard = styled(CaseStudyCard)`
   background-color: ${laserlikeBlue};
+`;
+
+const BarkdCaseStudyCard = styled(CaseStudyCard)`
+  background-color: ${barkdDarkBlue};
 `;
 
 const OpenGovBrowser = styled(BrowserFrame)`
@@ -62,6 +67,7 @@ storiesOf('UI', module)
           </CaseStudyCard.Tags>
         </CaseStudyCard.TextContent>
       </OpenGovCaseStudyCard>
+
       <LaserlikeCaseStudyCard>
         <CaseStudyCard.TextContent>
           <CaseStudyCard.Logo>
@@ -89,5 +95,31 @@ storiesOf('UI', module)
           <PhoneFrame />
         </CaseStudyCard.ImageContent>
       </LaserlikeCaseStudyCard>
+
+      <BarkdCaseStudyCard>
+        <CaseStudyCard.ImageContent>
+          <PhoneFrame />
+        </CaseStudyCard.ImageContent>
+        <CaseStudyCard.TextContent>
+          <CaseStudyCard.Logo>
+            <BarkdLogo contentStyle="light" />
+          </CaseStudyCard.Logo>
+          <CaseStudyCard.Title>
+            Building a cross-platform MVP for an early-stage startup
+          </CaseStudyCard.Title>
+          <CaseStudyCard.Body>
+            Starting from scratch, I worked with Barkd to create an iOS, Android
+            and web experience for their exciting new platform
+          </CaseStudyCard.Body>
+          <CaseStudyCard.ViewCaseStudyButton>
+            View Case Study
+          </CaseStudyCard.ViewCaseStudyButton>
+          <CaseStudyCard.Tags>
+            <Tag>React Native</Tag>
+            <Tag>Typescript</Tag>
+            <Tag>Firebase</Tag>
+          </CaseStudyCard.Tags>
+        </CaseStudyCard.TextContent>
+      </BarkdCaseStudyCard>
     </Container>
   ));
