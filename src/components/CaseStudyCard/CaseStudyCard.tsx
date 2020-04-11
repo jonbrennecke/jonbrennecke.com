@@ -84,9 +84,16 @@ const Container = styled.div`
   border-radius: ${unit}px;
   padding: ${unit * 5}px ${unit * 7}px;
 
-  &:hover ${ImageContent} {
-    ${darkerBorderShadowCss}
-    transform: rotateY(7deg) scale(1.02);
+  &:hover {
+    ${ImageContent}:first-child {
+      ${darkerBorderShadowCss}
+      transform: rotateY(7deg) rotateX(-5deg) scale(1.02);
+    }
+
+    ${ImageContent}:not(:first-child) {
+      ${darkerBorderShadowCss}
+      transform: rotateY(-14deg) rotateX(8deg) scale(1.02);
+    }
   }
 
   & > ${Title} {
