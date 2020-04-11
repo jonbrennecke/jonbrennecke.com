@@ -1,16 +1,18 @@
 import React from 'react';
-import { trueWhite } from '../../styles';
+import { lightTan, tan } from '../../styles';
 
 export interface CheckProps {
   checkColor?: string;
   backgroundColor?: string;
+  className?: string;
 }
 
 export const Check = ({
-  checkColor = trueWhite,
-  backgroundColor = '#24474A'
+  backgroundColor = lightTan,
+  checkColor = tan,
+  className
 }: CheckProps) => (
-  <svg width="38px" height="38px" viewBox="0 0 38 38">
+  <svg viewBox="0 0 38 38" className={className}>
     <g
       id="Page-Design-Exploration"
       stroke="none"

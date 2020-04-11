@@ -10,3 +10,8 @@ export const laserlikeBlue = '#3562E3';
 
 // Barkd color theme
 export const barkdDarkBlue = '#081018';
+
+// default theme
+export const darkGreen = '#24474A';
+export const lightTan = '#FFF0D5';
+export const tan = '#D0A55D';
