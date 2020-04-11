@@ -10,6 +10,7 @@ import { Tag } from '../Tag';
 import { LaserlikeLogo } from '../LaserlikeLogo';
 import { PhoneFrame } from '../PhoneFrame';
 import { BarkdLogo } from '../BarkdLogo';
+import { OpenGovEmblem } from '../OpenGovEmblem';
 
 const Container = styled.div`
   display: flex;
@@ -34,6 +35,15 @@ const BarkdCaseStudyCard = styled(CaseStudyCard)`
 
 const OpenGovBrowser = styled(BrowserFrame)`
   height: 450px;
+`;
+
+const StyledOpenGovEmblem = styled(OpenGovEmblem)`
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.08;
+  z-index: -1;
+  width: 35%;
 `;
 
 storiesOf('UI', module)
@@ -66,6 +76,7 @@ storiesOf('UI', module)
             <Tag>D3</Tag>
           </CaseStudyCard.Tags>
         </CaseStudyCard.TextContent>
+        <StyledOpenGovEmblem />
       </OpenGovCaseStudyCard>
 
       <LaserlikeCaseStudyCard>

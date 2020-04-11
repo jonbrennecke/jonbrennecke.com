@@ -17,6 +17,7 @@ const TagText = styled(Text)`
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  vertical-align: bottom;
 `;
 
 export interface TagProps {
