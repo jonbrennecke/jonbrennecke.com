@@ -15,21 +15,26 @@ import { OpenGovEmblem } from '../OpenGovEmblem';
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   & > *:not(:first-child) {
     margin-top: ${unit * 7}px;
   }
 `;
 
-const OpenGovCaseStudyCard = styled(CaseStudyCard)`
+const BaseCaseStudyCard = styled(CaseStudyCard)`
+  max-width: 1024px;
+`;
+
+const OpenGovCaseStudyCard = styled(BaseCaseStudyCard)`
   background-color: ${openGovBlue};
 `;
 
-const LaserlikeCaseStudyCard = styled(CaseStudyCard)`
+const LaserlikeCaseStudyCard = styled(BaseCaseStudyCard)`
   background-color: ${laserlikeBlue};
 `;
 
-const BarkdCaseStudyCard = styled(CaseStudyCard)`
+const BarkdCaseStudyCard = styled(BaseCaseStudyCard)`
   background-color: ${barkdDarkBlue};
 `;
 
@@ -44,6 +49,7 @@ const StyledOpenGovEmblem = styled(OpenGovEmblem)`
   opacity: 0.08;
   z-index: -1;
   width: 35%;
+  max-width: 320px;
 `;
 
 storiesOf('UI', module)
