@@ -12,6 +12,7 @@ export interface CaseStudyCardProps {
 
 const Logo = styled.div`
   height: ${unit * 7}px;
+  padding-bottom: ${unit * 3}px;
 
   & > * {
     height: 100%;
@@ -33,6 +34,16 @@ const Title = styled(Heading)`
 const Body = styled(Text)`
   font-size: 15px;
   color: ${trueWhite};
+`;
+
+const Tags = styled.div`
+  display: flex;
+  flex-direction: row;
+  padding-top: ${unit * 3}px;
+
+  & > *:not(:first-child) {
+    margin-left: ${unit}px;
+  }
 `;
 
 const ViewCaseStudyButton = styled(ViewButton)``;
@@ -86,6 +97,7 @@ interface CaseStudyCardSubComponents {
   Logo: typeof Logo;
   Title: typeof Title;
   Body: typeof Body;
+  Tags: typeof Tags;
   ImageContent: typeof ImageContent;
   TextContent: typeof TextContent;
   ViewCaseStudyButton: typeof ViewCaseStudyButton;
@@ -102,6 +114,7 @@ export const CaseStudyCard: React.FC<CaseStudyCardProps> &
 CaseStudyCard.Logo = Logo;
 CaseStudyCard.Title = Title;
 CaseStudyCard.Body = Body;
+CaseStudyCard.Tags = Tags;
 CaseStudyCard.ImageContent = ImageContent;
 CaseStudyCard.TextContent = TextContent;
 CaseStudyCard.ViewCaseStudyButton = ViewCaseStudyButton;

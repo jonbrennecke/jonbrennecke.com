@@ -6,6 +6,7 @@ import { CaseStudyCard } from './CaseStudyCard';
 import styled from 'styled-components';
 import { openGovBlue } from '../../styles';
 import { BrowserFrame } from '../BrowserFrame';
+import { Tag } from '../Tag';
 
 const OpenGovCaseStudyCard = styled(CaseStudyCard)`
   background-color: ${openGovBlue};
@@ -34,6 +35,11 @@ storiesOf('UI', module)
         <CaseStudyCard.ViewCaseStudyButton>
           View Case Study
         </CaseStudyCard.ViewCaseStudyButton>
+        <CaseStudyCard.Tags>
+          <Tag>React</Tag>
+          <Tag>Typescript</Tag>
+          <Tag>D3</Tag>
+        </CaseStudyCard.Tags>
       </CaseStudyCard.TextContent>
     </OpenGovCaseStudyCard>
   ));
