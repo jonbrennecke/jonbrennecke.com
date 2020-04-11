@@ -13,6 +13,7 @@ export interface CaseStudyCardProps {
 const Logo = styled.div`
   height: ${unit * 7}px;
   padding-bottom: ${unit * 3}px;
+  box-sizing: content-box;
 
   & > * {
     height: 100%;
@@ -59,7 +60,7 @@ const darkerBorderShadowCss = css`
 const ImageContent = styled.div`
   display: flex;
   flex: 1;
-  transition: 150ms transform ease-in-out, 250ms box-shadow ease-in-out;
+  transition: 250ms transform ease-in-out, 250ms box-shadow ease-in-out;
   ${borderShadowCss}
 `;
 
@@ -81,7 +82,7 @@ const Container = styled.div`
 
   &:hover ${ImageContent} {
     ${darkerBorderShadowCss}
-    transform: rotateY(5deg);
+    transform: rotateY(7deg) scale(1.02);
   }
 
   & > ${Title} {
