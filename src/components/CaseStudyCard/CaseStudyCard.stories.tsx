@@ -21,14 +21,19 @@ storiesOf('UI', module)
         </BrowserFrame>
       </CaseStudyCard.ImageContent>
       <CaseStudyCard.TextContent>
-        <OpenGovLogo contentStyle="light" />
+        <CaseStudyCard.Logo>
+          <OpenGovLogo contentStyle="light" />
+        </CaseStudyCard.Logo>
         <CaseStudyCard.Title>
           Accelerating the future of open governments
         </CaseStudyCard.Title>
         <CaseStudyCard.Body>
-          I worked with OpenGov as a consultant to accelerate feature
-          development for their next generation reporting platform.
+          I worked with OpenGov to accelerate feature development for their next
+          generation reporting platform.
         </CaseStudyCard.Body>
+        <CaseStudyCard.ViewCaseStudyButton>
+          View Case Study
+        </CaseStudyCard.ViewCaseStudyButton>
       </CaseStudyCard.TextContent>
     </OpenGovCaseStudyCard>
   ));

@@ -1,5 +1,5 @@
 import React from 'react';
-import { transparent, trueBlack, trueWhite } from '../../styles';
+import { trueBlack, trueWhite } from '../../styles';
 
 export enum OpenGovLogoContentStyle {
   dark = 'dark',
@@ -16,7 +16,7 @@ export const OpenGovLogo = ({
   const fillColor =
     contentStyle === OpenGovLogoContentStyle.light ? trueWhite : trueBlack;
   return (
-    <svg width="226px" height="50px" viewBox="0 0 226 50" version="1.1">
+    <svg viewBox="0 0 226 50" version="1.1">
       <defs>
         <rect id="path-1" x="0" y="0" width="1064" height="525" rx="7"></rect>
         <polygon

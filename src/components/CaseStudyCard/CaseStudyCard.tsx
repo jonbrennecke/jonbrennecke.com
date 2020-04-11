@@ -3,11 +3,20 @@ import styled, { css } from 'styled-components';
 import { Heading } from '../Heading';
 import { trueWhite, unit, colorToRGBA, trueBlack } from '../../styles';
 import { Text } from '../Text';
+import { ViewButton } from '../ViewButton';
 
 export interface CaseStudyCardProps {
   className?: string;
   children?: React.ReactChild | React.ReactChild[];
 }
+
+const Logo = styled.div`
+  height: ${unit * 7}px;
+
+  & > * {
+    height: 100%;
+  }
+`;
 
 const Title = styled(Heading)`
   font-size: 25px;
@@ -25,6 +34,8 @@ const Body = styled(Text)`
   font-size: 15px;
   color: ${trueWhite};
 `;
+
+const ViewCaseStudyButton = styled(ViewButton)``;
 
 const borderShadowCss = css`
   box-shadow: 0px 6px 45px ${colorToRGBA(trueBlack, 0.06)};
@@ -72,10 +83,12 @@ const Container = styled.div`
 `;
 
 interface CaseStudyCardSubComponents {
+  Logo: typeof Logo;
   Title: typeof Title;
   Body: typeof Body;
   ImageContent: typeof ImageContent;
   TextContent: typeof TextContent;
+  ViewCaseStudyButton: typeof ViewCaseStudyButton;
 }
 
 export const CaseStudyCard: React.FC<CaseStudyCardProps> &
@@ -86,7 +99,9 @@ export const CaseStudyCard: React.FC<CaseStudyCardProps> &
   <Container className={className}>{children}</Container>
 );
 
+CaseStudyCard.Logo = Logo;
 CaseStudyCard.Title = Title;
 CaseStudyCard.Body = Body;
 CaseStudyCard.ImageContent = ImageContent;
 CaseStudyCard.TextContent = TextContent;
+CaseStudyCard.ViewCaseStudyButton = ViewCaseStudyButton;
