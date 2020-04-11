@@ -2,14 +2,14 @@ import { withKnobs, boolean } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
 import styled from 'styled-components';
-import { LaserlikeLogo, LaserlikeLogoContentStyle } from './LaserlikeLogo';
+import { JonLogo, JonLogoContentStyle } from './JonLogo';
 import { trueWhite, trueBlack } from '../../styles';
 
-const Container = styled.div<{ logoContentStyle: LaserlikeLogoContentStyle }>`
+const Container = styled.div<{ logoContentStyle: JonLogoContentStyle }>`
   display: flex;
   flex: 1;
   background-color: ${props =>
-    props.logoContentStyle === LaserlikeLogoContentStyle.dark
+    props.logoContentStyle === JonLogoContentStyle.dark
       ? trueWhite
       : trueBlack};
 
@@ -21,13 +21,13 @@ const Container = styled.div<{ logoContentStyle: LaserlikeLogoContentStyle }>`
 
 storiesOf('Logos', module)
   .addDecorator(withKnobs)
-  .add('LaserlikeLogo', () => {
+  .add('JonLogo', () => {
     const logoContentStyle = boolean('Dark Content Style', true)
-      ? LaserlikeLogoContentStyle.dark
-      : LaserlikeLogoContentStyle.light;
+      ? JonLogoContentStyle.dark
+      : JonLogoContentStyle.light;
     return (
       <Container logoContentStyle={logoContentStyle}>
-        <LaserlikeLogo contentStyle={logoContentStyle} />
+        <JonLogo contentStyle={logoContentStyle} />
       </Container>
     );
   });
