@@ -7,6 +7,7 @@ const Container = styled.div`
   padding: ${unit * 0.5}px ${unit * 2}px;
   background-color: ${colorToRGBA(trueWhite, 0.1)};
   border-radius: ${unit * 0.5}px;
+  display: inline-block;
 `;
 
 const TagText = styled(Text)`

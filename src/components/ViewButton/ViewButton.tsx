@@ -54,6 +54,7 @@ const Underline = styled.div`
 const Container = styled.div`
   display: inline-flex;
   flex-direction: row;
+  align-items: flex-end;
   cursor: pointer;
 
   ${Arrow} {

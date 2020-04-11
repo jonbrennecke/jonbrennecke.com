@@ -38,8 +38,7 @@ const Body = styled(Text)`
 `;
 
 const Tags = styled.div`
-  display: flex;
-  flex-direction: row;
+  display: inline-block;
   padding-top: ${unit * 3}px;
 
   & > *:not(:first-child) {
