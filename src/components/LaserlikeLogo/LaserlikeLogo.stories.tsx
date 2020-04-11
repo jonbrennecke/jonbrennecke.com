@@ -2,14 +2,14 @@ import { withKnobs, boolean } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
 import styled from 'styled-components';
-import { OpenGovLogo, OpenGovLogoContentStyle } from './OpenGovLogo';
+import { LaserlikeLogo, LaserlikeLogoContentStyle } from './LaserlikeLogo';
 import { trueWhite, trueBlack } from '../../styles';
 
-const Container = styled.div<{ logoContentStyle: OpenGovLogoContentStyle }>`
+const Container = styled.div<{ logoContentStyle: LaserlikeLogoContentStyle }>`
   display: flex;
   flex: 1;
   background-color: ${(props) =>
-    props.logoContentStyle === OpenGovLogoContentStyle.dark
+    props.logoContentStyle === LaserlikeLogoContentStyle.dark
       ? trueWhite
       : trueBlack};
 
@@ -21,13 +21,13 @@ const Container = styled.div<{ logoContentStyle: OpenGovLogoContentStyle }>`
 
 storiesOf('Logos', module)
   .addDecorator(withKnobs)
-  .add('OpenGovLogo', () => {
+  .add('LaserlikeLogo', () => {
     const logoContentStyle = boolean('Dark Content Style', true)
-      ? OpenGovLogoContentStyle.dark
-      : OpenGovLogoContentStyle.light;
+      ? LaserlikeLogoContentStyle.dark
+      : LaserlikeLogoContentStyle.light;
     return (
       <Container logoContentStyle={logoContentStyle}>
-        <OpenGovLogo contentStyle={logoContentStyle} />
+        <LaserlikeLogo contentStyle={logoContentStyle} />
       </Container>
     );
   });
