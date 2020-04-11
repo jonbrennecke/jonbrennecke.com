@@ -1,6 +1,8 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 import { trueBlack } from '../../styles';
+
+import './Text.css';
 
 type ReactChild = React.ReactElement | React.ReactNode;
 
@@ -30,9 +32,13 @@ const StyledSpan = styled.span<{
   weight: ETextWeight | keyof typeof ETextWeight;
 }>`
   color: ${(props) => props.color};
-  font-family: 'Red Hat Text', sans-serif;
+  font-family: 'Cabin', sans-serif;
   font-weight: ${(props) => textWeightToFontWeight(props.weight)};
   font-size: 16px;
+`;
+
+const GlobalFontStyle = createGlobalStyle`
+
 `;
 
 export const Text = ({
