@@ -12,6 +12,13 @@ export interface CaseStudyCardProps {
 const Title = styled(Heading)`
   font-size: 25px;
   color: ${trueWhite};
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  box-orient: vertical;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  display: -moz-box;
+  white-space: normal;
 `;
 
 const Body = styled(Text)`
@@ -45,10 +52,10 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  column-gap: ${unit * 3}px;
+  column-gap: ${unit * 7}px;
   perspective: 1500px;
   border-radius: ${unit}px;
-  padding: ${unit * 3}px;
+  padding: ${unit * 5}px ${unit * 7}px;
 
   &:hover ${ImageContent} {
     ${darkerBorderShadowCss}
