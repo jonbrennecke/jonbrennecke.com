@@ -44,7 +44,7 @@ const StyledOpenGovEmblem = styled(OpenGovEmblem)`
 `;
 
 export const App = hot(() => (
-  <>
+  <Container>
     <OpenGovCaseStudyCard>
       <CaseStudyCard.ImageContent>
         <OpenGovBrowser>
@@ -73,5 +73,5 @@ export const App = hot(() => (
       </CaseStudyCard.TextContent>
       <StyledOpenGovEmblem />
     </OpenGovCaseStudyCard>
-  </>
+  </Container>
 ));
