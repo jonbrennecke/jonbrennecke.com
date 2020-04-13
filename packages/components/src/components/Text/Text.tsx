@@ -2,14 +2,16 @@ import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 import { trueBlack } from '../../styles';
 
-import './Text.css';
+import CabinRegularTTF from '../../../assets/fonts/Cabin/Cabin-Regular.ttf';
+import CabinBoldTTF from '../../../assets/fonts/Cabin/Cabin-Bold.ttf';
+import CabinMediumTTF from '../../../assets/fonts/Cabin/Cabin-Medium.ttf';
 
 type ReactChild = React.ReactElement | React.ReactNode;
 
 export enum ETextWeight {
   bold = 'bold',
   medium = 'medium',
-  regular = 'regular',
+  regular = 'regular'
 }
 
 export type ITextProps = {
@@ -24,21 +26,40 @@ const textWeightToFontWeight = (
   ({
     [ETextWeight.bold]: '700',
     [ETextWeight.medium]: '500',
-    [ETextWeight.regular]: 'normal',
+    [ETextWeight.regular]: 'normal'
   }[weight]);
 
 const StyledSpan = styled.span<{
   color: string;
   weight: ETextWeight | keyof typeof ETextWeight;
 }>`
-  color: ${(props) => props.color};
+  color: ${props => props.color};
   font-family: 'Cabin', sans-serif;
-  font-weight: ${(props) => textWeightToFontWeight(props.weight)};
+  font-weight: ${props => textWeightToFontWeight(props.weight)};
   font-size: 16px;
 `;
 
 const GlobalFontStyle = createGlobalStyle`
+  @font-face {
+    font-family: 'Cabin';
+    src: url(${CabinRegularTTF}) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
 
+  @font-face {
+    font-family: 'Cabin';
+    src: url(${CabinMediumTTF}) format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Cabin';
+    src: url(${CabinBoldTTF}) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
 `;
 
 export const Text = ({
@@ -48,6 +69,7 @@ export const Text = ({
   ...etc
 }: ITextProps) => (
   <StyledSpan color={color} weight={weight} {...etc}>
+    <GlobalFontStyle />
     {children}
   </StyledSpan>
 );

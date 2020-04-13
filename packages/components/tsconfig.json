@@ -9,12 +9,12 @@
     "moduleResolution": "node",
     "strict": true,
     "esModuleInterop": true,
-    "outDir": "packages/components/lib",
+    "outDir": "lib",
     "resolveJsonModule": true,
     "allowJs": true,
     "jsx": "react",
     "types": ["react", "jest"]
   },
-  "include": ["src"],
+  "include": ["./global.d.ts", "src"],
   "exclude": ["node_modules"]
 }
