@@ -15,3 +15,6 @@ export const barkdDarkBlue = '#081018';
 export const darkGreen = '#24474A';
 export const lightTan = '#FFF0D5';
 export const tan = '#D0A55D';
+export const blue = '#3B58B9';
+
+export const offWhite = '#f3f3f4';
