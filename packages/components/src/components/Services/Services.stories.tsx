@@ -11,35 +11,33 @@ storiesOf('UI', module)
   .add('Services', () => (
     <Container>
       <Services>
-        <Services.List>
-          <Services.List.Item>
-            <Services.Icons.Phone />
-            <Services.List.Item.Title>
-              Cross-platform mobile development
-            </Services.List.Item.Title>
-            <Services.List.Item.Description>
-              Engage new audiences with a world-class native experience.
-            </Services.List.Item.Description>
-          </Services.List.Item>
-          <Services.List.Item>
-            <Services.Icons.Web />
-            <Services.List.Item.Title>Web development</Services.List.Item.Title>
-            <Services.List.Item.Description>
-              Full-stack development for web platforms, marketing pages and
-              everything in between.
-            </Services.List.Item.Description>
-          </Services.List.Item>
-          <Services.List.Item>
-            <Services.Icons.Server />
-            <Services.List.Item.Title>
-              Deployment, automation and QA
-            </Services.List.Item.Title>
-            <Services.List.Item.Description>
-              Scale your team to new levels with continuous integration
-              solutions designed just for you.
-            </Services.List.Item.Description>
-          </Services.List.Item>
-        </Services.List>
+        <Services.Item>
+          <Services.Icons.Phone />
+          <Services.Item.Title>
+            Cross-platform mobile development
+          </Services.Item.Title>
+          <Services.Item.Description>
+            Engage new audiences with a world-class native experience.
+          </Services.Item.Description>
+        </Services.Item>
+        <Services.Item>
+          <Services.Icons.Web />
+          <Services.Item.Title>Web development</Services.Item.Title>
+          <Services.Item.Description>
+            Full-stack development for web platforms, marketing pages and
+            everything in between.
+          </Services.Item.Description>
+        </Services.Item>
+        <Services.Item>
+          <Services.Icons.Server />
+          <Services.Item.Title>
+            Deployment, automation and QA
+          </Services.Item.Title>
+          <Services.Item.Description>
+            Scale your team to new levels with continuous integration solutions
+            designed just for you.
+          </Services.Item.Description>
+        </Services.Item>
       </Services>
     </Container>
   ));

@@ -62,20 +62,6 @@ ListItem.Description = ListItemDescription;
 
 export interface ServiceListSubComponents {
   Item: typeof ListItem;
-}
-
-export interface ServiceListProps {
-  children?: React.ReactChild | React.ReactChild[];
-}
-
-export const List: React.FC<ServiceListProps> & ServiceListSubComponents = ({
-  children,
-}: ServiceListProps) => <ListContainer>{children}</ListContainer>;
-
-List.Item = ListItem;
-
-export interface ServicesSubComponents {
-  List: typeof List;
   Icons: {
     Phone: typeof PhoneIcon;
     Server: typeof ServersIcon;
@@ -84,16 +70,14 @@ export interface ServicesSubComponents {
 }
 
 export interface ServicesProps {
-  className?: string;
   children?: React.ReactChild | React.ReactChild[];
 }
 
-export const Services: React.FC<ServicesProps> & ServicesSubComponents = ({
+export const Services: React.FC<ServicesProps> & ServiceListSubComponents = ({
   children,
-  className,
-}: ServicesProps) => <section className={className}>{children}</section>;
+}: ServicesProps) => <ListContainer>{children}</ListContainer>;
 
-Services.List = List;
+Services.Item = ListItem;
 Services.Icons = {
   Phone: makeListIcon(PhoneIcon),
   Server: makeListIcon(ServersIcon),
