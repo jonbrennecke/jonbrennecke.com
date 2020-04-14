@@ -1,6 +1,7 @@
 // text
 export * from './Text';
 export * from './Heading';
+export * from './SectionHeader';
 
 // logos
 export * from './OpenGovLogo';
