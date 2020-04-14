@@ -15,6 +15,8 @@ const Container = styled.div`
 const Logo = styled((props) => <JonLogo contentStyle="dark" {...props} />)`
   max-width: ${unit * 15}px;
   width: 100%;
+  position: relative;
+  top: 10px;
 `;
 
 const Links = styled.ul`
