@@ -2,19 +2,15 @@ import isString from 'lodash/isString';
 import noop from 'lodash/noop';
 import React, { useState } from 'react';
 import styled, { css } from 'styled-components';
-import { Text } from '../Text';
 import {
-  trueBlack,
+  blue,
+  darkGreen,
+  offWhite,
   trueWhite,
   unit,
-  transparent,
-  lightTan,
-  tan,
-  darkGreen,
   lighten,
-  offWhite,
-  blue
 } from '../../styles';
+import { Text } from '../Text';
 
 type ReactChild = React.ReactElement | React.ReactNode;
 
@@ -30,13 +26,13 @@ export interface IButtonProps {
 
 export enum EButtonVariant {
   primary = 'primary',
-  default = 'default'
+  default = 'default',
 }
 
 export enum EButtonSize {
   small = 'small',
   medium = 'medium',
-  large = 'large'
+  large = 'large',
 }
 
 export interface IStyledButton {
@@ -45,6 +41,16 @@ export interface IStyledButton {
   active: boolean;
   disabled: boolean;
 }
+
+export const buttonBackgroundColors = {
+  [EButtonVariant.default]: offWhite,
+  [EButtonVariant.primary]: blue,
+};
+
+export const buttonTextColors = {
+  [EButtonVariant.default]: darkGreen,
+  [EButtonVariant.primary]: trueWhite,
+};
 
 const buttonPadding = (size: EButtonSize | keyof typeof EButtonSize) => {
   switch (size) {
@@ -63,20 +69,9 @@ const buttonPadding = (size: EButtonSize | keyof typeof EButtonSize) => {
   }
 };
 
-const backgroundColors = {
-  [EButtonVariant.default]: offWhite,
-  [EButtonVariant.primary]: blue
-};
-
-const textColors = {
-  [EButtonVariant.default]: darkGreen,
-  [EButtonVariant.primary]: trueWhite
-};
-
-const activeStyles = ({ active, variant }: IStyledButton) =>
+const activeStyles = ({ active }: IStyledButton) =>
   active
     ? css`
-        background-color: ${backgroundColors[variant]};
         opacity: 0.7;
       `
     : css``;
@@ -87,7 +82,7 @@ const defaultStyles = ({ variant, size }: IStyledButton) =>
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: ${backgroundColors[variant]};
+    background-color: ${buttonBackgroundColors[variant]};
     border-radius: 4px;
     outline: 0;
     border-width: 0;
@@ -115,7 +110,7 @@ export const Button = ({
   style,
   className,
   disabled = false,
-  onClick = noop
+  onClick = noop,
 }: IButtonProps) => {
   const [active, setActive] = useState(false);
   return (
@@ -131,7 +126,7 @@ export const Button = ({
       onMouseUp={() => setActive(false)}
     >
       {isString(children) ? (
-        <Text weight="bold" color={textColors[variant]}>
+        <Text weight="bold" color={buttonTextColors[variant]}>
           {children}
         </Text>
       ) : (
