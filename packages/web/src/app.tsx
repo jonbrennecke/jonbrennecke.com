@@ -1,7 +1,7 @@
 import React from 'react';
 import { hot } from 'react-hot-loader/root';
 import styled from 'styled-components';
-import { CaseStudies } from './components/caseStudies';
+import { CaseStudies, Capabilities } from './components';
 
 const Container = styled.div`
   display: flex;
@@ -11,6 +11,7 @@ const Container = styled.div`
 
 export const App = hot(() => (
   <Container>
+    <Capabilities />
     <CaseStudies />
   </Container>
 ));

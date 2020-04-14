@@ -1,9 +1,9 @@
 import {
   BrowserFrame,
+  CaseStudyCard,
   openGovBlue,
   OpenGovEmblem,
   OpenGovLogo,
-  CaseStudyCard,
   Tag
 } from '@portfolio/components';
 import React from 'react';
