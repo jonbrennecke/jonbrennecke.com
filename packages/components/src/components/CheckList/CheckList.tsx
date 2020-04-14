@@ -33,6 +33,7 @@ const CheckListItem = ({ children }: CheckListItemProps) => (
 
 export interface CheckListProps {
   children?: React.ReactChild | React.ReactChild[];
+  className?: string;
 }
 
 export interface CheckListSubComponents {
@@ -43,12 +44,13 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  column-gap: ${unit * 2}px;
-  row-gap: ${unit * 2}px;
+  column-gap: ${unit * 5}px;
+  row-gap: ${unit * 5}px;
 `;
 
 export const CheckList: React.FC<CheckListProps> & CheckListSubComponents = ({
-  children
-}: CheckListProps) => <Container>{children}</Container>;
+  children,
+  className
+}: CheckListProps) => <Container className={className}>{children}</Container>;
 
 CheckList.Item = CheckListItem;

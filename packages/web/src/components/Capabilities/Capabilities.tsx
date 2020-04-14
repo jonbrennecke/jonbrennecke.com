@@ -1,8 +1,9 @@
 import React from 'react';
-import { CheckList } from '@portfolio/components';
+import { CheckList, unit } from '@portfolio/components';
+import styled from 'styled-components';
 
-export const Capabilities = () => (
-  <CheckList>
+export const Capabilities = styled(props => (
+  <CheckList {...props}>
     <CheckList.Item>Mobile App Development</CheckList.Item>
     <CheckList.Item>Mobile App Design</CheckList.Item>
     <CheckList.Item>Wireframing</CheckList.Item>
@@ -10,4 +11,6 @@ export const Capabilities = () => (
     <CheckList.Item>Web Design</CheckList.Item>
     <CheckList.Item>Consulting & Strategy</CheckList.Item>
   </CheckList>
-);
+))`
+  padding: ${unit * 15}px;
+`;
