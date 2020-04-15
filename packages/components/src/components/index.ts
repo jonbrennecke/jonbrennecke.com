@@ -19,3 +19,4 @@ export * from './CheckList';
 export * from './Navigation';
 export * from './Button';
 export * from './Services';
+export * from './Hero';

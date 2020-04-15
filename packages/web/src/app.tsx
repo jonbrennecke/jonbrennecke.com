@@ -7,6 +7,7 @@ import {
   CaseStudies,
   Navbar,
   ServicesSection,
+  HeroSection,
 } from './components';
 
 const Container = styled.div`
@@ -24,6 +25,7 @@ const Container = styled.div`
 export const App = hot(() => (
   <Container>
     <Navbar />
+    <HeroSection />
     <ServicesSection />
     <CaseStudies />
     <Capabilities />
