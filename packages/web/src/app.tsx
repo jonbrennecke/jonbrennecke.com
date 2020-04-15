@@ -1,4 +1,4 @@
-import { unit } from '@portfolio/components';
+import { unit, LoadingBanner } from '@portfolio/components';
 import React from 'react';
 import { hot } from 'react-hot-loader/root';
 import styled from 'styled-components';
@@ -23,11 +23,14 @@ const Container = styled.div`
 `;
 
 export const App = hot(() => (
-  <Container>
-    <Navbar />
-    <HeroSection />
-    <ServicesSection />
-    <CaseStudies />
-    <Capabilities />
-  </Container>
+  <>
+    <Container>
+      <Navbar />
+      <HeroSection />
+      <ServicesSection />
+      <CaseStudies />
+      <Capabilities />
+    </Container>
+    <LoadingBanner contentStyle="dark" />
+  </>
 ));

@@ -1,13 +1,36 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { trueBlack, trueWhite } from '../../styles';
 import { AnimatedJonLogo } from '../AnimatedJonLogo';
 import { JonLogoContentStyle } from '../JonLogo';
+import { timingFunctions } from 'polished';
 
 export enum LoadingBannerContentStyle {
   dark = 'dark',
   light = 'light',
 }
+
+const drawerAnimation = keyframes`
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-100%);
+  }
+`;
+
+const drawerChildrenAnimation = keyframes`
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0.1;
+    transform: scale(0.66);
+  }
+`;
 
 const Container = styled.div<{
   contentStyle:
@@ -26,6 +49,12 @@ const Container = styled.div<{
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: ${drawerAnimation} 0.5s ${timingFunctions('easeInOutCubic')}
+    forwards 3s;
+
+  & > * {
+    animation: ${drawerChildrenAnimation} 1s ease forwards 2.5s;
+  }
 `;
 
 const StyledAnimatedJonLogo = styled(AnimatedJonLogo)`
