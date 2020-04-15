@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const StyledHero = styled(Hero)`
   padding: ${unit * 10}px ${unit * 5}px;
-  height: 70vh;
+  height: 75vh;
 `;
 
 export const HeroSection = () => (
@@ -12,7 +12,7 @@ export const HeroSection = () => (
     <Hero.Title>Full-Stack React Native Software Development</Hero.Title>
     <Hero.SubTitle>
       Hi, I’m Jon. I am a software engineer from the Pacific Northwest. I build
-      mobile apps and websites for companies, startups -- and sometimes just for
+      mobile apps and websites for companies, startups—and sometimes just for
       fun.
     </Hero.SubTitle>
   </StyledHero>

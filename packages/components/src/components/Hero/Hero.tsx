@@ -10,13 +10,13 @@ const Container = styled.div`
 `;
 
 const Title = styled(Heading)`
-  font-size: ${unit * 10}px;
+  font-size: ${unit * 8}px;
   white-space: normal;
   padding-bottom: ${unit * 3}px;
 `;
 
 const SubTitle = styled(Heading)`
-  font-size: ${unit * 5}px;
+  font-size: ${unit * 4}px;
   font-weight: normal;
   color: #726e84;
   white-space: normal;
