@@ -8,6 +8,8 @@ export * from './OpenGovLogo';
 export * from './OpenGovEmblem';
 export * from './LaserlikeLogo';
 export * from './BarkdLogo';
+export * from './AnimatedJonLogo';
+export * from './JonLogo';
 
 // UI
 export * from './CaseStudyCard';
