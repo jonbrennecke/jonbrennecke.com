@@ -22,10 +22,9 @@ const Container = styled.div<{ logoContentStyle: JonLogoContentStyle }>`
 storiesOf('Logos', module)
   .addDecorator(withKnobs)
   .add('AnimatedJonLogo', () => {
-    // const logoContentStyle = boolean('Dark Content Style', true)
-    //   ? JonLogoContentStyle.dark
-    //   : JonLogoContentStyle.light;
-    const logoContentStyle = JonLogoContentStyle.light;
+    const logoContentStyle = boolean('Dark Content Style', true)
+      ? JonLogoContentStyle.dark
+      : JonLogoContentStyle.light;
     return (
       <Container logoContentStyle={logoContentStyle}>
         <AnimatedJonLogo contentStyle={logoContentStyle} />

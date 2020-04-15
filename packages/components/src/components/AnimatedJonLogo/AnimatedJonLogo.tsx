@@ -1,6 +1,7 @@
-import React, { useRef, useLayoutEffect, useState } from 'react';
-import { trueWhite, trueBlack, lighten, opacity } from '../../styles';
-import styled, { keyframes, css, Keyframes } from 'styled-components';
+import React, { useLayoutEffect, useRef, useState } from 'react';
+import styled, { keyframes } from 'styled-components';
+import { timingFunctions } from 'polished';
+import { opacity, trueBlack, trueWhite } from '../../styles';
 
 export enum JonLogoContentStyle {
   dark = 'dark',
@@ -52,10 +53,12 @@ const makeFillAnimation = (fill: string = trueWhite) => keyframes`
     }
   `;
 
+const easingFn = timingFunctions('easeInOutQuad');
+
 const AnimatedSvgGroup = styled.g`
   fill: ${(props) => opacity(props.fill || trueWhite, 0.1)};
-  animation: ${(props) => makeFillAnimation(props.fill)} 1.25s ease-in forwards
-    1.25s;
+  animation: ${(props) => makeFillAnimation(props.fill)} 1.33s ${easingFn}
+    forwards 0.66s;
 `;
 
 const makeDashOffsetAnimation = (max: number) =>
@@ -71,8 +74,8 @@ const makeDashOffsetAnimation = (max: number) =>
 
 const StyledPath = styled.path<{ pathLength?: number }>`
   stroke-dasharray: ${(props) => (props.pathLength || 0) + 1};
-  animation: ${(props) => makeDashOffsetAnimation(props.pathLength || 0)} 2s
-    ease-in forwards;
+  animation: ${(props) => makeDashOffsetAnimation(props.pathLength || 0)} 1.5s
+    ${easingFn} forwards;
 `;
 
 export const AnimatedSvgPath = (props: React.SVGProps<SVGPathElement>) => {
