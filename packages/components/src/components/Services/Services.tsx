@@ -71,11 +71,15 @@ export interface ServiceListSubComponents {
 
 export interface ServicesProps {
   children?: React.ReactChild | React.ReactChild[];
+  className?: string;
 }
 
 export const Services: React.FC<ServicesProps> & ServiceListSubComponents = ({
   children,
-}: ServicesProps) => <ListContainer>{children}</ListContainer>;
+  className,
+}: ServicesProps) => (
+  <ListContainer className={className}>{children}</ListContainer>
+);
 
 Services.Item = ListItem;
 Services.Icons = {
