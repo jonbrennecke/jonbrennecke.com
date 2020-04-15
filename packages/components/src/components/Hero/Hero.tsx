@@ -12,6 +12,7 @@ const Container = styled.div`
 const Title = styled(Heading)`
   font-size: ${unit * 10}px;
   white-space: normal;
+  padding-bottom: ${unit * 3}px;
 `;
 
 const SubTitle = styled(Heading)`
@@ -19,6 +20,7 @@ const SubTitle = styled(Heading)`
   font-weight: normal;
   color: #726e84;
   white-space: normal;
+  padding-top: ${unit * 3}px;
 `;
 
 export interface HeroSubComponents {
