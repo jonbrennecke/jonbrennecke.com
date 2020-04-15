@@ -30,6 +30,10 @@ const Links = styled.ul`
 const LinkContainer = styled.li`
   list-style-type: none;
   padding: ${unit}px ${unit * 2}px;
+
+  &:last-child {
+    padding-right: 0;
+  }
 `;
 
 const linkButtonBackgroundColors = {
