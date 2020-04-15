@@ -1,13 +1,25 @@
 import React from 'react';
-import { unit, Services } from '@portfolio/components';
+import { unit, Services, SectionHeader } from '@portfolio/components';
 import styled from 'styled-components';
 
 const StyledServicesContainer = styled(Services)`
   padding: ${unit * 10}px ${unit * 5}px;
 `;
 
+const StyledSectionHeader = styled(SectionHeader)`
+  padding: ${unit * 10}px 0;
+`;
+
 export const ServicesSection = () => (
   <StyledServicesContainer>
+    <StyledSectionHeader>
+      <SectionHeader.SubTitle>Always at your service</SectionHeader.SubTitle>
+      <SectionHeader.Title>Services</SectionHeader.Title>
+      <SectionHeader.Paragraph>
+        Looking for something not mentioned here? Contact me for more
+        information.
+      </SectionHeader.Paragraph>
+    </StyledSectionHeader>
     <Services.Item>
       <Services.Icons.Phone />
       <Services.Item.Title>

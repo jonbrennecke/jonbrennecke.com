@@ -9,7 +9,7 @@ const StyledHero = styled(Hero)`
 
 export const HeroSection = () => (
   <StyledHero>
-    <Hero.Title>Full-Stack React Native Software Development</Hero.Title>
+    <Hero.Title>Custom React Native Software Development</Hero.Title>
     <Hero.SubTitle>
       Hi, I’m Jon. I am a software engineer from the Pacific Northwest. I build
       mobile apps and websites for companies, startups—and sometimes just for

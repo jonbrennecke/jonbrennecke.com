@@ -27,8 +27,8 @@ export const App = hot(() => (
     <Container>
       <Navbar />
       <HeroSection />
-      <ServicesSection />
       <CaseStudies />
+      <ServicesSection />
       <Capabilities />
     </Container>
     <LoadingBanner contentStyle="dark" />

@@ -20,7 +20,7 @@ const Container = styled.div`
 export const Capabilities = () => (
   <Container>
     <StyledSectionHeader>
-      <SectionHeader.SubTitle>What I do</SectionHeader.SubTitle>
+      <SectionHeader.SubTitle>What I do best</SectionHeader.SubTitle>
       <SectionHeader.Title>Capabilities</SectionHeader.Title>
     </StyledSectionHeader>
     <CheckListContainer>
