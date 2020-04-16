@@ -9,13 +9,11 @@ const StyledHero = styled(Hero)`
 `;
 
 const ButtonGroup = styled.div`
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: ${unit * 3}px;
   padding-top: ${unit * 6}px;
-
-  & > * {
-    margin-right: ${unit * 3}px;
-  }
+  max-width: 400px;
 `;
 
 export const HeroSection = () => (
