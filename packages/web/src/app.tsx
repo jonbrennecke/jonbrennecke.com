@@ -8,6 +8,7 @@ import {
   Navbar,
   ServicesSection,
   HeroSection,
+  FooterSection,
 } from './components';
 
 const Container = styled.div`
@@ -30,6 +31,7 @@ export const App = hot(() => (
       <CaseStudies />
       <ServicesSection />
       <Capabilities />
+      <FooterSection />
     </Container>
     <LoadingBanner contentStyle="dark" />
   </>

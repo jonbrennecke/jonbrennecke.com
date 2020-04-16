@@ -23,3 +23,4 @@ export * from './Button';
 export * from './Services';
 export * from './Hero';
 export * from './LoadingBanner';
+export * from './Footer';

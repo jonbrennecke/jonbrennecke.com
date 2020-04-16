@@ -3,3 +3,4 @@ export * from './CaseStudies';
 export * from './Navbar';
 export * from './ServicesSection';
 export * from './HeroSection';
+export * from './FooterSection';
