@@ -13,6 +13,10 @@ const StyledNavigation = styled(Navigation)`
   max-width: ${maxWidth}px;
 `;
 
+const ContactForm = styled(Form)`
+  padding: 0 ${unit * 10}px;
+`;
+
 export const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
@@ -22,7 +26,7 @@ export const Navbar = () => {
         alignment="left"
         onClickOutside={() => setShowMenu(false)}
       >
-        <Form>
+        <ContactForm>
           <Form.Title>Let's work together!</Form.Title>
           <Form.Note>
             Want to chat? Shoot me an email at{' '}
@@ -56,7 +60,7 @@ export const Navbar = () => {
           <Form.Button variant="primary" size="large">
             Send
           </Form.Button>
-        </Form>
+        </ContactForm>
       </SideDrawer>
       <Navigation.MenuButton onClick={() => setShowMenu(!showMenu)} />
       <Navigation.Logo />

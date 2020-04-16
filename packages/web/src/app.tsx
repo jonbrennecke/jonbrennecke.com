@@ -35,15 +35,12 @@ const AboutImage = styled.div`
   background-size: cover;
 `;
 
-const ContactForm = styled.div`
+const ContactForm = styled(Form)`
   max-width: 1024px;
   padding: ${unit * 15}px 0;
   background-color: ${trueWhite};
   border-radius: ${unit * 2}px;
   position: relative;
-  /* box-shadow: 0px 6px 105px ${colorToRGBA(trueBlack, 0.09)}; */
-  /* margin-top: -${unit * 5}px; */
-  /* margin-bottom: -${unit * 5}px; */
   width: 100%;
   max-width: 1024px;
   padding: ${unit * 15}px ${unit * 17}px;
@@ -76,41 +73,39 @@ export const App = hot(() => (
       </About>
 
       <ContactForm>
-        <Form>
-          <Form.Title>Let's work together!</Form.Title>
-          <Form.Note>
-            Want to chat? Shoot me an email at{' '}
-            <a href="mailto:jpbrennecke@gmail.com" target="_blank">
-              jpbrennecke@gmail.com
-            </a>
-          </Form.Note>
-          <Form.Field>
-            <Form.Label>Name & Company</Form.Label>
-            <Form.Input
-              autoFocus={false}
-              name="name"
-              placeholder="John from Google..."
-            />
-          </Form.Field>
-          <Form.Field>
-            <Form.Label>Email</Form.Label>
-            <Form.Input
-              autoFocus={false}
-              name="email"
-              placeholder="john@google.com"
-            />
-          </Form.Field>
-          <Form.Field>
-            <Form.Label>Project Description</Form.Label>
-            <Form.TextArea
-              autoFocus={false}
-              placeholder="We need help redesigning our app..."
-            />
-          </Form.Field>
-          <Form.Button variant="primary" size="large">
-            Send
-          </Form.Button>
-        </Form>
+        <Form.Title>Let's work together!</Form.Title>
+        <Form.Note>
+          Want to chat? Shoot me an email at{' '}
+          <a href="mailto:jpbrennecke@gmail.com" target="_blank">
+            jpbrennecke@gmail.com
+          </a>
+        </Form.Note>
+        <Form.Field>
+          <Form.Label>Name & Company</Form.Label>
+          <Form.Input
+            autoFocus={false}
+            name="name"
+            placeholder="John from Google..."
+          />
+        </Form.Field>
+        <Form.Field>
+          <Form.Label>Email</Form.Label>
+          <Form.Input
+            autoFocus={false}
+            name="email"
+            placeholder="john@google.com"
+          />
+        </Form.Field>
+        <Form.Field>
+          <Form.Label>Project Description</Form.Label>
+          <Form.TextArea
+            autoFocus={false}
+            placeholder="We need help redesigning our app..."
+          />
+        </Form.Field>
+        <Form.Button variant="primary" size="large">
+          Send
+        </Form.Button>
       </ContactForm>
 
       <FooterSection />
