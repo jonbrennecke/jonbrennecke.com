@@ -1,13 +1,10 @@
+import times from 'lodash/times';
+import { timingFunctions } from 'polished';
 import React from 'react';
-import styled from 'styled-components';
-import { Heading } from '../Heading';
+import styled, { css, keyframes } from 'styled-components';
 import { unit } from '../../styles';
-
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-`;
+import { Button } from '../Button';
+import { Heading } from '../Heading';
 
 const Title = styled(Heading)`
   font-size: ${unit * 8}px;
@@ -24,9 +21,47 @@ const SubTitle = styled(Heading)`
   padding-top: ${unit * 3}px;
 `;
 
+const ButtonGroup = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: ${unit * 3}px;
+  padding-top: ${unit * 6}px;
+  max-width: 400px;
+`;
+
+const heroAnimation = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(${unit * 5}px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+`;
+
+const makeNthChildAnimation = (n: number) => css`
+  & > *:nth-child(${n}) {
+    opacity: 0;
+    animation: ${heroAnimation} 1s ${timingFunctions('easeOutQuad')} forwards
+      ${4 + n * 0.2}s;
+  }
+`;
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  ${times(5).map((n) => makeNthChildAnimation(n))}
+`;
+
 export interface HeroSubComponents {
   Title: typeof Title;
   SubTitle: typeof SubTitle;
+  ButtonGroup: typeof ButtonGroup;
+  Button: typeof Button;
 }
 
 export interface HeroProps {
@@ -41,3 +76,5 @@ export const Hero: React.FC<HeroProps> & HeroSubComponents = ({
 
 Hero.Title = Title;
 Hero.SubTitle = SubTitle;
+Hero.ButtonGroup = ButtonGroup;
+Hero.Button = Button;

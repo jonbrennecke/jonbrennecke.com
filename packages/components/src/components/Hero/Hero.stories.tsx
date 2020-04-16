@@ -10,8 +10,14 @@ storiesOf('UI', module)
       <Hero.Title>Full-Stack React Native Software Development</Hero.Title>
       <Hero.SubTitle>
         Hi, I’m Jon. I am a software engineer from the Pacific Northwest. I
-        build mobile apps and websites for companies, startups -- and sometimes
-        just for fun
+        build mobile apps and websites for companies, startups—and sometimes
+        just for fun.
       </Hero.SubTitle>
+      <Hero.ButtonGroup>
+        <Hero.Button variant="primary" size="large">
+          Work with me
+        </Hero.Button>
+        <Hero.Button size="large">See more</Hero.Button>
+      </Hero.ButtonGroup>
     </Hero>
   ));

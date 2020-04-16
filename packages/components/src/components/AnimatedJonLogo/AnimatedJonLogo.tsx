@@ -40,14 +40,14 @@ export const AnimatedJonLogo = ({
 };
 
 const makeFillAnimation = (fill: string = trueWhite) => keyframes`
-    from {
-      fill: ${opacity(fill, 0.1)};
-    }
+  from {
+    fill: ${opacity(fill, 0.1)};
+  }
 
-    to {
-      fill: ${opacity(fill, 1)};
-    }
-  `;
+  to {
+    fill: ${opacity(fill, 1)};
+  }
+`;
 
 const easeInOutQuad = timingFunctions('easeInOutQuad');
 const easeInQuad = timingFunctions('easeInQuad');
