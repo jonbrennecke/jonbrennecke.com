@@ -21,7 +21,7 @@ const Logo = styled.div`
 `;
 
 const Title = styled(Heading)`
-  font-size: 25px;
+  font-size: ${unit * 4}px;
   color: ${trueWhite};
   line-clamp: 2;
   -webkit-line-clamp: 2;
@@ -33,7 +33,7 @@ const Title = styled(Heading)`
 `;
 
 const Body = styled(Text)`
-  font-size: 15px;
+  font-size: ${unit * 2}px;
   color: ${trueWhite};
 `;
 

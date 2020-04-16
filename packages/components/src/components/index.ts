@@ -1,9 +1,10 @@
-// text
+// Text
 export * from './Text';
 export * from './Heading';
+export * from './Input';
 export * from './SectionHeader';
 
-// logos
+// Logos
 export * from './OpenGovLogo';
 export * from './OpenGovEmblem';
 export * from './LaserlikeLogo';
@@ -25,3 +26,4 @@ export * from './Hero';
 export * from './LoadingBanner';
 export * from './Footer';
 export * from './About';
+export * from './Form';
