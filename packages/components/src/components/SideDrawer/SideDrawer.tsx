@@ -9,7 +9,11 @@ export enum SideDrawerAlignment {
   left = 'left',
 }
 
-const Background = styled.div<{ open: boolean }>`
+const Background = styled.div.attrs<{ open: boolean }>((props) => ({
+  style: {
+    opacity: props.open ? 1 : 0,
+  },
+}))<{ open: boolean }>`
   top: 0;
   left: 0;
   z-index: 1000;
@@ -17,12 +21,20 @@ const Background = styled.div<{ open: boolean }>`
   width: 100vw;
   height: 100vh;
   background-color: ${opacity(trueWhite, 0.8)};
-  opacity: ${(props) => (props.open ? 1 : 0)};
   pointer-events: none;
   transition: 250ms opacity ease-in-out 100ms;
 `;
 
-const Container = styled.div<{
+const Container = styled.div.attrs<{
+  open: boolean;
+  alignment: SideDrawerAlignment | keyof typeof SideDrawerAlignment;
+}>((props) => ({
+  style: {
+    transform: `translateX(
+       ${props.open ? '0%' : translateX[props.alignment]}
+    )`,
+  },
+}))<{
   open: boolean;
   alignment: SideDrawerAlignment | keyof typeof SideDrawerAlignment;
 }>`
@@ -35,9 +47,6 @@ const Container = styled.div<{
   left: ${(props) => props.alignment === SideDrawerAlignment.left && '0'};
   top: 0;
   transition: 0.5s ${timingFunctions('easeInOutCubic')};
-  transform: translateX(
-    ${(props) => (props.open ? '0%' : translateX[props.alignment])}
-  );
 `;
 
 const translateX = {
