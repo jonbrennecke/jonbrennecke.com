@@ -12,8 +12,9 @@ const Container = styled.div<{
   open: boolean;
   alignment: SideDrawerAlignment | keyof typeof SideDrawerAlignment;
 }>`
+  z-index: 1000;
   position: fixed;
-  width: 40vw;
+  width: 60vw;
   height: 100vh;
   background-color: ${trueBlack};
   right: ${(props) => props.alignment === SideDrawerAlignment.right && '0'};

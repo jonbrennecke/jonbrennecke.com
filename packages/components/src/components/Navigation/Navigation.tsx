@@ -6,9 +6,9 @@ import { ITextProps, Text } from '../Text';
 import { Button, EButtonVariant, buttonBackgroundColors } from '../Button';
 
 const Container = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: min-content 1fr max-content;
+  grid-template-areas: 'menu logo links';
   align-items: center;
 `;
 
@@ -17,6 +17,7 @@ const Logo = styled((props) => <JonLogo contentStyle="dark" {...props} />)`
   width: 100%;
   position: relative;
   top: 10px;
+  grid-area: logo;
 `;
 
 const Links = styled.ul`
@@ -25,6 +26,7 @@ const Links = styled.ul`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  grid-area: links;
 `;
 
 const LinkContainer = styled.li`
@@ -67,13 +69,13 @@ const MenuIcon = styled((props) => (
         <g transform="translate(1, 1)">
           <g transform="translate(157.000000, 91.000000)">
             <g transform="translate(0.000000, 0.932773)">
-              <rect x="0" y="0" width="44.4" height="4.50630252" rx="1"></rect>
+              <rect x="0" y="0" width="44.4" height="4.50630252" rx="2"></rect>
               <rect
                 x="0"
                 y="12.1323529"
                 width="30.3"
                 height="4.50630252"
-                rx="1"
+                rx="2"
               ></rect>
             </g>
           </g>
@@ -82,8 +84,7 @@ const MenuIcon = styled((props) => (
     </g>
   </svg>
 ))`
-  max-width: ${unit * 6}px;
-  width: 100%;
+  width: ${unit * 6}px;
 `;
 
 const MenuButton = styled(
@@ -98,6 +99,7 @@ const MenuButton = styled(
     </button>
   )
 )`
+  padding: 0 ${unit * 10}px 0 0;
   max-width: 100%;
   display: flex;
   align-items: center;
@@ -105,6 +107,7 @@ const MenuButton = styled(
   outline: 0;
   border-width: 0;
   cursor: pointer;
+  grid-area: menu;
 
   rect {
     stroke-width: 0;
