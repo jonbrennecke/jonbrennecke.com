@@ -7,6 +7,7 @@ storiesOf('UI', module)
   .addDecorator(withKnobs)
   .add('Navigation', () => (
     <Navigation>
+      <Navigation.MenuButton />
       <Navigation.Logo />
       <Navigation.Links>
         <Navigation.Link>Home</Navigation.Link>
