@@ -72,7 +72,7 @@ export const App = hot(() => (
         </About.ImageContent>
       </About>
 
-      <ContactForm>
+      <ContactForm contentStyle="dark">
         <Form.Title>Let's work together!</Form.Title>
         <Form.Note>
           Want to chat? Shoot me an email at{' '}

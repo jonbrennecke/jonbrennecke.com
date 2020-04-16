@@ -38,7 +38,6 @@ export enum EButtonSize {
 export interface IStyledButton {
   variant: EButtonVariant | keyof typeof EButtonVariant;
   size: EButtonSize | keyof typeof EButtonSize;
-  active: boolean;
   disabled: boolean;
 }
 
@@ -69,13 +68,6 @@ const buttonPadding = (size: EButtonSize | keyof typeof EButtonSize) => {
   }
 };
 
-const activeStyles = ({ active }: IStyledButton) =>
-  active
-    ? css`
-        opacity: 0.7;
-      `
-    : css``;
-
 const defaultStyles = ({ variant, size }: IStyledButton) =>
   css`
     max-width: 100%;
@@ -88,6 +80,10 @@ const defaultStyles = ({ variant, size }: IStyledButton) =>
     border-width: 0;
     cursor: pointer;
     ${buttonPadding(size)};
+
+    &:active {
+      opacity: 0.7;
+    }
   `;
 
 const disabledStyles = ({ disabled }: IStyledButton) =>
@@ -99,7 +95,6 @@ const disabledStyles = ({ disabled }: IStyledButton) =>
 
 const Container = styled.button<IStyledButton>`
   ${defaultStyles}
-  ${activeStyles};
   ${disabledStyles};
 `;
 
@@ -111,27 +106,21 @@ export const Button = ({
   className,
   disabled = false,
   onClick = noop,
-}: IButtonProps) => {
-  const [active, setActive] = useState(false);
-  return (
-    <Container
-      className={className}
-      style={style}
-      size={size}
-      onClick={!disabled ? onClick : noop}
-      variant={variant}
-      active={active}
-      disabled={disabled}
-      onMouseDown={() => setActive(true)}
-      onMouseUp={() => setActive(false)}
-    >
-      {isString(children) ? (
-        <Text weight="bold" color={buttonTextColors[variant]}>
-          {children}
-        </Text>
-      ) : (
-        children
-      )}
-    </Container>
-  );
-};
+}: IButtonProps) => (
+  <Container
+    className={className}
+    style={style}
+    size={size}
+    onClick={!disabled ? onClick : noop}
+    variant={variant}
+    disabled={disabled}
+  >
+    {isString(children) ? (
+      <Text weight="bold" color={buttonTextColors[variant]}>
+        {children}
+      </Text>
+    ) : (
+      children
+    )}
+  </Container>
+);

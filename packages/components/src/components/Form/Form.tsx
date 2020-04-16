@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import {
   offWhite,
   trueBlack,
@@ -84,6 +84,11 @@ const Container = styled.div<{
   flex-direction: column;
   align-items: flex-start;
 
+  ${(props) =>
+    props.contentStyle === FormContentStyle.light && lightContentStyleCss};
+`;
+
+const lightContentStyleCss = css`
   ${Label} {
     color: ${trueWhite};
   }

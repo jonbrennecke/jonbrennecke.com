@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react';
 import styled from 'styled-components';
-import { trueBlack } from '../../styles';
+import { trueBlack, trueWhite, opacity } from '../../styles';
 import { timingFunctions } from 'polished';
 import { useClickOutside } from './clickOutside';
 
@@ -8,6 +8,19 @@ export enum SideDrawerAlignment {
   right = 'right',
   left = 'left',
 }
+
+const Background = styled.div<{ open: boolean }>`
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: ${opacity(trueWhite, 0.8)};
+  opacity: ${(props) => (props.open ? 1 : 0)};
+  pointer-events: none;
+  transition: 250ms opacity ease-in-out 100ms;
+`;
 
 const Container = styled.div<{
   open: boolean;
@@ -54,13 +67,16 @@ export const SideDrawer = ({
   }, [onClickOutside, open]);
   const ref = useClickOutside(clickOutsideCallback);
   return (
-    <Container
-      ref={ref}
-      alignment={alignment}
-      open={open}
-      className={className}
-    >
-      {children}
-    </Container>
+    <>
+      <Background open={open} />
+      <Container
+        ref={ref}
+        alignment={alignment}
+        open={open}
+        className={className}
+      >
+        {children}
+      </Container>
+    </>
   );
 };
