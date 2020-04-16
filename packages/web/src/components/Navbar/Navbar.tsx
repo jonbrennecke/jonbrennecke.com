@@ -14,7 +14,7 @@ const StyledNavigation = styled(Navigation)`
 `;
 
 const ContactForm = styled(Form)`
-  padding: 0 ${unit * 10}px;
+  padding: ${unit * 10}px;
 `;
 
 export const Navbar = () => {
@@ -26,8 +26,8 @@ export const Navbar = () => {
         alignment="left"
         onClickOutside={() => setShowMenu(false)}
       >
-        <ContactForm>
-          <Form.Title>Let's work together!</Form.Title>
+        <ContactForm contentStyle="light">
+          <Form.Title>Let's talk!</Form.Title>
           <Form.Note>
             Want to chat? Shoot me an email at{' '}
             <a href="mailto:jpbrennecke@gmail.com" target="_blank">

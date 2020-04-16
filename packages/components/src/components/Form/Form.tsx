@@ -1,17 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
-import { offWhite, trueBlack, unit } from '../../styles';
+import {
+  offWhite,
+  trueBlack,
+  unit,
+  trueWhite,
+  opacity,
+  blue,
+} from '../../styles';
 import { Heading } from '../Heading';
 import { Input } from '../Input';
 import { Text } from '../Text';
 import { TextArea } from '../TextArea';
 import { Button } from '../Button';
 
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-`;
+export enum FormContentStyle {
+  light = 'light',
+  dark = 'dark',
+}
 
 const Title = styled(Heading)`
   font-size: ${unit * 8}px;
@@ -42,7 +48,7 @@ const Note = styled(Text)`
     top: 0;
     bottom: 0;
     left: 0;
-    background-color: blue;
+    background-color: ${blue};
     width: 1px;
   }
 `;
@@ -71,6 +77,44 @@ const FormButton = styled(Button)`
   display: inline-block;
 `;
 
+const Container = styled.div<{
+  contentStyle: FormContentStyle | keyof typeof FormContentStyle;
+}>`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  ${Label} {
+    color: ${trueWhite};
+  }
+
+  ${Note} {
+    color: ${trueWhite};
+
+    a {
+      color: ${trueWhite};
+    }
+
+    &::before {
+      background-color: ${trueWhite};
+    }
+  }
+
+  ${Title} {
+    color: ${trueWhite};
+  }
+
+  input,
+  textarea {
+    background-color: ${opacity(trueWhite, 0.1)};
+    color: ${trueWhite};
+
+    &::placeholder {
+      opacity: 0.5;
+    }
+  }
+`;
+
 export interface FormSubComponents {
   Title: typeof Title;
   Field: typeof Field;
@@ -84,12 +128,18 @@ export interface FormSubComponents {
 export interface FormProps {
   children?: React.ReactChild | React.ReactChild[];
   className?: string;
+  contentStyle?: FormContentStyle | keyof typeof FormContentStyle;
 }
 
 export const Form: React.FC<FormProps> & FormSubComponents = ({
   children,
   className,
-}: FormProps) => <Container className={className}>{children}</Container>;
+  contentStyle = FormContentStyle.dark,
+}: FormProps) => (
+  <Container contentStyle={contentStyle} className={className}>
+    {children}
+  </Container>
+);
 
 Form.Title = Title;
 Form.Field = Field;
