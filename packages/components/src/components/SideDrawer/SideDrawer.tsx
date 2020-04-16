@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import styled from 'styled-components';
 import { trueBlack } from '../../styles';
 import { timingFunctions } from 'polished';
+import { useClickOutside } from './clickOutside';
 
 export enum SideDrawerAlignment {
   right = 'right',
@@ -36,6 +37,7 @@ export interface SideDrawerProps {
   className?: string;
   open?: boolean;
   alignment?: SideDrawerAlignment | keyof typeof SideDrawerAlignment;
+  onClickOutside?(): void;
 }
 
 export const SideDrawer = ({
@@ -43,8 +45,22 @@ export const SideDrawer = ({
   children,
   open = false,
   alignment = SideDrawerAlignment.right,
-}: SideDrawerProps) => (
-  <Container alignment={alignment} open={open} className={className}>
-    {children}
-  </Container>
-);
+  onClickOutside,
+}: SideDrawerProps) => {
+  const clickOutsideCallback = useCallback(() => {
+    if (open && onClickOutside) {
+      onClickOutside();
+    }
+  }, [onClickOutside, open]);
+  const ref = useClickOutside(clickOutsideCallback);
+  return (
+    <Container
+      ref={ref}
+      alignment={alignment}
+      open={open}
+      className={className}
+    >
+      {children}
+    </Container>
+  );
+};

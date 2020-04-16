@@ -16,5 +16,6 @@ storiesOf('UI', module)
         SideDrawerAlignment.left
       )}
       open={boolean('Open', true)}
+      onClickOutside={() => console.log('click outside')}
     ></SideDrawer>
   ));
