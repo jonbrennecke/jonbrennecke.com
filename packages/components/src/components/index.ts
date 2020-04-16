@@ -28,3 +28,4 @@ export * from './LoadingBanner';
 export * from './Footer';
 export * from './About';
 export * from './Form';
+export * from './SideDrawer';
