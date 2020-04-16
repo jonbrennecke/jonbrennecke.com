@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { JonLogo } from '../JonLogo';
-import { unit, offWhite, trueWhite, maxWidth } from '../../styles';
+import { unit, offWhite, maxWidth, blue, mediumBlue } from '../../styles';
 import { Text } from '../Text';
 
 const Container = styled.footer`
@@ -23,7 +23,7 @@ const Logo = styled((props) => <JonLogo contentStyle="dark" {...props} />)`
   padding-top: ${unit * 7}px;
 
   path {
-    fill: ${trueWhite};
+    fill: ${mediumBlue};
   }
 `;
 
@@ -50,6 +50,12 @@ const FootNotes = styled.div`
 
 const FootNote = styled(Text)`
   font-size: ${unit * 2}px;
+  color: ${blue};
+
+  a {
+    color: ${blue};
+    font-weight: bold;
+  }
 `;
 
 export interface FooterSubComponents {

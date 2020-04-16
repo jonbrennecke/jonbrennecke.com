@@ -28,7 +28,7 @@ export const HeroSection = () => (
       <Button variant="primary" size="large">
         Work with me
       </Button>
-      <Button size="large">See more</Button>
+      {/* <Button size="large">See more</Button> */}
     </ButtonGroup>
   </StyledHero>
 );
