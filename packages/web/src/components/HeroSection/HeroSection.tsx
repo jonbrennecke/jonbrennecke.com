@@ -27,9 +27,9 @@ export const HeroSection = () => (
     </Hero.SubTitle>
     <ButtonGroup>
       <Button variant="primary" size="large">
-        Contact
+        Work with me
       </Button>
-      <Button size="large">See Work</Button>
+      <Button size="large">See more</Button>
     </ButtonGroup>
   </StyledHero>
 );
