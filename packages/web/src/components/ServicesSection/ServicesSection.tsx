@@ -1,13 +1,14 @@
 import React from 'react';
-import { unit, Services, SectionHeader } from '@portfolio/components';
+import { unit, Services, SectionHeader, maxWidth } from '@portfolio/components';
 import styled from 'styled-components';
 
 const StyledServicesContainer = styled(Services)`
-  padding: ${unit * 10}px ${unit * 5}px;
+  padding: ${unit * 15}px ${unit * 5}px;
+  max-width: ${maxWidth}px;
 `;
 
 const StyledSectionHeader = styled(SectionHeader)`
-  padding: ${unit * 10}px 0;
+  padding: 0 0 ${unit * 15}px 0;
 `;
 
 export const ServicesSection = () => (

@@ -41,8 +41,9 @@ export interface CheckListSubComponents {
 }
 
 const Container = styled.div`
+  width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   column-gap: ${unit * 5}px;
   row-gap: ${unit * 5}px;
@@ -50,7 +51,7 @@ const Container = styled.div`
 
 export const CheckList: React.FC<CheckListProps> & CheckListSubComponents = ({
   children,
-  className
+  className,
 }: CheckListProps) => <Container className={className}>{children}</Container>;
 
 CheckList.Item = CheckListItem;

@@ -1,17 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 import { JonLogo } from '../JonLogo';
-import { unit, offWhite, trueWhite } from '../../styles';
+import { unit, offWhite, trueWhite, maxWidth } from '../../styles';
 import { Text } from '../Text';
 
 const Container = styled.footer`
   display: flex;
   flex: 1;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   background-color: ${offWhite};
   padding: ${unit * 7}px;
+  min-height: ${unit * 75}px;
 `;
 
 const Logo = styled((props) => <JonLogo contentStyle="dark" {...props} />)`
@@ -19,6 +20,7 @@ const Logo = styled((props) => <JonLogo contentStyle="dark" {...props} />)`
   width: 100%;
   position: relative;
   top: 10px;
+  padding-top: ${unit * 7}px;
 
   path {
     fill: ${trueWhite};
@@ -31,6 +33,7 @@ const FootNotes = styled.div`
   justify-content: space-between;
   padding-top: ${unit * 10}px;
   width: 100%;
+  max-width: ${maxWidth}px;
 
   & > * {
     padding: 0 ${unit * 3}px;

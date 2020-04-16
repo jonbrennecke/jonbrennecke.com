@@ -1,20 +1,26 @@
 import React from 'react';
-import { CheckList, SectionHeader, unit } from '@portfolio/components';
+import {
+  CheckList,
+  SectionHeader,
+  unit,
+  maxWidth,
+} from '@portfolio/components';
 import styled from 'styled-components';
 
 const StyledSectionHeader = styled(SectionHeader)`
-  padding: ${unit * 10}px 0;
+  padding: 0 0 ${unit * 15}px 0;
 `;
 
 const CheckListContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 ${unit * 5}px;
+  padding: 0 ${unit * 3}px;
 `;
 
 const Container = styled.div`
-  padding: ${unit * 10}px ${unit * 5}px;
+  padding: ${unit * 15}px ${unit * 5}px;
+  max-width: ${maxWidth}px;
 `;
 
 export const Capabilities = () => (

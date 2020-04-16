@@ -23,7 +23,10 @@ const Container = styled.div`
   }
 `;
 
-const AboutImage = styled.div``;
+const AboutImage = styled.div`
+  background-image: url(${require('../assets/images/about_image.jpg')});
+  background-size: cover;
+`;
 
 export const App = hot(() => (
   <>

@@ -1,9 +1,9 @@
+import { maxWidth, offWhite, SectionHeader, unit } from '@portfolio/components';
 import React from 'react';
 import styled from 'styled-components';
-import { unit, SectionHeader, offWhite } from '@portfolio/components';
-import { OpenGovCaseStudy } from './OpenGovCaseStudy';
-import { LaserlikeCaseStudy } from './LaserlikeCaseStudy';
 import { BarkdCaseStudy } from './BarkdCaseStudy';
+import { LaserlikeCaseStudy } from './LaserlikeCaseStudy';
+import { OpenGovCaseStudy } from './OpenGovCaseStudy';
 
 const Container = styled.div`
   display: flex;
@@ -11,6 +11,7 @@ const Container = styled.div`
   align-items: center;
   position: relative;
   padding: ${unit * 7}px 0;
+  max-width: ${maxWidth}px;
 
   & > *:not(:first-child) {
     margin-top: ${unit * 7}px;

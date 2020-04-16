@@ -20,6 +20,7 @@ const SubTitle = styled(Heading)`
   font-weight: normal;
   color: #726e84;
   white-space: normal;
+  overflow: visible;
   padding-top: ${unit * 3}px;
 `;
 

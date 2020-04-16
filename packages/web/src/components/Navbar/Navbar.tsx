@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import { unit, Navigation } from '@portfolio/components';
+import { unit, maxWidth, Navigation } from '@portfolio/components';
 
 const StyledNavigation = styled(Navigation)`
-  padding: 0 ${unit * 5}px;
+  padding: ${unit * 3}px ${unit * 5}px 0 ${unit * 5}px;
+  max-width: ${maxWidth}px;
 `;
 
 export const Navbar = () => (
