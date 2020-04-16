@@ -15,6 +15,6 @@
     "jsx": "react",
     "types": ["react", "jest"]
   },
-  "include": ["src"],
+  "include": ["./global.d.ts", "src"],
   "exclude": ["node_modules"]
 }

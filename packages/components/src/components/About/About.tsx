@@ -60,6 +60,7 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   min-height: 600px;
+  overflow: hidden;
 `;
 
 const Contents = styled.div`

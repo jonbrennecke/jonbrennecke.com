@@ -23,7 +23,7 @@ const Container = styled.div`
     top: 0;
     left: 50%;
     bottom: 0;
-    width: calc(100vw - ${unit * 7}px);
+    width: 100vw;
     background-color: ${offWhite};
     z-index: -1;
     transform: translateX(-50%);

@@ -1,23 +1,28 @@
 import React from 'react';
 import styled from 'styled-components';
-import { offWhite, unit, trueBlack } from '../../styles';
+import { offWhite, trueBlack, unit } from '../../styles';
 import { Heading } from '../Heading';
 import { Input } from '../Input';
 import { Text } from '../Text';
+import { TextArea } from '../TextArea';
+import { Button } from '../Button';
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 `;
 
 const Title = styled(Heading)`
-  font-size: ${unit * 4}px;
+  font-size: ${unit * 8}px;
+  padding-bottom: ${unit * 3}px;
 `;
 
 const Field = styled.div`
   display: flex;
   flex-direction: column;
   padding: ${unit * 2}px 0;
+  width: 100%;
 `;
 
 const Note = styled(Text)`
@@ -55,12 +60,25 @@ const FormInput = styled(Input)`
   background-color: ${offWhite};
 `;
 
+const FormTextArea = styled(TextArea)`
+  padding: ${unit * 1.5}px ${unit * 3}px;
+  background-color: ${offWhite};
+`;
+
+const FormButton = styled(Button)`
+  text-transform: uppercase;
+  margin-top: ${unit}px;
+  display: inline-block;
+`;
+
 export interface FormSubComponents {
   Title: typeof Title;
   Field: typeof Field;
   Label: typeof Label;
   Input: typeof FormInput;
   Note: typeof Note;
+  TextArea: typeof FormTextArea;
+  Button: typeof FormButton;
 }
 
 export interface FormProps {
@@ -78,3 +96,5 @@ Form.Field = Field;
 Form.Label = Label;
 Form.Input = FormInput;
 Form.Note = Note;
+Form.TextArea = FormTextArea;
+Form.Button = FormButton;

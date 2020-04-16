@@ -8,7 +8,7 @@ const StyledServicesContainer = styled(Services)`
 `;
 
 const StyledSectionHeader = styled(SectionHeader)`
-  padding: 0 0 ${unit * 15}px 0;
+  padding: ${unit * 7}px 0 ${unit * 15}px 0;
 `;
 
 export const ServicesSection = () => (

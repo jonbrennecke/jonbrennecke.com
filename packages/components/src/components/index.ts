@@ -2,6 +2,7 @@
 export * from './Text';
 export * from './Heading';
 export * from './Input';
+export * from './TextArea';
 export * from './SectionHeader';
 
 // Logos

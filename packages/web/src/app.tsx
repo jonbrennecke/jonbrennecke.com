@@ -1,31 +1,52 @@
-import { unit, LoadingBanner, About } from '@portfolio/components';
+import {
+  About,
+  Form,
+  LoadingBanner,
+  unit,
+  Button,
+  colorToRGBA,
+  trueBlack,
+  trueWhite,
+} from '@portfolio/components';
 import React from 'react';
 import { hot } from 'react-hot-loader/root';
 import styled from 'styled-components';
+import aboutImageURL from '../assets/images/about_image.jpg';
 import {
-  Capabilities,
   CaseStudies,
+  FooterSection,
+  HeroSection,
   Navbar,
   ServicesSection,
-  HeroSection,
-  FooterSection,
 } from './components';
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* padding: ${unit * 3}px; */
 
   & > * {
-    /* max-width: 1024px; */
     width: 100%;
   }
 `;
 
 const AboutImage = styled.div`
-  background-image: url(${require('../assets/images/about_image.jpg')});
+  background-image: url(${aboutImageURL});
   background-size: cover;
+`;
+
+const ContactForm = styled.div`
+  max-width: 1024px;
+  padding: ${unit * 15}px 0;
+  background-color: ${trueWhite};
+  border-radius: ${unit * 2}px;
+  position: relative;
+  /* box-shadow: 0px 6px 105px ${colorToRGBA(trueBlack, 0.09)}; */
+  /* margin-top: -${unit * 5}px; */
+  /* margin-bottom: -${unit * 5}px; */
+  width: 100%;
+  max-width: 1024px;
+  padding: ${unit * 15}px ${unit * 17}px;
 `;
 
 export const App = hot(() => (
@@ -54,7 +75,44 @@ export const App = hot(() => (
         </About.ImageContent>
       </About>
 
-      <Capabilities />
+      <ContactForm>
+        <Form>
+          <Form.Title>Let's work together!</Form.Title>
+          <Form.Note>
+            Want to chat? Shoot me an email at{' '}
+            <a href="mailto:jpbrennecke@gmail.com" target="_blank">
+              jpbrennecke@gmail.com
+            </a>
+          </Form.Note>
+          <Form.Field>
+            <Form.Label>Name & Company</Form.Label>
+            <Form.Input
+              autoFocus={false}
+              name="name"
+              placeholder="John from Google..."
+            />
+          </Form.Field>
+          <Form.Field>
+            <Form.Label>Email</Form.Label>
+            <Form.Input
+              autoFocus={false}
+              name="email"
+              placeholder="john@google.com"
+            />
+          </Form.Field>
+          <Form.Field>
+            <Form.Label>Project Description</Form.Label>
+            <Form.TextArea
+              autoFocus={false}
+              placeholder="We need help redesigning our app..."
+            />
+          </Form.Field>
+          <Form.Button variant="primary" size="large">
+            Send
+          </Form.Button>
+        </Form>
+      </ContactForm>
+
       <FooterSection />
     </Container>
     <LoadingBanner contentStyle="dark" />
