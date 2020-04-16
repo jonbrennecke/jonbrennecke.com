@@ -24,3 +24,4 @@ export * from './Services';
 export * from './Hero';
 export * from './LoadingBanner';
 export * from './Footer';
+export * from './About';
