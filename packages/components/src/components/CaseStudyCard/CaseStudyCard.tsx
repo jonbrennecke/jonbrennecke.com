@@ -121,7 +121,7 @@ const Container = styled.div`
   }
 `;
 
-interface CaseStudyCardSubComponents {
+export interface CaseStudyCardSubComponents {
   Logo: typeof Logo;
   Title: typeof Title;
   Body: typeof Body;

@@ -7,10 +7,9 @@ const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const DotenvPlugin = require('webpack-dotenv-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const nodeExternals = require('webpack-node-externals');
-const CopyPlugin = require('copy-webpack-plugin');
 const packageData = require('../package.json');
 
 const isProduction = process.env.NODE_ENV === 'production';
@@ -58,12 +57,7 @@ const extractCssPlugin = new MiniCssExtractPlugin({
   chunkFilename: '[id]_[contenthash].css',
 });
 
-const cleanPlugin =
-  (isProduction || isStaging) && new CleanWebpackPlugin(['public']);
-
-const copySEOAssetsPlugin = new CopyPlugin([
-  { from: path.resolve(__dirname, '..', 'assets', 'seo') },
-]);
+const cleanPlugin = (isProduction || isStaging) && new CleanWebpackPlugin();
 
 const clientPlugins = _.compact([
   cleanPlugin,
@@ -73,7 +67,6 @@ const clientPlugins = _.compact([
   env,
   hotModulesPlugin,
   progressPlugin,
-  copySEOAssetsPlugin,
 ]);
 
 const serverPlugins = _.compact([
