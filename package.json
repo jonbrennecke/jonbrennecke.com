@@ -12,6 +12,6 @@
   },
   "scripts": {
     "compileAll": "cd packages/components && yarn compile",
-    "buildForNetlify": "cd packages/web && yarn build:production"
+    "buildForNetlify": "yarn compileAll && cd packages/web && yarn build:production"
   }
 }
