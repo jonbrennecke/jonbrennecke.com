@@ -24,7 +24,9 @@
   "license": "MIT",
   "dependencies": {
     "@portfolio/components": "*",
+    "@types/isomorphic-fetch": "^0.0.35",
     "immutable": "^4.0.0-rc.12",
+    "isomorphic-fetch": "^2.2.1",
     "jest": "24.9.0",
     "lodash": "4.17.15",
     "moment": "2.24.0",

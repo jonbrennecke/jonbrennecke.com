@@ -16,6 +16,7 @@ export const createContactFormRecord = functions.https.onRequest((req, res) => {
         email: req.body.email,
         description: req.body.description,
       });
+      res.sendStatus(201);
     } catch (error) {
       if (error) {
         res.sendStatus(400);

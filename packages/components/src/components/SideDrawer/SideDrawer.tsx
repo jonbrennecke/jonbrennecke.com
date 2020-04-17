@@ -40,6 +40,7 @@ const Container = styled.div.attrs<{
 }>`
   z-index: 1000;
   position: fixed;
+  max-width: 768px;
   width: 60vw;
   height: 100vh;
   background-color: ${trueBlack};
