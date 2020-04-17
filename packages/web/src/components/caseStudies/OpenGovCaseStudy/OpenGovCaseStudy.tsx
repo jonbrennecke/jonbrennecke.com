@@ -4,11 +4,12 @@ import {
   openGovBlue,
   OpenGovEmblem,
   OpenGovLogo,
-  Tag
+  Tag,
 } from '@portfolio/components';
 import React from 'react';
 import styled from 'styled-components';
 import { BaseCaseStudyCard } from '../BaseCaseStudyCard';
+import openGovScreenshot from '../../../../assets/images/openGovScreenshot.png';
 
 const OpenGovCaseStudyCard = styled(BaseCaseStudyCard)`
   background-color: ${openGovBlue};
@@ -28,11 +29,17 @@ const StyledOpenGovEmblem = styled(OpenGovEmblem)`
   max-width: 320px;
 `;
 
+const OpenGovScreenshot = styled.div`
+  background-image: url(${openGovScreenshot});
+  background-size: cover;
+  width: 100%;
+`;
+
 export const OpenGovCaseStudy = () => (
   <OpenGovCaseStudyCard>
     <CaseStudyCard.ImageContent>
       <OpenGovBrowser>
-        <div />
+        <OpenGovScreenshot />
       </OpenGovBrowser>
     </CaseStudyCard.ImageContent>
     <CaseStudyCard.TextContent>

@@ -3,15 +3,26 @@ import {
   CaseStudyCard,
   Tag,
   LaserlikeLogo,
-  laserlikeBlue
+  laserlikeBlue,
 } from '@portfolio/components';
 import React from 'react';
 import styled from 'styled-components';
 import { BaseCaseStudyCard } from '../BaseCaseStudyCard';
+import laserlikeScreenshot from '../../../../assets/images/laserlikeScreenshot.png';
 
 const LaserlikeCaseStudyCard = styled(BaseCaseStudyCard)`
   background-color: ${laserlikeBlue};
 `;
+
+const LaserlikeScreenshot = () => (
+  <image
+    mask="url(#mask-10)"
+    x="3"
+    y="6"
+    width="746"
+    href={laserlikeScreenshot}
+  />
+);
 
 export const LaserlikeCaseStudy = () => (
   <LaserlikeCaseStudyCard>
@@ -38,7 +49,9 @@ export const LaserlikeCaseStudy = () => (
       </CaseStudyCard.Tags>
     </CaseStudyCard.TextContent>
     <CaseStudyCard.ImageContent>
-      <PhoneFrame />
+      <PhoneFrame>
+        <LaserlikeScreenshot />
+      </PhoneFrame>
     </CaseStudyCard.ImageContent>
   </LaserlikeCaseStudyCard>
 );

@@ -1,6 +1,10 @@
 import React from 'react';
 
-export const PhoneFrame = () => (
+export interface PhoneFrameProps {
+  children?: React.SVGProps<SVGGElement>['children'];
+}
+
+export const PhoneFrame = ({ children }: PhoneFrameProps) => (
   <svg
     viewBox="0 0 1054 1651"
     version="1.1"
@@ -274,6 +278,7 @@ export const PhoneFrame = () => (
                 <use xlinkHref="#path-9"></use>
               </mask>
             </g>
+            {children}
             <path
               d="M10,3 C6.13400675,3 3,6.13400675 3,10 L3,1326 C3,1329.86599 6.13400675,1333 10,1333 L740,1333 C743.865993,1333 747,1329.86599 747,1326 L747,10 C747,6.13400675 743.865993,3 740,3 L10,3 Z"
               id="Rectangle"

@@ -3,20 +3,28 @@ import {
   CaseStudyCard,
   Tag,
   BarkdLogo,
-  barkdDarkBlue
+  barkdDarkBlue,
 } from '@portfolio/components';
 import React from 'react';
 import styled from 'styled-components';
 import { BaseCaseStudyCard } from '../BaseCaseStudyCard';
 
+import barkdScreenshot from '../../../../assets/images/barkdScreenshot.png';
+
 const BarkdCaseStudyCard = styled(BaseCaseStudyCard)`
   background-color: ${barkdDarkBlue};
 `;
 
+const BarkdScreenshot = () => (
+  <image mask="url(#mask-10)" x="3" y="3" width="744" href={barkdScreenshot} />
+);
+
 export const BarkdCaseStudy = () => (
   <BarkdCaseStudyCard>
     <CaseStudyCard.ImageContent>
-      <PhoneFrame />
+      <PhoneFrame>
+        <BarkdScreenshot />
+      </PhoneFrame>
     </CaseStudyCard.ImageContent>
     <CaseStudyCard.TextContent>
       <CaseStudyCard.Logo>
