@@ -8,7 +8,11 @@ const StyledHero = styled(Hero)`
   max-width: ${maxWidth}px;
 `;
 
-export const HeroSection = () => (
+export interface HeroSectionProps {
+  onClickContactButton(): void;
+}
+
+export const HeroSection = ({ onClickContactButton }: HeroSectionProps) => (
   <StyledHero>
     <Hero.Title>Custom React Native Software Development</Hero.Title>
     <Hero.SubTitle>
@@ -17,10 +21,13 @@ export const HeroSection = () => (
       fun.
     </Hero.SubTitle>
     <Hero.ButtonGroup>
-      <Hero.Button variant="primary" size="large">
+      <Hero.Button
+        variant="primary"
+        size="large"
+        onClick={onClickContactButton}
+      >
         Work with me
       </Hero.Button>
-      {/* <Hero.Button size="large">See more</Hero.Button> */}
     </Hero.ButtonGroup>
   </StyledHero>
 );
