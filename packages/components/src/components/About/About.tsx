@@ -23,7 +23,7 @@ const TextContent = styled.div`
   grid-area: text;
   display: flex;
   flex-direction: column;
-  padding: ${unit * 7}px ${unit * 7}px ${unit * 7}px 0;
+  padding: ${unit * 15}px ${unit * 7}px ${unit * 15}px 0;
   justify-content: center;
 `;
 
@@ -31,6 +31,11 @@ const Body = styled(Text)`
   grid-area: text;
   color: ${trueWhite};
   line-height: 1.75em;
+
+  a {
+    color: ${trueWhite};
+    font-weight: bold;
+  }
 `;
 
 const Title = styled(Heading)`
