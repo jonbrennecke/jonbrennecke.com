@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "e1fb383ede6c48dde5c5";
+/******/ 	var hotCurrentHash = "4fa11b9bba515af129b9";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -795,6 +795,299 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "../../../node_modules/@babel/runtime/helpers/arrayLikeToArray.js":
+/*!********************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/node_modules/@babel/runtime/helpers/arrayLikeToArray.js ***!
+  \********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _arrayLikeToArray(arr, len) {
+  if (len == null || len > arr.length) len = arr.length;
+
+  for (var i = 0, arr2 = new Array(len); i < len; i++) {
+    arr2[i] = arr[i];
+  }
+
+  return arr2;
+}
+
+module.exports = _arrayLikeToArray;
+
+/***/ }),
+
+/***/ "../../../node_modules/@babel/runtime/helpers/arrayWithHoles.js":
+/*!******************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/node_modules/@babel/runtime/helpers/arrayWithHoles.js ***!
+  \******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _arrayWithHoles(arr) {
+  if (Array.isArray(arr)) return arr;
+}
+
+module.exports = _arrayWithHoles;
+
+/***/ }),
+
+/***/ "../../../node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js":
+/*!*****************************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js ***!
+  \*****************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _assertThisInitialized; });
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+/***/ }),
+
+/***/ "../../../node_modules/@babel/runtime/helpers/esm/construct.js":
+/*!*****************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/node_modules/@babel/runtime/helpers/esm/construct.js ***!
+  \*****************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _construct; });
+/* harmony import */ var _setPrototypeOf__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./setPrototypeOf */ "../../../node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js");
+/* harmony import */ var _isNativeReflectConstruct__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./isNativeReflectConstruct */ "../../../node_modules/@babel/runtime/helpers/esm/isNativeReflectConstruct.js");
+
+
+function _construct(Parent, args, Class) {
+  if (Object(_isNativeReflectConstruct__WEBPACK_IMPORTED_MODULE_1__["default"])()) {
+    _construct = Reflect.construct;
+  } else {
+    _construct = function _construct(Parent, args, Class) {
+      var a = [null];
+      a.push.apply(a, args);
+      var Constructor = Function.bind.apply(Parent, a);
+      var instance = new Constructor();
+      if (Class) Object(_setPrototypeOf__WEBPACK_IMPORTED_MODULE_0__["default"])(instance, Class.prototype);
+      return instance;
+    };
+  }
+
+  return _construct.apply(null, arguments);
+}
+
+/***/ }),
+
+/***/ "../../../node_modules/@babel/runtime/helpers/esm/extends.js":
+/*!***************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/node_modules/@babel/runtime/helpers/esm/extends.js ***!
+  \***************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _extends; });
+function _extends() {
+  _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
+
+/***/ }),
+
+/***/ "../../../node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js":
+/*!**********************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js ***!
+  \**********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _getPrototypeOf; });
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+/***/ }),
+
+/***/ "../../../node_modules/@babel/runtime/helpers/esm/inheritsLoose.js":
+/*!*********************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/node_modules/@babel/runtime/helpers/esm/inheritsLoose.js ***!
+  \*********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _inheritsLoose; });
+function _inheritsLoose(subClass, superClass) {
+  subClass.prototype = Object.create(superClass.prototype);
+  subClass.prototype.constructor = subClass;
+  subClass.__proto__ = superClass;
+}
+
+/***/ }),
+
+/***/ "../../../node_modules/@babel/runtime/helpers/esm/isNativeFunction.js":
+/*!************************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/node_modules/@babel/runtime/helpers/esm/isNativeFunction.js ***!
+  \************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _isNativeFunction; });
+function _isNativeFunction(fn) {
+  return Function.toString.call(fn).indexOf("[native code]") !== -1;
+}
+
+/***/ }),
+
+/***/ "../../../node_modules/@babel/runtime/helpers/esm/isNativeReflectConstruct.js":
+/*!********************************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/node_modules/@babel/runtime/helpers/esm/isNativeReflectConstruct.js ***!
+  \********************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _isNativeReflectConstruct; });
+function _isNativeReflectConstruct() {
+  if (typeof Reflect === "undefined" || !Reflect.construct) return false;
+  if (Reflect.construct.sham) return false;
+  if (typeof Proxy === "function") return true;
+
+  try {
+    Date.prototype.toString.call(Reflect.construct(Date, [], function () {}));
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
+
+/***/ }),
+
+/***/ "../../../node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js":
+/*!**********************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js ***!
+  \**********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _setPrototypeOf; });
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+/***/ }),
+
+/***/ "../../../node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteralLoose.js":
+/*!**********************************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteralLoose.js ***!
+  \**********************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _taggedTemplateLiteralLoose; });
+function _taggedTemplateLiteralLoose(strings, raw) {
+  if (!raw) {
+    raw = strings.slice(0);
+  }
+
+  strings.raw = raw;
+  return strings;
+}
+
+/***/ }),
+
+/***/ "../../../node_modules/@babel/runtime/helpers/esm/wrapNativeSuper.js":
+/*!***********************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/node_modules/@babel/runtime/helpers/esm/wrapNativeSuper.js ***!
+  \***********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _wrapNativeSuper; });
+/* harmony import */ var _getPrototypeOf__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getPrototypeOf */ "../../../node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _setPrototypeOf__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./setPrototypeOf */ "../../../node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js");
+/* harmony import */ var _isNativeFunction__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./isNativeFunction */ "../../../node_modules/@babel/runtime/helpers/esm/isNativeFunction.js");
+/* harmony import */ var _construct__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./construct */ "../../../node_modules/@babel/runtime/helpers/esm/construct.js");
+
+
+
+
+function _wrapNativeSuper(Class) {
+  var _cache = typeof Map === "function" ? new Map() : undefined;
+
+  _wrapNativeSuper = function _wrapNativeSuper(Class) {
+    if (Class === null || !Object(_isNativeFunction__WEBPACK_IMPORTED_MODULE_2__["default"])(Class)) return Class;
+
+    if (typeof Class !== "function") {
+      throw new TypeError("Super expression must either be null or a function");
+    }
+
+    if (typeof _cache !== "undefined") {
+      if (_cache.has(Class)) return _cache.get(Class);
+
+      _cache.set(Class, Wrapper);
+    }
+
+    function Wrapper() {
+      return Object(_construct__WEBPACK_IMPORTED_MODULE_3__["default"])(Class, arguments, Object(_getPrototypeOf__WEBPACK_IMPORTED_MODULE_0__["default"])(this).constructor);
+    }
+
+    Wrapper.prototype = Object.create(Class.prototype, {
+      constructor: {
+        value: Wrapper,
+        enumerable: false,
+        writable: true,
+        configurable: true
+      }
+    });
+    return Object(_setPrototypeOf__WEBPACK_IMPORTED_MODULE_1__["default"])(Wrapper, Class);
+  };
+
+  return _wrapNativeSuper(Class);
+}
+
+/***/ }),
+
 /***/ "../../../node_modules/@babel/runtime/helpers/interopRequireDefault.js":
 /*!*************************************************************************************************************!*\
   !*** /Users/jon/Projects/portfolio-components/node_modules/@babel/runtime/helpers/interopRequireDefault.js ***!
@@ -809,6 +1102,147 @@ function _interopRequireDefault(obj) {
 }
 
 module.exports = _interopRequireDefault;
+
+/***/ }),
+
+/***/ "../../../node_modules/@babel/runtime/helpers/interopRequireWildcard.js":
+/*!**************************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/node_modules/@babel/runtime/helpers/interopRequireWildcard.js ***!
+  \**************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _typeof = __webpack_require__(/*! ../helpers/typeof */ "../../../node_modules/@babel/runtime/helpers/typeof.js");
+
+function _getRequireWildcardCache() {
+  if (typeof WeakMap !== "function") return null;
+  var cache = new WeakMap();
+
+  _getRequireWildcardCache = function _getRequireWildcardCache() {
+    return cache;
+  };
+
+  return cache;
+}
+
+function _interopRequireWildcard(obj) {
+  if (obj && obj.__esModule) {
+    return obj;
+  }
+
+  if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") {
+    return {
+      "default": obj
+    };
+  }
+
+  var cache = _getRequireWildcardCache();
+
+  if (cache && cache.has(obj)) {
+    return cache.get(obj);
+  }
+
+  var newObj = {};
+  var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
+
+  for (var key in obj) {
+    if (Object.prototype.hasOwnProperty.call(obj, key)) {
+      var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
+
+      if (desc && (desc.get || desc.set)) {
+        Object.defineProperty(newObj, key, desc);
+      } else {
+        newObj[key] = obj[key];
+      }
+    }
+  }
+
+  newObj["default"] = obj;
+
+  if (cache) {
+    cache.set(obj, newObj);
+  }
+
+  return newObj;
+}
+
+module.exports = _interopRequireWildcard;
+
+/***/ }),
+
+/***/ "../../../node_modules/@babel/runtime/helpers/iterableToArrayLimit.js":
+/*!************************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/node_modules/@babel/runtime/helpers/iterableToArrayLimit.js ***!
+  \************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _iterableToArrayLimit(arr, i) {
+  if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;
+  var _arr = [];
+  var _n = true;
+  var _d = false;
+  var _e = undefined;
+
+  try {
+    for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {
+      _arr.push(_s.value);
+
+      if (i && _arr.length === i) break;
+    }
+  } catch (err) {
+    _d = true;
+    _e = err;
+  } finally {
+    try {
+      if (!_n && _i["return"] != null) _i["return"]();
+    } finally {
+      if (_d) throw _e;
+    }
+  }
+
+  return _arr;
+}
+
+module.exports = _iterableToArrayLimit;
+
+/***/ }),
+
+/***/ "../../../node_modules/@babel/runtime/helpers/nonIterableRest.js":
+/*!*******************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/node_modules/@babel/runtime/helpers/nonIterableRest.js ***!
+  \*******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _nonIterableRest() {
+  throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+
+module.exports = _nonIterableRest;
+
+/***/ }),
+
+/***/ "../../../node_modules/@babel/runtime/helpers/slicedToArray.js":
+/*!*****************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/node_modules/@babel/runtime/helpers/slicedToArray.js ***!
+  \*****************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var arrayWithHoles = __webpack_require__(/*! ./arrayWithHoles */ "../../../node_modules/@babel/runtime/helpers/arrayWithHoles.js");
+
+var iterableToArrayLimit = __webpack_require__(/*! ./iterableToArrayLimit */ "../../../node_modules/@babel/runtime/helpers/iterableToArrayLimit.js");
+
+var unsupportedIterableToArray = __webpack_require__(/*! ./unsupportedIterableToArray */ "../../../node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js");
+
+var nonIterableRest = __webpack_require__(/*! ./nonIterableRest */ "../../../node_modules/@babel/runtime/helpers/nonIterableRest.js");
+
+function _slicedToArray(arr, i) {
+  return arrayWithHoles(arr) || iterableToArrayLimit(arr, i) || unsupportedIterableToArray(arr, i) || nonIterableRest();
+}
+
+module.exports = _slicedToArray;
 
 /***/ }),
 
@@ -829,6 +1263,55 @@ function _taggedTemplateLiteralLoose(strings, raw) {
 }
 
 module.exports = _taggedTemplateLiteralLoose;
+
+/***/ }),
+
+/***/ "../../../node_modules/@babel/runtime/helpers/typeof.js":
+/*!**********************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/node_modules/@babel/runtime/helpers/typeof.js ***!
+  \**********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _typeof(obj) {
+  "@babel/helpers - typeof";
+
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    module.exports = _typeof = function _typeof(obj) {
+      return typeof obj;
+    };
+  } else {
+    module.exports = _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+  }
+
+  return _typeof(obj);
+}
+
+module.exports = _typeof;
+
+/***/ }),
+
+/***/ "../../../node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js":
+/*!******************************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js ***!
+  \******************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var arrayLikeToArray = __webpack_require__(/*! ./arrayLikeToArray */ "../../../node_modules/@babel/runtime/helpers/arrayLikeToArray.js");
+
+function _unsupportedIterableToArray(o, minLen) {
+  if (!o) return;
+  if (typeof o === "string") return arrayLikeToArray(o, minLen);
+  var n = Object.prototype.toString.call(o).slice(8, -1);
+  if (n === "Object" && o.constructor) n = o.constructor.name;
+  if (n === "Map" || n === "Set") return Array.from(n);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return arrayLikeToArray(o, minLen);
+}
+
+module.exports = _unsupportedIterableToArray;
 
 /***/ }),
 
@@ -8124,6 +8607,743 @@ module.exports = hoistNonReactStatics;
 
 /***/ }),
 
+/***/ "../../../node_modules/lodash/_Symbol.js":
+/*!*******************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/node_modules/lodash/_Symbol.js ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var root = __webpack_require__(/*! ./_root */ "../../../node_modules/lodash/_root.js");
+
+/** Built-in value references. */
+var Symbol = root.Symbol;
+
+module.exports = Symbol;
+
+
+/***/ }),
+
+/***/ "../../../node_modules/lodash/_baseGetTag.js":
+/*!***********************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/node_modules/lodash/_baseGetTag.js ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Symbol = __webpack_require__(/*! ./_Symbol */ "../../../node_modules/lodash/_Symbol.js"),
+    getRawTag = __webpack_require__(/*! ./_getRawTag */ "../../../node_modules/lodash/_getRawTag.js"),
+    objectToString = __webpack_require__(/*! ./_objectToString */ "../../../node_modules/lodash/_objectToString.js");
+
+/** `Object#toString` result references. */
+var nullTag = '[object Null]',
+    undefinedTag = '[object Undefined]';
+
+/** Built-in value references. */
+var symToStringTag = Symbol ? Symbol.toStringTag : undefined;
+
+/**
+ * The base implementation of `getTag` without fallbacks for buggy environments.
+ *
+ * @private
+ * @param {*} value The value to query.
+ * @returns {string} Returns the `toStringTag`.
+ */
+function baseGetTag(value) {
+  if (value == null) {
+    return value === undefined ? undefinedTag : nullTag;
+  }
+  return (symToStringTag && symToStringTag in Object(value))
+    ? getRawTag(value)
+    : objectToString(value);
+}
+
+module.exports = baseGetTag;
+
+
+/***/ }),
+
+/***/ "../../../node_modules/lodash/_baseTimes.js":
+/*!**********************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/node_modules/lodash/_baseTimes.js ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/**
+ * The base implementation of `_.times` without support for iteratee shorthands
+ * or max array length checks.
+ *
+ * @private
+ * @param {number} n The number of times to invoke `iteratee`.
+ * @param {Function} iteratee The function invoked per iteration.
+ * @returns {Array} Returns the array of results.
+ */
+function baseTimes(n, iteratee) {
+  var index = -1,
+      result = Array(n);
+
+  while (++index < n) {
+    result[index] = iteratee(index);
+  }
+  return result;
+}
+
+module.exports = baseTimes;
+
+
+/***/ }),
+
+/***/ "../../../node_modules/lodash/_castFunction.js":
+/*!*************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/node_modules/lodash/_castFunction.js ***!
+  \*************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var identity = __webpack_require__(/*! ./identity */ "../../../node_modules/lodash/identity.js");
+
+/**
+ * Casts `value` to `identity` if it's not a function.
+ *
+ * @private
+ * @param {*} value The value to inspect.
+ * @returns {Function} Returns cast function.
+ */
+function castFunction(value) {
+  return typeof value == 'function' ? value : identity;
+}
+
+module.exports = castFunction;
+
+
+/***/ }),
+
+/***/ "../../../node_modules/lodash/_freeGlobal.js":
+/*!***********************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/node_modules/lodash/_freeGlobal.js ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(global) {/** Detect free variable `global` from Node.js. */
+var freeGlobal = typeof global == 'object' && global && global.Object === Object && global;
+
+module.exports = freeGlobal;
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/global.js */ "../../../node_modules/webpack/buildin/global.js")))
+
+/***/ }),
+
+/***/ "../../../node_modules/lodash/_getRawTag.js":
+/*!**********************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/node_modules/lodash/_getRawTag.js ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Symbol = __webpack_require__(/*! ./_Symbol */ "../../../node_modules/lodash/_Symbol.js");
+
+/** Used for built-in method references. */
+var objectProto = Object.prototype;
+
+/** Used to check objects for own properties. */
+var hasOwnProperty = objectProto.hasOwnProperty;
+
+/**
+ * Used to resolve the
+ * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
+ * of values.
+ */
+var nativeObjectToString = objectProto.toString;
+
+/** Built-in value references. */
+var symToStringTag = Symbol ? Symbol.toStringTag : undefined;
+
+/**
+ * A specialized version of `baseGetTag` which ignores `Symbol.toStringTag` values.
+ *
+ * @private
+ * @param {*} value The value to query.
+ * @returns {string} Returns the raw `toStringTag`.
+ */
+function getRawTag(value) {
+  var isOwn = hasOwnProperty.call(value, symToStringTag),
+      tag = value[symToStringTag];
+
+  try {
+    value[symToStringTag] = undefined;
+    var unmasked = true;
+  } catch (e) {}
+
+  var result = nativeObjectToString.call(value);
+  if (unmasked) {
+    if (isOwn) {
+      value[symToStringTag] = tag;
+    } else {
+      delete value[symToStringTag];
+    }
+  }
+  return result;
+}
+
+module.exports = getRawTag;
+
+
+/***/ }),
+
+/***/ "../../../node_modules/lodash/_objectToString.js":
+/*!***************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/node_modules/lodash/_objectToString.js ***!
+  \***************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/** Used for built-in method references. */
+var objectProto = Object.prototype;
+
+/**
+ * Used to resolve the
+ * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
+ * of values.
+ */
+var nativeObjectToString = objectProto.toString;
+
+/**
+ * Converts `value` to a string using `Object.prototype.toString`.
+ *
+ * @private
+ * @param {*} value The value to convert.
+ * @returns {string} Returns the converted string.
+ */
+function objectToString(value) {
+  return nativeObjectToString.call(value);
+}
+
+module.exports = objectToString;
+
+
+/***/ }),
+
+/***/ "../../../node_modules/lodash/_root.js":
+/*!*****************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/node_modules/lodash/_root.js ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var freeGlobal = __webpack_require__(/*! ./_freeGlobal */ "../../../node_modules/lodash/_freeGlobal.js");
+
+/** Detect free variable `self`. */
+var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
+
+/** Used as a reference to the global object. */
+var root = freeGlobal || freeSelf || Function('return this')();
+
+module.exports = root;
+
+
+/***/ }),
+
+/***/ "../../../node_modules/lodash/identity.js":
+/*!********************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/node_modules/lodash/identity.js ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/**
+ * This method returns the first argument it receives.
+ *
+ * @static
+ * @since 0.1.0
+ * @memberOf _
+ * @category Util
+ * @param {*} value Any value.
+ * @returns {*} Returns `value`.
+ * @example
+ *
+ * var object = { 'a': 1 };
+ *
+ * console.log(_.identity(object) === object);
+ * // => true
+ */
+function identity(value) {
+  return value;
+}
+
+module.exports = identity;
+
+
+/***/ }),
+
+/***/ "../../../node_modules/lodash/isArray.js":
+/*!*******************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/node_modules/lodash/isArray.js ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/**
+ * Checks if `value` is classified as an `Array` object.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is an array, else `false`.
+ * @example
+ *
+ * _.isArray([1, 2, 3]);
+ * // => true
+ *
+ * _.isArray(document.body.children);
+ * // => false
+ *
+ * _.isArray('abc');
+ * // => false
+ *
+ * _.isArray(_.noop);
+ * // => false
+ */
+var isArray = Array.isArray;
+
+module.exports = isArray;
+
+
+/***/ }),
+
+/***/ "../../../node_modules/lodash/isObject.js":
+/*!********************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/node_modules/lodash/isObject.js ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/**
+ * Checks if `value` is the
+ * [language type](http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
+ * of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is an object, else `false`.
+ * @example
+ *
+ * _.isObject({});
+ * // => true
+ *
+ * _.isObject([1, 2, 3]);
+ * // => true
+ *
+ * _.isObject(_.noop);
+ * // => true
+ *
+ * _.isObject(null);
+ * // => false
+ */
+function isObject(value) {
+  var type = typeof value;
+  return value != null && (type == 'object' || type == 'function');
+}
+
+module.exports = isObject;
+
+
+/***/ }),
+
+/***/ "../../../node_modules/lodash/isObjectLike.js":
+/*!************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/node_modules/lodash/isObjectLike.js ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/**
+ * Checks if `value` is object-like. A value is object-like if it's not `null`
+ * and has a `typeof` result of "object".
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is object-like, else `false`.
+ * @example
+ *
+ * _.isObjectLike({});
+ * // => true
+ *
+ * _.isObjectLike([1, 2, 3]);
+ * // => true
+ *
+ * _.isObjectLike(_.noop);
+ * // => false
+ *
+ * _.isObjectLike(null);
+ * // => false
+ */
+function isObjectLike(value) {
+  return value != null && typeof value == 'object';
+}
+
+module.exports = isObjectLike;
+
+
+/***/ }),
+
+/***/ "../../../node_modules/lodash/isString.js":
+/*!********************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/node_modules/lodash/isString.js ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var baseGetTag = __webpack_require__(/*! ./_baseGetTag */ "../../../node_modules/lodash/_baseGetTag.js"),
+    isArray = __webpack_require__(/*! ./isArray */ "../../../node_modules/lodash/isArray.js"),
+    isObjectLike = __webpack_require__(/*! ./isObjectLike */ "../../../node_modules/lodash/isObjectLike.js");
+
+/** `Object#toString` result references. */
+var stringTag = '[object String]';
+
+/**
+ * Checks if `value` is classified as a `String` primitive or object.
+ *
+ * @static
+ * @since 0.1.0
+ * @memberOf _
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a string, else `false`.
+ * @example
+ *
+ * _.isString('abc');
+ * // => true
+ *
+ * _.isString(1);
+ * // => false
+ */
+function isString(value) {
+  return typeof value == 'string' ||
+    (!isArray(value) && isObjectLike(value) && baseGetTag(value) == stringTag);
+}
+
+module.exports = isString;
+
+
+/***/ }),
+
+/***/ "../../../node_modules/lodash/isSymbol.js":
+/*!********************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/node_modules/lodash/isSymbol.js ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var baseGetTag = __webpack_require__(/*! ./_baseGetTag */ "../../../node_modules/lodash/_baseGetTag.js"),
+    isObjectLike = __webpack_require__(/*! ./isObjectLike */ "../../../node_modules/lodash/isObjectLike.js");
+
+/** `Object#toString` result references. */
+var symbolTag = '[object Symbol]';
+
+/**
+ * Checks if `value` is classified as a `Symbol` primitive or object.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a symbol, else `false`.
+ * @example
+ *
+ * _.isSymbol(Symbol.iterator);
+ * // => true
+ *
+ * _.isSymbol('abc');
+ * // => false
+ */
+function isSymbol(value) {
+  return typeof value == 'symbol' ||
+    (isObjectLike(value) && baseGetTag(value) == symbolTag);
+}
+
+module.exports = isSymbol;
+
+
+/***/ }),
+
+/***/ "../../../node_modules/lodash/noop.js":
+/*!****************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/node_modules/lodash/noop.js ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/**
+ * This method returns `undefined`.
+ *
+ * @static
+ * @memberOf _
+ * @since 2.3.0
+ * @category Util
+ * @example
+ *
+ * _.times(2, _.noop);
+ * // => [undefined, undefined]
+ */
+function noop() {
+  // No operation performed.
+}
+
+module.exports = noop;
+
+
+/***/ }),
+
+/***/ "../../../node_modules/lodash/times.js":
+/*!*****************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/node_modules/lodash/times.js ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var baseTimes = __webpack_require__(/*! ./_baseTimes */ "../../../node_modules/lodash/_baseTimes.js"),
+    castFunction = __webpack_require__(/*! ./_castFunction */ "../../../node_modules/lodash/_castFunction.js"),
+    toInteger = __webpack_require__(/*! ./toInteger */ "../../../node_modules/lodash/toInteger.js");
+
+/** Used as references for various `Number` constants. */
+var MAX_SAFE_INTEGER = 9007199254740991;
+
+/** Used as references for the maximum length and index of an array. */
+var MAX_ARRAY_LENGTH = 4294967295;
+
+/* Built-in method references for those with the same name as other `lodash` methods. */
+var nativeMin = Math.min;
+
+/**
+ * Invokes the iteratee `n` times, returning an array of the results of
+ * each invocation. The iteratee is invoked with one argument; (index).
+ *
+ * @static
+ * @since 0.1.0
+ * @memberOf _
+ * @category Util
+ * @param {number} n The number of times to invoke `iteratee`.
+ * @param {Function} [iteratee=_.identity] The function invoked per iteration.
+ * @returns {Array} Returns the array of results.
+ * @example
+ *
+ * _.times(3, String);
+ * // => ['0', '1', '2']
+ *
+ *  _.times(4, _.constant(0));
+ * // => [0, 0, 0, 0]
+ */
+function times(n, iteratee) {
+  n = toInteger(n);
+  if (n < 1 || n > MAX_SAFE_INTEGER) {
+    return [];
+  }
+  var index = MAX_ARRAY_LENGTH,
+      length = nativeMin(n, MAX_ARRAY_LENGTH);
+
+  iteratee = castFunction(iteratee);
+  n -= MAX_ARRAY_LENGTH;
+
+  var result = baseTimes(length, iteratee);
+  while (++index < n) {
+    iteratee(index);
+  }
+  return result;
+}
+
+module.exports = times;
+
+
+/***/ }),
+
+/***/ "../../../node_modules/lodash/toFinite.js":
+/*!********************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/node_modules/lodash/toFinite.js ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var toNumber = __webpack_require__(/*! ./toNumber */ "../../../node_modules/lodash/toNumber.js");
+
+/** Used as references for various `Number` constants. */
+var INFINITY = 1 / 0,
+    MAX_INTEGER = 1.7976931348623157e+308;
+
+/**
+ * Converts `value` to a finite number.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.12.0
+ * @category Lang
+ * @param {*} value The value to convert.
+ * @returns {number} Returns the converted number.
+ * @example
+ *
+ * _.toFinite(3.2);
+ * // => 3.2
+ *
+ * _.toFinite(Number.MIN_VALUE);
+ * // => 5e-324
+ *
+ * _.toFinite(Infinity);
+ * // => 1.7976931348623157e+308
+ *
+ * _.toFinite('3.2');
+ * // => 3.2
+ */
+function toFinite(value) {
+  if (!value) {
+    return value === 0 ? value : 0;
+  }
+  value = toNumber(value);
+  if (value === INFINITY || value === -INFINITY) {
+    var sign = (value < 0 ? -1 : 1);
+    return sign * MAX_INTEGER;
+  }
+  return value === value ? value : 0;
+}
+
+module.exports = toFinite;
+
+
+/***/ }),
+
+/***/ "../../../node_modules/lodash/toInteger.js":
+/*!*********************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/node_modules/lodash/toInteger.js ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var toFinite = __webpack_require__(/*! ./toFinite */ "../../../node_modules/lodash/toFinite.js");
+
+/**
+ * Converts `value` to an integer.
+ *
+ * **Note:** This method is loosely based on
+ * [`ToInteger`](http://www.ecma-international.org/ecma-262/7.0/#sec-tointeger).
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to convert.
+ * @returns {number} Returns the converted integer.
+ * @example
+ *
+ * _.toInteger(3.2);
+ * // => 3
+ *
+ * _.toInteger(Number.MIN_VALUE);
+ * // => 0
+ *
+ * _.toInteger(Infinity);
+ * // => 1.7976931348623157e+308
+ *
+ * _.toInteger('3.2');
+ * // => 3
+ */
+function toInteger(value) {
+  var result = toFinite(value),
+      remainder = result % 1;
+
+  return result === result ? (remainder ? result - remainder : result) : 0;
+}
+
+module.exports = toInteger;
+
+
+/***/ }),
+
+/***/ "../../../node_modules/lodash/toNumber.js":
+/*!********************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/node_modules/lodash/toNumber.js ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var isObject = __webpack_require__(/*! ./isObject */ "../../../node_modules/lodash/isObject.js"),
+    isSymbol = __webpack_require__(/*! ./isSymbol */ "../../../node_modules/lodash/isSymbol.js");
+
+/** Used as references for various `Number` constants. */
+var NAN = 0 / 0;
+
+/** Used to match leading and trailing whitespace. */
+var reTrim = /^\s+|\s+$/g;
+
+/** Used to detect bad signed hexadecimal string values. */
+var reIsBadHex = /^[-+]0x[0-9a-f]+$/i;
+
+/** Used to detect binary string values. */
+var reIsBinary = /^0b[01]+$/i;
+
+/** Used to detect octal string values. */
+var reIsOctal = /^0o[0-7]+$/i;
+
+/** Built-in method references without a dependency on `root`. */
+var freeParseInt = parseInt;
+
+/**
+ * Converts `value` to a number.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to process.
+ * @returns {number} Returns the number.
+ * @example
+ *
+ * _.toNumber(3.2);
+ * // => 3.2
+ *
+ * _.toNumber(Number.MIN_VALUE);
+ * // => 5e-324
+ *
+ * _.toNumber(Infinity);
+ * // => Infinity
+ *
+ * _.toNumber('3.2');
+ * // => 3.2
+ */
+function toNumber(value) {
+  if (typeof value == 'number') {
+    return value;
+  }
+  if (isSymbol(value)) {
+    return NAN;
+  }
+  if (isObject(value)) {
+    var other = typeof value.valueOf == 'function' ? value.valueOf() : value;
+    value = isObject(other) ? (other + '') : other;
+  }
+  if (typeof value != 'string') {
+    return value === 0 ? value : +value;
+  }
+  value = value.replace(reTrim, '');
+  var isBinary = reIsBinary.test(value);
+  return (isBinary || reIsOctal.test(value))
+    ? freeParseInt(value.slice(2), isBinary ? 2 : 8)
+    : (reIsBadHex.test(value) ? NAN : +value);
+}
+
+module.exports = toNumber;
+
+
+/***/ }),
+
 /***/ "../../../node_modules/object-assign/index.js":
 /*!************************************************************************************!*\
   !*** /Users/jon/Projects/portfolio-components/node_modules/object-assign/index.js ***!
@@ -8222,6 +9442,4157 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 	return to;
 };
+
+
+/***/ }),
+
+/***/ "../../../node_modules/polished/dist/polished.es.js":
+/*!******************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/node_modules/polished/dist/polished.es.js ***!
+  \******************************************************************************************/
+/*! exports provided: adjustHue, animation, backgroundImages, backgrounds, between, border, borderColor, borderRadius, borderStyle, borderWidth, buttons, clearFix, complement, cover, cssVar, darken, desaturate, directionalProperty, ellipsis, em, fluidRange, fontFace, getContrast, getLuminance, getValueAndUnit, grayscale, hiDPI, hideText, hideVisually, hsl, hslToColorString, hsla, invert, lighten, linearGradient, margin, math, meetsContrastGuidelines, mix, modularScale, normalize, opacify, padding, parseToHsl, parseToRgb, position, radialGradient, readableColor, rem, retinaImage, rgb, rgbToColorString, rgba, saturate, setHue, setLightness, setSaturation, shade, size, stripUnit, textInputs, timingFunctions, tint, toColorString, transitions, transparentize, triangle, wordWrap */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "adjustHue", function() { return curriedAdjustHue; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "animation", function() { return animation; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "backgroundImages", function() { return backgroundImages; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "backgrounds", function() { return backgrounds; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "between", function() { return between; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "border", function() { return border; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "borderColor", function() { return borderColor; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "borderRadius", function() { return borderRadius; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "borderStyle", function() { return borderStyle; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "borderWidth", function() { return borderWidth; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "buttons", function() { return buttons; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "clearFix", function() { return clearFix; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "complement", function() { return complement; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "cover", function() { return cover; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "cssVar", function() { return cssVar; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "darken", function() { return curriedDarken; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "desaturate", function() { return curriedDesaturate; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "directionalProperty", function() { return directionalProperty; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ellipsis", function() { return ellipsis; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "em", function() { return em; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fluidRange", function() { return fluidRange; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fontFace", function() { return fontFace; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getContrast", function() { return getContrast; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getLuminance", function() { return getLuminance; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getValueAndUnit", function() { return getValueAndUnit; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "grayscale", function() { return grayscale; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "hiDPI", function() { return hiDPI; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "hideText", function() { return hideText; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "hideVisually", function() { return hideVisually; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "hsl", function() { return hsl; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "hslToColorString", function() { return hslToColorString; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "hsla", function() { return hsla; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "invert", function() { return invert; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "lighten", function() { return curriedLighten; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "linearGradient", function() { return linearGradient; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "margin", function() { return margin; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "math", function() { return math; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "meetsContrastGuidelines", function() { return meetsContrastGuidelines; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mix", function() { return curriedMix; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "modularScale", function() { return modularScale; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "normalize", function() { return normalize; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "opacify", function() { return curriedOpacify; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "padding", function() { return padding; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "parseToHsl", function() { return parseToHsl; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "parseToRgb", function() { return parseToRgb; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "position", function() { return position; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "radialGradient", function() { return radialGradient; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "readableColor", function() { return readableColor; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rem", function() { return rem; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "retinaImage", function() { return retinaImage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rgb", function() { return rgb; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rgbToColorString", function() { return rgbToColorString; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rgba", function() { return rgba; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "saturate", function() { return curriedSaturate; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setHue", function() { return curriedSetHue; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setLightness", function() { return curriedSetLightness; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setSaturation", function() { return curriedSetSaturation; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "shade", function() { return curriedShade; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "size", function() { return size; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "stripUnit", function() { return stripUnit; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "textInputs", function() { return textInputs; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "timingFunctions", function() { return timingFunctions; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "tint", function() { return curriedTint; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "toColorString", function() { return toColorString; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "transitions", function() { return transitions; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "transparentize", function() { return curriedTransparentize; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "triangle", function() { return triangle; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "wordWrap", function() { return wordWrap; });
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "../../../node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/assertThisInitialized */ "../../../node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inheritsLoose */ "../../../node_modules/@babel/runtime/helpers/esm/inheritsLoose.js");
+/* harmony import */ var _babel_runtime_helpers_esm_wrapNativeSuper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/wrapNativeSuper */ "../../../node_modules/@babel/runtime/helpers/esm/wrapNativeSuper.js");
+/* harmony import */ var _babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/taggedTemplateLiteralLoose */ "../../../node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteralLoose.js");
+
+
+
+
+
+
+function last() {
+  var _ref;
+
+  return _ref = arguments.length - 1, _ref < 0 || arguments.length <= _ref ? undefined : arguments[_ref];
+}
+
+function negation(a) {
+  return -a;
+}
+
+function addition(a, b) {
+  return a + b;
+}
+
+function subtraction(a, b) {
+  return a - b;
+}
+
+function multiplication(a, b) {
+  return a * b;
+}
+
+function division(a, b) {
+  return a / b;
+}
+
+function factorial(a) {
+  if (a % 1 || !(+a >= 0)) return NaN;
+  if (a > 170) return Infinity;else if (a === 0) return 1;else {
+    return a * factorial(a - 1);
+  }
+}
+
+function power(a, b) {
+  return Math.pow(a, b);
+}
+
+function sqrt(a) {
+  return Math.sqrt(a);
+}
+
+function max() {
+  return Math.max.apply(Math, arguments);
+}
+
+function min() {
+  return Math.min.apply(Math, arguments);
+}
+
+function comma() {
+  return Array.of.apply(Array, arguments);
+}
+
+var defaultMathSymbols = {
+  symbols: {
+    '!': {
+      postfix: {
+        symbol: '!',
+        f: factorial,
+        notation: 'postfix',
+        precedence: 6,
+        rightToLeft: 0,
+        argCount: 1
+      },
+      symbol: '!',
+      regSymbol: '!'
+    },
+    '^': {
+      infix: {
+        symbol: '^',
+        f: power,
+        notation: 'infix',
+        precedence: 5,
+        rightToLeft: 1,
+        argCount: 2
+      },
+      symbol: '^',
+      regSymbol: '\\^'
+    },
+    '*': {
+      infix: {
+        symbol: '*',
+        f: multiplication,
+        notation: 'infix',
+        precedence: 4,
+        rightToLeft: 0,
+        argCount: 2
+      },
+      symbol: '*',
+      regSymbol: '\\*'
+    },
+    '/': {
+      infix: {
+        symbol: '/',
+        f: division,
+        notation: 'infix',
+        precedence: 4,
+        rightToLeft: 0,
+        argCount: 2
+      },
+      symbol: '/',
+      regSymbol: '/'
+    },
+    '+': {
+      infix: {
+        symbol: '+',
+        f: addition,
+        notation: 'infix',
+        precedence: 2,
+        rightToLeft: 0,
+        argCount: 2
+      },
+      prefix: {
+        symbol: '+',
+        f: last,
+        notation: 'prefix',
+        precedence: 3,
+        rightToLeft: 0,
+        argCount: 1
+      },
+      symbol: '+',
+      regSymbol: '\\+'
+    },
+    '-': {
+      infix: {
+        symbol: '-',
+        f: subtraction,
+        notation: 'infix',
+        precedence: 2,
+        rightToLeft: 0,
+        argCount: 2
+      },
+      prefix: {
+        symbol: '-',
+        f: negation,
+        notation: 'prefix',
+        precedence: 3,
+        rightToLeft: 0,
+        argCount: 1
+      },
+      symbol: '-',
+      regSymbol: '-'
+    },
+    ',': {
+      infix: {
+        symbol: ',',
+        f: comma,
+        notation: 'infix',
+        precedence: 1,
+        rightToLeft: 0,
+        argCount: 2
+      },
+      symbol: ',',
+      regSymbol: ','
+    },
+    '(': {
+      prefix: {
+        symbol: '(',
+        f: last,
+        notation: 'prefix',
+        precedence: 0,
+        rightToLeft: 0,
+        argCount: 1
+      },
+      symbol: '(',
+      regSymbol: '\\('
+    },
+    ')': {
+      postfix: {
+        symbol: ')',
+        f: undefined,
+        notation: 'postfix',
+        precedence: 0,
+        rightToLeft: 0,
+        argCount: 1
+      },
+      symbol: ')',
+      regSymbol: '\\)'
+    },
+    min: {
+      func: {
+        symbol: 'min',
+        f: min,
+        notation: 'func',
+        precedence: 0,
+        rightToLeft: 0,
+        argCount: 1
+      },
+      symbol: 'min',
+      regSymbol: 'min\\b'
+    },
+    max: {
+      func: {
+        symbol: 'max',
+        f: max,
+        notation: 'func',
+        precedence: 0,
+        rightToLeft: 0,
+        argCount: 1
+      },
+      symbol: 'max',
+      regSymbol: 'max\\b'
+    },
+    sqrt: {
+      func: {
+        symbol: 'sqrt',
+        f: sqrt,
+        notation: 'func',
+        precedence: 0,
+        rightToLeft: 0,
+        argCount: 1
+      },
+      symbol: 'sqrt',
+      regSymbol: 'sqrt\\b'
+    }
+  }
+};
+
+// based on https://github.com/styled-components/styled-components/blob/fcf6f3804c57a14dd7984dfab7bc06ee2edca044/src/utils/error.js
+
+/**
+ * Parse errors.md and turn it into a simple hash of code: message
+ * @private
+ */
+var ERRORS = {
+  "1": "Passed invalid arguments to hsl, please pass multiple numbers e.g. hsl(360, 0.75, 0.4) or an object e.g. rgb({ hue: 255, saturation: 0.4, lightness: 0.75 }).\n\n",
+  "2": "Passed invalid arguments to hsla, please pass multiple numbers e.g. hsla(360, 0.75, 0.4, 0.7) or an object e.g. rgb({ hue: 255, saturation: 0.4, lightness: 0.75, alpha: 0.7 }).\n\n",
+  "3": "Passed an incorrect argument to a color function, please pass a string representation of a color.\n\n",
+  "4": "Couldn't generate valid rgb string from %s, it returned %s.\n\n",
+  "5": "Couldn't parse the color string. Please provide the color as a string in hex, rgb, rgba, hsl or hsla notation.\n\n",
+  "6": "Passed invalid arguments to rgb, please pass multiple numbers e.g. rgb(255, 205, 100) or an object e.g. rgb({ red: 255, green: 205, blue: 100 }).\n\n",
+  "7": "Passed invalid arguments to rgba, please pass multiple numbers e.g. rgb(255, 205, 100, 0.75) or an object e.g. rgb({ red: 255, green: 205, blue: 100, alpha: 0.75 }).\n\n",
+  "8": "Passed invalid argument to toColorString, please pass a RgbColor, RgbaColor, HslColor or HslaColor object.\n\n",
+  "9": "Please provide a number of steps to the modularScale helper.\n\n",
+  "10": "Please pass a number or one of the predefined scales to the modularScale helper as the ratio.\n\n",
+  "11": "Invalid value passed as base to modularScale, expected number or em string but got \"%s\"\n\n",
+  "12": "Expected a string ending in \"px\" or a number passed as the first argument to %s(), got \"%s\" instead.\n\n",
+  "13": "Expected a string ending in \"px\" or a number passed as the second argument to %s(), got \"%s\" instead.\n\n",
+  "14": "Passed invalid pixel value (\"%s\") to %s(), please pass a value like \"12px\" or 12.\n\n",
+  "15": "Passed invalid base value (\"%s\") to %s(), please pass a value like \"12px\" or 12.\n\n",
+  "16": "You must provide a template to this method.\n\n",
+  "17": "You passed an unsupported selector state to this method.\n\n",
+  "18": "minScreen and maxScreen must be provided as stringified numbers with the same units.\n\n",
+  "19": "fromSize and toSize must be provided as stringified numbers with the same units.\n\n",
+  "20": "expects either an array of objects or a single object with the properties prop, fromSize, and toSize.\n\n",
+  "21": "expects the objects in the first argument array to have the properties `prop`, `fromSize`, and `toSize`.\n\n",
+  "22": "expects the first argument object to have the properties `prop`, `fromSize`, and `toSize`.\n\n",
+  "23": "fontFace expects a name of a font-family.\n\n",
+  "24": "fontFace expects either the path to the font file(s) or a name of a local copy.\n\n",
+  "25": "fontFace expects localFonts to be an array.\n\n",
+  "26": "fontFace expects fileFormats to be an array.\n\n",
+  "27": "radialGradient requries at least 2 color-stops to properly render.\n\n",
+  "28": "Please supply a filename to retinaImage() as the first argument.\n\n",
+  "29": "Passed invalid argument to triangle, please pass correct pointingDirection e.g. 'right'.\n\n",
+  "30": "Passed an invalid value to `height` or `width`. Please provide a pixel based unit.\n\n",
+  "31": "The animation shorthand only takes 8 arguments. See the specification for more information: http://mdn.io/animation\n\n",
+  "32": "To pass multiple animations please supply them in arrays, e.g. animation(['rotate', '2s'], ['move', '1s'])\nTo pass a single animation please supply them in simple values, e.g. animation('rotate', '2s')\n\n",
+  "33": "The animation shorthand arrays can only have 8 elements. See the specification for more information: http://mdn.io/animation\n\n",
+  "34": "borderRadius expects a radius value as a string or number as the second argument.\n\n",
+  "35": "borderRadius expects one of \"top\", \"bottom\", \"left\" or \"right\" as the first argument.\n\n",
+  "36": "Property must be a string value.\n\n",
+  "37": "Syntax Error at %s.\n\n",
+  "38": "Formula contains a function that needs parentheses at %s.\n\n",
+  "39": "Formula is missing closing parenthesis at %s.\n\n",
+  "40": "Formula has too many closing parentheses at %s.\n\n",
+  "41": "All values in a formula must have the same unit or be unitless.\n\n",
+  "42": "Please provide a number of steps to the modularScale helper.\n\n",
+  "43": "Please pass a number or one of the predefined scales to the modularScale helper as the ratio.\n\n",
+  "44": "Invalid value passed as base to modularScale, expected number or em/rem string but got %s.\n\n",
+  "45": "Passed invalid argument to hslToColorString, please pass a HslColor or HslaColor object.\n\n",
+  "46": "Passed invalid argument to rgbToColorString, please pass a RgbColor or RgbaColor object.\n\n",
+  "47": "minScreen and maxScreen must be provided as stringified numbers with the same units.\n\n",
+  "48": "fromSize and toSize must be provided as stringified numbers with the same units.\n\n",
+  "49": "Expects either an array of objects or a single object with the properties prop, fromSize, and toSize.\n\n",
+  "50": "Expects the objects in the first argument array to have the properties prop, fromSize, and toSize.\n\n",
+  "51": "Expects the first argument object to have the properties prop, fromSize, and toSize.\n\n",
+  "52": "fontFace expects either the path to the font file(s) or a name of a local copy.\n\n",
+  "53": "fontFace expects localFonts to be an array.\n\n",
+  "54": "fontFace expects fileFormats to be an array.\n\n",
+  "55": "fontFace expects a name of a font-family.\n\n",
+  "56": "linearGradient requries at least 2 color-stops to properly render.\n\n",
+  "57": "radialGradient requries at least 2 color-stops to properly render.\n\n",
+  "58": "Please supply a filename to retinaImage() as the first argument.\n\n",
+  "59": "Passed invalid argument to triangle, please pass correct pointingDirection e.g. 'right'.\n\n",
+  "60": "Passed an invalid value to `height` or `width`. Please provide a pixel based unit.\n\n",
+  "61": "Property must be a string value.\n\n",
+  "62": "borderRadius expects a radius value as a string or number as the second argument.\n\n",
+  "63": "borderRadius expects one of \"top\", \"bottom\", \"left\" or \"right\" as the first argument.\n\n",
+  "64": "The animation shorthand only takes 8 arguments. See the specification for more information: http://mdn.io/animation.\n\n",
+  "65": "To pass multiple animations please supply them in arrays, e.g. animation(['rotate', '2s'], ['move', '1s'])\\nTo pass a single animation please supply them in simple values, e.g. animation('rotate', '2s').\n\n",
+  "66": "The animation shorthand arrays can only have 8 elements. See the specification for more information: http://mdn.io/animation.\n\n",
+  "67": "You must provide a template to this method.\n\n",
+  "68": "You passed an unsupported selector state to this method.\n\n",
+  "69": "Expected a string ending in \"px\" or a number passed as the first argument to %s(), got %s instead.\n\n",
+  "70": "Expected a string ending in \"px\" or a number passed as the second argument to %s(), got %s instead.\n\n",
+  "71": "Passed invalid pixel value %s to %s(), please pass a value like \"12px\" or 12.\n\n",
+  "72": "Passed invalid base value %s to %s(), please pass a value like \"12px\" or 12.\n\n",
+  "73": "Please provide a valid CSS variable.\n\n",
+  "74": "CSS variable not found.\n"
+};
+/**
+ * super basic version of sprintf
+ * @private
+ */
+
+function format() {
+  for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+    args[_key] = arguments[_key];
+  }
+
+  var a = args[0];
+  var b = [];
+  var c;
+
+  for (c = 1; c < args.length; c += 1) {
+    b.push(args[c]);
+  }
+
+  b.forEach(function (d) {
+    a = a.replace(/%[a-z]/, d);
+  });
+  return a;
+}
+/**
+ * Create an error file out of errors.md for development and a simple web link to the full errors
+ * in production mode.
+ * @private
+ */
+
+
+var PolishedError = /*#__PURE__*/function (_Error) {
+  Object(_babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_2__["default"])(PolishedError, _Error);
+
+  function PolishedError(code) {
+    var _this;
+
+    if (false) {} else {
+      for (var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
+        args[_key2 - 1] = arguments[_key2];
+      }
+
+      _this = _Error.call(this, format.apply(void 0, [ERRORS[code]].concat(args))) || this;
+    }
+
+    return Object(_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_1__["default"])(_this);
+  }
+
+  return PolishedError;
+}( /*#__PURE__*/Object(_babel_runtime_helpers_esm_wrapNativeSuper__WEBPACK_IMPORTED_MODULE_3__["default"])(Error));
+
+var unitRegExp = /((?!\w)a|na|hc|mc|dg|me[r]?|xe|ni(?![a-zA-Z])|mm|cp|tp|xp|q(?!s)|hv|xamv|nimv|wv|sm|s(?!\D|$)|ged|darg?|nrut)/g; // Merges additional math functionality into the defaults.
+
+function mergeSymbolMaps(additionalSymbols) {
+  var symbolMap = {};
+  symbolMap.symbols = additionalSymbols ? Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, defaultMathSymbols.symbols, {}, additionalSymbols.symbols) : Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, defaultMathSymbols.symbols);
+  return symbolMap;
+}
+
+function exec(operators, values) {
+  var _ref;
+
+  var op = operators.pop();
+  values.push(op.f.apply(op, (_ref = []).concat.apply(_ref, values.splice(-op.argCount))));
+  return op.precedence;
+}
+
+function calculate(expression, additionalSymbols) {
+  var symbolMap = mergeSymbolMaps(additionalSymbols);
+  var match;
+  var operators = [symbolMap.symbols['('].prefix];
+  var values = [];
+  var pattern = new RegExp( // Pattern for numbers
+  "\\d+(?:\\.\\d+)?|" + // ...and patterns for individual operators/function names
+  Object.keys(symbolMap.symbols).map(function (key) {
+    return symbolMap.symbols[key];
+  }) // longer symbols should be listed first
+  // $FlowFixMe
+  .sort(function (a, b) {
+    return b.symbol.length - a.symbol.length;
+  }) // $FlowFixMe
+  .map(function (val) {
+    return val.regSymbol;
+  }).join('|') + "|(\\S)", 'g');
+  pattern.lastIndex = 0; // Reset regular expression object
+
+  var afterValue = false;
+
+  do {
+    match = pattern.exec(expression);
+
+    var _ref2 = match || [')', undefined],
+        token = _ref2[0],
+        bad = _ref2[1];
+
+    var notNumber = symbolMap.symbols[token];
+    var notNewValue = notNumber && !notNumber.prefix && !notNumber.func;
+    var notAfterValue = !notNumber || !notNumber.postfix && !notNumber.infix; // Check for syntax errors:
+
+    if (bad || (afterValue ? notAfterValue : notNewValue)) {
+      throw new PolishedError(37, match ? match.index : expression.length, expression);
+    }
+
+    if (afterValue) {
+      // We either have an infix or postfix operator (they should be mutually exclusive)
+      var curr = notNumber.postfix || notNumber.infix;
+
+      do {
+        var prev = operators[operators.length - 1];
+        if ((curr.precedence - prev.precedence || prev.rightToLeft) > 0) break; // Apply previous operator, since it has precedence over current one
+      } while (exec(operators, values)); // Exit loop after executing an opening parenthesis or function
+
+
+      afterValue = curr.notation === 'postfix';
+
+      if (curr.symbol !== ')') {
+        operators.push(curr); // Postfix always has precedence over any operator that follows after it
+
+        if (afterValue) exec(operators, values);
+      }
+    } else if (notNumber) {
+      // prefix operator or function
+      operators.push(notNumber.prefix || notNumber.func);
+
+      if (notNumber.func) {
+        // Require an opening parenthesis
+        match = pattern.exec(expression);
+
+        if (!match || match[0] !== '(') {
+          throw new PolishedError(38, match ? match.index : expression.length, expression);
+        }
+      }
+    } else {
+      // number
+      values.push(+token);
+      afterValue = true;
+    }
+  } while (match && operators.length);
+
+  if (operators.length) {
+    throw new PolishedError(39, match ? match.index : expression.length, expression);
+  } else if (match) {
+    throw new PolishedError(40, match ? match.index : expression.length, expression);
+  } else {
+    return values.pop();
+  }
+}
+
+function reverseString(str) {
+  return str.split('').reverse().join('');
+}
+/**
+ * Helper for doing math with CSS Units. Accepts a formula as a string. All values in the formula must have the same unit (or be unitless). Supports complex formulas utliziing addition, subtraction, multiplication, division, square root, powers, factorial, min, max, as well as parentheses for order of operation.
+ *
+ *In cases where you need to do calculations with mixed units where one unit is a [relative length unit](https://developer.mozilla.org/en-US/docs/Web/CSS/length#Relative_length_units), you will want to use [CSS Calc](https://developer.mozilla.org/en-US/docs/Web/CSS/calc).
+ *
+ * *warning* While we've done everything possible to ensure math safely evalutes formulas expressed as strings, you should always use extreme caution when passing `math` user provided values.
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   fontSize: math('12rem + 8rem'),
+ *   fontSize: math('(12px + 2px) * 3'),
+ *   fontSize: math('3px^2 + sqrt(4)'),
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   fontSize: ${math('12rem + 8rem')};
+ *   fontSize: ${math('(12px + 2px) * 3')};
+ *   fontSize: ${math('3px^2 + sqrt(4)')};
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * div: {
+ *   fontSize: '20rem',
+ *   fontSize: '42px',
+ *   fontSize: '11px',
+ * }
+ */
+
+
+function math(formula, additionalSymbols) {
+  var reversedFormula = reverseString(formula);
+  var formulaMatch = reversedFormula.match(unitRegExp); // Check that all units are the same
+
+  if (formulaMatch && !formulaMatch.every(function (unit) {
+    return unit === formulaMatch[0];
+  })) {
+    throw new PolishedError(41);
+  }
+
+  var cleanFormula = reverseString(reversedFormula.replace(unitRegExp, ''));
+  return "" + calculate(cleanFormula, additionalSymbols) + (formulaMatch ? reverseString(formulaMatch[0]) : '');
+}
+
+var cssVariableRegex = /--[\S]*/g;
+/**
+ * Fetches the value of a passed CSS Variable.
+ *
+ * Passthrough can be enabled (off by default) for when you are unsure of the input and want non-variable values to be returned instead of an error.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   'background': cssVar('--background-color'),
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   background: ${cssVar('--background-color')};
+ * `
+ *
+ * // CSS in JS Output
+ *
+ * element {
+ *   'background': 'red'
+ * }
+ */
+
+function cssVar(cssVariable, passThrough) {
+  if (!cssVariable || !cssVariable.match(cssVariableRegex)) {
+    if (passThrough) return cssVariable;
+    throw new PolishedError(73);
+  }
+
+  var variableValue;
+  /* eslint-disable */
+
+  /* istanbul ignore next */
+
+  if (document.documentElement !== null) {
+    variableValue = getComputedStyle(document.documentElement).getPropertyValue(cssVariable);
+  }
+  /* eslint-enable */
+
+
+  if (variableValue) {
+    return variableValue;
+  } else {
+    throw new PolishedError(74);
+  }
+}
+
+// @private
+function capitalizeString(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+var positionMap = ['Top', 'Right', 'Bottom', 'Left'];
+
+function generateProperty(property, position) {
+  if (!property) return position.toLowerCase();
+  var splitProperty = property.split('-');
+
+  if (splitProperty.length > 1) {
+    splitProperty.splice(1, 0, position);
+    return splitProperty.reduce(function (acc, val) {
+      return "" + acc + capitalizeString(val);
+    });
+  }
+
+  var joinedProperty = property.replace(/([a-z])([A-Z])/g, "$1" + position + "$2");
+  return property === joinedProperty ? "" + property + position : joinedProperty;
+}
+
+function generateStyles(property, valuesWithDefaults) {
+  var styles = {};
+
+  for (var i = 0; i < valuesWithDefaults.length; i += 1) {
+    if (valuesWithDefaults[i] || valuesWithDefaults[i] === 0) {
+      styles[generateProperty(property, positionMap[i])] = valuesWithDefaults[i];
+    }
+  }
+
+  return styles;
+}
+/**
+ * Enables shorthand for direction-based properties. It accepts a property (hyphenated or camelCased) and up to four values that map to top, right, bottom, and left, respectively. You can optionally pass an empty string to get only the directional values as properties. You can also optionally pass a null argument for a directional value to ignore it.
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   ...directionalProperty('padding', '12px', '24px', '36px', '48px')
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${directionalProperty('padding', '12px', '24px', '36px', '48px')}
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * div {
+ *   'paddingTop': '12px',
+ *   'paddingRight': '24px',
+ *   'paddingBottom': '36px',
+ *   'paddingLeft': '48px'
+ * }
+ */
+
+
+function directionalProperty(property) {
+  for (var _len = arguments.length, values = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+    values[_key - 1] = arguments[_key];
+  }
+
+  //  prettier-ignore
+  var firstValue = values[0],
+      _values$ = values[1],
+      secondValue = _values$ === void 0 ? firstValue : _values$,
+      _values$2 = values[2],
+      thirdValue = _values$2 === void 0 ? firstValue : _values$2,
+      _values$3 = values[3],
+      fourthValue = _values$3 === void 0 ? secondValue : _values$3;
+  var valuesWithDefaults = [firstValue, secondValue, thirdValue, fourthValue];
+  return generateStyles(property, valuesWithDefaults);
+}
+
+/**
+ * Check if a string ends with something
+ * @private
+ */
+function endsWith (string, suffix) {
+  return string.substr(-suffix.length) === suffix;
+}
+
+var cssRegex = /^([+-]?(?:\d+|\d*\.\d+))([a-z]*|%)$/;
+/**
+ * Returns a given CSS value minus its unit of measure.
+ *
+ * @deprecated - stripUnit's unitReturn functionality has been marked for deprecation in polished 4.0. It's functionality has been been moved to getUnitAndValue.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   '--dimension': stripUnit('100px')
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   --dimension: ${stripUnit('100px')};
+ * `
+ *
+ * // CSS in JS Output
+ *
+ * element {
+ *   '--dimension': 100
+ * }
+ */
+
+function stripUnit(value, unitReturn) {
+  if (typeof value !== 'string') return unitReturn ? [value, undefined] : value;
+  var matchedValue = value.match(cssRegex);
+
+  if (unitReturn) {
+    // eslint-disable-next-line no-console
+    console.warn("stripUnit's unitReturn functionality has been marked for deprecation in polished 4.0. It's functionality has been been moved to getUnitAndValue.");
+    if (matchedValue) return [parseFloat(value), matchedValue[2]];
+    return [value, undefined];
+  }
+
+  if (matchedValue) return parseFloat(value);
+  return value;
+}
+
+/**
+ * Factory function that creates pixel-to-x converters
+ * @private
+ */
+
+var pxtoFactory = function pxtoFactory(to) {
+  return function (pxval, base) {
+    if (base === void 0) {
+      base = '16px';
+    }
+
+    var newPxval = pxval;
+    var newBase = base;
+
+    if (typeof pxval === 'string') {
+      if (!endsWith(pxval, 'px')) {
+        throw new PolishedError(69, to, pxval);
+      }
+
+      newPxval = stripUnit(pxval);
+    }
+
+    if (typeof base === 'string') {
+      if (!endsWith(base, 'px')) {
+        throw new PolishedError(70, to, base);
+      }
+
+      newBase = stripUnit(base);
+    }
+
+    if (typeof newPxval === 'string') {
+      throw new PolishedError(71, pxval, to);
+    }
+
+    if (typeof newBase === 'string') {
+      throw new PolishedError(72, base, to);
+    }
+
+    return "" + newPxval / newBase + to;
+  };
+};
+
+/**
+ * Convert pixel value to ems. The default base value is 16px, but can be changed by passing a
+ * second argument to the function.
+ * @function
+ * @param {string|number} pxval
+ * @param {string|number} [base='16px']
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   'height': em('16px')
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   height: ${em('16px')}
+ * `
+ *
+ * // CSS in JS Output
+ *
+ * element {
+ *   'height': '1em'
+ * }
+ */
+
+var em = /*#__PURE__*/pxtoFactory('em');
+
+var cssRegex$1 = /^([+-]?(?:\d+|\d*\.\d+))([a-z]*|%)$/;
+/**
+ * Returns a given CSS value and its unit as elements of an array.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   '--dimension': getValueAndUnit('100px')[0],
+ *   '--unit': getValueAndUnit('100px')[1],
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   --dimension: ${getValueAndUnit('100px')[0]};
+ *   --unit: ${getValueAndUnit('100px')[1]};
+ * `
+ *
+ * // CSS in JS Output
+ *
+ * element {
+ *   '--dimension': 100,
+ *   '--unit': 'px',
+ * }
+ */
+
+function getValueAndUnit(value) {
+  if (typeof value !== 'string') return [value, ''];
+  var matchedValue = value.match(cssRegex$1);
+  if (matchedValue) return [parseFloat(value), matchedValue[2]];
+  return [value, undefined];
+}
+
+var ratioNames = {
+  minorSecond: 1.067,
+  majorSecond: 1.125,
+  minorThird: 1.2,
+  majorThird: 1.25,
+  perfectFourth: 1.333,
+  augFourth: 1.414,
+  perfectFifth: 1.5,
+  minorSixth: 1.6,
+  goldenSection: 1.618,
+  majorSixth: 1.667,
+  minorSeventh: 1.778,
+  majorSeventh: 1.875,
+  octave: 2,
+  majorTenth: 2.5,
+  majorEleventh: 2.667,
+  majorTwelfth: 3,
+  doubleOctave: 4
+};
+
+function getRatio(ratioName) {
+  return ratioNames[ratioName];
+}
+/**
+ * Establish consistent measurements and spacial relationships throughout your projects by incrementing an em or rem value up or down a defined scale. We provide a list of commonly used scales as pre-defined variables.
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *    // Increment two steps up the default scale
+ *   'fontSize': modularScale(2)
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *    // Increment two steps up the default scale
+ *   fontSize: ${modularScale(2)}
+ * `
+ *
+ * // CSS in JS Output
+ *
+ * element {
+ *   'fontSize': '1.77689em'
+ * }
+ */
+
+
+function modularScale(steps, base, ratio) {
+  if (base === void 0) {
+    base = '1em';
+  }
+
+  if (ratio === void 0) {
+    ratio = 1.333;
+  }
+
+  if (typeof steps !== 'number') {
+    throw new PolishedError(42);
+  }
+
+  if (typeof ratio === 'string' && !ratioNames[ratio]) {
+    throw new PolishedError(43);
+  }
+
+  var _ref = typeof base === 'string' ? getValueAndUnit(base) : [base, ''],
+      realBase = _ref[0],
+      unit = _ref[1];
+
+  var realRatio = typeof ratio === 'string' ? getRatio(ratio) : ratio;
+
+  if (typeof realBase === 'string') {
+    throw new PolishedError(44, base);
+  }
+
+  return "" + realBase * Math.pow(realRatio, steps) + (unit || '');
+}
+
+/**
+ * Convert pixel value to rems. The default base value is 16px, but can be changed by passing a
+ * second argument to the function.
+ * @function
+ * @param {string|number} pxval
+ * @param {string|number} [base='16px']
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   'height': rem('16px')
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   height: ${rem('16px')}
+ * `
+ *
+ * // CSS in JS Output
+ *
+ * element {
+ *   'height': '1rem'
+ * }
+ */
+
+var rem = /*#__PURE__*/pxtoFactory('rem');
+
+/**
+ * Returns a CSS calc formula for linear interpolation of a property between two values. Accepts optional minScreen (defaults to '320px') and maxScreen (defaults to '1200px').
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   fontSize: between('20px', '100px', '400px', '1000px'),
+ *   fontSize: between('20px', '100px')
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   fontSize: ${between('20px', '100px', '400px', '1000px')};
+ *   fontSize: ${between('20px', '100px')}
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * h1: {
+ *   'fontSize': 'calc(-33.33333333333334px + 13.333333333333334vw)',
+ *   'fontSize': 'calc(-9.090909090909093px + 9.090909090909092vw)'
+ * }
+ */
+
+function between(fromSize, toSize, minScreen, maxScreen) {
+  if (minScreen === void 0) {
+    minScreen = '320px';
+  }
+
+  if (maxScreen === void 0) {
+    maxScreen = '1200px';
+  }
+
+  var _getValueAndUnit = getValueAndUnit(fromSize),
+      unitlessFromSize = _getValueAndUnit[0],
+      fromSizeUnit = _getValueAndUnit[1];
+
+  var _getValueAndUnit2 = getValueAndUnit(toSize),
+      unitlessToSize = _getValueAndUnit2[0],
+      toSizeUnit = _getValueAndUnit2[1];
+
+  var _getValueAndUnit3 = getValueAndUnit(minScreen),
+      unitlessMinScreen = _getValueAndUnit3[0],
+      minScreenUnit = _getValueAndUnit3[1];
+
+  var _getValueAndUnit4 = getValueAndUnit(maxScreen),
+      unitlessMaxScreen = _getValueAndUnit4[0],
+      maxScreenUnit = _getValueAndUnit4[1];
+
+  if (typeof unitlessMinScreen !== 'number' || typeof unitlessMaxScreen !== 'number' || !minScreenUnit || !maxScreenUnit || minScreenUnit !== maxScreenUnit) {
+    throw new PolishedError(47);
+  }
+
+  if (typeof unitlessFromSize !== 'number' || typeof unitlessToSize !== 'number' || fromSizeUnit !== toSizeUnit) {
+    throw new PolishedError(48);
+  }
+
+  var slope = (unitlessFromSize - unitlessToSize) / (unitlessMinScreen - unitlessMaxScreen);
+  var base = unitlessToSize - slope * unitlessMaxScreen;
+  return "calc(" + base.toFixed(2) + (fromSizeUnit || '') + " + " + (100 * slope).toFixed(2) + "vw)";
+}
+
+/**
+ * CSS to contain a float (credit to CSSMojo).
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *    ...clearFix(),
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${clearFix()}
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * '&::after': {
+ *   'clear': 'both',
+ *   'content': '""',
+ *   'display': 'table'
+ * }
+ */
+function clearFix(parent) {
+  var _ref;
+
+  if (parent === void 0) {
+    parent = '&';
+  }
+
+  var pseudoSelector = parent + "::after";
+  return _ref = {}, _ref[pseudoSelector] = {
+    clear: 'both',
+    content: '""',
+    display: 'table'
+  }, _ref;
+}
+
+/**
+ * CSS to fully cover an area. Can optionally be passed an offset to act as a "padding".
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   ...cover()
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${cover()}
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * div: {
+ *   'position': 'absolute',
+ *   'top': '0',
+ *   'right: '0',
+ *   'bottom': '0',
+ *   'left: '0'
+ * }
+ */
+function cover(offset) {
+  if (offset === void 0) {
+    offset = 0;
+  }
+
+  return {
+    position: 'absolute',
+    top: offset,
+    right: offset,
+    bottom: offset,
+    left: offset
+  };
+}
+
+/**
+ * CSS to represent truncated text with an ellipsis.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   ...ellipsis('250px')
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${ellipsis('250px')}
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * div: {
+ *   'display': 'inline-block',
+ *   'maxWidth': '250px',
+ *   'overflow': 'hidden',
+ *   'textOverflow': 'ellipsis',
+ *   'whiteSpace': 'nowrap',
+ *   'wordWrap': 'normal'
+ * }
+ */
+function ellipsis(width) {
+  if (width === void 0) {
+    width = '100%';
+  }
+
+  return {
+    display: 'inline-block',
+    maxWidth: width,
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+    whiteSpace: 'nowrap',
+    wordWrap: 'normal'
+  };
+}
+
+/**
+ * Returns a set of media queries that resizes a property (or set of properties) between a provided fromSize and toSize. Accepts optional minScreen (defaults to '320px') and maxScreen (defaults to '1200px') to constrain the interpolation.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   ...fluidRange(
+ *    {
+ *        prop: 'padding',
+ *        fromSize: '20px',
+ *        toSize: '100px',
+ *      },
+ *      '400px',
+ *      '1000px',
+ *    )
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${fluidRange(
+ *      {
+ *        prop: 'padding',
+ *        fromSize: '20px',
+ *        toSize: '100px',
+ *      },
+ *      '400px',
+ *      '1000px',
+ *    )}
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * div: {
+ *   "@media (min-width: 1000px)": Object {
+ *     "padding": "100px",
+ *   },
+ *   "@media (min-width: 400px)": Object {
+ *     "padding": "calc(-33.33333333333334px + 13.333333333333334vw)",
+ *   },
+ *   "padding": "20px",
+ * }
+ */
+function fluidRange(cssProp, minScreen, maxScreen) {
+  if (minScreen === void 0) {
+    minScreen = '320px';
+  }
+
+  if (maxScreen === void 0) {
+    maxScreen = '1200px';
+  }
+
+  if (!Array.isArray(cssProp) && typeof cssProp !== 'object' || cssProp === null) {
+    throw new PolishedError(49);
+  }
+
+  if (Array.isArray(cssProp)) {
+    var mediaQueries = {};
+    var fallbacks = {};
+
+    for (var _iterator = cssProp, _isArray = Array.isArray(_iterator), _i = 0, _iterator = _isArray ? _iterator : _iterator[Symbol.iterator]();;) {
+      var _extends2, _extends3;
+
+      var _ref;
+
+      if (_isArray) {
+        if (_i >= _iterator.length) break;
+        _ref = _iterator[_i++];
+      } else {
+        _i = _iterator.next();
+        if (_i.done) break;
+        _ref = _i.value;
+      }
+
+      var obj = _ref;
+
+      if (!obj.prop || !obj.fromSize || !obj.toSize) {
+        throw new PolishedError(50);
+      }
+
+      fallbacks[obj.prop] = obj.fromSize;
+      mediaQueries["@media (min-width: " + minScreen + ")"] = Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, mediaQueries["@media (min-width: " + minScreen + ")"], (_extends2 = {}, _extends2[obj.prop] = between(obj.fromSize, obj.toSize, minScreen, maxScreen), _extends2));
+      mediaQueries["@media (min-width: " + maxScreen + ")"] = Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, mediaQueries["@media (min-width: " + maxScreen + ")"], (_extends3 = {}, _extends3[obj.prop] = obj.toSize, _extends3));
+    }
+
+    return Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, fallbacks, {}, mediaQueries);
+  } else {
+    var _ref2, _ref3, _ref4;
+
+    if (!cssProp.prop || !cssProp.fromSize || !cssProp.toSize) {
+      throw new PolishedError(51);
+    }
+
+    return _ref4 = {}, _ref4[cssProp.prop] = cssProp.fromSize, _ref4["@media (min-width: " + minScreen + ")"] = (_ref2 = {}, _ref2[cssProp.prop] = between(cssProp.fromSize, cssProp.toSize, minScreen, maxScreen), _ref2), _ref4["@media (min-width: " + maxScreen + ")"] = (_ref3 = {}, _ref3[cssProp.prop] = cssProp.toSize, _ref3), _ref4;
+  }
+}
+
+var dataURIRegex = /^\s*data:([a-z]+\/[a-z-]+(;[a-z-]+=[a-z-]+)?)?(;charset=[a-z0-9-]+)?(;base64)?,[a-z0-9!$&',()*+,;=\-._~:@/?%\s]*\s*$/i;
+var formatHintMap = {
+  woff: 'woff',
+  woff2: 'woff2',
+  ttf: 'truetype',
+  otf: 'opentype',
+  eot: 'embedded-opentype',
+  svg: 'svg',
+  svgz: 'svg'
+};
+
+function generateFormatHint(format, formatHint) {
+  if (!formatHint) return '';
+  return " format(\"" + formatHintMap[format] + "\")";
+}
+
+function isDataURI(fontFilePath) {
+  return !!fontFilePath.match(dataURIRegex);
+}
+
+function generateFileReferences(fontFilePath, fileFormats, formatHint) {
+  if (isDataURI(fontFilePath)) {
+    return "url(\"" + fontFilePath + "\")" + generateFormatHint(fileFormats[0], formatHint);
+  }
+
+  var fileFontReferences = fileFormats.map(function (format) {
+    return "url(\"" + fontFilePath + "." + format + "\")" + generateFormatHint(format, formatHint);
+  });
+  return fileFontReferences.join(', ');
+}
+
+function generateLocalReferences(localFonts) {
+  var localFontReferences = localFonts.map(function (font) {
+    return "local(\"" + font + "\")";
+  });
+  return localFontReferences.join(', ');
+}
+
+function generateSources(fontFilePath, localFonts, fileFormats, formatHint) {
+  var fontReferences = [];
+  if (localFonts) fontReferences.push(generateLocalReferences(localFonts));
+
+  if (fontFilePath) {
+    fontReferences.push(generateFileReferences(fontFilePath, fileFormats, formatHint));
+  }
+
+  return fontReferences.join(', ');
+}
+/**
+ * CSS for a @font-face declaration.
+ *
+ * @example
+ * // Styles as object basic usage
+ * const styles = {
+ *    ...fontFace({
+ *      'fontFamily': 'Sans-Pro',
+ *      'fontFilePath': 'path/to/file'
+ *    })
+ * }
+ *
+ * // styled-components basic usage
+ * const GlobalStyle = createGlobalStyle`${
+ *   fontFace({
+ *     'fontFamily': 'Sans-Pro',
+ *     'fontFilePath': 'path/to/file'
+ *   }
+ * )}`
+ *
+ * // CSS as JS Output
+ *
+ * '@font-face': {
+ *   'fontFamily': 'Sans-Pro',
+ *   'src': 'url("path/to/file.eot"), url("path/to/file.woff2"), url("path/to/file.woff"), url("path/to/file.ttf"), url("path/to/file.svg")',
+ * }
+ */
+
+
+function fontFace(_ref) {
+  var fontFamily = _ref.fontFamily,
+      fontFilePath = _ref.fontFilePath,
+      fontStretch = _ref.fontStretch,
+      fontStyle = _ref.fontStyle,
+      fontVariant = _ref.fontVariant,
+      fontWeight = _ref.fontWeight,
+      _ref$fileFormats = _ref.fileFormats,
+      fileFormats = _ref$fileFormats === void 0 ? ['eot', 'woff2', 'woff', 'ttf', 'svg'] : _ref$fileFormats,
+      _ref$formatHint = _ref.formatHint,
+      formatHint = _ref$formatHint === void 0 ? false : _ref$formatHint,
+      localFonts = _ref.localFonts,
+      unicodeRange = _ref.unicodeRange,
+      fontDisplay = _ref.fontDisplay,
+      fontVariationSettings = _ref.fontVariationSettings,
+      fontFeatureSettings = _ref.fontFeatureSettings;
+  // Error Handling
+  if (!fontFamily) throw new PolishedError(55);
+
+  if (!fontFilePath && !localFonts) {
+    throw new PolishedError(52);
+  }
+
+  if (localFonts && !Array.isArray(localFonts)) {
+    throw new PolishedError(53);
+  }
+
+  if (!Array.isArray(fileFormats)) {
+    throw new PolishedError(54);
+  }
+
+  var fontFaceDeclaration = {
+    '@font-face': {
+      fontFamily: fontFamily,
+      src: generateSources(fontFilePath, localFonts, fileFormats, formatHint),
+      unicodeRange: unicodeRange,
+      fontStretch: fontStretch,
+      fontStyle: fontStyle,
+      fontVariant: fontVariant,
+      fontWeight: fontWeight,
+      fontDisplay: fontDisplay,
+      fontVariationSettings: fontVariationSettings,
+      fontFeatureSettings: fontFeatureSettings
+    }
+  }; // Removes undefined fields for cleaner css object.
+
+  return JSON.parse(JSON.stringify(fontFaceDeclaration));
+}
+
+/**
+ * CSS to hide text to show a background image in a SEO-friendly way.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   'backgroundImage': 'url(logo.png)',
+ *   ...hideText(),
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   backgroundImage: url(logo.png);
+ *   ${hideText()};
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * 'div': {
+ *   'backgroundImage': 'url(logo.png)',
+ *   'textIndent': '101%',
+ *   'overflow': 'hidden',
+ *   'whiteSpace': 'nowrap',
+ * }
+ */
+function hideText() {
+  return {
+    textIndent: '101%',
+    overflow: 'hidden',
+    whiteSpace: 'nowrap'
+  };
+}
+
+/**
+ * CSS to hide content visually but remain accessible to screen readers.
+ * from [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate/blob/9a176f57af1cfe8ec70300da4621fb9b07e5fa31/src/css/main.css#L121)
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   ...hideVisually(),
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${hideVisually()};
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * 'div': {
+ *   'border': '0',
+ *   'clip': 'rect(0 0 0 0)',
+ *   'height': '1px',
+ *   'margin': '-1px',
+ *   'overflow': 'hidden',
+ *   'padding': '0',
+ *   'position': 'absolute',
+ *   'whiteSpace': 'nowrap',
+ *   'width': '1px',
+ * }
+ */
+function hideVisually() {
+  return {
+    border: '0',
+    clip: 'rect(0 0 0 0)',
+    height: '1px',
+    margin: '-1px',
+    overflow: 'hidden',
+    padding: '0',
+    position: 'absolute',
+    whiteSpace: 'nowrap',
+    width: '1px'
+  };
+}
+
+/**
+ * Generates a media query to target HiDPI devices.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *  [hiDPI(1.5)]: {
+ *    width: 200px;
+ *  }
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${hiDPI(1.5)} {
+ *     width: 200px;
+ *   }
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * '@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+ *  only screen and (min--moz-device-pixel-ratio: 1.5),
+ *  only screen and (-o-min-device-pixel-ratio: 1.5/1),
+ *  only screen and (min-resolution: 144dpi),
+ *  only screen and (min-resolution: 1.5dppx)': {
+ *   'width': '200px',
+ * }
+ */
+function hiDPI(ratio) {
+  if (ratio === void 0) {
+    ratio = 1.3;
+  }
+
+  return "\n    @media only screen and (-webkit-min-device-pixel-ratio: " + ratio + "),\n    only screen and (min--moz-device-pixel-ratio: " + ratio + "),\n    only screen and (-o-min-device-pixel-ratio: " + ratio + "/1),\n    only screen and (min-resolution: " + Math.round(ratio * 96) + "dpi),\n    only screen and (min-resolution: " + ratio + "dppx)\n  ";
+}
+
+function constructGradientValue(literals) {
+  var template = '';
+
+  for (var _len = arguments.length, substitutions = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+    substitutions[_key - 1] = arguments[_key];
+  }
+
+  for (var i = 0; i < literals.length; i += 1) {
+    template += literals[i];
+
+    if (i === substitutions.length - 1 && substitutions[i]) {
+      var definedValues = substitutions.filter(function (substitute) {
+        return !!substitute;
+      }); // Adds leading coma if properties preceed color-stops
+
+      if (definedValues.length > 1) {
+        template = template.slice(0, -1);
+        template += ", " + substitutions[i]; // No trailing space if color-stops is the only param provided
+      } else if (definedValues.length === 1) {
+        template += "" + substitutions[i];
+      }
+    } else if (substitutions[i]) {
+      template += substitutions[i] + " ";
+    }
+  }
+
+  return template.trim();
+}
+
+function _templateObject() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_4__["default"])(["linear-gradient(", "", ")"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+/**
+ * CSS for declaring a linear gradient, including a fallback background-color. The fallback is either the first color-stop or an explicitly passed fallback color.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   ...linearGradient({
+        colorStops: ['#00FFFF 0%', 'rgba(0, 0, 255, 0) 50%', '#0000FF 95%'],
+        toDirection: 'to top right',
+        fallback: '#FFF',
+      })
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${linearGradient({
+        colorStops: ['#00FFFF 0%', 'rgba(0, 0, 255, 0) 50%', '#0000FF 95%'],
+        toDirection: 'to top right',
+        fallback: '#FFF',
+      })}
+ *`
+ *
+ * // CSS as JS Output
+ *
+ * div: {
+ *   'backgroundColor': '#FFF',
+ *   'backgroundImage': 'linear-gradient(to top right, #00FFFF 0%, rgba(0, 0, 255, 0) 50%, #0000FF 95%)',
+ * }
+ */
+function linearGradient(_ref) {
+  var colorStops = _ref.colorStops,
+      fallback = _ref.fallback,
+      _ref$toDirection = _ref.toDirection,
+      toDirection = _ref$toDirection === void 0 ? '' : _ref$toDirection;
+
+  if (!colorStops || colorStops.length < 2) {
+    throw new PolishedError(56);
+  }
+
+  return {
+    backgroundColor: fallback || colorStops[0].split(' ')[0],
+    backgroundImage: constructGradientValue(_templateObject(), toDirection, colorStops.join(', '))
+  };
+}
+
+/**
+ * CSS to normalize abnormalities across browsers (normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css)
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *    ...normalize(),
+ * }
+ *
+ * // styled-components usage
+ * const GlobalStyle = createGlobalStyle`${normalize()}`
+ *
+ * // CSS as JS Output
+ *
+ * html {
+ *   lineHeight: 1.15,
+ *   textSizeAdjust: 100%,
+ * } ...
+ */
+function normalize() {
+  var _ref;
+
+  return [(_ref = {
+    html: {
+      lineHeight: '1.15',
+      textSizeAdjust: '100%'
+    },
+    body: {
+      margin: '0'
+    },
+    h1: {
+      fontSize: '2em',
+      margin: '0.67em 0'
+    },
+    hr: {
+      boxSizing: 'content-box',
+      height: '0',
+      overflow: 'visible'
+    },
+    pre: {
+      fontFamily: 'monospace, monospace',
+      fontSize: '1em'
+    },
+    a: {
+      backgroundColor: 'transparent'
+    },
+    'abbr[title]': {
+      borderBottom: 'none',
+      textDecoration: 'underline'
+    }
+  }, _ref["b,\n    strong"] = {
+    fontWeight: 'bolder'
+  }, _ref["code,\n    kbd,\n    samp"] = {
+    fontFamily: 'monospace, monospace',
+    fontSize: '1em'
+  }, _ref.small = {
+    fontSize: '80%'
+  }, _ref["sub,\n    sup"] = {
+    fontSize: '75%',
+    lineHeight: '0',
+    position: 'relative',
+    verticalAlign: 'baseline'
+  }, _ref.sub = {
+    bottom: '-0.25em'
+  }, _ref.sup = {
+    top: '-0.5em'
+  }, _ref.img = {
+    borderStyle: 'none'
+  }, _ref["button,\n    input,\n    optgroup,\n    select,\n    textarea"] = {
+    fontFamily: 'inherit',
+    fontSize: '100%',
+    lineHeight: '1.15',
+    margin: '0'
+  }, _ref["button,\n    input"] = {
+    overflow: 'visible'
+  }, _ref["button,\n    select"] = {
+    textTransform: 'none'
+  }, _ref["button,\n    html [type=\"button\"],\n    [type=\"reset\"],\n    [type=\"submit\"]"] = {
+    WebkitAppearance: 'button'
+  }, _ref["button::-moz-focus-inner,\n    [type=\"button\"]::-moz-focus-inner,\n    [type=\"reset\"]::-moz-focus-inner,\n    [type=\"submit\"]::-moz-focus-inner"] = {
+    borderStyle: 'none',
+    padding: '0'
+  }, _ref["button:-moz-focusring,\n    [type=\"button\"]:-moz-focusring,\n    [type=\"reset\"]:-moz-focusring,\n    [type=\"submit\"]:-moz-focusring"] = {
+    outline: '1px dotted ButtonText'
+  }, _ref.fieldset = {
+    padding: '0.35em 0.625em 0.75em'
+  }, _ref.legend = {
+    boxSizing: 'border-box',
+    color: 'inherit',
+    display: 'table',
+    maxWidth: '100%',
+    padding: '0',
+    whiteSpace: 'normal'
+  }, _ref.progress = {
+    verticalAlign: 'baseline'
+  }, _ref.textarea = {
+    overflow: 'auto'
+  }, _ref["[type=\"checkbox\"],\n    [type=\"radio\"]"] = {
+    boxSizing: 'border-box',
+    padding: '0'
+  }, _ref["[type=\"number\"]::-webkit-inner-spin-button,\n    [type=\"number\"]::-webkit-outer-spin-button"] = {
+    height: 'auto'
+  }, _ref['[type="search"]'] = {
+    WebkitAppearance: 'textfield',
+    outlineOffset: '-2px'
+  }, _ref['[type="search"]::-webkit-search-decoration'] = {
+    WebkitAppearance: 'none'
+  }, _ref['::-webkit-file-upload-button'] = {
+    WebkitAppearance: 'button',
+    font: 'inherit'
+  }, _ref.details = {
+    display: 'block'
+  }, _ref.summary = {
+    display: 'list-item'
+  }, _ref.template = {
+    display: 'none'
+  }, _ref['[hidden]'] = {
+    display: 'none'
+  }, _ref), {
+    'abbr[title]': {
+      textDecoration: 'underline dotted'
+    }
+  }];
+}
+
+function _templateObject$1() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_4__["default"])(["radial-gradient(", "", "", "", ")"]);
+
+  _templateObject$1 = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+/**
+ * CSS for declaring a radial gradient, including a fallback background-color. The fallback is either the first color-stop or an explicitly passed fallback color.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   ...radialGradient({
+ *     colorStops: ['#00FFFF 0%', 'rgba(0, 0, 255, 0) 50%', '#0000FF 95%'],
+ *     extent: 'farthest-corner at 45px 45px',
+ *     position: 'center',
+ *     shape: 'ellipse',
+ *   })
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${radialGradient({
+ *     colorStops: ['#00FFFF 0%', 'rgba(0, 0, 255, 0) 50%', '#0000FF 95%'],
+ *     extent: 'farthest-corner at 45px 45px',
+ *     position: 'center',
+ *     shape: 'ellipse',
+ *   })}
+ *`
+ *
+ * // CSS as JS Output
+ *
+ * div: {
+ *   'backgroundColor': '#00FFFF',
+ *   'backgroundImage': 'radial-gradient(center ellipse farthest-corner at 45px 45px, #00FFFF 0%, rgba(0, 0, 255, 0) 50%, #0000FF 95%)',
+ * }
+ */
+function radialGradient(_ref) {
+  var colorStops = _ref.colorStops,
+      _ref$extent = _ref.extent,
+      extent = _ref$extent === void 0 ? '' : _ref$extent,
+      fallback = _ref.fallback,
+      _ref$position = _ref.position,
+      position = _ref$position === void 0 ? '' : _ref$position,
+      _ref$shape = _ref.shape,
+      shape = _ref$shape === void 0 ? '' : _ref$shape;
+
+  if (!colorStops || colorStops.length < 2) {
+    throw new PolishedError(57);
+  }
+
+  return {
+    backgroundColor: fallback || colorStops[0].split(' ')[0],
+    backgroundImage: constructGradientValue(_templateObject$1(), position, shape, extent, colorStops.join(', '))
+  };
+}
+
+/**
+ * A helper to generate a retina background image and non-retina
+ * background image. The retina background image will output to a HiDPI media query. The mixin uses
+ * a _2x.png filename suffix by default.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *  ...retinaImage('my-img')
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${retinaImage('my-img')}
+ * `
+ *
+ * // CSS as JS Output
+ * div {
+ *   backgroundImage: 'url(my-img.png)',
+ *   '@media only screen and (-webkit-min-device-pixel-ratio: 1.3),
+ *    only screen and (min--moz-device-pixel-ratio: 1.3),
+ *    only screen and (-o-min-device-pixel-ratio: 1.3/1),
+ *    only screen and (min-resolution: 144dpi),
+ *    only screen and (min-resolution: 1.5dppx)': {
+ *     backgroundImage: 'url(my-img_2x.png)',
+ *   }
+ * }
+ */
+function retinaImage(filename, backgroundSize, extension, retinaFilename, retinaSuffix) {
+  var _ref;
+
+  if (extension === void 0) {
+    extension = 'png';
+  }
+
+  if (retinaSuffix === void 0) {
+    retinaSuffix = '_2x';
+  }
+
+  if (!filename) {
+    throw new PolishedError(58);
+  } // Replace the dot at the beginning of the passed extension if one exists
+
+
+  var ext = extension.replace(/^\./, '');
+  var rFilename = retinaFilename ? retinaFilename + "." + ext : "" + filename + retinaSuffix + "." + ext;
+  return _ref = {
+    backgroundImage: "url(" + filename + "." + ext + ")"
+  }, _ref[hiDPI()] = Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    backgroundImage: "url(" + rFilename + ")"
+  }, backgroundSize ? {
+    backgroundSize: backgroundSize
+  } : {}), _ref;
+}
+
+/* eslint-disable key-spacing */
+var functionsMap = {
+  easeInBack: 'cubic-bezier(0.600, -0.280, 0.735, 0.045)',
+  easeInCirc: 'cubic-bezier(0.600,  0.040, 0.980, 0.335)',
+  easeInCubic: 'cubic-bezier(0.550,  0.055, 0.675, 0.190)',
+  easeInExpo: 'cubic-bezier(0.950,  0.050, 0.795, 0.035)',
+  easeInQuad: 'cubic-bezier(0.550,  0.085, 0.680, 0.530)',
+  easeInQuart: 'cubic-bezier(0.895,  0.030, 0.685, 0.220)',
+  easeInQuint: 'cubic-bezier(0.755,  0.050, 0.855, 0.060)',
+  easeInSine: 'cubic-bezier(0.470,  0.000, 0.745, 0.715)',
+  easeOutBack: 'cubic-bezier(0.175,  0.885, 0.320, 1.275)',
+  easeOutCubic: 'cubic-bezier(0.215,  0.610, 0.355, 1.000)',
+  easeOutCirc: 'cubic-bezier(0.075,  0.820, 0.165, 1.000)',
+  easeOutExpo: 'cubic-bezier(0.190,  1.000, 0.220, 1.000)',
+  easeOutQuad: 'cubic-bezier(0.250,  0.460, 0.450, 0.940)',
+  easeOutQuart: 'cubic-bezier(0.165,  0.840, 0.440, 1.000)',
+  easeOutQuint: 'cubic-bezier(0.230,  1.000, 0.320, 1.000)',
+  easeOutSine: 'cubic-bezier(0.390,  0.575, 0.565, 1.000)',
+  easeInOutBack: 'cubic-bezier(0.680, -0.550, 0.265, 1.550)',
+  easeInOutCirc: 'cubic-bezier(0.785,  0.135, 0.150, 0.860)',
+  easeInOutCubic: 'cubic-bezier(0.645,  0.045, 0.355, 1.000)',
+  easeInOutExpo: 'cubic-bezier(1.000,  0.000, 0.000, 1.000)',
+  easeInOutQuad: 'cubic-bezier(0.455,  0.030, 0.515, 0.955)',
+  easeInOutQuart: 'cubic-bezier(0.770,  0.000, 0.175, 1.000)',
+  easeInOutQuint: 'cubic-bezier(0.860,  0.000, 0.070, 1.000)',
+  easeInOutSine: 'cubic-bezier(0.445,  0.050, 0.550, 0.950)'
+};
+/* eslint-enable key-spacing */
+
+function getTimingFunction(functionName) {
+  return functionsMap[functionName];
+}
+/**
+ * String to represent common easing functions as demonstrated here: (github.com/jaukia/easie).
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   'transitionTimingFunction': timingFunctions('easeInQuad')
+ * }
+ *
+ * // styled-components usage
+ *  const div = styled.div`
+ *   transitionTimingFunction: ${timingFunctions('easeInQuad')};
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * 'div': {
+ *   'transitionTimingFunction': 'cubic-bezier(0.550,  0.085, 0.680, 0.530)',
+ * }
+ */
+
+
+function timingFunctions(timingFunction) {
+  return getTimingFunction(timingFunction);
+}
+
+var getBorderWidth = function getBorderWidth(pointingDirection, height, width) {
+  var fullWidth = "" + width[0] + (width[1] || '');
+  var halfWidth = "" + width[0] / 2 + (width[1] || '');
+  var fullHeight = "" + height[0] + (height[1] || '');
+  var halfHeight = "" + height[0] / 2 + (height[1] || '');
+
+  switch (pointingDirection) {
+    case 'top':
+      return "0 " + halfWidth + " " + fullHeight + " " + halfWidth;
+
+    case 'topLeft':
+      return fullWidth + " " + fullHeight + " 0 0";
+
+    case 'left':
+      return halfHeight + " " + fullWidth + " " + halfHeight + " 0";
+
+    case 'bottomLeft':
+      return fullWidth + " 0 0 " + fullHeight;
+
+    case 'bottom':
+      return fullHeight + " " + halfWidth + " 0 " + halfWidth;
+
+    case 'bottomRight':
+      return "0 0 " + fullWidth + " " + fullHeight;
+
+    case 'right':
+      return halfHeight + " 0 " + halfHeight + " " + fullWidth;
+
+    case 'topRight':
+    default:
+      return "0 " + fullWidth + " " + fullHeight + " 0";
+  }
+};
+
+var getBorderColor = function getBorderColor(pointingDirection, foregroundColor, backgroundColor) {
+  switch (pointingDirection) {
+    case 'top':
+    case 'bottomRight':
+      return backgroundColor + " " + backgroundColor + " " + foregroundColor + " " + backgroundColor;
+
+    case 'right':
+    case 'bottomLeft':
+      return backgroundColor + " " + backgroundColor + " " + backgroundColor + " " + foregroundColor;
+
+    case 'bottom':
+    case 'topLeft':
+      return foregroundColor + " " + backgroundColor + " " + backgroundColor + " " + backgroundColor;
+
+    case 'left':
+    case 'topRight':
+      return backgroundColor + " " + foregroundColor + " " + backgroundColor + " " + backgroundColor;
+
+    default:
+      throw new PolishedError(59);
+  }
+};
+/**
+ * CSS to represent triangle with any pointing direction with an optional background color.
+ *
+ * @example
+ * // Styles as object usage
+ *
+ * const styles = {
+ *   ...triangle({ pointingDirection: 'right', width: '100px', height: '100px', foregroundColor: 'red' })
+ * }
+ *
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${triangle({ pointingDirection: 'right', width: '100px', height: '100px', foregroundColor: 'red' })}
+ *
+ *
+ * // CSS as JS Output
+ *
+ * div: {
+ *  'borderColor': 'transparent transparent transparent red',
+ *  'borderStyle': 'solid',
+ *  'borderWidth': '50px 0 50px 100px',
+ *  'height': '0',
+ *  'width': '0',
+ * }
+ */
+
+
+function triangle(_ref) {
+  var pointingDirection = _ref.pointingDirection,
+      height = _ref.height,
+      width = _ref.width,
+      foregroundColor = _ref.foregroundColor,
+      _ref$backgroundColor = _ref.backgroundColor,
+      backgroundColor = _ref$backgroundColor === void 0 ? 'transparent' : _ref$backgroundColor;
+  var widthAndUnit = getValueAndUnit(width);
+  var heightAndUnit = getValueAndUnit(height);
+
+  if (isNaN(heightAndUnit[0]) || isNaN(widthAndUnit[0])) {
+    throw new PolishedError(60);
+  }
+
+  return {
+    width: '0',
+    height: '0',
+    borderColor: getBorderColor(pointingDirection, foregroundColor, backgroundColor),
+    borderStyle: 'solid',
+    borderWidth: getBorderWidth(pointingDirection, heightAndUnit, widthAndUnit)
+  };
+}
+
+/**
+ * Provides an easy way to change the `wordWrap` property.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   ...wordWrap('break-word')
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${wordWrap('break-word')}
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * const styles = {
+ *   overflowWrap: 'break-word',
+ *   wordWrap: 'break-word',
+ *   wordBreak: 'break-all',
+ * }
+ */
+function wordWrap(wrap) {
+  if (wrap === void 0) {
+    wrap = 'break-word';
+  }
+
+  var wordBreak = wrap === 'break-word' ? 'break-all' : wrap;
+  return {
+    overflowWrap: wrap,
+    wordWrap: wrap,
+    wordBreak: wordBreak
+  };
+}
+
+function colorToInt(color) {
+  return Math.round(color * 255);
+}
+
+function convertToInt(red, green, blue) {
+  return colorToInt(red) + "," + colorToInt(green) + "," + colorToInt(blue);
+}
+
+function hslToRgb(hue, saturation, lightness, convert) {
+  if (convert === void 0) {
+    convert = convertToInt;
+  }
+
+  if (saturation === 0) {
+    // achromatic
+    return convert(lightness, lightness, lightness);
+  } // formulae from https://en.wikipedia.org/wiki/HSL_and_HSV
+
+
+  var huePrime = (hue % 360 + 360) % 360 / 60;
+  var chroma = (1 - Math.abs(2 * lightness - 1)) * saturation;
+  var secondComponent = chroma * (1 - Math.abs(huePrime % 2 - 1));
+  var red = 0;
+  var green = 0;
+  var blue = 0;
+
+  if (huePrime >= 0 && huePrime < 1) {
+    red = chroma;
+    green = secondComponent;
+  } else if (huePrime >= 1 && huePrime < 2) {
+    red = secondComponent;
+    green = chroma;
+  } else if (huePrime >= 2 && huePrime < 3) {
+    green = chroma;
+    blue = secondComponent;
+  } else if (huePrime >= 3 && huePrime < 4) {
+    green = secondComponent;
+    blue = chroma;
+  } else if (huePrime >= 4 && huePrime < 5) {
+    red = secondComponent;
+    blue = chroma;
+  } else if (huePrime >= 5 && huePrime < 6) {
+    red = chroma;
+    blue = secondComponent;
+  }
+
+  var lightnessModification = lightness - chroma / 2;
+  var finalRed = red + lightnessModification;
+  var finalGreen = green + lightnessModification;
+  var finalBlue = blue + lightnessModification;
+  return convert(finalRed, finalGreen, finalBlue);
+}
+
+var namedColorMap = {
+  aliceblue: 'f0f8ff',
+  antiquewhite: 'faebd7',
+  aqua: '00ffff',
+  aquamarine: '7fffd4',
+  azure: 'f0ffff',
+  beige: 'f5f5dc',
+  bisque: 'ffe4c4',
+  black: '000',
+  blanchedalmond: 'ffebcd',
+  blue: '0000ff',
+  blueviolet: '8a2be2',
+  brown: 'a52a2a',
+  burlywood: 'deb887',
+  cadetblue: '5f9ea0',
+  chartreuse: '7fff00',
+  chocolate: 'd2691e',
+  coral: 'ff7f50',
+  cornflowerblue: '6495ed',
+  cornsilk: 'fff8dc',
+  crimson: 'dc143c',
+  cyan: '00ffff',
+  darkblue: '00008b',
+  darkcyan: '008b8b',
+  darkgoldenrod: 'b8860b',
+  darkgray: 'a9a9a9',
+  darkgreen: '006400',
+  darkgrey: 'a9a9a9',
+  darkkhaki: 'bdb76b',
+  darkmagenta: '8b008b',
+  darkolivegreen: '556b2f',
+  darkorange: 'ff8c00',
+  darkorchid: '9932cc',
+  darkred: '8b0000',
+  darksalmon: 'e9967a',
+  darkseagreen: '8fbc8f',
+  darkslateblue: '483d8b',
+  darkslategray: '2f4f4f',
+  darkslategrey: '2f4f4f',
+  darkturquoise: '00ced1',
+  darkviolet: '9400d3',
+  deeppink: 'ff1493',
+  deepskyblue: '00bfff',
+  dimgray: '696969',
+  dimgrey: '696969',
+  dodgerblue: '1e90ff',
+  firebrick: 'b22222',
+  floralwhite: 'fffaf0',
+  forestgreen: '228b22',
+  fuchsia: 'ff00ff',
+  gainsboro: 'dcdcdc',
+  ghostwhite: 'f8f8ff',
+  gold: 'ffd700',
+  goldenrod: 'daa520',
+  gray: '808080',
+  green: '008000',
+  greenyellow: 'adff2f',
+  grey: '808080',
+  honeydew: 'f0fff0',
+  hotpink: 'ff69b4',
+  indianred: 'cd5c5c',
+  indigo: '4b0082',
+  ivory: 'fffff0',
+  khaki: 'f0e68c',
+  lavender: 'e6e6fa',
+  lavenderblush: 'fff0f5',
+  lawngreen: '7cfc00',
+  lemonchiffon: 'fffacd',
+  lightblue: 'add8e6',
+  lightcoral: 'f08080',
+  lightcyan: 'e0ffff',
+  lightgoldenrodyellow: 'fafad2',
+  lightgray: 'd3d3d3',
+  lightgreen: '90ee90',
+  lightgrey: 'd3d3d3',
+  lightpink: 'ffb6c1',
+  lightsalmon: 'ffa07a',
+  lightseagreen: '20b2aa',
+  lightskyblue: '87cefa',
+  lightslategray: '789',
+  lightslategrey: '789',
+  lightsteelblue: 'b0c4de',
+  lightyellow: 'ffffe0',
+  lime: '0f0',
+  limegreen: '32cd32',
+  linen: 'faf0e6',
+  magenta: 'f0f',
+  maroon: '800000',
+  mediumaquamarine: '66cdaa',
+  mediumblue: '0000cd',
+  mediumorchid: 'ba55d3',
+  mediumpurple: '9370db',
+  mediumseagreen: '3cb371',
+  mediumslateblue: '7b68ee',
+  mediumspringgreen: '00fa9a',
+  mediumturquoise: '48d1cc',
+  mediumvioletred: 'c71585',
+  midnightblue: '191970',
+  mintcream: 'f5fffa',
+  mistyrose: 'ffe4e1',
+  moccasin: 'ffe4b5',
+  navajowhite: 'ffdead',
+  navy: '000080',
+  oldlace: 'fdf5e6',
+  olive: '808000',
+  olivedrab: '6b8e23',
+  orange: 'ffa500',
+  orangered: 'ff4500',
+  orchid: 'da70d6',
+  palegoldenrod: 'eee8aa',
+  palegreen: '98fb98',
+  paleturquoise: 'afeeee',
+  palevioletred: 'db7093',
+  papayawhip: 'ffefd5',
+  peachpuff: 'ffdab9',
+  peru: 'cd853f',
+  pink: 'ffc0cb',
+  plum: 'dda0dd',
+  powderblue: 'b0e0e6',
+  purple: '800080',
+  rebeccapurple: '639',
+  red: 'f00',
+  rosybrown: 'bc8f8f',
+  royalblue: '4169e1',
+  saddlebrown: '8b4513',
+  salmon: 'fa8072',
+  sandybrown: 'f4a460',
+  seagreen: '2e8b57',
+  seashell: 'fff5ee',
+  sienna: 'a0522d',
+  silver: 'c0c0c0',
+  skyblue: '87ceeb',
+  slateblue: '6a5acd',
+  slategray: '708090',
+  slategrey: '708090',
+  snow: 'fffafa',
+  springgreen: '00ff7f',
+  steelblue: '4682b4',
+  tan: 'd2b48c',
+  teal: '008080',
+  thistle: 'd8bfd8',
+  tomato: 'ff6347',
+  turquoise: '40e0d0',
+  violet: 'ee82ee',
+  wheat: 'f5deb3',
+  white: 'fff',
+  whitesmoke: 'f5f5f5',
+  yellow: 'ff0',
+  yellowgreen: '9acd32'
+};
+/**
+ * Checks if a string is a CSS named color and returns its equivalent hex value, otherwise returns the original color.
+ * @private
+ */
+
+function nameToHex(color) {
+  if (typeof color !== 'string') return color;
+  var normalizedColorName = color.toLowerCase();
+  return namedColorMap[normalizedColorName] ? "#" + namedColorMap[normalizedColorName] : color;
+}
+
+var hexRegex = /^#[a-fA-F0-9]{6}$/;
+var hexRgbaRegex = /^#[a-fA-F0-9]{8}$/;
+var reducedHexRegex = /^#[a-fA-F0-9]{3}$/;
+var reducedRgbaHexRegex = /^#[a-fA-F0-9]{4}$/;
+var rgbRegex = /^rgb\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})\s*\)$/i;
+var rgbaRegex = /^rgba\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*([-+]?[0-9]*[.]?[0-9]+)\s*\)$/i;
+var hslRegex = /^hsl\(\s*(\d{0,3}[.]?[0-9]+)\s*,\s*(\d{1,3}[.]?[0-9]?)%\s*,\s*(\d{1,3}[.]?[0-9]?)%\s*\)$/i;
+var hslaRegex = /^hsla\(\s*(\d{0,3}[.]?[0-9]+)\s*,\s*(\d{1,3}[.]?[0-9]?)%\s*,\s*(\d{1,3}[.]?[0-9]?)%\s*,\s*([-+]?[0-9]*[.]?[0-9]+)\s*\)$/i;
+/**
+ * Returns an RgbColor or RgbaColor object. This utility function is only useful
+ * if want to extract a color component. With the color util `toColorString` you
+ * can convert a RgbColor or RgbaColor object back to a string.
+ *
+ * @example
+ * // Assigns `{ red: 255, green: 0, blue: 0 }` to color1
+ * const color1 = parseToRgb('rgb(255, 0, 0)');
+ * // Assigns `{ red: 92, green: 102, blue: 112, alpha: 0.75 }` to color2
+ * const color2 = parseToRgb('hsla(210, 10%, 40%, 0.75)');
+ */
+
+function parseToRgb(color) {
+  if (typeof color !== 'string') {
+    throw new PolishedError(3);
+  }
+
+  var normalizedColor = nameToHex(color);
+
+  if (normalizedColor.match(hexRegex)) {
+    return {
+      red: parseInt("" + normalizedColor[1] + normalizedColor[2], 16),
+      green: parseInt("" + normalizedColor[3] + normalizedColor[4], 16),
+      blue: parseInt("" + normalizedColor[5] + normalizedColor[6], 16)
+    };
+  }
+
+  if (normalizedColor.match(hexRgbaRegex)) {
+    var alpha = parseFloat((parseInt("" + normalizedColor[7] + normalizedColor[8], 16) / 255).toFixed(2));
+    return {
+      red: parseInt("" + normalizedColor[1] + normalizedColor[2], 16),
+      green: parseInt("" + normalizedColor[3] + normalizedColor[4], 16),
+      blue: parseInt("" + normalizedColor[5] + normalizedColor[6], 16),
+      alpha: alpha
+    };
+  }
+
+  if (normalizedColor.match(reducedHexRegex)) {
+    return {
+      red: parseInt("" + normalizedColor[1] + normalizedColor[1], 16),
+      green: parseInt("" + normalizedColor[2] + normalizedColor[2], 16),
+      blue: parseInt("" + normalizedColor[3] + normalizedColor[3], 16)
+    };
+  }
+
+  if (normalizedColor.match(reducedRgbaHexRegex)) {
+    var _alpha = parseFloat((parseInt("" + normalizedColor[4] + normalizedColor[4], 16) / 255).toFixed(2));
+
+    return {
+      red: parseInt("" + normalizedColor[1] + normalizedColor[1], 16),
+      green: parseInt("" + normalizedColor[2] + normalizedColor[2], 16),
+      blue: parseInt("" + normalizedColor[3] + normalizedColor[3], 16),
+      alpha: _alpha
+    };
+  }
+
+  var rgbMatched = rgbRegex.exec(normalizedColor);
+
+  if (rgbMatched) {
+    return {
+      red: parseInt("" + rgbMatched[1], 10),
+      green: parseInt("" + rgbMatched[2], 10),
+      blue: parseInt("" + rgbMatched[3], 10)
+    };
+  }
+
+  var rgbaMatched = rgbaRegex.exec(normalizedColor);
+
+  if (rgbaMatched) {
+    return {
+      red: parseInt("" + rgbaMatched[1], 10),
+      green: parseInt("" + rgbaMatched[2], 10),
+      blue: parseInt("" + rgbaMatched[3], 10),
+      alpha: parseFloat("" + rgbaMatched[4])
+    };
+  }
+
+  var hslMatched = hslRegex.exec(normalizedColor);
+
+  if (hslMatched) {
+    var hue = parseInt("" + hslMatched[1], 10);
+    var saturation = parseInt("" + hslMatched[2], 10) / 100;
+    var lightness = parseInt("" + hslMatched[3], 10) / 100;
+    var rgbColorString = "rgb(" + hslToRgb(hue, saturation, lightness) + ")";
+    var hslRgbMatched = rgbRegex.exec(rgbColorString);
+
+    if (!hslRgbMatched) {
+      throw new PolishedError(4, normalizedColor, rgbColorString);
+    }
+
+    return {
+      red: parseInt("" + hslRgbMatched[1], 10),
+      green: parseInt("" + hslRgbMatched[2], 10),
+      blue: parseInt("" + hslRgbMatched[3], 10)
+    };
+  }
+
+  var hslaMatched = hslaRegex.exec(normalizedColor);
+
+  if (hslaMatched) {
+    var _hue = parseInt("" + hslaMatched[1], 10);
+
+    var _saturation = parseInt("" + hslaMatched[2], 10) / 100;
+
+    var _lightness = parseInt("" + hslaMatched[3], 10) / 100;
+
+    var _rgbColorString = "rgb(" + hslToRgb(_hue, _saturation, _lightness) + ")";
+
+    var _hslRgbMatched = rgbRegex.exec(_rgbColorString);
+
+    if (!_hslRgbMatched) {
+      throw new PolishedError(4, normalizedColor, _rgbColorString);
+    }
+
+    return {
+      red: parseInt("" + _hslRgbMatched[1], 10),
+      green: parseInt("" + _hslRgbMatched[2], 10),
+      blue: parseInt("" + _hslRgbMatched[3], 10),
+      alpha: parseFloat("" + hslaMatched[4])
+    };
+  }
+
+  throw new PolishedError(5);
+}
+
+function rgbToHsl(color) {
+  // make sure rgb are contained in a set of [0, 255]
+  var red = color.red / 255;
+  var green = color.green / 255;
+  var blue = color.blue / 255;
+  var max = Math.max(red, green, blue);
+  var min = Math.min(red, green, blue);
+  var lightness = (max + min) / 2;
+
+  if (max === min) {
+    // achromatic
+    if (color.alpha !== undefined) {
+      return {
+        hue: 0,
+        saturation: 0,
+        lightness: lightness,
+        alpha: color.alpha
+      };
+    } else {
+      return {
+        hue: 0,
+        saturation: 0,
+        lightness: lightness
+      };
+    }
+  }
+
+  var hue;
+  var delta = max - min;
+  var saturation = lightness > 0.5 ? delta / (2 - max - min) : delta / (max + min);
+
+  switch (max) {
+    case red:
+      hue = (green - blue) / delta + (green < blue ? 6 : 0);
+      break;
+
+    case green:
+      hue = (blue - red) / delta + 2;
+      break;
+
+    default:
+      // blue case
+      hue = (red - green) / delta + 4;
+      break;
+  }
+
+  hue *= 60;
+
+  if (color.alpha !== undefined) {
+    return {
+      hue: hue,
+      saturation: saturation,
+      lightness: lightness,
+      alpha: color.alpha
+    };
+  }
+
+  return {
+    hue: hue,
+    saturation: saturation,
+    lightness: lightness
+  };
+}
+
+/**
+ * Returns an HslColor or HslaColor object. This utility function is only useful
+ * if want to extract a color component. With the color util `toColorString` you
+ * can convert a HslColor or HslaColor object back to a string.
+ *
+ * @example
+ * // Assigns `{ hue: 0, saturation: 1, lightness: 0.5 }` to color1
+ * const color1 = parseToHsl('rgb(255, 0, 0)');
+ * // Assigns `{ hue: 128, saturation: 1, lightness: 0.5, alpha: 0.75 }` to color2
+ * const color2 = parseToHsl('hsla(128, 100%, 50%, 0.75)');
+ */
+function parseToHsl(color) {
+  // Note: At a later stage we can optimize this function as right now a hsl
+  // color would be parsed converted to rgb values and converted back to hsl.
+  return rgbToHsl(parseToRgb(color));
+}
+
+/**
+ * Reduces hex values if possible e.g. #ff8866 to #f86
+ * @private
+ */
+var reduceHexValue = function reduceHexValue(value) {
+  if (value.length === 7 && value[1] === value[2] && value[3] === value[4] && value[5] === value[6]) {
+    return "#" + value[1] + value[3] + value[5];
+  }
+
+  return value;
+};
+
+function numberToHex(value) {
+  var hex = value.toString(16);
+  return hex.length === 1 ? "0" + hex : hex;
+}
+
+function colorToHex(color) {
+  return numberToHex(Math.round(color * 255));
+}
+
+function convertToHex(red, green, blue) {
+  return reduceHexValue("#" + colorToHex(red) + colorToHex(green) + colorToHex(blue));
+}
+
+function hslToHex(hue, saturation, lightness) {
+  return hslToRgb(hue, saturation, lightness, convertToHex);
+}
+
+/**
+ * Returns a string value for the color. The returned result is the smallest possible hex notation.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   background: hsl(359, 0.75, 0.4),
+ *   background: hsl({ hue: 360, saturation: 0.75, lightness: 0.4 }),
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   background: ${hsl(359, 0.75, 0.4)};
+ *   background: ${hsl({ hue: 360, saturation: 0.75, lightness: 0.4 })};
+ * `
+ *
+ * // CSS in JS Output
+ *
+ * element {
+ *   background: "#b3191c";
+ *   background: "#b3191c";
+ * }
+ */
+function hsl(value, saturation, lightness) {
+  if (typeof value === 'number' && typeof saturation === 'number' && typeof lightness === 'number') {
+    return hslToHex(value, saturation, lightness);
+  } else if (typeof value === 'object' && saturation === undefined && lightness === undefined) {
+    return hslToHex(value.hue, value.saturation, value.lightness);
+  }
+
+  throw new PolishedError(1);
+}
+
+/**
+ * Returns a string value for the color. The returned result is the smallest possible rgba or hex notation.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   background: hsla(359, 0.75, 0.4, 0.7),
+ *   background: hsla({ hue: 360, saturation: 0.75, lightness: 0.4, alpha: 0,7 }),
+ *   background: hsla(359, 0.75, 0.4, 1),
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   background: ${hsla(359, 0.75, 0.4, 0.7)};
+ *   background: ${hsla({ hue: 360, saturation: 0.75, lightness: 0.4, alpha: 0,7 })};
+ *   background: ${hsla(359, 0.75, 0.4, 1)};
+ * `
+ *
+ * // CSS in JS Output
+ *
+ * element {
+ *   background: "rgba(179,25,28,0.7)";
+ *   background: "rgba(179,25,28,0.7)";
+ *   background: "#b3191c";
+ * }
+ */
+function hsla(value, saturation, lightness, alpha) {
+  if (typeof value === 'number' && typeof saturation === 'number' && typeof lightness === 'number' && typeof alpha === 'number') {
+    return alpha >= 1 ? hslToHex(value, saturation, lightness) : "rgba(" + hslToRgb(value, saturation, lightness) + "," + alpha + ")";
+  } else if (typeof value === 'object' && saturation === undefined && lightness === undefined && alpha === undefined) {
+    return value.alpha >= 1 ? hslToHex(value.hue, value.saturation, value.lightness) : "rgba(" + hslToRgb(value.hue, value.saturation, value.lightness) + "," + value.alpha + ")";
+  }
+
+  throw new PolishedError(2);
+}
+
+/**
+ * Returns a string value for the color. The returned result is the smallest possible hex notation.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   background: rgb(255, 205, 100),
+ *   background: rgb({ red: 255, green: 205, blue: 100 }),
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   background: ${rgb(255, 205, 100)};
+ *   background: ${rgb({ red: 255, green: 205, blue: 100 })};
+ * `
+ *
+ * // CSS in JS Output
+ *
+ * element {
+ *   background: "#ffcd64";
+ *   background: "#ffcd64";
+ * }
+ */
+function rgb(value, green, blue) {
+  if (typeof value === 'number' && typeof green === 'number' && typeof blue === 'number') {
+    return reduceHexValue("#" + numberToHex(value) + numberToHex(green) + numberToHex(blue));
+  } else if (typeof value === 'object' && green === undefined && blue === undefined) {
+    return reduceHexValue("#" + numberToHex(value.red) + numberToHex(value.green) + numberToHex(value.blue));
+  }
+
+  throw new PolishedError(6);
+}
+
+/**
+ * Returns a string value for the color. The returned result is the smallest possible rgba or hex notation.
+ *
+ * Can also be used to fade a color by passing a hex value or named CSS color along with an alpha value.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   background: rgba(255, 205, 100, 0.7),
+ *   background: rgba({ red: 255, green: 205, blue: 100, alpha: 0.7 }),
+ *   background: rgba(255, 205, 100, 1),
+ *   background: rgba('#ffffff', 0.4),
+ *   background: rgba('black', 0.7),
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   background: ${rgba(255, 205, 100, 0.7)};
+ *   background: ${rgba({ red: 255, green: 205, blue: 100, alpha: 0.7 })};
+ *   background: ${rgba(255, 205, 100, 1)};
+ *   background: ${rgba('#ffffff', 0.4)};
+ *   background: ${rgba('black', 0.7)};
+ * `
+ *
+ * // CSS in JS Output
+ *
+ * element {
+ *   background: "rgba(255,205,100,0.7)";
+ *   background: "rgba(255,205,100,0.7)";
+ *   background: "#ffcd64";
+ *   background: "rgba(255,255,255,0.4)";
+ *   background: "rgba(0,0,0,0.7)";
+ * }
+ */
+function rgba(firstValue, secondValue, thirdValue, fourthValue) {
+  if (typeof firstValue === 'string' && typeof secondValue === 'number') {
+    var rgbValue = parseToRgb(firstValue);
+    return "rgba(" + rgbValue.red + "," + rgbValue.green + "," + rgbValue.blue + "," + secondValue + ")";
+  } else if (typeof firstValue === 'number' && typeof secondValue === 'number' && typeof thirdValue === 'number' && typeof fourthValue === 'number') {
+    return fourthValue >= 1 ? rgb(firstValue, secondValue, thirdValue) : "rgba(" + firstValue + "," + secondValue + "," + thirdValue + "," + fourthValue + ")";
+  } else if (typeof firstValue === 'object' && secondValue === undefined && thirdValue === undefined && fourthValue === undefined) {
+    return firstValue.alpha >= 1 ? rgb(firstValue.red, firstValue.green, firstValue.blue) : "rgba(" + firstValue.red + "," + firstValue.green + "," + firstValue.blue + "," + firstValue.alpha + ")";
+  }
+
+  throw new PolishedError(7);
+}
+
+var isRgb = function isRgb(color) {
+  return typeof color.red === 'number' && typeof color.green === 'number' && typeof color.blue === 'number' && (typeof color.alpha !== 'number' || typeof color.alpha === 'undefined');
+};
+
+var isRgba = function isRgba(color) {
+  return typeof color.red === 'number' && typeof color.green === 'number' && typeof color.blue === 'number' && typeof color.alpha === 'number';
+};
+
+var isHsl = function isHsl(color) {
+  return typeof color.hue === 'number' && typeof color.saturation === 'number' && typeof color.lightness === 'number' && (typeof color.alpha !== 'number' || typeof color.alpha === 'undefined');
+};
+
+var isHsla = function isHsla(color) {
+  return typeof color.hue === 'number' && typeof color.saturation === 'number' && typeof color.lightness === 'number' && typeof color.alpha === 'number';
+};
+/**
+ * Converts a RgbColor, RgbaColor, HslColor or HslaColor object to a color string.
+ * This util is useful in case you only know on runtime which color object is
+ * used. Otherwise we recommend to rely on `rgb`, `rgba`, `hsl` or `hsla`.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   background: toColorString({ red: 255, green: 205, blue: 100 }),
+ *   background: toColorString({ red: 255, green: 205, blue: 100, alpha: 0.72 }),
+ *   background: toColorString({ hue: 240, saturation: 1, lightness: 0.5 }),
+ *   background: toColorString({ hue: 360, saturation: 0.75, lightness: 0.4, alpha: 0.72 }),
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   background: ${toColorString({ red: 255, green: 205, blue: 100 })};
+ *   background: ${toColorString({ red: 255, green: 205, blue: 100, alpha: 0.72 })};
+ *   background: ${toColorString({ hue: 240, saturation: 1, lightness: 0.5 })};
+ *   background: ${toColorString({ hue: 360, saturation: 0.75, lightness: 0.4, alpha: 0.72 })};
+ * `
+ *
+ * // CSS in JS Output
+ * element {
+ *   background: "#ffcd64";
+ *   background: "rgba(255,205,100,0.72)";
+ *   background: "#00f";
+ *   background: "rgba(179,25,25,0.72)";
+ * }
+ */
+
+
+function toColorString(color) {
+  if (typeof color !== 'object') throw new PolishedError(8);
+  if (isRgba(color)) return rgba(color);
+  if (isRgb(color)) return rgb(color);
+  if (isHsla(color)) return hsla(color);
+  if (isHsl(color)) return hsl(color);
+  throw new PolishedError(8);
+}
+
+// Type definitions taken from https://github.com/gcanti/flow-static-land/blob/master/src/Fun.js
+// eslint-disable-next-line no-unused-vars
+// eslint-disable-next-line no-unused-vars
+// eslint-disable-next-line no-redeclare
+function curried(f, length, acc) {
+  return function fn() {
+    // eslint-disable-next-line prefer-rest-params
+    var combined = acc.concat(Array.prototype.slice.call(arguments));
+    return combined.length >= length ? f.apply(this, combined) : curried(f, length, combined);
+  };
+} // eslint-disable-next-line no-redeclare
+
+
+function curry(f) {
+  // eslint-disable-line no-redeclare
+  return curried(f, f.length, []);
+}
+
+/**
+ * Changes the hue of the color. Hue is a number between 0 to 360. The first
+ * argument for adjustHue is the amount of degrees the color is rotated around
+ * the color wheel, always producing a positive hue value.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   background: adjustHue(180, '#448'),
+ *   background: adjustHue('180', 'rgba(101,100,205,0.7)'),
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   background: ${adjustHue(180, '#448')};
+ *   background: ${adjustHue('180', 'rgba(101,100,205,0.7)')};
+ * `
+ *
+ * // CSS in JS Output
+ * element {
+ *   background: "#888844";
+ *   background: "rgba(136,136,68,0.7)";
+ * }
+ */
+
+function adjustHue(degree, color) {
+  if (color === 'transparent') return color;
+  var hslColor = parseToHsl(color);
+  return toColorString(Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, hslColor, {
+    hue: hslColor.hue + parseFloat(degree)
+  }));
+} // prettier-ignore
+
+
+var curriedAdjustHue = /*#__PURE__*/curry
+/* ::<number | string, string, string> */
+(adjustHue);
+
+/**
+ * Returns the complement of the provided color. This is identical to adjustHue(180, <color>).
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   background: complement('#448'),
+ *   background: complement('rgba(204,205,100,0.7)'),
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   background: ${complement('#448')};
+ *   background: ${complement('rgba(204,205,100,0.7)')};
+ * `
+ *
+ * // CSS in JS Output
+ * element {
+ *   background: "#884";
+ *   background: "rgba(153,153,153,0.7)";
+ * }
+ */
+
+function complement(color) {
+  if (color === 'transparent') return color;
+  var hslColor = parseToHsl(color);
+  return toColorString(Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, hslColor, {
+    hue: (hslColor.hue + 180) % 360
+  }));
+}
+
+function guard(lowerBoundary, upperBoundary, value) {
+  return Math.max(lowerBoundary, Math.min(upperBoundary, value));
+}
+
+/**
+ * Returns a string value for the darkened color.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   background: darken(0.2, '#FFCD64'),
+ *   background: darken('0.2', 'rgba(255,205,100,0.7)'),
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   background: ${darken(0.2, '#FFCD64')};
+ *   background: ${darken('0.2', 'rgba(255,205,100,0.7)')};
+ * `
+ *
+ * // CSS in JS Output
+ *
+ * element {
+ *   background: "#ffbd31";
+ *   background: "rgba(255,189,49,0.7)";
+ * }
+ */
+
+function darken(amount, color) {
+  if (color === 'transparent') return color;
+  var hslColor = parseToHsl(color);
+  return toColorString(Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, hslColor, {
+    lightness: guard(0, 1, hslColor.lightness - parseFloat(amount))
+  }));
+} // prettier-ignore
+
+
+var curriedDarken = /*#__PURE__*/curry
+/* ::<number | string, string, string> */
+(darken);
+
+/**
+ * Decreases the intensity of a color. Its range is between 0 to 1. The first
+ * argument of the desaturate function is the amount by how much the color
+ * intensity should be decreased.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   background: desaturate(0.2, '#CCCD64'),
+ *   background: desaturate('0.2', 'rgba(204,205,100,0.7)'),
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   background: ${desaturate(0.2, '#CCCD64')};
+ *   background: ${desaturate('0.2', 'rgba(204,205,100,0.7)')};
+ * `
+ *
+ * // CSS in JS Output
+ * element {
+ *   background: "#b8b979";
+ *   background: "rgba(184,185,121,0.7)";
+ * }
+ */
+
+function desaturate(amount, color) {
+  if (color === 'transparent') return color;
+  var hslColor = parseToHsl(color);
+  return toColorString(Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, hslColor, {
+    saturation: guard(0, 1, hslColor.saturation - parseFloat(amount))
+  }));
+} // prettier-ignore
+
+
+var curriedDesaturate = /*#__PURE__*/curry
+/* ::<number | string, string, string> */
+(desaturate);
+
+/**
+ * Returns a number (float) representing the luminance of a color.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   background: getLuminance('#CCCD64') >= getLuminance('#0000ff') ? '#CCCD64' : '#0000ff',
+ *   background: getLuminance('rgba(58, 133, 255, 1)') >= getLuminance('rgba(255, 57, 149, 1)') ?
+ *                             'rgba(58, 133, 255, 1)' :
+ *                             'rgba(255, 57, 149, 1)',
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   background: ${getLuminance('#CCCD64') >= getLuminance('#0000ff') ? '#CCCD64' : '#0000ff'};
+ *   background: ${getLuminance('rgba(58, 133, 255, 1)') >= getLuminance('rgba(255, 57, 149, 1)') ?
+ *                             'rgba(58, 133, 255, 1)' :
+ *                             'rgba(255, 57, 149, 1)'};
+ *
+ * // CSS in JS Output
+ *
+ * div {
+ *   background: "#CCCD64";
+ *   background: "rgba(58, 133, 255, 1)";
+ * }
+ */
+
+function getLuminance(color) {
+  if (color === 'transparent') return 0;
+  var rgbColor = parseToRgb(color);
+
+  var _Object$keys$map = Object.keys(rgbColor).map(function (key) {
+    var channel = rgbColor[key] / 255;
+    return channel <= 0.03928 ? channel / 12.92 : Math.pow((channel + 0.055) / 1.055, 2.4);
+  }),
+      r = _Object$keys$map[0],
+      g = _Object$keys$map[1],
+      b = _Object$keys$map[2];
+
+  return parseFloat((0.2126 * r + 0.7152 * g + 0.0722 * b).toFixed(3));
+}
+
+/**
+ * Returns the contrast ratio between two colors based on
+ * [W3's recommended equation for calculating contrast](http://www.w3.org/TR/WCAG20/#contrast-ratiodef).
+ *
+ * @example
+ * const contrastRatio = getContrast('#444', '#fff');
+ */
+
+function getContrast(color1, color2) {
+  var luminance1 = getLuminance(color1);
+  var luminance2 = getLuminance(color2);
+  return parseFloat((luminance1 > luminance2 ? (luminance1 + 0.05) / (luminance2 + 0.05) : (luminance2 + 0.05) / (luminance1 + 0.05)).toFixed(2));
+}
+
+/**
+ * Converts the color to a grayscale, by reducing its saturation to 0.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   background: grayscale('#CCCD64'),
+ *   background: grayscale('rgba(204,205,100,0.7)'),
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   background: ${grayscale('#CCCD64')};
+ *   background: ${grayscale('rgba(204,205,100,0.7)')};
+ * `
+ *
+ * // CSS in JS Output
+ * element {
+ *   background: "#999";
+ *   background: "rgba(153,153,153,0.7)";
+ * }
+ */
+
+function grayscale(color) {
+  if (color === 'transparent') return color;
+  return toColorString(Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, parseToHsl(color), {
+    saturation: 0
+  }));
+}
+
+/**
+ * Converts a HslColor or HslaColor object to a color string.
+ * This util is useful in case you only know on runtime which color object is
+ * used. Otherwise we recommend to rely on `hsl` or `hsla`.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   background: hslToColorString({ hue: 240, saturation: 1, lightness: 0.5 }),
+ *   background: hslToColorString({ hue: 360, saturation: 0.75, lightness: 0.4, alpha: 0.72 }),
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   background: ${hslToColorString({ hue: 240, saturation: 1, lightness: 0.5 })};
+ *   background: ${hslToColorString({ hue: 360, saturation: 0.75, lightness: 0.4, alpha: 0.72 })};
+ * `
+ *
+ * // CSS in JS Output
+ * element {
+ *   background: "#00f";
+ *   background: "rgba(179,25,25,0.72)";
+ * }
+ */
+function hslToColorString(color) {
+  if (typeof color === 'object' && typeof color.hue === 'number' && typeof color.saturation === 'number' && typeof color.lightness === 'number') {
+    if (color.alpha && typeof color.alpha === 'number') {
+      return hsla({
+        hue: color.hue,
+        saturation: color.saturation,
+        lightness: color.lightness,
+        alpha: color.alpha
+      });
+    }
+
+    return hsl({
+      hue: color.hue,
+      saturation: color.saturation,
+      lightness: color.lightness
+    });
+  }
+
+  throw new PolishedError(45);
+}
+
+/**
+ * Inverts the red, green and blue values of a color.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   background: invert('#CCCD64'),
+ *   background: invert('rgba(101,100,205,0.7)'),
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   background: ${invert('#CCCD64')};
+ *   background: ${invert('rgba(101,100,205,0.7)')};
+ * `
+ *
+ * // CSS in JS Output
+ *
+ * element {
+ *   background: "#33329b";
+ *   background: "rgba(154,155,50,0.7)";
+ * }
+ */
+
+function invert(color) {
+  if (color === 'transparent') return color; // parse color string to rgb
+
+  var value = parseToRgb(color);
+  return toColorString(Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, value, {
+    red: 255 - value.red,
+    green: 255 - value.green,
+    blue: 255 - value.blue
+  }));
+}
+
+/**
+ * Returns a string value for the lightened color.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   background: lighten(0.2, '#CCCD64'),
+ *   background: lighten('0.2', 'rgba(204,205,100,0.7)'),
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   background: ${lighten(0.2, '#FFCD64')};
+ *   background: ${lighten('0.2', 'rgba(204,205,100,0.7)')};
+ * `
+ *
+ * // CSS in JS Output
+ *
+ * element {
+ *   background: "#e5e6b1";
+ *   background: "rgba(229,230,177,0.7)";
+ * }
+ */
+
+function lighten(amount, color) {
+  if (color === 'transparent') return color;
+  var hslColor = parseToHsl(color);
+  return toColorString(Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, hslColor, {
+    lightness: guard(0, 1, hslColor.lightness + parseFloat(amount))
+  }));
+} // prettier-ignore
+
+
+var curriedLighten = /*#__PURE__*/curry
+/* ::<number | string, string, string> */
+(lighten);
+
+/**
+ * Determines which contrast guidelines have been met for two colors.
+ * Based on the [contrast calculations recommended by W3](https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced.html).
+ *
+ * @example
+ * const scores = meetsContrastGuidelines('#444', '#fff');
+ */
+function meetsContrastGuidelines(color1, color2) {
+  var contrastRatio = getContrast(color1, color2);
+  return {
+    AA: contrastRatio >= 4.5,
+    AALarge: contrastRatio >= 3,
+    AAA: contrastRatio >= 7,
+    AAALarge: contrastRatio >= 4.5
+  };
+}
+
+/**
+ * Mixes the two provided colors together by calculating the average of each of the RGB components weighted to the first color by the provided weight.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   background: mix(0.5, '#f00', '#00f')
+ *   background: mix(0.25, '#f00', '#00f')
+ *   background: mix('0.5', 'rgba(255, 0, 0, 0.5)', '#00f')
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   background: ${mix(0.5, '#f00', '#00f')};
+ *   background: ${mix(0.25, '#f00', '#00f')};
+ *   background: ${mix('0.5', 'rgba(255, 0, 0, 0.5)', '#00f')};
+ * `
+ *
+ * // CSS in JS Output
+ *
+ * element {
+ *   background: "#7f007f";
+ *   background: "#3f00bf";
+ *   background: "rgba(63, 0, 191, 0.75)";
+ * }
+ */
+
+function mix(weight, color, otherColor) {
+  if (color === 'transparent') return otherColor;
+  if (otherColor === 'transparent') return color;
+  if (weight === 0) return otherColor;
+  var parsedColor1 = parseToRgb(color);
+
+  var color1 = Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, parsedColor1, {
+    alpha: typeof parsedColor1.alpha === 'number' ? parsedColor1.alpha : 1
+  });
+
+  var parsedColor2 = parseToRgb(otherColor);
+
+  var color2 = Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, parsedColor2, {
+    alpha: typeof parsedColor2.alpha === 'number' ? parsedColor2.alpha : 1
+  }); // The formula is copied from the original Sass implementation:
+  // http://sass-lang.com/documentation/Sass/Script/Functions.html#mix-instance_method
+
+
+  var alphaDelta = color1.alpha - color2.alpha;
+  var x = parseFloat(weight) * 2 - 1;
+  var y = x * alphaDelta === -1 ? x : x + alphaDelta;
+  var z = 1 + x * alphaDelta;
+  var weight1 = (y / z + 1) / 2.0;
+  var weight2 = 1 - weight1;
+  var mixedColor = {
+    red: Math.floor(color1.red * weight1 + color2.red * weight2),
+    green: Math.floor(color1.green * weight1 + color2.green * weight2),
+    blue: Math.floor(color1.blue * weight1 + color2.blue * weight2),
+    alpha: color1.alpha * (parseFloat(weight) / 1.0) + color2.alpha * (1 - parseFloat(weight) / 1.0)
+  };
+  return rgba(mixedColor);
+} // prettier-ignore
+
+
+var curriedMix = /*#__PURE__*/curry
+/* ::<number | string, string, string, string> */
+(mix);
+
+/**
+ * Increases the opacity of a color. Its range for the amount is between 0 to 1.
+ *
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   background: opacify(0.1, 'rgba(255, 255, 255, 0.9)');
+ *   background: opacify(0.2, 'hsla(0, 0%, 100%, 0.5)'),
+ *   background: opacify('0.5', 'rgba(255, 0, 0, 0.2)'),
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   background: ${opacify(0.1, 'rgba(255, 255, 255, 0.9)')};
+ *   background: ${opacify(0.2, 'hsla(0, 0%, 100%, 0.5)')},
+ *   background: ${opacify('0.5', 'rgba(255, 0, 0, 0.2)')},
+ * `
+ *
+ * // CSS in JS Output
+ *
+ * element {
+ *   background: "#fff";
+ *   background: "rgba(255,255,255,0.7)";
+ *   background: "rgba(255,0,0,0.7)";
+ * }
+ */
+
+function opacify(amount, color) {
+  if (color === 'transparent') return color;
+  var parsedColor = parseToRgb(color);
+  var alpha = typeof parsedColor.alpha === 'number' ? parsedColor.alpha : 1;
+
+  var colorWithAlpha = Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, parsedColor, {
+    alpha: guard(0, 1, (alpha * 100 + parseFloat(amount) * 100) / 100)
+  });
+
+  return rgba(colorWithAlpha);
+} // prettier-ignore
+
+
+var curriedOpacify = /*#__PURE__*/curry
+/* ::<number | string, string, string> */
+(opacify);
+
+var defaultLightReturnColor = '#000';
+var defaultDarkReturnColor = '#fff';
+/**
+ * Returns black or white (or optional light and dark return colors) for best
+ * contrast depending on the luminosity of the given color.
+ * When passing custom return colors, set `strict` to `true` to ensure that the
+ * return color always meets or exceeds WCAG level AA or greater. If this test
+ * fails, the default return color (black or white) is returned in place of the
+ * custom return color.
+ *
+ * Follows [W3C specs for readability](https://www.w3.org/TR/WCAG20-TECHS/G18.html).
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   color: readableColor('#000'),
+ *   color: readableColor('black', '#001', '#ff8'),
+ *   color: readableColor('white', '#001', '#ff8'),
+ *   color: readableColor('red', '#333', '#ddd', true)
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   color: ${readableColor('#000')};
+ *   color: ${readableColor('black', '#001', '#ff8')};
+ *   color: ${readableColor('white', '#001', '#ff8')};
+ *   color: ${readableColor('red', '#333', '#ddd', true)};
+ * `
+ *
+ * // CSS in JS Output
+ * element {
+ *   color: "#fff";
+ *   color: "#ff8";
+ *   color: "#001";
+ *   color: "#000";
+ * }
+ */
+
+function readableColor(color, lightReturnColor, darkReturnColor, strict) {
+  if (lightReturnColor === void 0) {
+    lightReturnColor = defaultLightReturnColor;
+  }
+
+  if (darkReturnColor === void 0) {
+    darkReturnColor = defaultDarkReturnColor;
+  }
+
+  if (strict === void 0) {
+    strict = false;
+  }
+
+  var isLightColor = getLuminance(color) > 0.179;
+  var preferredReturnColor = isLightColor ? lightReturnColor : darkReturnColor; // TODO: Make `strict` the default behaviour in the next major release.
+  // Without `strict`, this may return a color that does not meet WCAG AA.
+
+  if (!strict || getContrast(color, preferredReturnColor) >= 4.5) {
+    return preferredReturnColor;
+  }
+
+  return isLightColor ? defaultLightReturnColor : defaultDarkReturnColor;
+}
+
+/**
+ * Converts a RgbColor or RgbaColor object to a color string.
+ * This util is useful in case you only know on runtime which color object is
+ * used. Otherwise we recommend to rely on `rgb` or `rgba`.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   background: rgbToColorString({ red: 255, green: 205, blue: 100 }),
+ *   background: rgbToColorString({ red: 255, green: 205, blue: 100, alpha: 0.72 }),
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   background: ${rgbToColorString({ red: 255, green: 205, blue: 100 })};
+ *   background: ${rgbToColorString({ red: 255, green: 205, blue: 100, alpha: 0.72 })};
+ * `
+ *
+ * // CSS in JS Output
+ * element {
+ *   background: "#ffcd64";
+ *   background: "rgba(255,205,100,0.72)";
+ * }
+ */
+function rgbToColorString(color) {
+  if (typeof color === 'object' && typeof color.red === 'number' && typeof color.green === 'number' && typeof color.blue === 'number') {
+    if (color.alpha && typeof color.alpha === 'number') {
+      return rgba({
+        red: color.red,
+        green: color.green,
+        blue: color.blue,
+        alpha: color.alpha
+      });
+    }
+
+    return rgb({
+      red: color.red,
+      green: color.green,
+      blue: color.blue
+    });
+  }
+
+  throw new PolishedError(46);
+}
+
+/**
+ * Increases the intensity of a color. Its range is between 0 to 1. The first
+ * argument of the saturate function is the amount by how much the color
+ * intensity should be increased.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   background: saturate(0.2, '#CCCD64'),
+ *   background: saturate('0.2', 'rgba(204,205,100,0.7)'),
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   background: ${saturate(0.2, '#FFCD64')};
+ *   background: ${saturate('0.2', 'rgba(204,205,100,0.7)')};
+ * `
+ *
+ * // CSS in JS Output
+ *
+ * element {
+ *   background: "#e0e250";
+ *   background: "rgba(224,226,80,0.7)";
+ * }
+ */
+
+function saturate(amount, color) {
+  if (color === 'transparent') return color;
+  var hslColor = parseToHsl(color);
+  return toColorString(Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, hslColor, {
+    saturation: guard(0, 1, hslColor.saturation + parseFloat(amount))
+  }));
+} // prettier-ignore
+
+
+var curriedSaturate = /*#__PURE__*/curry
+/* ::<number | string, string, string> */
+(saturate);
+
+/**
+ * Sets the hue of a color to the provided value. The hue range can be
+ * from 0 and 359.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   background: setHue(42, '#CCCD64'),
+ *   background: setHue('244', 'rgba(204,205,100,0.7)'),
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   background: ${setHue(42, '#CCCD64')};
+ *   background: ${setHue('244', 'rgba(204,205,100,0.7)')};
+ * `
+ *
+ * // CSS in JS Output
+ * element {
+ *   background: "#cdae64";
+ *   background: "rgba(107,100,205,0.7)";
+ * }
+ */
+
+function setHue(hue, color) {
+  if (color === 'transparent') return color;
+  return toColorString(Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, parseToHsl(color), {
+    hue: parseFloat(hue)
+  }));
+} // prettier-ignore
+
+
+var curriedSetHue = /*#__PURE__*/curry
+/* ::<number | string, string, string> */
+(setHue);
+
+/**
+ * Sets the lightness of a color to the provided value. The lightness range can be
+ * from 0 and 1.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   background: setLightness(0.2, '#CCCD64'),
+ *   background: setLightness('0.75', 'rgba(204,205,100,0.7)'),
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   background: ${setLightness(0.2, '#CCCD64')};
+ *   background: ${setLightness('0.75', 'rgba(204,205,100,0.7)')};
+ * `
+ *
+ * // CSS in JS Output
+ * element {
+ *   background: "#4d4d19";
+ *   background: "rgba(223,224,159,0.7)";
+ * }
+ */
+
+function setLightness(lightness, color) {
+  if (color === 'transparent') return color;
+  return toColorString(Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, parseToHsl(color), {
+    lightness: parseFloat(lightness)
+  }));
+} // prettier-ignore
+
+
+var curriedSetLightness = /*#__PURE__*/curry
+/* ::<number | string, string, string> */
+(setLightness);
+
+/**
+ * Sets the saturation of a color to the provided value. The saturation range can be
+ * from 0 and 1.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   background: setSaturation(0.2, '#CCCD64'),
+ *   background: setSaturation('0.75', 'rgba(204,205,100,0.7)'),
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   background: ${setSaturation(0.2, '#CCCD64')};
+ *   background: ${setSaturation('0.75', 'rgba(204,205,100,0.7)')};
+ * `
+ *
+ * // CSS in JS Output
+ * element {
+ *   background: "#adad84";
+ *   background: "rgba(228,229,76,0.7)";
+ * }
+ */
+
+function setSaturation(saturation, color) {
+  if (color === 'transparent') return color;
+  return toColorString(Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, parseToHsl(color), {
+    saturation: parseFloat(saturation)
+  }));
+} // prettier-ignore
+
+
+var curriedSetSaturation = /*#__PURE__*/curry
+/* ::<number | string, string, string> */
+(setSaturation);
+
+/**
+ * Shades a color by mixing it with black. `shade` can produce
+ * hue shifts, where as `darken` manipulates the luminance channel and therefore
+ * doesn't produce hue shifts.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   background: shade(0.25, '#00f')
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   background: ${shade(0.25, '#00f')};
+ * `
+ *
+ * // CSS in JS Output
+ *
+ * element {
+ *   background: "#00003f";
+ * }
+ */
+
+function shade(percentage, color) {
+  if (color === 'transparent') return color;
+  return curriedMix(parseFloat(percentage), 'rgb(0, 0, 0)', color);
+} // prettier-ignore
+
+
+var curriedShade = /*#__PURE__*/curry
+/* ::<number | string, string, string> */
+(shade);
+
+/**
+ * Tints a color by mixing it with white. `tint` can produce
+ * hue shifts, where as `lighten` manipulates the luminance channel and therefore
+ * doesn't produce hue shifts.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   background: tint(0.25, '#00f')
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   background: ${tint(0.25, '#00f')};
+ * `
+ *
+ * // CSS in JS Output
+ *
+ * element {
+ *   background: "#bfbfff";
+ * }
+ */
+
+function tint(percentage, color) {
+  if (color === 'transparent') return color;
+  return curriedMix(parseFloat(percentage), 'rgb(255, 255, 255)', color);
+} // prettier-ignore
+
+
+var curriedTint = /*#__PURE__*/curry
+/* ::<number | string, string, string> */
+(tint);
+
+/**
+ * Decreases the opacity of a color. Its range for the amount is between 0 to 1.
+ *
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   background: transparentize(0.1, '#fff');
+ *   background: transparentize(0.2, 'hsl(0, 0%, 100%)'),
+ *   background: transparentize('0.5', 'rgba(255, 0, 0, 0.8)'),
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   background: ${transparentize(0.1, '#fff')};
+ *   background: ${transparentize(0.2, 'hsl(0, 0%, 100%)')},
+ *   background: ${transparentize('0.5', 'rgba(255, 0, 0, 0.8)')},
+ * `
+ *
+ * // CSS in JS Output
+ *
+ * element {
+ *   background: "rgba(255,255,255,0.9)";
+ *   background: "rgba(255,255,255,0.8)";
+ *   background: "rgba(255,0,0,0.3)";
+ * }
+ */
+
+function transparentize(amount, color) {
+  if (color === 'transparent') return color;
+  var parsedColor = parseToRgb(color);
+  var alpha = typeof parsedColor.alpha === 'number' ? parsedColor.alpha : 1;
+
+  var colorWithAlpha = Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, parsedColor, {
+    alpha: guard(0, 1, (alpha * 100 - parseFloat(amount) * 100) / 100)
+  });
+
+  return rgba(colorWithAlpha);
+} // prettier-ignore
+
+
+var curriedTransparentize = /*#__PURE__*/curry
+/* ::<number | string, string, string> */
+(transparentize);
+
+/**
+ * Shorthand for easily setting the animation property. Allows either multiple arrays with animations
+ * or a single animation spread over the arguments.
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   ...animation(['rotate', '1s', 'ease-in-out'], ['colorchange', '2s'])
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${animation(['rotate', '1s', 'ease-in-out'], ['colorchange', '2s'])}
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * div {
+ *   'animation': 'rotate 1s ease-in-out, colorchange 2s'
+ * }
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   ...animation('rotate', '1s', 'ease-in-out')
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${animation('rotate', '1s', 'ease-in-out')}
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * div {
+ *   'animation': 'rotate 1s ease-in-out'
+ * }
+ */
+function animation() {
+  for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+    args[_key] = arguments[_key];
+  }
+
+  // Allow single or multiple animations passed
+  var multiMode = Array.isArray(args[0]);
+
+  if (!multiMode && args.length > 8) {
+    throw new PolishedError(64);
+  }
+
+  var code = args.map(function (arg) {
+    if (multiMode && !Array.isArray(arg) || !multiMode && Array.isArray(arg)) {
+      throw new PolishedError(65);
+    }
+
+    if (Array.isArray(arg) && arg.length > 8) {
+      throw new PolishedError(66);
+    }
+
+    return Array.isArray(arg) ? arg.join(' ') : arg;
+  }).join(', ');
+  return {
+    animation: code
+  };
+}
+
+/**
+ * Shorthand that accepts any number of backgroundImage values as parameters for creating a single background statement.
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   ...backgroundImages('url("/image/background.jpg")', 'linear-gradient(red, green)')
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${backgroundImages('url("/image/background.jpg")', 'linear-gradient(red, green)')}
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * div {
+ *   'backgroundImage': 'url("/image/background.jpg"), linear-gradient(red, green)'
+ * }
+ */
+function backgroundImages() {
+  for (var _len = arguments.length, properties = new Array(_len), _key = 0; _key < _len; _key++) {
+    properties[_key] = arguments[_key];
+  }
+
+  return {
+    backgroundImage: properties.join(', ')
+  };
+}
+
+/**
+ * Shorthand that accepts any number of background values as parameters for creating a single background statement.
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   ...backgrounds('url("/image/background.jpg")', 'linear-gradient(red, green)', 'center no-repeat')
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${backgrounds('url("/image/background.jpg")', 'linear-gradient(red, green)', 'center no-repeat')}
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * div {
+ *   'background': 'url("/image/background.jpg"), linear-gradient(red, green), center no-repeat'
+ * }
+ */
+function backgrounds() {
+  for (var _len = arguments.length, properties = new Array(_len), _key = 0; _key < _len; _key++) {
+    properties[_key] = arguments[_key];
+  }
+
+  return {
+    background: properties.join(', ')
+  };
+}
+
+var sideMap = ['top', 'right', 'bottom', 'left'];
+/**
+ * Shorthand for the border property that splits out individual properties for use with tools like Fela and Styletron. A side keyword can optionally be passed to target only one side's border properties.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   ...border('1px', 'solid', 'red')
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${border('1px', 'solid', 'red')}
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * div {
+ *   'borderColor': 'red',
+ *   'borderStyle': 'solid',
+ *   'borderWidth': `1px`,
+ * }
+ *
+ * // Styles as object usage
+ * const styles = {
+ *   ...border('top', '1px', 'solid', 'red')
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${border('top', '1px', 'solid', 'red')}
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * div {
+ *   'borderTopColor': 'red',
+ *   'borderTopStyle': 'solid',
+ *   'borderTopWidth': `1px`,
+ * }
+ */
+
+function border(sideKeyword) {
+  for (var _len = arguments.length, values = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+    values[_key - 1] = arguments[_key];
+  }
+
+  if (typeof sideKeyword === 'string' && sideMap.indexOf(sideKeyword) >= 0) {
+    var _ref;
+
+    return _ref = {}, _ref["border" + capitalizeString(sideKeyword) + "Width"] = values[0], _ref["border" + capitalizeString(sideKeyword) + "Style"] = values[1], _ref["border" + capitalizeString(sideKeyword) + "Color"] = values[2], _ref;
+  } else {
+    values.unshift(sideKeyword);
+    return {
+      borderWidth: values[0],
+      borderStyle: values[1],
+      borderColor: values[2]
+    };
+  }
+}
+
+/**
+ * Shorthand that accepts up to four values, including null to skip a value, and maps them to their respective directions.
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   ...borderColor('red', 'green', 'blue', 'yellow')
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${borderColor('red', 'green', 'blue', 'yellow')}
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * div {
+ *   'borderTopColor': 'red',
+ *   'borderRightColor': 'green',
+ *   'borderBottomColor': 'blue',
+ *   'borderLeftColor': 'yellow'
+ * }
+ */
+function borderColor() {
+  for (var _len = arguments.length, values = new Array(_len), _key = 0; _key < _len; _key++) {
+    values[_key] = arguments[_key];
+  }
+
+  return directionalProperty.apply(void 0, ['borderColor'].concat(values));
+}
+
+/**
+ * Shorthand that accepts a value for side and a value for radius and applies the radius value to both corners of the side.
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   ...borderRadius('top', '5px')
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${borderRadius('top', '5px')}
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * div {
+ *   'borderTopRightRadius': '5px',
+ *   'borderTopLeftRadius': '5px',
+ * }
+ */
+function borderRadius(side, radius) {
+  var uppercaseSide = capitalizeString(side);
+
+  if (!radius && radius !== 0) {
+    throw new PolishedError(62);
+  }
+
+  if (uppercaseSide === 'Top' || uppercaseSide === 'Bottom') {
+    var _ref;
+
+    return _ref = {}, _ref["border" + uppercaseSide + "RightRadius"] = radius, _ref["border" + uppercaseSide + "LeftRadius"] = radius, _ref;
+  }
+
+  if (uppercaseSide === 'Left' || uppercaseSide === 'Right') {
+    var _ref2;
+
+    return _ref2 = {}, _ref2["borderTop" + uppercaseSide + "Radius"] = radius, _ref2["borderBottom" + uppercaseSide + "Radius"] = radius, _ref2;
+  }
+
+  throw new PolishedError(63);
+}
+
+/**
+ * Shorthand that accepts up to four values, including null to skip a value, and maps them to their respective directions.
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   ...borderStyle('solid', 'dashed', 'dotted', 'double')
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${borderStyle('solid', 'dashed', 'dotted', 'double')}
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * div {
+ *   'borderTopStyle': 'solid',
+ *   'borderRightStyle': 'dashed',
+ *   'borderBottomStyle': 'dotted',
+ *   'borderLeftStyle': 'double'
+ * }
+ */
+function borderStyle() {
+  for (var _len = arguments.length, values = new Array(_len), _key = 0; _key < _len; _key++) {
+    values[_key] = arguments[_key];
+  }
+
+  return directionalProperty.apply(void 0, ['borderStyle'].concat(values));
+}
+
+/**
+ * Shorthand that accepts up to four values, including null to skip a value, and maps them to their respective directions.
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   ...borderWidth('12px', '24px', '36px', '48px')
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${borderWidth('12px', '24px', '36px', '48px')}
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * div {
+ *   'borderTopWidth': '12px',
+ *   'borderRightWidth': '24px',
+ *   'borderBottomWidth': '36px',
+ *   'borderLeftWidth': '48px'
+ * }
+ */
+function borderWidth() {
+  for (var _len = arguments.length, values = new Array(_len), _key = 0; _key < _len; _key++) {
+    values[_key] = arguments[_key];
+  }
+
+  return directionalProperty.apply(void 0, ['borderWidth'].concat(values));
+}
+
+function generateSelectors(template, state) {
+  var stateSuffix = state ? ":" + state : '';
+  return template(stateSuffix);
+}
+/**
+ * Function helper that adds an array of states to a template of selectors. Used in textInputs and buttons.
+ * @private
+ */
+
+
+function statefulSelectors(states, template, stateMap) {
+  if (!template) throw new PolishedError(67);
+  if (states.length === 0) return generateSelectors(template, null);
+  var selectors = [];
+
+  for (var i = 0; i < states.length; i += 1) {
+    if (stateMap && stateMap.indexOf(states[i]) < 0) {
+      throw new PolishedError(68);
+    }
+
+    selectors.push(generateSelectors(template, states[i]));
+  }
+
+  selectors = selectors.join(',');
+  return selectors;
+}
+
+var stateMap = [undefined, null, 'active', 'focus', 'hover'];
+
+function template(state) {
+  return "button" + state + ",\n  input[type=\"button\"]" + state + ",\n  input[type=\"reset\"]" + state + ",\n  input[type=\"submit\"]" + state;
+}
+/**
+ * Populates selectors that target all buttons. You can pass optional states to append to the selectors.
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   [buttons('active')]: {
+ *     'border': 'none'
+ *   }
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   > ${buttons('active')} {
+ *     border: none;
+ *   }
+ * `
+ *
+ * // CSS in JS Output
+ *
+ *  'button:active,
+ *  'input[type="button"]:active,
+ *  'input[type=\"reset\"]:active,
+ *  'input[type=\"submit\"]:active: {
+ *   'border': 'none'
+ * }
+ */
+
+
+function buttons() {
+  for (var _len = arguments.length, states = new Array(_len), _key = 0; _key < _len; _key++) {
+    states[_key] = arguments[_key];
+  }
+
+  return statefulSelectors(states, template, stateMap);
+}
+
+/**
+ * Shorthand that accepts up to four values, including null to skip a value, and maps them to their respective directions.
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   ...margin('12px', '24px', '36px', '48px')
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${margin('12px', '24px', '36px', '48px')}
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * div {
+ *   'marginTop': '12px',
+ *   'marginRight': '24px',
+ *   'marginBottom': '36px',
+ *   'marginLeft': '48px'
+ * }
+ */
+function margin() {
+  for (var _len = arguments.length, values = new Array(_len), _key = 0; _key < _len; _key++) {
+    values[_key] = arguments[_key];
+  }
+
+  return directionalProperty.apply(void 0, ['margin'].concat(values));
+}
+
+/**
+ * Shorthand that accepts up to four values, including null to skip a value, and maps them to their respective directions.
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   ...padding('12px', '24px', '36px', '48px')
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${padding('12px', '24px', '36px', '48px')}
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * div {
+ *   'paddingTop': '12px',
+ *   'paddingRight': '24px',
+ *   'paddingBottom': '36px',
+ *   'paddingLeft': '48px'
+ * }
+ */
+function padding() {
+  for (var _len = arguments.length, values = new Array(_len), _key = 0; _key < _len; _key++) {
+    values[_key] = arguments[_key];
+  }
+
+  return directionalProperty.apply(void 0, ['padding'].concat(values));
+}
+
+var positionMap$1 = ['absolute', 'fixed', 'relative', 'static', 'sticky'];
+/**
+ * Shorthand accepts up to five values, including null to skip a value, and maps them to their respective directions. The first value can optionally be a position keyword.
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   ...position('12px', '24px', '36px', '48px')
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${position('12px', '24px', '36px', '48px')}
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * div {
+ *   'top': '12px',
+ *   'right': '24px',
+ *   'bottom': '36px',
+ *   'left': '48px'
+ * }
+ *
+ * // Styles as object usage
+ * const styles = {
+ *   ...position('absolute', '12px', '24px', '36px', '48px')
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${position('absolute', '12px', '24px', '36px', '48px')}
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * div {
+ *   'position': 'absolute',
+ *   'top': '12px',
+ *   'right': '24px',
+ *   'bottom': '36px',
+ *   'left': '48px'
+ * }
+ */
+
+function position(firstValue) {
+  for (var _len = arguments.length, values = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+    values[_key - 1] = arguments[_key];
+  }
+
+  if (positionMap$1.indexOf(firstValue) >= 0 && firstValue) {
+    return Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, directionalProperty.apply(void 0, [''].concat(values)), {
+      position: firstValue
+    });
+  } else {
+    return directionalProperty.apply(void 0, ['', firstValue].concat(values));
+  }
+}
+
+/**
+ * Shorthand to set the height and width properties in a single statement.
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   ...size('300px', '250px')
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${size('300px', '250px')}
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * div {
+ *   'height': '300px',
+ *   'width': '250px',
+ * }
+ */
+function size(height, width) {
+  if (width === void 0) {
+    width = height;
+  }
+
+  return {
+    height: height,
+    width: width
+  };
+}
+
+var stateMap$1 = [undefined, null, 'active', 'focus', 'hover'];
+
+function template$1(state) {
+  return "input[type=\"color\"]" + state + ",\n    input[type=\"date\"]" + state + ",\n    input[type=\"datetime\"]" + state + ",\n    input[type=\"datetime-local\"]" + state + ",\n    input[type=\"email\"]" + state + ",\n    input[type=\"month\"]" + state + ",\n    input[type=\"number\"]" + state + ",\n    input[type=\"password\"]" + state + ",\n    input[type=\"search\"]" + state + ",\n    input[type=\"tel\"]" + state + ",\n    input[type=\"text\"]" + state + ",\n    input[type=\"time\"]" + state + ",\n    input[type=\"url\"]" + state + ",\n    input[type=\"week\"]" + state + ",\n    input:not([type])" + state + ",\n    textarea" + state;
+}
+/**
+ * Populates selectors that target all text inputs. You can pass optional states to append to the selectors.
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   [textInputs('active')]: {
+ *     'border': 'none'
+ *   }
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   > ${textInputs('active')} {
+ *     border: none;
+ *   }
+ * `
+ *
+ * // CSS in JS Output
+ *
+ *  'input[type="color"]:active,
+ *  input[type="date"]:active,
+ *  input[type="datetime"]:active,
+ *  input[type="datetime-local"]:active,
+ *  input[type="email"]:active,
+ *  input[type="month"]:active,
+ *  input[type="number"]:active,
+ *  input[type="password"]:active,
+ *  input[type="search"]:active,
+ *  input[type="tel"]:active,
+ *  input[type="text"]:active,
+ *  input[type="time"]:active,
+ *  input[type="url"]:active,
+ *  input[type="week"]:active,
+ *  input:not([type]):active,
+ *  textarea:active': {
+ *   'border': 'none'
+ * }
+ */
+
+
+function textInputs() {
+  for (var _len = arguments.length, states = new Array(_len), _key = 0; _key < _len; _key++) {
+    states[_key] = arguments[_key];
+  }
+
+  return statefulSelectors(states, template$1, stateMap$1);
+}
+
+/**
+ * Accepts any number of transition values as parameters for creating a single transition statement. You may also pass an array of properties as the first parameter that you would like to apply the same transition values to (second parameter).
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   ...transitions('opacity 1.0s ease-in 0s', 'width 2.0s ease-in 2s'),
+ *   ...transitions(['color', 'background-color'], '2.0s ease-in 2s')
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${transitions('opacity 1.0s ease-in 0s', 'width 2.0s ease-in 2s')};
+ *   ${transitions(['color', 'background-color'], '2.0s ease-in 2s'),};
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * div {
+ *   'transition': 'opacity 1.0s ease-in 0s, width 2.0s ease-in 2s'
+ *   'transition': 'color 2.0s ease-in 2s, background-color 2.0s ease-in 2s',
+ * }
+ */
+
+function transitions() {
+  for (var _len = arguments.length, properties = new Array(_len), _key = 0; _key < _len; _key++) {
+    properties[_key] = arguments[_key];
+  }
+
+  if (Array.isArray(properties[0]) && properties.length === 2) {
+    var value = properties[1];
+
+    if (typeof value !== 'string') {
+      throw new PolishedError(61);
+    }
+
+    var transitionsString = properties[0].map(function (property) {
+      return property + " " + value;
+    }).join(', ');
+    return {
+      transition: transitionsString
+    };
+  } else {
+    return {
+      transition: properties.join(', ')
+    };
+  }
+}
+
+
 
 
 /***/ }),
@@ -47429,6 +52800,360 @@ module.exports = __webpack_require__.p + "Cabin-Regular.ttf";
 
 /***/ }),
 
+/***/ "../../components/lib/components/About/About.js":
+/*!**************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/About/About.js ***!
+  \**************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+const react_1 = __importDefault(__webpack_require__(/*! react */ "../../../node_modules/react/index.js"));
+
+const styled_components_1 = __importDefault(__webpack_require__(/*! styled-components */ "../../../node_modules/styled-components/dist/styled-components.browser.esm.js"));
+
+const styles_1 = __webpack_require__(/*! ../../styles */ "../../components/lib/styles/index.js");
+
+const Heading_1 = __webpack_require__(/*! ../Heading */ "../../components/lib/components/Heading/index.js");
+
+const Text_1 = __webpack_require__(/*! ../Text */ "../../components/lib/components/Text/index.js");
+
+const ImageContentContainer = styled_components_1.default.div`
+  grid-area: image;
+
+  & > * {
+    height: 100%;
+    width: 50%;
+    left: calc(50% + ${styles_1.unit * 2.5}px);
+    position: absolute;
+  }
+`;
+
+const ImageContent = ({
+  children
+}) => react_1.default.createElement(ImageContentContainer, null, children);
+
+const TextContent = styled_components_1.default.div`
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  padding: ${styles_1.unit * 7}px ${styles_1.unit * 7}px ${styles_1.unit * 7}px 0;
+  justify-content: center;
+`;
+const Body = styled_components_1.default(Text_1.Text)`
+  grid-area: text;
+  color: ${styles_1.trueWhite};
+  line-height: 1.75em;
+`;
+const Title = styled_components_1.default(Heading_1.Heading)`
+  grid-area: text;
+  color: ${styles_1.trueWhite};
+  font-size: ${styles_1.unit * 8}px;
+  white-space: normal;
+  padding-bottom: ${styles_1.unit * 5}px;
+`;
+const Container = styled_components_1.default.div`
+  position: relative;
+  background-color: ${styles_1.trueBlack};
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  min-height: 600px;
+  overflow: hidden;
+`;
+const Contents = styled_components_1.default.div`
+  max-width: ${styles_1.maxWidth}px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 'text image';
+  column-gap: ${styles_1.unit * 5}px;
+`;
+
+exports.About = ({
+  className,
+  children
+}) => react_1.default.createElement(Container, {
+  className: className
+}, react_1.default.createElement(Contents, null, children));
+
+exports.About.Body = Body;
+exports.About.Title = Title;
+exports.About.TextContent = TextContent;
+exports.About.ImageContent = ImageContent;
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/About/About.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/About/About.js"); } }(); 
+
+/***/ }),
+
+/***/ "../../components/lib/components/About/index.js":
+/*!**************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/About/index.js ***!
+  \**************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function __export(m) {
+  for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+__export(__webpack_require__(/*! ./About */ "../../components/lib/components/About/About.js"));
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/About/index.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/About/index.js"); } }(); 
+
+/***/ }),
+
+/***/ "../../components/lib/components/AnimatedJonLogo/AnimatedJonLogo.js":
+/*!**********************************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/AnimatedJonLogo/AnimatedJonLogo.js ***!
+  \**********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importStar = this && this.__importStar || function (mod) {
+  if (mod && mod.__esModule) return mod;
+  var result = {};
+  if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+  result["default"] = mod;
+  return result;
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+const polished_1 = __webpack_require__(/*! polished */ "../../../node_modules/polished/dist/polished.es.js");
+
+const react_1 = __importStar(__webpack_require__(/*! react */ "../../../node_modules/react/index.js"));
+
+const styled_components_1 = __importStar(__webpack_require__(/*! styled-components */ "../../../node_modules/styled-components/dist/styled-components.browser.esm.js"));
+
+const styles_1 = __webpack_require__(/*! ../../styles */ "../../components/lib/styles/index.js");
+
+const JonLogo_1 = __webpack_require__(/*! ../JonLogo */ "../../components/lib/components/JonLogo/index.js");
+
+exports.AnimatedJonLogo = ({
+  className,
+  contentStyle = JonLogo_1.JonLogoContentStyle.light
+}) => {
+  const fillColor = contentStyle === JonLogo_1.JonLogoContentStyle.light ? styles_1.trueWhite : styles_1.trueBlack;
+  return react_1.default.createElement("svg", {
+    viewBox: "0 0 407 227",
+    className: className
+  }, react_1.default.createElement("g", {
+    id: "Symbols",
+    stroke: "none",
+    strokeWidth: "2",
+    fill: "none",
+    fillRule: "evenodd",
+    transform: "translate(1,1)"
+  }, react_1.default.createElement(AnimatedSvgGroup, {
+    fill: fillColor,
+    stroke: fillColor,
+    fillRule: "nonzero"
+  }, react_1.default.createElement(exports.AnimatedSvgPath, {
+    d: "M53.4836066,0 L70,0 C72.7614237,-5.07265313e-16 75,2.23857625 75,5 L75,150 L75,150 C75,189.168521 44.9745958,221.324233 6.68476765,224.706155 C6.27986732,224.741918 5.81716079,224.775267 5.29664808,224.806203 C2.54008817,224.970038 0.172641364,222.868218 0.0088077048,220.111658 C0.0029371951,220.012885 1.21176018e-17,219.913959 0,219.815011 L0,186.534508 C-7.03446774e-06,184.005284 1.88869981,181.874373 4.39962348,181.570677 C5.99419319,181.377813 7.28013898,181.151089 8.25746086,180.890503 C21.9101423,177.250264 31.9672131,164.799609 31.9672131,150 L31.9672131,21.5163934 C31.9672131,9.63321747 41.6004306,2.32916649e-14 53.4836066,0 Z"
+  }), react_1.default.createElement(exports.AnimatedSvgPath, {
+    d: "M165,150 C123.578644,150 90,116.421356 90,75 C90,33.5786438 123.578644,0 165,0 C206.421356,0 240,33.5786438 240,75 C240,116.421356 206.421356,150 165,150 Z M165,106.967213 C182.655004,106.967213 196.967213,92.6550043 196.967213,75 C196.967213,57.3449957 182.655004,43.0327869 165,43.0327869 C147.344996,43.0327869 133.032787,57.3449957 133.032787,75 C133.032787,92.6550043 147.344996,106.967213 165,106.967213 Z"
+  }), react_1.default.createElement(exports.AnimatedSvgPath, {
+    d: "M400,150 L383.483607,150 C371.600431,150 361.967213,140.366783 361.967213,128.483607 L361.967213,75.0075051 L361.967213,75.0075051 C361.967213,57.3507341 347.655004,43.0370931 330,43.0370931 C312.344996,43.0370931 298.032787,57.3507341 298.032787,75.0075051 L298.032787,145 C298.032787,147.761424 295.794211,150 293.032787,150 L276.516393,150 C264.633217,150 255,140.366783 255,128.483607 L255,75.0075051 L255,75.0075051 C255,33.5820039 288.578644,0 330,0 C371.421356,0 405,33.5820039 405,75.0075051 L405,145 C405,147.761424 402.761424,150 400,150 Z"
+  }))));
+};
+
+const makeFillAnimation = (fill = styles_1.trueWhite) => styled_components_1.keyframes`
+  from {
+    fill: ${styles_1.opacity(fill, 0.1)};
+  }
+
+  to {
+    fill: ${styles_1.opacity(fill, 1)};
+  }
+`;
+
+const easeInOutQuad = polished_1.timingFunctions('easeInOutQuad');
+const easeInQuad = polished_1.timingFunctions('easeInQuad');
+const AnimatedSvgGroup = styled_components_1.default.g`
+  fill: ${props => styles_1.opacity(props.fill || styles_1.trueWhite, 0.1)};
+  animation: ${props => makeFillAnimation(props.fill)} 1.33s ${easeInQuad}
+    forwards 0.66s;
+`;
+
+const makeDashOffsetAnimation = max => styled_components_1.keyframes`
+    from {
+      stroke-dashoffset: ${max};
+    }
+
+    to {
+      stroke-dashoffset: 0;
+    }
+  `;
+
+const StyledPath = styled_components_1.default.path`
+  stroke-dasharray: ${props => (props.pathLength || 0) + 1};
+  animation: ${props => makeDashOffsetAnimation(props.pathLength || 0)} 1.5s
+    ${easeInOutQuad} forwards;
+`;
+
+exports.AnimatedSvgPath = props => {
+  const ref = react_1.useRef();
+  const [pathLength, setPathLength] = react_1.useState();
+  react_1.useLayoutEffect(() => {
+    var _a;
+
+    const totalLength = (_a = ref.current) === null || _a === void 0 ? void 0 : _a.getTotalLength();
+    setPathLength(totalLength);
+  }, [ref]);
+  return react_1.default.createElement(StyledPath, Object.assign({}, props, {
+    pathLength: pathLength,
+    ref: ref
+  }));
+};
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/AnimatedJonLogo/AnimatedJonLogo.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/AnimatedJonLogo/AnimatedJonLogo.js"); } }(); 
+
+/***/ }),
+
+/***/ "../../components/lib/components/AnimatedJonLogo/index.js":
+/*!************************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/AnimatedJonLogo/index.js ***!
+  \************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function __export(m) {
+  for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+__export(__webpack_require__(/*! ./AnimatedJonLogo */ "../../components/lib/components/AnimatedJonLogo/AnimatedJonLogo.js"));
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/AnimatedJonLogo/index.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/AnimatedJonLogo/index.js"); } }(); 
+
+/***/ }),
+
+/***/ "../../components/lib/components/BarkdLogo/BarkdLogo.js":
+/*!**********************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/BarkdLogo/BarkdLogo.js ***!
+  \**********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+const react_1 = __importDefault(__webpack_require__(/*! react */ "../../../node_modules/react/index.js"));
+
+const styles_1 = __webpack_require__(/*! ../../styles */ "../../components/lib/styles/index.js");
+
+var BarkdLogoContentStyle;
+
+(function (BarkdLogoContentStyle) {
+  BarkdLogoContentStyle["dark"] = "dark";
+  BarkdLogoContentStyle["light"] = "light";
+})(BarkdLogoContentStyle = exports.BarkdLogoContentStyle || (exports.BarkdLogoContentStyle = {}));
+
+exports.BarkdLogo = ({
+  contentStyle = BarkdLogoContentStyle.light
+}) => {
+  const fillColor = contentStyle === BarkdLogoContentStyle.light ? styles_1.trueWhite : styles_1.trueBlack;
+  return react_1.default.createElement("svg", {
+    viewBox: "0 0 225 43"
+  }, react_1.default.createElement("g", {
+    id: "Page-Design-Exploration",
+    stroke: "none",
+    strokeWidth: "1",
+    fill: "none",
+    fillRule: "evenodd"
+  }, react_1.default.createElement("g", {
+    id: "Artboard",
+    transform: "translate(-786.000000, -2417.000000)",
+    fill: fillColor
+  }, react_1.default.createElement("g", {
+    id: "Group-4",
+    transform: "translate(188.000000, 2295.000000)"
+  }, react_1.default.createElement("g", {
+    id: "text",
+    transform: "translate(598.000000, 122.000000)"
+  }, react_1.default.createElement("g", {
+    id: "barkd-logo-white",
+    transform: "translate(0.000000, 0.000000)"
+  }, react_1.default.createElement("g", {
+    id: "logo-white",
+    transform: "translate(0.000000, 0.285714)"
+  }, react_1.default.createElement("g", {
+    id: "Combined-Shape",
+    transform: "translate(0.000000, 0.594134)"
+  }, react_1.default.createElement("path", {
+    d: "M64.0970601,7.5785748 C64.3053965,8.75452154 63.4999266,10.101194 62.9071946,11.0600542 C62.2858528,12.0645394 61.6403034,13.052835 60.6800478,13.766645 C59.5231935,14.6261606 58.2166891,14.882985 56.7994139,14.882985 C55.5317889,14.882985 54.2927736,15.1147893 53.1168461,15.5909078 C50.2016023,16.7690622 47.9971967,19.2570947 46.5278375,21.9813469 C45.0093285,24.7946413 44.1040918,28.1686812 44.1040918,31.3727314 C44.1040918,32.8503916 44.3065596,34.3928098 44.8296016,35.7843714 L46.3715851,39.2695302 C46.6554803,39.7353464 46.7266375,40.2659206 46.6378744,40.7744182 C46.638608,40.7810412 46.6400751,40.7869283 46.6400751,40.7935513 C46.6364072,41.4426033 46.1104309,41.9658186 45.4641477,41.9628997 L38.9712379,41.9378549 C38.3271553,41.9341755 37.8070476,41.4131678 37.8048469,40.7685311 C37.7850402,36.3487964 35.5300177,32.8827706 31.7102706,30.8252317 C29.7523477,29.7714422 27.537672,29.1599204 25.328865,28.9479851 C23.1317952,28.7382574 20.8474295,28.9111907 18.7222504,29.5241843 C15.3631911,30.4933469 12.3379104,32.6450793 11.4524802,36.1456917 L13.0406793,38.7441072 C13.4551516,39.4225946 13.4441479,40.243844 13.093497,40.925275 C12.8990985,41.3020489 12.6041996,41.6383491 12.2110012,41.8797199 C12.1273731,41.9297602 11.9403104,41.9231372 11.9403104,41.9231372 L5.55963831,41.9128347 L5.54716746,41.9150425 C5.12682657,41.9459497 4.71969009,41.7479962 4.48421116,41.3977142 C0.514080373,35.5098857 4.88254468,29.1834688 8.20565858,24.2243291 C9.16518025,22.7908221 10.2853557,21.1990994 11.0020626,19.6338687 L11.1590486,19.288002 L10.7915254,19.1982238 C7.91516119,18.5020751 5.24639998,16.433498 3.40364895,14.1662314 C1.41564925,11.7208803 -0.0500420546,8.53301971 0.00130849141,5.33485665 C0.0115786006,4.7012583 0.0776007313,4.06913173 0.21184573,3.44877935 C0.347557887,2.81444512 0.974768127,2.40897162 1.60711342,2.54584652 C2.06119897,2.64298355 2.413317,3.00062442 2.50941587,3.45393055 L2.51235019,3.46496886 L2.51455093,3.47527127 C2.68620847,4.06913173 2.92388814,4.64017971 3.22392205,5.18179223 C5.61172244,9.47789806 11.5258382,11.3360117 16.0505549,12.0822006 C21.4680374,12.975567 27.9213339,12.8070489 33.2016372,11.3455782 C34.4509227,10.9997115 35.7170804,10.5581795 36.8710005,9.96211143 L37.0177164,9.88631509 L37.037523,9.72074063 C37.3082137,7.46892771 38.6389265,5.57328389 40.3122207,4.1147567 C42.2327312,2.44061474 44.7489079,1.22493012 47.203464,0.572198726 C48.5195051,0.221916716 49.9059698,0.00262251655 51.2704273,0.00262251655 C53.8753671,0.00262251655 54.8128813,1.05935564 56.1003129,3.05728769 L56.1920103,3.1993138 L56.2000796,3.1993138 C57.2292911,4.76086511 58.1558018,5.48939282 60.184882,5.48939282 C61.7474056,5.48939282 63.7676829,5.72414063 64.0970601,7.5785748 Z",
+    id: "Path"
+  })), react_1.default.createElement("path", {
+    d: "M102.712334,27.2826111 C102.712334,29.4257035 102.312174,31.4348225 101.511842,33.3100284 C100.711511,35.1852342 99.6253639,36.8116639 98.2533674,38.1893661 C96.8813709,39.5670684 95.2521499,40.6481657 93.3656548,41.4326906 C91.4791603,42.2172155 89.4688342,42.6094721 87.3346181,42.6094721 C85.8482886,42.6094721 84.4000918,42.398993 82.9899843,41.9780284 C81.5798768,41.5570638 80.2841223,40.9638954 79.1026809,40.1985052 L79.1026809,42.2076443 L71.3852402,42.2076443 L71.3852402,2.02486282 L79.2170134,0.302743611 L79.2170134,14.653737 C80.3984548,13.7735383 81.7037373,13.0942647 83.1329003,12.6158959 C84.5620627,12.1375271 86.0388425,11.8983463 87.563283,11.8983463 C89.6593882,11.8983463 91.6316037,12.3001701 93.4799873,13.1038297 C95.3283714,13.9074894 96.9385375,14.9981539 98.3105339,16.3758562 C99.6825304,17.7535585 100.75915,19.3799881 101.540425,21.2551939 C102.321701,23.1303998 102.712334,25.1395187 102.712334,27.2826111 Z M86.3056259,18.6146111 C84.8955184,18.6146111 83.5807084,18.853792 82.361156,19.3321609 C81.1416036,19.8105297 80.0935667,20.5089377 79.2170134,21.4274059 L79.2170134,33.1952205 C80.0554557,34.0371496 81.0939651,34.7068559 82.332573,35.2043595 C83.5711804,35.7018631 84.8955184,35.9506111 86.3056259,35.9506111 C88.7447301,35.9506111 90.8026941,35.1182619 92.4795786,33.4535383 C94.1564632,31.7888147 94.9948923,29.7318596 94.9948923,27.2826111 C94.9948923,24.8333627 94.1469351,22.7764075 92.4509951,21.111684 C90.7550556,19.4469605 88.7066191,18.6146111 86.3056259,18.6146111 Z M116.946725,42.7242801 C113.745399,42.7242801 111.134834,41.8727963 109.114951,40.1698032 C107.095068,38.4668102 106.085141,36.2567793 106.085141,33.5396443 C106.085141,30.7077007 107.171289,28.4881026 109.343616,26.8807834 C111.515943,25.2734641 114.507613,24.4698165 118.318714,24.4698165 C119.538266,24.4698165 120.7578,24.5654888 121.977353,24.7568363 C123.196905,24.9481839 124.397384,25.2352009 125.578825,25.6178959 L125.578825,23.4939489 C125.578825,21.7718211 125.045279,20.4706774 123.978171,19.5904787 C122.911062,18.7102801 121.348535,18.2701873 119.29054,18.2701873 C118.032876,18.2701873 116.670429,18.4710992 115.203155,18.872929 C113.735881,19.2747589 112.068549,19.896629 110.201109,20.7385582 L107.342798,14.9407569 C109.66757,13.8692107 111.925613,13.0655631 114.116996,12.52979 C116.308379,11.9940169 118.471146,11.7261343 120.605363,11.7261343 C124.607019,11.7261343 127.722548,12.6924249 129.952041,14.625035 C132.181536,16.5576451 133.296266,19.2843066 133.296266,22.8051013 L133.296266,42.2076443 L125.578825,42.2076443 L125.578825,40.1411013 C124.321162,41.0212999 122.996824,41.6718718 121.605772,42.0928363 C120.21472,42.5138009 118.66172,42.7242801 116.946725,42.7242801 Z M113.573917,33.3674323 C113.573917,34.5155175 114.069353,35.4244047 115.060239,36.0941211 C116.051125,36.7638375 117.365935,37.0986906 119.004708,37.0986906 C120.300483,37.0986906 121.491434,36.9360477 122.577598,36.6107569 C123.663762,36.2854661 124.664161,35.8166716 125.578825,35.2043595 L125.578825,30.7268496 C124.62605,30.3441545 123.625651,30.0667047 122.577598,29.8944919 C121.529545,29.7222792 120.43387,29.6361741 119.29054,29.6361741 C117.499322,29.6361741 116.098764,29.9710273 115.088822,30.6407436 C114.07888,31.31046 113.573917,32.2193471 113.573917,33.3674323 Z M139.241554,42.2076443 L139.241554,12.3001741 L147.073327,12.3001741 L147.073327,15.5722006 C148.026102,14.2710373 149.178943,13.2856123 150.531884,12.6158959 C151.884825,11.9461795 153.38066,11.6113264 155.019433,11.6113264 C155.781653,11.6495959 156.420003,11.7165665 156.934502,11.8122403 C157.449,11.9079141 157.896797,12.070557 158.277908,12.3001741 L158.277908,19.1886509 C157.706242,18.9207643 157.07742,18.7198525 156.391422,18.5859092 C155.705424,18.4519659 155.000381,18.3849953 154.276272,18.3849953 C152.751831,18.3849953 151.351273,18.7676846 150.074554,19.5330747 C148.797835,20.2984649 147.797436,21.4082639 147.073327,22.8625052 L147.073327,42.2076443 L139.241554,42.2076443 Z M162.508209,42.2076443 L162.508209,2.02486282 L170.339982,0.302743611 L170.339982,24.9290482 L183.202383,12.3001741 L192.063149,12.3001741 L178.114589,26.0197238 L192.920643,42.2076443 L182.916553,42.2076443 L170.339982,28.5454986 L170.339982,42.2076443 L162.508209,42.2076443 Z M217.21629,42.2076443 L217.21629,39.7392734 C216.034848,40.6960111 214.720038,41.4135536 213.27182,41.8919224 C211.823601,42.3702913 210.318239,42.6094721 208.755688,42.6094721 C206.659582,42.6094721 204.687367,42.2076483 202.838983,41.4039886 C200.990599,40.600329 199.380433,39.5096644 198.008437,38.1319622 C196.636441,36.7542599 195.55982,35.1278302 194.778545,33.2526244 C193.997269,31.3774186 193.606637,29.3682996 193.606637,27.2252072 C193.606637,25.0821148 194.006797,23.0729958 194.807128,21.19779 C195.607459,19.3225841 196.693607,17.6961545 198.065603,16.3184522 C199.4376,14.9407499 201.066821,13.8596526 202.953316,13.0751277 C204.839811,12.2906028 206.850136,11.8983463 208.984353,11.8983463 C210.432571,11.8983463 211.852185,12.0992582 213.243237,12.501088 C214.634289,12.9029178 215.920516,13.486519 217.101957,14.2519092 L217.101957,2.02486282 L224.93373,0.302743611 L224.93373,42.2076443 L217.21629,42.2076443 Z M201.324078,27.2252072 C201.324078,29.6361861 202.162508,31.6835741 203.839392,33.3674323 C205.516277,35.0512907 207.57424,35.8932072 210.013345,35.8932072 C211.461563,35.8932072 212.785901,35.6444591 213.986398,35.1469555 C215.186894,34.6494519 216.225404,33.9414767 217.101957,33.0230085 L217.101957,21.3700019 C216.263515,20.4898033 215.225005,19.8009625 213.986398,19.3034589 C212.74779,18.8059553 211.423452,18.5572072 210.013345,18.5572072 C207.536129,18.5572072 205.468638,19.3895565 203.810809,21.0542801 C202.15298,22.7190036 201.324078,24.7759587 201.324078,27.2252072 Z",
+    id: "barkd",
+    fillRule: "nonzero"
+  }))))))));
+};
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/BarkdLogo/BarkdLogo.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/BarkdLogo/BarkdLogo.js"); } }(); 
+
+/***/ }),
+
+/***/ "../../components/lib/components/BarkdLogo/index.js":
+/*!******************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/BarkdLogo/index.js ***!
+  \******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function __export(m) {
+  for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+__export(__webpack_require__(/*! ./BarkdLogo */ "../../components/lib/components/BarkdLogo/BarkdLogo.js"));
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/BarkdLogo/index.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/BarkdLogo/index.js"); } }(); 
+
+/***/ }),
+
 /***/ "../../components/lib/components/BrowserFrame/BrowserFrame.js":
 /*!****************************************************************************************************************!*\
   !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/BrowserFrame/BrowserFrame.js ***!
@@ -47592,6 +53317,166 @@ __export(__webpack_require__(/*! ./BrowserFrame */ "../../components/lib/compone
 
 /***/ }),
 
+/***/ "../../components/lib/components/Button/Button.js":
+/*!****************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/Button/Button.js ***!
+  \****************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+var __importStar = this && this.__importStar || function (mod) {
+  if (mod && mod.__esModule) return mod;
+  var result = {};
+  if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+  result["default"] = mod;
+  return result;
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+const isString_1 = __importDefault(__webpack_require__(/*! lodash/isString */ "../../../node_modules/lodash/isString.js"));
+
+const noop_1 = __importDefault(__webpack_require__(/*! lodash/noop */ "../../../node_modules/lodash/noop.js"));
+
+const react_1 = __importDefault(__webpack_require__(/*! react */ "../../../node_modules/react/index.js"));
+
+const styled_components_1 = __importStar(__webpack_require__(/*! styled-components */ "../../../node_modules/styled-components/dist/styled-components.browser.esm.js"));
+
+const styles_1 = __webpack_require__(/*! ../../styles */ "../../components/lib/styles/index.js");
+
+const Text_1 = __webpack_require__(/*! ../Text */ "../../components/lib/components/Text/index.js");
+
+var EButtonVariant;
+
+(function (EButtonVariant) {
+  EButtonVariant["primary"] = "primary";
+  EButtonVariant["default"] = "default";
+})(EButtonVariant = exports.EButtonVariant || (exports.EButtonVariant = {}));
+
+var EButtonSize;
+
+(function (EButtonSize) {
+  EButtonSize["small"] = "small";
+  EButtonSize["medium"] = "medium";
+  EButtonSize["large"] = "large";
+})(EButtonSize = exports.EButtonSize || (exports.EButtonSize = {}));
+
+exports.buttonBackgroundColors = {
+  [EButtonVariant.default]: styles_1.offWhite,
+  [EButtonVariant.primary]: styles_1.blue
+};
+exports.buttonTextColors = {
+  [EButtonVariant.default]: styles_1.darkGreen,
+  [EButtonVariant.primary]: styles_1.trueWhite
+};
+
+const buttonPadding = size => {
+  switch (size) {
+    case EButtonSize.small:
+      return styled_components_1.css`
+        padding: ${0.25 * styles_1.unit}px ${styles_1.unit}px;
+      `;
+
+    case EButtonSize.medium:
+      return styled_components_1.css`
+        padding: ${styles_1.unit}px ${2 * styles_1.unit}px;
+      `;
+
+    case EButtonSize.large:
+      return styled_components_1.css`
+        padding: ${2 * styles_1.unit}px ${4 * styles_1.unit}px;
+      `;
+  }
+};
+
+const defaultStyles = ({
+  variant,
+  size
+}) => styled_components_1.css`
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: ${exports.buttonBackgroundColors[variant]};
+    border-radius: 4px;
+    outline: 0;
+    border-width: 0;
+    cursor: pointer;
+    ${buttonPadding(size)};
+
+    &:active {
+      opacity: 0.7;
+    }
+  `;
+
+const disabledStyles = ({
+  disabled
+}) => disabled ? styled_components_1.css`
+        opacity: 0.5;
+      ` : styled_components_1.css``;
+
+const Container = styled_components_1.default.button`
+  ${defaultStyles}
+  ${disabledStyles};
+`;
+
+exports.Button = ({
+  variant = EButtonVariant.default,
+  size = EButtonSize.medium,
+  children,
+  style,
+  className,
+  disabled = false,
+  onClick = noop_1.default
+}) => react_1.default.createElement(Container, {
+  className: className,
+  style: style,
+  size: size,
+  onClick: !disabled ? onClick : noop_1.default,
+  variant: variant,
+  disabled: disabled
+}, isString_1.default(children) ? react_1.default.createElement(Text_1.Text, {
+  weight: "bold",
+  color: exports.buttonTextColors[variant]
+}, children) : children);
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/Button/Button.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/Button/Button.js"); } }(); 
+
+/***/ }),
+
+/***/ "../../components/lib/components/Button/index.js":
+/*!***************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/Button/index.js ***!
+  \***************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function __export(m) {
+  for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+__export(__webpack_require__(/*! ./Button */ "../../components/lib/components/Button/Button.js"));
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/Button/index.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/Button/index.js"); } }(); 
+
+/***/ }),
+
 /***/ "../../components/lib/components/CaseStudyCard/CaseStudyCard.js":
 /*!******************************************************************************************************************!*\
   !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/CaseStudyCard/CaseStudyCard.js ***!
@@ -47642,7 +53527,7 @@ const Logo = styled_components_1.default.div`
   }
 `;
 const Title = styled_components_1.default(Heading_1.Heading)`
-  font-size: 25px;
+  font-size: ${styles_1.unit * 4}px;
   color: ${styles_1.trueWhite};
   line-clamp: 2;
   -webkit-line-clamp: 2;
@@ -47653,7 +53538,7 @@ const Title = styled_components_1.default(Heading_1.Heading)`
   white-space: normal;
 `;
 const Body = styled_components_1.default(Text_1.Text)`
-  font-size: 15px;
+  font-size: ${styles_1.unit * 2}px;
   color: ${styles_1.trueWhite};
 `;
 const Tags = styled_components_1.default.div`
@@ -47674,11 +53559,18 @@ const darkerBorderShadowCss = styled_components_1.css`
 const ImageContent = styled_components_1.default.div`
   display: flex;
   flex: 1;
+  width: 100%;
+  height: 100%;
   transition: 250ms transform ease-in-out, 250ms filter ease-in-out;
   ${borderShadowCss}
 
   & > * {
+    position: absolute;
+    top: 50%;
+    bottom: 0;
     width: 100%;
+    max-height: 100%;
+    transform: translateY(-50%);
   }
 
   &:first-child {
@@ -47704,6 +53596,7 @@ const Container = styled_components_1.default.div`
   perspective: 1500px;
   border-radius: ${styles_1.unit}px;
   padding: ${styles_1.unit * 5}px ${styles_1.unit * 7}px;
+  height: 525px;
 
   &:hover {
     ${ImageContent}:first-child {
@@ -47764,6 +53657,464 @@ Object.defineProperty(exports, "__esModule", {
 
 __export(__webpack_require__(/*! ./CaseStudyCard */ "../../components/lib/components/CaseStudyCard/CaseStudyCard.js"));
  void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/CaseStudyCard/index.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/CaseStudyCard/index.js"); } }(); 
+
+/***/ }),
+
+/***/ "../../components/lib/components/Check/Check.js":
+/*!**************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/Check/Check.js ***!
+  \**************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+const react_1 = __importDefault(__webpack_require__(/*! react */ "../../../node_modules/react/index.js"));
+
+const styles_1 = __webpack_require__(/*! ../../styles */ "../../components/lib/styles/index.js");
+
+exports.Check = ({
+  backgroundColor = styles_1.lightTan,
+  checkColor = styles_1.tan,
+  className
+}) => react_1.default.createElement("svg", {
+  viewBox: "0 0 38 38",
+  className: className
+}, react_1.default.createElement("g", {
+  id: "Page-Design-Exploration",
+  stroke: "none",
+  strokeWidth: "1",
+  fill: "none",
+  fillRule: "evenodd"
+}, react_1.default.createElement("g", {
+  id: "Artboard",
+  transform: "translate(-410.000000, -837.000000)"
+}, react_1.default.createElement("g", {
+  id: "Checkmark",
+  transform: "translate(410.000000, 837.000000)"
+}, react_1.default.createElement("g", {
+  id: "Group-2"
+}, react_1.default.createElement("circle", {
+  id: "Oval",
+  fill: backgroundColor,
+  cx: "19",
+  cy: "19",
+  r: "19"
+}), react_1.default.createElement("polyline", {
+  id: "Path-2",
+  stroke: checkColor,
+  strokeWidth: "2.85",
+  transform: "translate(19.000000, 16.367641) rotate(45.000000) translate(-19.000000, -16.367641) ",
+  points: "14.8669434 24.2234155 23.1330566 24.2234155 23.1330566 8.51186622"
+}))))));
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/Check/Check.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/Check/Check.js"); } }(); 
+
+/***/ }),
+
+/***/ "../../components/lib/components/CheckList/CheckList.js":
+/*!**********************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/CheckList/CheckList.js ***!
+  \**********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+const react_1 = __importDefault(__webpack_require__(/*! react */ "../../../node_modules/react/index.js"));
+
+const styled_components_1 = __importDefault(__webpack_require__(/*! styled-components */ "../../../node_modules/styled-components/dist/styled-components.browser.esm.js"));
+
+const Text_1 = __webpack_require__(/*! ../Text */ "../../components/lib/components/Text/index.js");
+
+const Check_1 = __webpack_require__(/*! ../Check/Check */ "../../components/lib/components/Check/Check.js");
+
+const styles_1 = __webpack_require__(/*! ../../styles */ "../../components/lib/styles/index.js");
+
+const CheckListItemContainer = styled_components_1.default.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+`;
+const StyledCheck = styled_components_1.default(Check_1.Check)`
+  width: ${styles_1.unit * 4}px;
+  margin-right: ${styles_1.unit * 2}px;
+`;
+const StyledText = styled_components_1.default(Text_1.Text)`
+  color: ${styles_1.darkGreen};
+  font-size: 1.25em;
+`;
+
+const CheckListItem = ({
+  children
+}) => react_1.default.createElement(CheckListItemContainer, null, react_1.default.createElement(StyledCheck, null), react_1.default.createElement(StyledText, null, children));
+
+const Container = styled_components_1.default.div`
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: ${styles_1.unit * 5}px;
+  row-gap: ${styles_1.unit * 5}px;
+`;
+
+exports.CheckList = ({
+  children,
+  className
+}) => react_1.default.createElement(Container, {
+  className: className
+}, children);
+
+exports.CheckList.Item = CheckListItem;
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/CheckList/CheckList.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/CheckList/CheckList.js"); } }(); 
+
+/***/ }),
+
+/***/ "../../components/lib/components/CheckList/index.js":
+/*!******************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/CheckList/index.js ***!
+  \******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function __export(m) {
+  for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+__export(__webpack_require__(/*! ./CheckList */ "../../components/lib/components/CheckList/CheckList.js"));
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/CheckList/index.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/CheckList/index.js"); } }(); 
+
+/***/ }),
+
+/***/ "../../components/lib/components/Footer/Footer.js":
+/*!****************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/Footer/Footer.js ***!
+  \****************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+const react_1 = __importDefault(__webpack_require__(/*! react */ "../../../node_modules/react/index.js"));
+
+const styled_components_1 = __importDefault(__webpack_require__(/*! styled-components */ "../../../node_modules/styled-components/dist/styled-components.browser.esm.js"));
+
+const JonLogo_1 = __webpack_require__(/*! ../JonLogo */ "../../components/lib/components/JonLogo/index.js");
+
+const styles_1 = __webpack_require__(/*! ../../styles */ "../../components/lib/styles/index.js");
+
+const Text_1 = __webpack_require__(/*! ../Text */ "../../components/lib/components/Text/index.js");
+
+const Container = styled_components_1.default.footer`
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: ${styles_1.offWhite};
+  padding: ${styles_1.unit * 7}px;
+  min-height: ${styles_1.unit * 75}px;
+`;
+const Logo = styled_components_1.default(props => react_1.default.createElement(JonLogo_1.JonLogo, Object.assign({
+  contentStyle: "dark"
+}, props)))`
+  max-width: ${styles_1.unit * 30}px;
+  width: 100%;
+  position: relative;
+  top: 10px;
+  padding-top: ${styles_1.unit * 7}px;
+
+  path {
+    fill: ${styles_1.mediumBlue};
+  }
+`;
+const FootNotes = styled_components_1.default.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: ${styles_1.unit * 10}px;
+  width: 100%;
+  max-width: ${styles_1.maxWidth}px;
+
+  & > * {
+    padding: 0 ${styles_1.unit * 3}px;
+  }
+
+  & > *:first-child {
+    padding-left: 0;
+  }
+
+  & > *:last-child {
+    padding-right: 0;
+  }
+`;
+const FootNote = styled_components_1.default(Text_1.Text)`
+  font-size: ${styles_1.unit * 2}px;
+  color: ${styles_1.blue};
+
+  a {
+    color: ${styles_1.blue};
+    font-weight: bold;
+  }
+`;
+
+exports.Footer = ({
+  children,
+  className
+}) => react_1.default.createElement(Container, {
+  className: className
+}, children);
+
+exports.Footer.Logo = Logo;
+exports.Footer.FootNote = FootNote;
+exports.Footer.FootNotes = FootNotes;
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/Footer/Footer.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/Footer/Footer.js"); } }(); 
+
+/***/ }),
+
+/***/ "../../components/lib/components/Footer/index.js":
+/*!***************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/Footer/index.js ***!
+  \***************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function __export(m) {
+  for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+__export(__webpack_require__(/*! ./Footer */ "../../components/lib/components/Footer/Footer.js"));
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/Footer/index.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/Footer/index.js"); } }(); 
+
+/***/ }),
+
+/***/ "../../components/lib/components/Form/Form.js":
+/*!************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/Form/Form.js ***!
+  \************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+var __importStar = this && this.__importStar || function (mod) {
+  if (mod && mod.__esModule) return mod;
+  var result = {};
+  if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+  result["default"] = mod;
+  return result;
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+const react_1 = __importDefault(__webpack_require__(/*! react */ "../../../node_modules/react/index.js"));
+
+const styled_components_1 = __importStar(__webpack_require__(/*! styled-components */ "../../../node_modules/styled-components/dist/styled-components.browser.esm.js"));
+
+const styles_1 = __webpack_require__(/*! ../../styles */ "../../components/lib/styles/index.js");
+
+const Heading_1 = __webpack_require__(/*! ../Heading */ "../../components/lib/components/Heading/index.js");
+
+const Input_1 = __webpack_require__(/*! ../Input */ "../../components/lib/components/Input/index.js");
+
+const Text_1 = __webpack_require__(/*! ../Text */ "../../components/lib/components/Text/index.js");
+
+const TextArea_1 = __webpack_require__(/*! ../TextArea */ "../../components/lib/components/TextArea/index.js");
+
+const Button_1 = __webpack_require__(/*! ../Button */ "../../components/lib/components/Button/index.js");
+
+var FormContentStyle;
+
+(function (FormContentStyle) {
+  FormContentStyle["light"] = "light";
+  FormContentStyle["dark"] = "dark";
+})(FormContentStyle = exports.FormContentStyle || (exports.FormContentStyle = {}));
+
+const Title = styled_components_1.default(Heading_1.Heading)`
+  font-size: ${styles_1.unit * 8}px;
+  padding-bottom: ${styles_1.unit * 3}px;
+`;
+const Field = styled_components_1.default.div`
+  display: flex;
+  flex-direction: column;
+  padding: ${styles_1.unit * 2}px 0;
+  width: 100%;
+`;
+const Note = styled_components_1.default(Text_1.Text)`
+  display: block;
+  position: relative;
+  padding: ${styles_1.unit * 1.5}px ${styles_1.unit * 3}px;
+  margin: ${styles_1.unit * 3}px 0;
+
+  a {
+    color: ${styles_1.trueBlack};
+    font-weight: bold;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: ${styles_1.blue};
+    width: 1px;
+  }
+`;
+const Label = styled_components_1.default.label`
+  font-family: 'Cabin', sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 0 0 ${styles_1.unit}px ${styles_1.unit * 3}px;
+`;
+const FormInput = styled_components_1.default(Input_1.Input)`
+  padding: ${styles_1.unit * 1.5}px ${styles_1.unit * 3}px;
+  background-color: ${styles_1.offWhite};
+`;
+const FormTextArea = styled_components_1.default(TextArea_1.TextArea)`
+  padding: ${styles_1.unit * 1.5}px ${styles_1.unit * 3}px;
+  background-color: ${styles_1.offWhite};
+`;
+const FormButton = styled_components_1.default(Button_1.Button)`
+  text-transform: uppercase;
+  margin-top: ${styles_1.unit}px;
+  display: inline-block;
+`;
+const Container = styled_components_1.default.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  ${props => props.contentStyle === FormContentStyle.light && lightContentStyleCss};
+`;
+const lightContentStyleCss = styled_components_1.css`
+  ${Label} {
+    color: ${styles_1.trueWhite};
+  }
+
+  ${Note} {
+    color: ${styles_1.trueWhite};
+
+    a {
+      color: ${styles_1.trueWhite};
+    }
+
+    &::before {
+      background-color: ${styles_1.trueWhite};
+    }
+  }
+
+  ${Title} {
+    color: ${styles_1.trueWhite};
+  }
+
+  input,
+  textarea {
+    background-color: ${styles_1.opacity(styles_1.trueWhite, 0.1)};
+    color: ${styles_1.trueWhite};
+
+    &::placeholder {
+      opacity: 0.5;
+    }
+  }
+`;
+
+exports.Form = ({
+  children,
+  className,
+  contentStyle = FormContentStyle.dark
+}) => react_1.default.createElement(Container, {
+  contentStyle: contentStyle,
+  className: className
+}, children);
+
+exports.Form.Title = Title;
+exports.Form.Field = Field;
+exports.Form.Label = Label;
+exports.Form.Input = FormInput;
+exports.Form.Note = Note;
+exports.Form.TextArea = FormTextArea;
+exports.Form.Button = FormButton;
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/Form/Form.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/Form/Form.js"); } }(); 
+
+/***/ }),
+
+/***/ "../../components/lib/components/Form/index.js":
+/*!*************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/Form/index.js ***!
+  \*************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function __export(m) {
+  for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+__export(__webpack_require__(/*! ./Form */ "../../components/lib/components/Form/Form.js"));
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/Form/index.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/Form/index.js"); } }(); 
 
 /***/ }),
 
@@ -47834,6 +54185,838 @@ Object.defineProperty(exports, "__esModule", {
 
 __export(__webpack_require__(/*! ./Heading */ "../../components/lib/components/Heading/Heading.js"));
  void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/Heading/index.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/Heading/index.js"); } }(); 
+
+/***/ }),
+
+/***/ "../../components/lib/components/Hero/Hero.js":
+/*!************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/Hero/Hero.js ***!
+  \************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+var __importStar = this && this.__importStar || function (mod) {
+  if (mod && mod.__esModule) return mod;
+  var result = {};
+  if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+  result["default"] = mod;
+  return result;
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+const times_1 = __importDefault(__webpack_require__(/*! lodash/times */ "../../../node_modules/lodash/times.js"));
+
+const polished_1 = __webpack_require__(/*! polished */ "../../../node_modules/polished/dist/polished.es.js");
+
+const react_1 = __importDefault(__webpack_require__(/*! react */ "../../../node_modules/react/index.js"));
+
+const styled_components_1 = __importStar(__webpack_require__(/*! styled-components */ "../../../node_modules/styled-components/dist/styled-components.browser.esm.js"));
+
+const styles_1 = __webpack_require__(/*! ../../styles */ "../../components/lib/styles/index.js");
+
+const Button_1 = __webpack_require__(/*! ../Button */ "../../components/lib/components/Button/index.js");
+
+const Heading_1 = __webpack_require__(/*! ../Heading */ "../../components/lib/components/Heading/index.js");
+
+const Title = styled_components_1.default(Heading_1.Heading)`
+  font-size: ${styles_1.unit * 8}px;
+  white-space: normal;
+  padding-bottom: ${styles_1.unit * 3}px;
+`;
+const SubTitle = styled_components_1.default(Heading_1.Heading)`
+  font-size: ${styles_1.unit * 4}px;
+  font-weight: normal;
+  color: #726e84;
+  white-space: normal;
+  overflow: visible;
+  padding-top: ${styles_1.unit * 3}px;
+`;
+const ButtonGroup = styled_components_1.default.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: ${styles_1.unit * 3}px;
+  padding-top: ${styles_1.unit * 6}px;
+  max-width: 400px;
+`;
+const heroAnimation = styled_components_1.keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(${styles_1.unit * 5}px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+`;
+
+const makeNthChildAnimation = n => styled_components_1.css`
+  & > *:nth-child(${n}) {
+    opacity: 0;
+    animation: ${heroAnimation} 1s ${polished_1.timingFunctions('easeOutQuad')} forwards
+      ${4 + n * 0.2}s;
+  }
+`;
+
+const Container = styled_components_1.default.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  ${times_1.default(5).map(n => makeNthChildAnimation(n))}
+`;
+
+exports.Hero = ({
+  children,
+  className
+}) => react_1.default.createElement(Container, {
+  className: className
+}, children);
+
+exports.Hero.Title = Title;
+exports.Hero.SubTitle = SubTitle;
+exports.Hero.ButtonGroup = ButtonGroup;
+exports.Hero.Button = Button_1.Button;
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/Hero/Hero.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/Hero/Hero.js"); } }(); 
+
+/***/ }),
+
+/***/ "../../components/lib/components/Hero/index.js":
+/*!*************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/Hero/index.js ***!
+  \*************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function __export(m) {
+  for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+__export(__webpack_require__(/*! ./Hero */ "../../components/lib/components/Hero/Hero.js"));
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/Hero/index.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/Hero/index.js"); } }(); 
+
+/***/ }),
+
+/***/ "../../components/lib/components/Input/Input.js":
+/*!**************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/Input/Input.js ***!
+  \**************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+const noop_1 = __importDefault(__webpack_require__(/*! lodash/noop */ "../../../node_modules/lodash/noop.js"));
+
+const react_1 = __importDefault(__webpack_require__(/*! react */ "../../../node_modules/react/index.js"));
+
+const styled_components_1 = __importDefault(__webpack_require__(/*! styled-components */ "../../../node_modules/styled-components/dist/styled-components.browser.esm.js"));
+
+const styles_1 = __webpack_require__(/*! ../../styles */ "../../components/lib/styles/index.js");
+
+exports.defaultInputPlaceholderTexColor = '#ccc';
+const StyledTextInput = styled_components_1.default.input`
+  color: ${styles_1.trueBlack};
+  font-family: 'Cabin', sans-serif;
+  font-size: 16px;
+  outline: 0;
+  border: 0;
+  background-color: ${styles_1.transparent};
+  padding: 0;
+
+  &::placeholder {
+    color: ${props => props.placeholderTextColor};
+  }
+`;
+
+exports.Input = ({
+  value,
+  placeholder,
+  style,
+  className,
+  name,
+  type = 'text',
+  placeholderTextColor = exports.defaultInputPlaceholderTexColor,
+  autoFocus = true,
+  required = false,
+  onChangeValue = noop_1.default,
+  onBlur = noop_1.default,
+  onFocus = noop_1.default
+}) => react_1.default.createElement(StyledTextInput, {
+  placeholderTextColor: placeholderTextColor,
+  className: className,
+  name: name,
+  style: style,
+  value: value,
+  type: type,
+  onChange: e => onChangeValue(e.target.value),
+  placeholder: placeholder,
+  autoFocus: autoFocus,
+  onBlur: onBlur,
+  onFocus: onFocus,
+  required: required
+});
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/Input/Input.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/Input/Input.js"); } }(); 
+
+/***/ }),
+
+/***/ "../../components/lib/components/Input/index.js":
+/*!**************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/Input/index.js ***!
+  \**************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function __export(m) {
+  for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+__export(__webpack_require__(/*! ./Input */ "../../components/lib/components/Input/Input.js"));
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/Input/index.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/Input/index.js"); } }(); 
+
+/***/ }),
+
+/***/ "../../components/lib/components/JonLogo/JonLogo.js":
+/*!******************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/JonLogo/JonLogo.js ***!
+  \******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+const react_1 = __importDefault(__webpack_require__(/*! react */ "../../../node_modules/react/index.js"));
+
+const styles_1 = __webpack_require__(/*! ../../styles */ "../../components/lib/styles/index.js");
+
+var JonLogoContentStyle;
+
+(function (JonLogoContentStyle) {
+  JonLogoContentStyle["dark"] = "dark";
+  JonLogoContentStyle["light"] = "light";
+})(JonLogoContentStyle = exports.JonLogoContentStyle || (exports.JonLogoContentStyle = {}));
+
+exports.JonLogo = ({
+  className,
+  contentStyle = JonLogoContentStyle.light
+}) => {
+  const fillColor = contentStyle === JonLogoContentStyle.light ? styles_1.trueWhite : styles_1.trueBlack;
+  return react_1.default.createElement("svg", {
+    viewBox: "0 0 405 225",
+    className: className
+  }, react_1.default.createElement("g", {
+    id: "Symbols",
+    stroke: "none",
+    strokeWidth: "1",
+    fill: "none",
+    fillRule: "evenodd"
+  }, react_1.default.createElement("g", {
+    id: "JON-Logo-Rounded",
+    fill: fillColor,
+    fillRule: "nonzero"
+  }, react_1.default.createElement("g", {
+    id: "Group"
+  }, react_1.default.createElement("path", {
+    d: "M165,150 C123.578644,150 90,116.421356 90,75 C90,33.5786438 123.578644,0 165,0 C206.421356,0 240,33.5786438 240,75 C240,116.421356 206.421356,150 165,150 Z M165,106.967213 C182.655004,106.967213 196.967213,92.6550043 196.967213,75 C196.967213,57.3449957 182.655004,43.0327869 165,43.0327869 C147.344996,43.0327869 133.032787,57.3449957 133.032787,75 C133.032787,92.6550043 147.344996,106.967213 165,106.967213 Z",
+    id: "Oval-2"
+  }), react_1.default.createElement("path", {
+    d: "M53.4836066,0 L70,0 C72.7614237,-5.07265313e-16 75,2.23857625 75,5 L75,150 L75,150 C75,189.168521 44.9745958,221.324233 6.68476765,224.706155 C6.27986732,224.741918 5.81716079,224.775267 5.29664808,224.806203 C2.54008817,224.970038 0.172641364,222.868218 0.0088077048,220.111658 C0.0029371951,220.012885 1.21176018e-17,219.913959 0,219.815011 L0,186.534508 C-7.03446774e-06,184.005284 1.88869981,181.874373 4.39962348,181.570677 C5.99419319,181.377813 7.28013898,181.151089 8.25746086,180.890503 C21.9101423,177.250264 31.9672131,164.799609 31.9672131,150 L31.9672131,21.5163934 C31.9672131,9.63321747 41.6004306,2.32916649e-14 53.4836066,0 Z",
+    id: "Path"
+  }), react_1.default.createElement("path", {
+    d: "M400,150 L383.483607,150 C371.600431,150 361.967213,140.366783 361.967213,128.483607 L361.967213,75.0075051 L361.967213,75.0075051 C361.967213,57.3507341 347.655004,43.0370931 330,43.0370931 C312.344996,43.0370931 298.032787,57.3507341 298.032787,75.0075051 L298.032787,145 C298.032787,147.761424 295.794211,150 293.032787,150 L276.516393,150 C264.633217,150 255,140.366783 255,128.483607 L255,75.0075051 L255,75.0075051 C255,33.5820039 288.578644,0 330,0 C371.421356,0 405,33.5820039 405,75.0075051 L405,145 C405,147.761424 402.761424,150 400,150 Z",
+    id: "Oval-2"
+  })))));
+};
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/JonLogo/JonLogo.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/JonLogo/JonLogo.js"); } }(); 
+
+/***/ }),
+
+/***/ "../../components/lib/components/JonLogo/index.js":
+/*!****************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/JonLogo/index.js ***!
+  \****************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function __export(m) {
+  for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+__export(__webpack_require__(/*! ./JonLogo */ "../../components/lib/components/JonLogo/JonLogo.js"));
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/JonLogo/index.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/JonLogo/index.js"); } }(); 
+
+/***/ }),
+
+/***/ "../../components/lib/components/LaserlikeLogo/LaserlikeLogo.js":
+/*!******************************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/LaserlikeLogo/LaserlikeLogo.js ***!
+  \******************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+const react_1 = __importDefault(__webpack_require__(/*! react */ "../../../node_modules/react/index.js"));
+
+const styles_1 = __webpack_require__(/*! ../../styles */ "../../components/lib/styles/index.js");
+
+var LaserlikeLogoContentStyle;
+
+(function (LaserlikeLogoContentStyle) {
+  LaserlikeLogoContentStyle["dark"] = "dark";
+  LaserlikeLogoContentStyle["light"] = "light";
+})(LaserlikeLogoContentStyle = exports.LaserlikeLogoContentStyle || (exports.LaserlikeLogoContentStyle = {}));
+
+exports.LaserlikeLogo = ({
+  contentStyle = LaserlikeLogoContentStyle.light
+}) => {
+  const fillColor = contentStyle === LaserlikeLogoContentStyle.light ? styles_1.trueWhite : styles_1.trueBlack;
+  return react_1.default.createElement("svg", {
+    viewBox: "0 0 225 46"
+  }, react_1.default.createElement("defs", null, react_1.default.createElement("path", {
+    d: "M7,0 L1057,0 C1060.86599,-7.10171439e-16 1064,3.13400675 1064,7 L1064,519 C1064,522.865993 1060.86599,526 1057,526 L7,526 C3.13400675,526 4.73447626e-16,522.865993 0,519 L0,7 C-4.73447626e-16,3.13400675 3.13400675,7.10171439e-16 7,0 Z",
+    id: "path-1"
+  })), react_1.default.createElement("g", {
+    stroke: "none",
+    strokeWidth: "1",
+    fill: "none",
+    fillRule: "evenodd"
+  }, react_1.default.createElement("g", {
+    id: "Artboard",
+    transform: "translate(-264.000000, -1729.000000)"
+  }, react_1.default.createElement("g", {
+    id: "laserlike",
+    transform: "translate(187.000000, 1608.000000)"
+  }, react_1.default.createElement("g", {
+    id: "Group-8",
+    transform: "translate(77.000000, 121.000000)",
+    fill: fillColor
+  }, react_1.default.createElement("g", {
+    id: "Group-5"
+  }, react_1.default.createElement("g", {
+    id: "Laserlike-Logo-White",
+    transform: "translate(0.000000, -0.000000)"
+  }, react_1.default.createElement("g", {
+    id: "Group"
+  }, react_1.default.createElement("path", {
+    d: "M145.281713,0 C147.117185,0.549183846 148.885871,1.3003632 150.55521,2.23971012 C150.942567,3.88216421 150.133874,5.21920328 149.726129,6.58339035 C147.748568,13.2075027 145.866147,19.8451891 144.846785,26.7000594 C144.358506,29.6158761 144.278456,32.5853281 144.608934,35.5231599 C144.989496,38.5298011 146.436989,39.7243131 149.039759,39.5207031 C152.125027,39.2763711 154.034631,37.484603 154.129771,34.8512469 C154.27653,27.6630492 155.589285,20.5461652 158.016937,13.7776107 C160.157596,13.8522677 161.822553,14.9856968 163.827298,15.8747939 C162.814732,20.9243221 161.28569,25.7838144 160.728439,30.8061947 C160.539112,32.1560687 160.42793,33.5157283 160.395447,34.8783949 C160.395447,37.939332 161.251711,39.2695841 163.242864,39.5207031 C165.852429,39.8532661 169.032838,37.83074 169.440582,35.4077809 C170.120157,31.6138477 170.595859,27.7995535 171.146314,23.9920463 C172.233633,16.4788369 174.544186,9.2371075 176.120799,1.8392771 C176.249918,1.24202107 176.800373,0.73978304 177.276075,0.0542960029 C179.227386,0.568377408 181.094825,1.35918926 182.821402,2.40259813 C181.951547,6.57660335 180.218632,10.4044716 179.593424,14.6191988 C180.898206,15.5490178 181.992321,14.2662748 183.174781,13.9880077 C186.212478,13.2685857 189.182218,12.8477917 191.852946,14.9653358 C195.250818,17.6801359 195.543035,23.4287253 192.53252,27.1208535 C191.071435,28.9126215 189.073486,29.9917546 187.095925,31.3627287 C187.381346,33.9214278 187.809478,36.419044 189.895771,38.2854691 C191.982065,40.1518942 196.820635,39.6428691 198.431226,37.308141 C199.002068,36.486914 198.465205,35.7810659 198.349677,35.0412829 C197.485501,29.7911622 198.316128,24.4025978 200.721392,19.6551531 C202.930008,15.2300288 211.26159,12.0401386 216.05259,14.0558778 C221.985274,16.5534939 222.943474,24.0327683 218.716521,28.8583255 C216.093364,31.8446057 212.512007,32.8898038 208.699595,33.2427278 C207.585093,33.3445328 206.450204,33.2427278 205.301723,33.2427278 C205.723059,40.2536992 212.85859,41.4685722 221.713445,36.2154339 C223.160938,37.15204 224.010406,38.5976711 224.853078,40.0297281 C220.062079,46.3212775 209.481105,47.2443095 201.829098,42.0658283 C200.503928,42.0658283 199.688438,43.1856833 198.628302,43.7761523 C192.410197,47.2443095 186.429942,45.5679204 183.07964,39.3306671 C181.713142,36.7168898 180.866215,33.8636302 180.585602,30.9283607 C180.415709,29.3605636 180.775883,28.3560875 182.379679,27.8063405 C183.896121,27.2946833 185.28609,26.4664019 186.457125,25.3765944 C188.094899,23.8155843 188.774474,21.5283652 187.755112,20.2524091 C186.395963,18.50815 184.5815,18.827139 182.814606,19.573709 C179.887531,20.6999129 177.765214,23.2753519 177.221709,26.3607094 C176.093616,31.4645337 175.747033,36.663376 175.278126,41.8486442 C175.196577,42.7377413 175.149007,43.6336253 175.067458,44.7399064 C172.858841,44.8484984 170.704591,46.0158625 168.761008,44.0612064 C167.952314,43.2535533 167.27274,44.0612064 166.647531,44.3734084 C162.644838,46.1651765 158.947954,46.2194725 155.774341,42.5001963 L155.281994,42.7685087 C150.113268,45.5655542 144.975381,47.6519472 140.035398,42.1065503 C138.064633,42.9888603 136.399675,44.3937694 134.313382,45.0317474 C128.027319,46.9456815 123.365438,43.5657553 123.440192,37.057022 C123.440192,33.7449658 124.330434,30.5618626 124.901277,27.3380375 C125.675991,22.9332742 125.349796,22.4853322 120.490839,21.9695202 C119.940383,24.6843203 119.580209,27.4805645 118.683171,30.1139206 C115.557129,39.4256851 109.128355,44.8552854 100.368641,45.4593284 C90.0594974,46.2126855 83.9841024,40.4912442 84.1200172,30.1750036 C84.0985005,25.711122 85.6966656,21.3905373 88.6187997,18.012699 C90.7891127,15.3216885 93.9989703,13.6744376 97.4532668,13.4789827 C102.210288,13.2142897 105.744074,15.3725558 107.014879,19.397247 C108.47537,23.8794258 106.650643,28.7756637 102.611236,31.2134147 C100.21017,32.510343 97.5258398,33.1957147 94.796131,33.2087928 C93.6816289,33.2563018 92.5671269,33.2087928 91.398259,33.2087928 C91.9487142,37.023087 94.0214161,39.0524001 97.5484072,39.4664071 C103.664577,40.1790422 109.780746,36.3715349 112.655346,30.0664116 C113.55852,27.9876826 114.213164,25.8098617 114.605724,23.5780393 C115.013469,21.5419392 115.230933,19.8519761 113.103865,18.243457 C110.976797,16.6349379 111.411725,13.3907517 113.260167,11.9654816 C115.210546,10.4655546 117.942435,10.9067096 119.321971,13.4111127 C120.280171,15.1485848 121.666502,15.6779708 123.277094,16.1802089 C132.111561,18.942518 132.689199,19.9266331 130.630089,29.0755096 C130.086429,31.5052557 129.386468,33.9214278 129.488404,36.439405 C129.59034,38.9573821 130.711638,39.8329051 133.24645,39.3849631 C136.644322,38.7809201 138.044245,36.846625 138.003471,33.4124028 C137.928718,24.9490133 139.845117,16.7910389 142.148875,8.72129547 C142.998343,5.83682031 143.7051,2.86411415 145.281713,0 Z M94.6519111,20.5785328 C92.6965195,22.3159514 91.457654,24.7192149 91.1766076,27.3202417 C94.7947318,28.1433969 97.2226836,27.8984912 99.1065566,26.55151 C101.242066,25.0480613 101.840553,22.034361 100.357938,20.2860066 C98.9773378,18.6533022 96.6922067,18.7145286 94.6519111,20.5785328 Z M214.217791,20.2858746 C212.965504,18.804345 210.816771,18.6951078 208.989664,20.1698101 C206.66698,22.0074693 205.220433,24.7305117 205.000137,27.6798684 C208.31904,28.0212346 211.097338,27.6593864 213.444521,25.7477352 C215.223727,24.3276514 215.470078,21.7674043 214.217791,20.2858746 Z",
+    id: "Combined-Shape",
+    fillRule: "nonzero"
+  }), react_1.default.createElement("path", {
+    d: "M30.343127,1.72007347 C29.9266214,3.73673654 29.2954226,5.70314003 28.4602932,7.58575446 C28.0728509,7.70116717 27.8553395,7.8437358 27.6582197,7.81657987 C21.9417462,7.00869094 20.2560323,8.16960697 19.5015393,13.9266642 C18.8693966,18.1629894 18.617899,22.4604154 18.1896733,26.7442635 C17.7843708,30.4442426 16.8457097,34.0662775 15.4028075,37.498012 C19.4811476,39.5890186 26.1628283,39.419294 30.927689,37.1314069 C31.0908227,33.587558 30.5946246,29.9282963 31.6957764,26.4048143 C32.0786012,24.9886072 32.5461853,23.596626 33.0960066,22.236379 C37.9220424,11.4147407 47.6624782,12.1004279 54.9627071,16.1738175 C56.3221538,16.9206056 56.0978451,17.8778521 55.8599419,19.0591351 C54.9158135,23.2591662 54.2819641,27.5228125 53.9635137,31.8156335 C53.8555502,33.2835691 53.8805751,34.758245 54.0382833,36.2216832 C54.5004952,39.5482847 56.7571768,40.5394762 59.6392038,38.6928729 C60.577222,38.0886534 61.3996873,37.3350764 62.2289498,36.6561781 C63.5883965,36.6561781 64.3428895,37.6134247 65.34888,38.0682865 C66.7898936,38.7471848 68.2037182,39.426083 69.8350542,39.5211288 C71.4663903,39.6161745 73.1792932,39.6297525 73.9133944,37.8103052 C74.6474956,35.9908578 73.3152378,34.8027859 71.9557911,33.8998512 C70.1681187,32.7049902 68.285285,31.6594869 66.5180042,30.4714149 C62.6571755,27.9187575 61.0802173,24.4020645 61.9706549,20.7020689 C62.8610925,17.0020734 66.3208844,14.0556549 70.5963444,13.5804261 C75.1368964,13.0712524 79.1268726,14.1371227 82.2060194,17.9864759 C81.3427707,19.6701436 79.7522181,20.5459223 78.3927713,21.7815172 C76.6186934,21.2180316 75.3340162,19.7448224 73.4851687,19.480052 C71.6363211,19.2152817 69.7262985,19.1541809 68.7746858,21.1365638 C67.8230731,23.1189467 69.4544091,24.2798628 70.8138559,25.2099534 C72.6830951,26.4727042 74.7630486,27.4435287 76.5983017,28.7470133 C79.5822872,30.8651759 81.1320565,33.7912274 80.7446142,37.5183789 C80.3571718,41.2455304 78.3180018,43.5673624 74.892196,44.7282785 C71.3264123,45.9764761 67.4131704,45.7815389 63.9894333,44.1851599 C62.9834427,43.730298 62.1337885,43.2007574 60.8287197,43.7710319 C54.4529146,46.5002029 53.3041821,46.2218546 48.6004964,41.4220439 C47.2410497,42.3589235 46.1466951,43.7031421 44.5833314,44.3956183 C41.3682399,45.8009377 38.2075262,46.1064419 35.1827573,44.11727 C34.1805563,43.3893741 32.8584374,43.2719371 31.7433571,43.8117658 C25.4695105,46.1539648 19.1005026,46.0453411 12.711103,44.2734166 C11.3516563,43.9000226 10.2233155,43.6284633 8.90465215,44.511031 C7.54490773,45.3697481 5.92061572,45.7096399 4.33011393,45.4682776 C1.8512643,45.193498 -0.018427137,43.0915491 0.000137036003,40.600577 C0.000137036003,38.0275526 1.69278729,36.2556281 4.4048835,35.902601 C5.76433022,35.7260875 7.36168012,36.683334 8.347279,35.6785646 C9.52320041,34.4904927 9.78829252,32.6506784 10.2301127,31.0145335 C11.460412,26.533805 11.7051124,21.856196 12.1401353,17.2328988 C12.3100662,15.3184057 12.4052275,13.3903346 12.6703196,11.4826305 C13.9685912,2.26319208 21.3028063,-1.8509314 30.343127,1.72007347 Z M48.1062414,23.4830173 C48.6780692,20.0074226 47.3642267,18.8375552 43.9128372,19.6673449 C42.1156639,20.0958429 41.0060456,21.3745352 40.121074,22.8572742 C38.3443232,25.8499584 37.6431533,29.1487126 37.500137,33.0596068 C37.4962056,34.365266 37.6936717,35.6637385 38.0856391,36.9092869 C39.1544126,39.8339556 41.6799856,40.4120877 43.9196446,38.2695979 C45.1978448,36.9716746 46.038032,35.3070296 46.3226831,33.5085094 C46.9830081,30.1757474 47.554836,26.8293823 48.1062414,23.4830173 Z",
+    id: "Combined-Shape",
+    fillRule: "nonzero"
+  }), react_1.default.createElement("path", {
+    d: "M164.331076,0.00333092475 C167.036812,0.043989916 168.626432,1.61613758 168.524967,4.14377153 C168.418787,6.63657672 166.340741,8.58579862 163.850808,8.52816609 C161.607247,8.40913862 159.849939,6.55037172 159.853078,4.299631 C159.857688,3.1283553 160.337212,2.00923845 161.181615,1.1990978 C162.026017,0.388957153 163.162794,-0.0426469519 164.331076,0.00333092475 L164.331076,0.00333092475 Z",
+    id: "Path",
+    fillRule: "nonzero"
+  })))))))));
+};
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/LaserlikeLogo/LaserlikeLogo.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/LaserlikeLogo/LaserlikeLogo.js"); } }(); 
+
+/***/ }),
+
+/***/ "../../components/lib/components/LaserlikeLogo/index.js":
+/*!**********************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/LaserlikeLogo/index.js ***!
+  \**********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function __export(m) {
+  for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+__export(__webpack_require__(/*! ./LaserlikeLogo */ "../../components/lib/components/LaserlikeLogo/LaserlikeLogo.js"));
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/LaserlikeLogo/index.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/LaserlikeLogo/index.js"); } }(); 
+
+/***/ }),
+
+/***/ "../../components/lib/components/LoadingBanner/LoadingBanner.js":
+/*!******************************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/LoadingBanner/LoadingBanner.js ***!
+  \******************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+var __importStar = this && this.__importStar || function (mod) {
+  if (mod && mod.__esModule) return mod;
+  var result = {};
+  if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+  result["default"] = mod;
+  return result;
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+const react_1 = __importDefault(__webpack_require__(/*! react */ "../../../node_modules/react/index.js"));
+
+const styled_components_1 = __importStar(__webpack_require__(/*! styled-components */ "../../../node_modules/styled-components/dist/styled-components.browser.esm.js"));
+
+const styles_1 = __webpack_require__(/*! ../../styles */ "../../components/lib/styles/index.js");
+
+const AnimatedJonLogo_1 = __webpack_require__(/*! ../AnimatedJonLogo */ "../../components/lib/components/AnimatedJonLogo/index.js");
+
+const JonLogo_1 = __webpack_require__(/*! ../JonLogo */ "../../components/lib/components/JonLogo/index.js");
+
+const polished_1 = __webpack_require__(/*! polished */ "../../../node_modules/polished/dist/polished.es.js");
+
+var LoadingBannerContentStyle;
+
+(function (LoadingBannerContentStyle) {
+  LoadingBannerContentStyle["dark"] = "dark";
+  LoadingBannerContentStyle["light"] = "light";
+})(LoadingBannerContentStyle = exports.LoadingBannerContentStyle || (exports.LoadingBannerContentStyle = {}));
+
+const drawerAnimation = styled_components_1.keyframes`
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-100%);
+  }
+`;
+const drawerChildrenAnimation = styled_components_1.keyframes`
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0.1;
+    transform: scale(0.66);
+  }
+`;
+const Container = styled_components_1.default.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: ${props => props.contentStyle === LoadingBannerContentStyle.light ? styles_1.trueWhite : styles_1.trueBlack};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: ${drawerAnimation} 0.5s ${polished_1.timingFunctions('easeInOutCubic')}
+    forwards 3s;
+
+  & > * {
+    animation: ${drawerChildrenAnimation} 1s ease forwards 2.5s;
+  }
+`;
+const StyledAnimatedJonLogo = styled_components_1.default(AnimatedJonLogo_1.AnimatedJonLogo)`
+  max-width: 320px;
+  width: 100%;
+`;
+
+const logoContentStyle = contentStyle => {
+  switch (contentStyle) {
+    case LoadingBannerContentStyle.dark:
+      return JonLogo_1.JonLogoContentStyle.light;
+
+    default:
+      return JonLogo_1.JonLogoContentStyle.dark;
+  }
+};
+
+exports.LoadingBanner = ({
+  contentStyle = LoadingBannerContentStyle.light
+}) => react_1.default.createElement(Container, {
+  contentStyle: contentStyle
+}, react_1.default.createElement(StyledAnimatedJonLogo, {
+  contentStyle: logoContentStyle(contentStyle)
+}));
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/LoadingBanner/LoadingBanner.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/LoadingBanner/LoadingBanner.js"); } }(); 
+
+/***/ }),
+
+/***/ "../../components/lib/components/LoadingBanner/index.js":
+/*!**********************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/LoadingBanner/index.js ***!
+  \**********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function __export(m) {
+  for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+__export(__webpack_require__(/*! ./LoadingBanner */ "../../components/lib/components/LoadingBanner/LoadingBanner.js"));
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/LoadingBanner/index.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/LoadingBanner/index.js"); } }(); 
+
+/***/ }),
+
+/***/ "../../components/lib/components/Navigation/Navigation.js":
+/*!************************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/Navigation/Navigation.js ***!
+  \************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+const react_1 = __importDefault(__webpack_require__(/*! react */ "../../../node_modules/react/index.js"));
+
+const styled_components_1 = __importDefault(__webpack_require__(/*! styled-components */ "../../../node_modules/styled-components/dist/styled-components.browser.esm.js"));
+
+const styles_1 = __webpack_require__(/*! ../../styles */ "../../components/lib/styles/index.js");
+
+const JonLogo_1 = __webpack_require__(/*! ../JonLogo */ "../../components/lib/components/JonLogo/index.js");
+
+const Button_1 = __webpack_require__(/*! ../Button */ "../../components/lib/components/Button/index.js");
+
+const Container = styled_components_1.default.div`
+  display: grid;
+  grid-template-columns: min-content 1fr max-content;
+  grid-template-areas: 'menu logo links';
+  align-items: center;
+`;
+const Logo = styled_components_1.default(props => react_1.default.createElement(JonLogo_1.JonLogo, Object.assign({
+  contentStyle: "dark"
+}, props)))`
+  max-width: ${styles_1.unit * 15}px;
+  width: 100%;
+  position: relative;
+  top: 10px;
+  grid-area: logo;
+`;
+const Links = styled_components_1.default.ul`
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-area: links;
+`;
+const LinkContainer = styled_components_1.default.li`
+  list-style-type: none;
+  padding: ${styles_1.unit}px ${styles_1.unit * 2}px;
+
+  &:last-child {
+    padding-right: 0;
+  }
+`;
+const linkButtonBackgroundColors = Object.assign(Object.assign({}, Button_1.buttonBackgroundColors), {
+  [Button_1.EButtonVariant.default]: styles_1.transparent
+});
+const LinkButton = styled_components_1.default(Button_1.Button)`
+  background-color: ${props => linkButtonBackgroundColors[props.variant || Button_1.EButtonVariant.default]};
+`;
+
+const Link = ({
+  children,
+  variant,
+  onClick
+}) => react_1.default.createElement(LinkContainer, null, react_1.default.createElement(LinkButton, {
+  variant: variant,
+  onClick: onClick
+}, children));
+
+const MenuIcon = styled_components_1.default(props => react_1.default.createElement("svg", Object.assign({
+  viewBox: "0 0 50 22"
+}, props), react_1.default.createElement("g", {
+  stroke: "none",
+  strokeWidth: "1",
+  fill: "none",
+  fillRule: "evenodd"
+}, react_1.default.createElement("g", {
+  transform: "translate(-156.000000, -91.000000)",
+  fill: styles_1.trueBlack
+}, react_1.default.createElement("g", {
+  transform: "translate(1, 1)"
+}, react_1.default.createElement("g", {
+  transform: "translate(157.000000, 91.000000)"
+}, react_1.default.createElement("g", {
+  transform: "translate(0.000000, 0.932773)"
+}, react_1.default.createElement("rect", {
+  x: "0",
+  y: "0",
+  width: "44.4",
+  height: "4.50630252",
+  rx: "2"
+}), react_1.default.createElement("rect", {
+  x: "0",
+  y: "12.1323529",
+  width: "30.3",
+  height: "4.50630252",
+  rx: "2"
+}))))))))`
+  width: ${styles_1.unit * 6}px;
+`;
+const MenuButton = styled_components_1.default(props => react_1.default.createElement("button", Object.assign({}, props), react_1.default.createElement(MenuIcon, null)))`
+  padding: 0 ${styles_1.unit * 10}px 0 0;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 0;
+  border-width: 0;
+  cursor: pointer;
+  grid-area: menu;
+
+  rect {
+    stroke-width: 0;
+    transition: 0.2s all ease-in-out;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+`;
+
+exports.Navigation = ({
+  children,
+  className
+}) => react_1.default.createElement(Container, {
+  className: className
+}, children);
+
+exports.Navigation.Logo = Logo;
+exports.Navigation.Links = Links;
+exports.Navigation.Link = Link;
+exports.Navigation.MenuButton = MenuButton;
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/Navigation/Navigation.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/Navigation/Navigation.js"); } }(); 
+
+/***/ }),
+
+/***/ "../../components/lib/components/Navigation/index.js":
+/*!*******************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/Navigation/index.js ***!
+  \*******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function __export(m) {
+  for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+__export(__webpack_require__(/*! ./Navigation */ "../../components/lib/components/Navigation/Navigation.js"));
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/Navigation/index.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/Navigation/index.js"); } }(); 
+
+/***/ }),
+
+/***/ "../../components/lib/components/OpenGovEmblem/OpenGovEmblem.js":
+/*!******************************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/OpenGovEmblem/OpenGovEmblem.js ***!
+  \******************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+const react_1 = __importDefault(__webpack_require__(/*! react */ "../../../node_modules/react/index.js"));
+
+const styles_1 = __webpack_require__(/*! ../../styles */ "../../components/lib/styles/index.js");
+
+var OpenGovEmblemContentStyle;
+
+(function (OpenGovEmblemContentStyle) {
+  OpenGovEmblemContentStyle["dark"] = "dark";
+  OpenGovEmblemContentStyle["light"] = "light";
+})(OpenGovEmblemContentStyle = exports.OpenGovEmblemContentStyle || (exports.OpenGovEmblemContentStyle = {}));
+
+exports.OpenGovEmblem = ({
+  className,
+  contentStyle = OpenGovEmblemContentStyle.light
+}) => {
+  const fillColor = contentStyle === OpenGovEmblemContentStyle.light ? styles_1.trueWhite : styles_1.trueBlack;
+  return react_1.default.createElement("svg", {
+    viewBox: "0 0 245 259",
+    className: className
+  }, react_1.default.createElement("defs", null, react_1.default.createElement("polygon", {
+    id: "path-1",
+    points: "0.2052 0.136633663 341.99658 0.136633663 341.99658 341.584158 0.2052 341.584158"
+  })), react_1.default.createElement("g", {
+    id: "Page-Design-Exploration",
+    stroke: "none",
+    strokeWidth: "1",
+    fill: "none",
+    fillRule: "evenodd"
+  }, react_1.default.createElement("g", {
+    id: "Artboard",
+    transform: "translate(-1007.000000, -921.000000)"
+  }, react_1.default.createElement("g", {
+    id: "opengov",
+    transform: "translate(188.000000, 901.000000)"
+  }, react_1.default.createElement("g", {
+    id: "Opengov",
+    transform: "translate(0.000000, 19.040888)"
+  }, react_1.default.createElement("g", {
+    transform: "translate(0.000000, 0.959112)",
+    id: "opengov-emblem-light"
+  }, react_1.default.createElement("g", {
+    transform: "translate(819.000000, -83.000000)"
+  }, react_1.default.createElement("g", {
+    id: "opengov-emblem-dark"
+  }, react_1.default.createElement("g", {
+    id: "Group-3"
+  }, react_1.default.createElement("mask", {
+    id: "mask-2",
+    fill: "white"
+  }, react_1.default.createElement("use", {
+    xlinkHref: "#path-1"
+  })), react_1.default.createElement("g", {
+    id: "Clip-2"
+  }), react_1.default.createElement("path", {
+    d: "M171,300.918564 C99.03978,300.918564 40.7151,242.661386 40.7151,170.792079 C40.7151,98.9227723 99.03978,40.6655941 171,40.6655941 C242.9568,40.6655941 301.2849,98.9227723 301.2849,170.792079 C301.2849,242.661386 242.9568,300.918564 171,300.918564 Z M171,0 C76.55328,0 0,76.4704455 0,170.792079 C0,265.120545 76.55328,341.584158 171,341.584158 C265.43646,341.584158 341.99658,265.120545 341.99658,170.792079 C341.99658,76.4704455 265.43646,0 171,0 L171,0 Z",
+    id: "Fill-1",
+    fill: fillColor,
+    mask: "url(#mask-2)"
+  })), react_1.default.createElement("path", {
+    d: "M245.22426,126.662822 C244.12986,124.74995 242.08812,123.585149 239.89248,123.585149 L102.1212,123.585149 C99.36468,123.585149 96.9399,125.419455 96.18066,128.070149 C95.43852,130.731089 96.56028,133.559406 98.9064,135.000891 L164.81664,175.30099 L164.81664,248.888465 C164.81664,251.692871 166.7079,254.121535 169.38576,254.845693 C169.93296,254.99599 170.46648,255.074554 171.01026,255.074554 C173.16828,255.074554 175.22712,253.923416 176.35572,251.97297 L245.22426,132.838663 C246.32892,130.922376 246.32892,128.579109 245.22426,126.662822",
+    id: "Fill-4",
+    fill: fillColor
+  })))))))));
+};
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/OpenGovEmblem/OpenGovEmblem.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/OpenGovEmblem/OpenGovEmblem.js"); } }(); 
+
+/***/ }),
+
+/***/ "../../components/lib/components/OpenGovEmblem/index.js":
+/*!**********************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/OpenGovEmblem/index.js ***!
+  \**********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function __export(m) {
+  for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+__export(__webpack_require__(/*! ./OpenGovEmblem */ "../../components/lib/components/OpenGovEmblem/OpenGovEmblem.js"));
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/OpenGovEmblem/index.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/OpenGovEmblem/index.js"); } }(); 
 
 /***/ }),
 
@@ -47985,6 +55168,1360 @@ Object.defineProperty(exports, "__esModule", {
 
 __export(__webpack_require__(/*! ./OpenGovLogo */ "../../components/lib/components/OpenGovLogo/OpenGovLogo.js"));
  void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/OpenGovLogo/index.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/OpenGovLogo/index.js"); } }(); 
+
+/***/ }),
+
+/***/ "../../components/lib/components/PhoneFrame/PhoneFrame.js":
+/*!************************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/PhoneFrame/PhoneFrame.js ***!
+  \************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+const react_1 = __importDefault(__webpack_require__(/*! react */ "../../../node_modules/react/index.js"));
+
+exports.PhoneFrame = ({
+  children
+}) => react_1.default.createElement("svg", {
+  viewBox: "0 0 1054 1651",
+  version: "1.1",
+  xmlns: "http://www.w3.org/2000/svg",
+  xmlnsXlink: "http://www.w3.org/1999/xlink"
+}, react_1.default.createElement("defs", null, react_1.default.createElement("linearGradient", {
+  x1: "0%",
+  y1: "38.6487889%",
+  x2: "100%",
+  y2: "61.3512111%",
+  id: "linearGradient-1"
+}, react_1.default.createElement("stop", {
+  stopColor: "#FFFFFF",
+  offset: "0%"
+}), react_1.default.createElement("stop", {
+  stopColor: "#FEFEFE",
+  offset: "100%"
+})), react_1.default.createElement("path", {
+  d: "M23,513 C26.8659932,513 30,516.134007 30,520 L30,628 C30,631.865993 26.8659932,635 23,635 L7,635 C3.13400675,635 4.73447626e-16,631.865993 0,628 L0,520 C-4.73447626e-16,516.134007 3.13400675,513 7,513 L23,513 Z M843,357 C846.865993,357 850,360.134007 850,364 L850,472 C850,475.865993 846.865993,479 843,479 L827,479 C823.134007,479 820,475.865993 820,472 L820,364 C820,360.134007 823.134007,357 827,357 L843,357 Z M23,357 C26.8659932,357 30,360.134007 30,364 L30,472 C30,475.865993 26.8659932,479 23,479 L7,479 C3.13400675,479 4.73447626e-16,475.865993 0,472 L0,364 C-4.73447626e-16,360.134007 3.13400675,357 7,357 L23,357 Z M23,230 C26.8659932,230 30,233.134007 30,237 L30,291 C30,294.865993 26.8659932,298 23,298 L7,298 C3.13400675,298 4.73447626e-16,294.865993 0,291 L0,237 C-4.73447626e-16,233.134007 3.13400675,230 7,230 L23,230 Z",
+  id: "path-2"
+}), react_1.default.createElement("filter", {
+  x: "-24.7%",
+  y: "-38.5%",
+  width: "149.4%",
+  height: "203.7%",
+  filterUnits: "objectBoundingBox",
+  id: "filter-3"
+}, react_1.default.createElement("feMorphology", {
+  radius: "3",
+  operator: "dilate",
+  in: "SourceAlpha",
+  result: "shadowSpreadOuter1"
+}), react_1.default.createElement("feOffset", {
+  dx: "0",
+  dy: "54",
+  in: "shadowSpreadOuter1",
+  result: "shadowOffsetOuter1"
+}), react_1.default.createElement("feGaussianBlur", {
+  stdDeviation: "60",
+  in: "shadowOffsetOuter1",
+  result: "shadowBlurOuter1"
+}), react_1.default.createElement("feComposite", {
+  in: "shadowBlurOuter1",
+  in2: "SourceAlpha",
+  operator: "out",
+  result: "shadowBlurOuter1"
+}), react_1.default.createElement("feColorMatrix", {
+  values: "0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.132840806 0",
+  type: "matrix",
+  in: "shadowBlurOuter1"
+})), react_1.default.createElement("path", {
+  d: "M140.19426,-5.17920154e-15 L699.80574,5.17920154e-15 C744.381677,-3.00926524e-15 760.545989,4.64128056 776.842285,13.3566352 C793.138581,22.0719898 805.92801,34.8614185 814.643365,51.1577148 C823.358719,67.4540111 828,83.618323 828,128.19426 L828,1516.80574 C828,1561.38168 823.358719,1577.54599 814.643365,1593.84229 C805.92801,1610.13858 793.138581,1622.92801 776.842285,1631.64336 C760.545989,1640.35872 744.381677,1645 699.80574,1645 L140.19426,1645 C95.618323,1645 79.4540111,1640.35872 63.1577148,1631.64336 C46.8614185,1622.92801 34.0719898,1610.13858 25.3566352,1593.84229 C16.6412806,1577.54599 12,1561.38168 12,1516.80574 L12,128.19426 C12,83.618323 16.6412806,67.4540111 25.3566352,51.1577148 C34.0719898,34.8614185 46.8614185,22.0719898 63.1577148,13.3566352 C79.4540111,4.64128056 95.618323,3.00926524e-15 140.19426,-5.17920154e-15 Z",
+  id: "path-4"
+}), react_1.default.createElement("filter", {
+  x: "-1.0%",
+  y: "-0.5%",
+  width: "102.1%",
+  height: "101.0%",
+  filterUnits: "objectBoundingBox",
+  id: "filter-5"
+}, react_1.default.createElement("feGaussianBlur", {
+  stdDeviation: "5",
+  in: "SourceAlpha",
+  result: "shadowBlurInner1"
+}), react_1.default.createElement("feOffset", {
+  dx: "0",
+  dy: "-2",
+  in: "shadowBlurInner1",
+  result: "shadowOffsetInner1"
+}), react_1.default.createElement("feComposite", {
+  in: "shadowOffsetInner1",
+  in2: "SourceAlpha",
+  operator: "arithmetic",
+  k2: "-1",
+  k3: "1",
+  result: "shadowInnerInner1"
+}), react_1.default.createElement("feColorMatrix", {
+  values: "0 0 0 0 0.9506   0 0 0 0 0.96334   0 0 0 0 0.98  0 0 0 1 0",
+  type: "matrix",
+  in: "shadowInnerInner1"
+})), react_1.default.createElement("path", {
+  d: "M437,1616 C462.957383,1616 484,1593.8381 484,1566.5 C484,1539.1619 462.957383,1517 437,1517 C411.042617,1517 390,1539.1619 390,1566.5 C390,1593.8381 411.042617,1616 437,1616 Z",
+  id: "path-6"
+}), react_1.default.createElement("filter", {
+  x: "-22.3%",
+  y: "-21.2%",
+  width: "144.7%",
+  height: "142.4%",
+  filterUnits: "objectBoundingBox",
+  id: "filter-7"
+}, react_1.default.createElement("feOffset", {
+  dx: "0",
+  dy: "0",
+  in: "SourceAlpha",
+  result: "shadowOffsetOuter1"
+}), react_1.default.createElement("feGaussianBlur", {
+  stdDeviation: "7",
+  in: "shadowOffsetOuter1",
+  result: "shadowBlurOuter1"
+}), react_1.default.createElement("feColorMatrix", {
+  values: "0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.187216938 0",
+  type: "matrix",
+  in: "shadowBlurOuter1"
+})), react_1.default.createElement("linearGradient", {
+  x1: "50%",
+  y1: "0%",
+  x2: "50%",
+  y2: "100%",
+  id: "linearGradient-8"
+}, react_1.default.createElement("stop", {
+  stopColor: "#D1D1D3",
+  offset: "0%"
+}), react_1.default.createElement("stop", {
+  stopColor: "#FCFDFF",
+  offset: "100%"
+})), react_1.default.createElement("path", {
+  d: "M10,0 L740,0 C745.522847,-1.01453063e-15 750,4.4771525 750,10 L750,1326 C750,1331.52285 745.522847,1336 740,1336 L10,1336 C4.4771525,1336 6.76353751e-16,1331.52285 0,1326 L0,10 C-6.76353751e-16,4.4771525 4.4771525,1.01453063e-15 10,0 Z",
+  id: "path-9"
+}), react_1.default.createElement("ellipse", {
+  id: "path-11",
+  cx: "7.07920792",
+  cy: "6.5",
+  rx: "7.07920792",
+  ry: "6.5"
+}), react_1.default.createElement("filter", {
+  x: "-31.8%",
+  y: "-34.6%",
+  width: "163.6%",
+  height: "169.2%",
+  filterUnits: "objectBoundingBox",
+  id: "filter-12"
+}, react_1.default.createElement("feGaussianBlur", {
+  stdDeviation: "2.5",
+  in: "SourceAlpha",
+  result: "shadowBlurInner1"
+}), react_1.default.createElement("feOffset", {
+  dx: "-2",
+  dy: "-2",
+  in: "shadowBlurInner1",
+  result: "shadowOffsetInner1"
+}), react_1.default.createElement("feComposite", {
+  in: "shadowOffsetInner1",
+  in2: "SourceAlpha",
+  operator: "arithmetic",
+  k2: "-1",
+  k3: "1",
+  result: "shadowInnerInner1"
+}), react_1.default.createElement("feColorMatrix", {
+  values: "0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.344061368 0",
+  type: "matrix",
+  in: "shadowInnerInner1"
+})), react_1.default.createElement("path", {
+  d: "M36.6732673,3 L106,3 C108.209139,3 110,4.790861 110,7 C110,9.209139 108.209139,11 106,11 L36.6732673,11 C34.4641283,11 32.6732673,9.209139 32.6732673,7 C32.6732673,4.790861 34.4641283,3 36.6732673,3 Z",
+  id: "path-13"
+}), react_1.default.createElement("filter", {
+  x: "-5.2%",
+  y: "-50.0%",
+  width: "110.3%",
+  height: "200.0%",
+  filterUnits: "objectBoundingBox",
+  id: "filter-14"
+}, react_1.default.createElement("feGaussianBlur", {
+  stdDeviation: "2",
+  in: "SourceAlpha",
+  result: "shadowBlurInner1"
+}), react_1.default.createElement("feOffset", {
+  dx: "2",
+  dy: "2",
+  in: "shadowBlurInner1",
+  result: "shadowOffsetInner1"
+}), react_1.default.createElement("feComposite", {
+  in: "shadowOffsetInner1",
+  in2: "SourceAlpha",
+  operator: "arithmetic",
+  k2: "-1",
+  k3: "1",
+  result: "shadowInnerInner1"
+}), react_1.default.createElement("feColorMatrix", {
+  values: "0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.344061368 0",
+  type: "matrix",
+  in: "shadowInnerInner1"
+}))), react_1.default.createElement("g", {
+  id: "Symbols",
+  stroke: "none",
+  strokeWidth: "1",
+  fill: "none",
+  fillRule: "evenodd"
+}, react_1.default.createElement("g", {
+  id: "iPhone-8",
+  transform: "translate(19.000000, -54.000000)"
+}, react_1.default.createElement("g", {
+  transform: "translate(83.000000, 57.000000)"
+}, react_1.default.createElement("g", {
+  id: "Buttons"
+}, react_1.default.createElement("use", {
+  fill: "black",
+  fillOpacity: "1",
+  filter: "url(#filter-3)",
+  xlinkHref: "#path-2"
+}), react_1.default.createElement("path", {
+  strokeOpacity: "0.04",
+  stroke: "#000000",
+  strokeWidth: "3",
+  d: "M23,511.5 C27.6944204,511.5 31.5,515.30558 31.5,520 L31.5,628 C31.5,632.69442 27.6944204,636.5 23,636.5 L7,636.5 C2.30557963,636.5 -1.5,632.69442 -1.5,628 L-1.5,520 C-1.5,515.30558 2.30557963,511.5 7,511.5 L23,511.5 Z M843,355.5 C847.69442,355.5 851.5,359.30558 851.5,364 L851.5,472 C851.5,476.69442 847.69442,480.5 843,480.5 L827,480.5 C822.30558,480.5 818.5,476.69442 818.5,472 L818.5,364 C818.5,359.30558 822.30558,355.5 827,355.5 L843,355.5 Z M23,355.5 C27.6944204,355.5 31.5,359.30558 31.5,364 L31.5,472 C31.5,476.69442 27.6944204,480.5 23,480.5 L7,480.5 C2.30557963,480.5 -1.5,476.69442 -1.5,472 L-1.5,364 C-1.5,359.30558 2.30557963,355.5 7,355.5 L23,355.5 Z M23,228.5 C27.6944204,228.5 31.5,232.30558 31.5,237 L31.5,291 C31.5,295.69442 27.6944204,299.5 23,299.5 L7,299.5 C2.30557963,299.5 -1.5,295.69442 -1.5,291 L-1.5,237 C-1.5,232.30558 2.30557963,228.5 7,228.5 L23,228.5 Z",
+  fill: "url(#linearGradient-1)",
+  fillRule: "evenodd"
+})), react_1.default.createElement("g", {
+  id: "Outer_Body"
+}, react_1.default.createElement("use", {
+  fill: "#FFFFFF",
+  fillRule: "evenodd",
+  xlinkHref: "#path-4"
+}), react_1.default.createElement("use", {
+  fill: "black",
+  fillOpacity: "1",
+  filter: "url(#filter-5)",
+  xlinkHref: "#path-4"
+}), react_1.default.createElement("use", {
+  strokeOpacity: "0.03",
+  stroke: "#000000",
+  strokeWidth: "5",
+  xlinkHref: "#path-4"
+})), react_1.default.createElement("g", {
+  id: "home"
+}, react_1.default.createElement("use", {
+  fill: "black",
+  fillOpacity: "1",
+  filter: "url(#filter-7)",
+  xlinkHref: "#path-6"
+}), react_1.default.createElement("use", {
+  fill: "#FFFFFF",
+  fillRule: "evenodd",
+  xlinkHref: "#path-6"
+})), react_1.default.createElement("path", {
+  d: "M425,58 C429.418278,58 433,53.9705627 433,49 C433,44.0294373 429.418278,40 425,40 C420.581722,40 417,44.0294373 417,49 C417,53.9705627 420.581722,58 425,58 Z",
+  id: "camera",
+  fill: "url(#linearGradient-8)"
+}), react_1.default.createElement("g", {
+  id: "iPhone8_Wallpaper",
+  transform: "translate(45.000000, 153.000000)"
+}, react_1.default.createElement("g", {
+  id: "Bitmap",
+  strokeWidth: "1",
+  fillRule: "evenodd"
+}, react_1.default.createElement("mask", {
+  id: "mask-10",
+  fill: "white"
+}, react_1.default.createElement("use", {
+  xlinkHref: "#path-9"
+}))), children, react_1.default.createElement("path", {
+  d: "M10,3 C6.13400675,3 3,6.13400675 3,10 L3,1326 C3,1329.86599 6.13400675,1333 10,1333 L740,1333 C743.865993,1333 747,1329.86599 747,1326 L747,10 C747,6.13400675 743.865993,3 740,3 L10,3 Z",
+  id: "Rectangle",
+  stroke: "#212121",
+  strokeWidth: "6"
+})), react_1.default.createElement("g", {
+  id: "sensor-camera-copy",
+  opacity: "0.6",
+  transform: "translate(360.000000, 76.000000)"
+}, react_1.default.createElement("g", {
+  id: "Group",
+  opacity: "0.75"
+}, react_1.default.createElement("g", {
+  id: "Oval"
+}, react_1.default.createElement("use", {
+  fill: "#BFC0C5",
+  fillRule: "evenodd",
+  xlinkHref: "#path-11"
+}), react_1.default.createElement("use", {
+  fill: "black",
+  fillOpacity: "1",
+  filter: "url(#filter-12)",
+  xlinkHref: "#path-11"
+}), react_1.default.createElement("ellipse", {
+  strokeOpacity: "0.568331069",
+  stroke: "#7D7D7D",
+  strokeWidth: "1",
+  cx: "7.07920792",
+  cy: "6.5",
+  rx: "7.57920792",
+  ry: "7"
+}))), react_1.default.createElement("g", {
+  id: "Rectangle-2"
+}, react_1.default.createElement("use", {
+  fill: "#BFC0C5",
+  fillRule: "evenodd",
+  xlinkHref: "#path-13"
+}), react_1.default.createElement("use", {
+  fill: "black",
+  fillOpacity: "1",
+  filter: "url(#filter-14)",
+  xlinkHref: "#path-13"
+}), react_1.default.createElement("path", {
+  strokeOpacity: "0.568331069",
+  stroke: "#7D7D7D",
+  strokeWidth: "1",
+  d: "M36.6732673,2.5 L106,2.5 C108.485281,2.5 110.5,4.51471863 110.5,7 C110.5,9.48528137 108.485281,11.5 106,11.5 L36.6732673,11.5 C34.187986,11.5 32.1732673,9.48528137 32.1732673,7 C32.1732673,4.51471863 34.187986,2.5 36.6732673,2.5 Z"
+})))))));
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/PhoneFrame/PhoneFrame.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/PhoneFrame/PhoneFrame.js"); } }(); 
+
+/***/ }),
+
+/***/ "../../components/lib/components/PhoneFrame/index.js":
+/*!*******************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/PhoneFrame/index.js ***!
+  \*******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function __export(m) {
+  for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+__export(__webpack_require__(/*! ./PhoneFrame */ "../../components/lib/components/PhoneFrame/PhoneFrame.js"));
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/PhoneFrame/index.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/PhoneFrame/index.js"); } }(); 
+
+/***/ }),
+
+/***/ "../../components/lib/components/SectionHeader/SectionHeader.js":
+/*!******************************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/SectionHeader/SectionHeader.js ***!
+  \******************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+const react_1 = __importDefault(__webpack_require__(/*! react */ "../../../node_modules/react/index.js"));
+
+const styled_components_1 = __importDefault(__webpack_require__(/*! styled-components */ "../../../node_modules/styled-components/dist/styled-components.browser.esm.js"));
+
+const Heading_1 = __webpack_require__(/*! ../Heading */ "../../components/lib/components/Heading/index.js");
+
+const Text_1 = __webpack_require__(/*! ../Text */ "../../components/lib/components/Text/index.js");
+
+const styles_1 = __webpack_require__(/*! ../../styles */ "../../components/lib/styles/index.js");
+
+const Container = styled_components_1.default.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'subtitle subtitle paragraph paragraph'
+    'title title paragraph paragraph';
+  padding: ${styles_1.unit * 3}px 0;
+`;
+const Divider = styled_components_1.default.div`
+  position: relative;
+  min-width: ${styles_1.unit * 3}px;
+  max-width: ${styles_1.unit * 3}px;
+  height: 100%;
+  transform: translateX(-100%);
+
+  &::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 3px;
+    left: ${styles_1.unit * 1.5}px;
+    background-color: ${styles_1.blue};
+    transform: rotate(5deg);
+  }
+`;
+const Title = styled_components_1.default(Heading_1.Heading)`
+  grid-area: title;
+  font-size: ${styles_1.unit * 10}px;
+`;
+const SubTitle = styled_components_1.default(Heading_1.Heading)`
+  font-size: ${styles_1.unit * 5}px;
+  font-weight: lighter;
+  color: #726e84;
+  grid-area: subtitle;
+`;
+const ParagraphText = styled_components_1.default(Text_1.Text)`
+  padding: ${styles_1.unit * 3}px;
+  font-size: 1.25em;
+  color: #726e84; // TODO
+`;
+const ParagraphContainer = styled_components_1.default.div`
+  display: flex;
+  flex: 1;
+  align-items: center;
+  grid-area: paragraph;
+`;
+
+const Paragraph = props => react_1.default.createElement(ParagraphContainer, null, react_1.default.createElement(Divider, null), react_1.default.createElement(ParagraphText, Object.assign({}, props)));
+
+exports.SectionHeader = ({
+  className,
+  children
+}) => react_1.default.createElement(Container, {
+  className: className
+}, children);
+
+exports.SectionHeader.Title = Title;
+exports.SectionHeader.SubTitle = SubTitle;
+exports.SectionHeader.Paragraph = Paragraph;
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/SectionHeader/SectionHeader.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/SectionHeader/SectionHeader.js"); } }(); 
+
+/***/ }),
+
+/***/ "../../components/lib/components/SectionHeader/index.js":
+/*!**********************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/SectionHeader/index.js ***!
+  \**********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function __export(m) {
+  for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+__export(__webpack_require__(/*! ./SectionHeader */ "../../components/lib/components/SectionHeader/SectionHeader.js"));
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/SectionHeader/index.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/SectionHeader/index.js"); } }(); 
+
+/***/ }),
+
+/***/ "../../components/lib/components/Services/Services.js":
+/*!********************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/Services/Services.js ***!
+  \********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+const react_1 = __importDefault(__webpack_require__(/*! react */ "../../../node_modules/react/index.js"));
+
+const styled_components_1 = __importDefault(__webpack_require__(/*! styled-components */ "../../../node_modules/styled-components/dist/styled-components.browser.esm.js"));
+
+const styles_1 = __webpack_require__(/*! ../../styles */ "../../components/lib/styles/index.js");
+
+const Heading_1 = __webpack_require__(/*! ../Heading */ "../../components/lib/components/Heading/index.js");
+
+const Text_1 = __webpack_require__(/*! ../Text */ "../../components/lib/components/Text/index.js");
+
+const icons_1 = __webpack_require__(/*! ./icons */ "../../components/lib/components/Services/icons/index.js");
+
+const ListContainer = styled_components_1.default.ul`
+  margin: 0;
+  padding: 0;
+`;
+const ListItemContainer = styled_components_1.default.li`
+  list-style-type: none;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: min-content 1fr 1fr 1fr;
+  grid-template-areas:
+    'icon title title title'
+    'icon desc desc desc';
+  padding: ${styles_1.unit * 3}px;
+
+  svg {
+    width: ${styles_1.unit * 17}px;
+    margin-right: ${styles_1.unit * 6}px;
+  }
+`;
+const ListItemTitle = styled_components_1.default(Heading_1.Heading)`
+  font-size: ${styles_1.unit * 5}px;
+  grid-area: title;
+  align-items: center;
+  display: flex;
+`;
+const ListItemDescription = styled_components_1.default(Text_1.Text)`
+  font-size: ${styles_1.unit * 3}px;
+  grid-area: desc;
+  align-items: flex-start;
+  display: flex;
+`;
+
+const makeListIcon = component => styled_components_1.default(component)`
+  grid-area: icon;
+`;
+
+const ListItem = ({
+  children
+}) => react_1.default.createElement(ListItemContainer, null, children);
+
+ListItem.Title = ListItemTitle;
+ListItem.Description = ListItemDescription;
+
+exports.Services = ({
+  children,
+  className
+}) => react_1.default.createElement(ListContainer, {
+  className: className
+}, children);
+
+exports.Services.Item = ListItem;
+exports.Services.Icons = {
+  Phone: makeListIcon(icons_1.PhoneIcon),
+  Server: makeListIcon(icons_1.ServersIcon),
+  Web: makeListIcon(icons_1.WebDevIcon)
+};
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/Services/Services.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/Services/Services.js"); } }(); 
+
+/***/ }),
+
+/***/ "../../components/lib/components/Services/icons/PhoneIcon.js":
+/*!***************************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/Services/icons/PhoneIcon.js ***!
+  \***************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+const react_1 = __importDefault(__webpack_require__(/*! react */ "../../../node_modules/react/index.js"));
+
+exports.PhoneIcon = props => react_1.default.createElement("svg", Object.assign({
+  viewBox: "0 0 140 140"
+}, props), react_1.default.createElement("g", {
+  id: "Page-1",
+  stroke: "none",
+  strokeWidth: "1",
+  fill: "none",
+  fillRule: "evenodd"
+}, react_1.default.createElement("g", {
+  id: "Landing-Page",
+  transform: "translate(-236.000000, -1050.000000)"
+}, react_1.default.createElement("g", {
+  id: "Services",
+  transform: "translate(238.000000, 1052.000000)"
+}, react_1.default.createElement("g", {
+  id: "Group-6"
+}, react_1.default.createElement("g", {
+  id: "Group-9"
+}, react_1.default.createElement("g", {
+  id: "Phone-Icon"
+}, react_1.default.createElement("g", {
+  id: "Group-6",
+  transform: "translate(68.059579, 68.045502) rotate(-19.000000) translate(-68.059579, -68.045502) translate(-0.018882, -0.032960)"
+}, react_1.default.createElement("circle", {
+  id: "Oval-2",
+  stroke: "#556089",
+  strokeWidth: "2.4",
+  fill: "#DFE3F2",
+  cx: "68.0784615",
+  cy: "68.0784615",
+  r: "68.0784615"
+}), react_1.default.createElement("path", {
+  d: "M99.0262316,91.1974366 L94.3655283,93.6477133 C93.7789148,93.9561142 93.0533622,93.7305784 92.7449613,93.1439649 C92.6221544,92.9103723 92.5797768,92.6428106 92.624389,92.3827015 L93.5145041,87.1929321 C93.5812696,86.8036593 93.4522114,86.406459 93.1693881,86.1307744 L89.3988,82.4553594 C88.9242197,81.9927579 88.9145089,81.233022 89.3771104,80.7584417 C89.5613207,80.5694613 89.8026916,80.4464767 90.063856,80.4085273 L95.2746807,79.6513502 C95.6655329,79.594556 96.0034116,79.3490728 96.178206,78.9949006 L98.5085576,74.2730924 C98.8018644,73.6787881 99.5214154,73.4347813 100.11572,73.728088 C100.352375,73.8448843 100.543928,74.0364373 100.660724,74.2730924 L102.991076,78.9949006 C103.16587,79.3490728 103.503749,79.594556 103.894601,79.6513502 L109.105426,80.4085273 C109.76128,80.5038284 110.215697,81.1127599 110.120396,81.7686137 C110.082447,82.0297781 109.959462,82.271149 109.770482,82.4553594 L105.999894,86.1307744 C105.71707,86.406459 105.588012,86.8036593 105.654778,87.1929321 L106.544893,92.3827015 C106.656926,93.0359052 106.218221,93.6562523 105.565017,93.7682856 C105.304908,93.8128978 105.037346,93.7705202 104.803754,93.6477133 L100.14305,91.1974366 C99.7934615,91.0136468 99.3758204,91.0136468 99.0262316,91.1974366 Z",
+  id: "Star",
+  stroke: "#556089",
+  strokeWidth: "2",
+  fill: "#FFE102",
+  transform: "translate(99.584668, 83.526892) rotate(33.000000) translate(-99.584668, -83.526892) "
+}), react_1.default.createElement("g", {
+  id: "Group",
+  transform: "translate(33.933846, 8.641538)"
+}, react_1.default.createElement("rect", {
+  id: "Rectangle-4",
+  stroke: "#556089",
+  strokeWidth: "2.4",
+  fill: "#F4F5F9",
+  x: "4.78307692",
+  y: "1.2",
+  width: "58.633578",
+  height: "116.430527"
+}), react_1.default.createElement("polygon", {
+  id: "Path-2",
+  fill: "#ECEDF0",
+  transform: "translate(34.530960, 72.495611) rotate(19.000000) translate(-34.530960, -72.495611) ",
+  points: "2.89647199 58.7124277 60.3775264 70.2512753 66.1654471 86.2787934 8.97420035 75.2718087"
+}), react_1.default.createElement("polygon", {
+  id: "Path-2",
+  fill: "#ECEDF0",
+  transform: "translate(34.123201, 58.782238) rotate(19.000000) translate(-34.123201, -58.782238) ",
+  points: "4.43134772 50.5630486 61.9124021 62.1018962 63.8150535 67.0014279 6.62380682 55.9944432"
+}), react_1.default.createElement("rect", {
+  id: "Rectangle-4",
+  stroke: "#556089",
+  strokeWidth: "2.4",
+  x: "8.36615385",
+  y: "16.5861538",
+  width: "51.6643584",
+  height: "85.8455437"
+}), react_1.default.createElement("rect", {
+  id: "Rectangle-5",
+  stroke: "#556089",
+  strokeWidth: "2",
+  x: "26.0815385",
+  y: "7.95538462",
+  width: "16.0326481",
+  height: "1"
+})), react_1.default.createElement("ellipse", {
+  id: "Oval",
+  fill: "#556089",
+  cx: "68.4051537",
+  cy: "119.161655",
+  rx: "3.69899984",
+  ry: "4.08165499"
+}), react_1.default.createElement("circle", {
+  id: "Oval-3",
+  stroke: "#556089",
+  strokeWidth: "2",
+  cx: "115.08",
+  cy: "44.4723077",
+  r: "8.22"
+}), react_1.default.createElement("circle", {
+  id: "Oval-3",
+  stroke: "#556089",
+  strokeWidth: "2",
+  cx: "19.9972235",
+  cy: "88.3781093",
+  r: "8.22"
+}), react_1.default.createElement("path", {
+  d: "M24.7214894,34.7324597 L31.436293,48.1620668 C31.6338844,48.5572496 31.4737049,49.037788 31.0785221,49.2353794 C30.9674377,49.2909216 30.8449473,49.3198377 30.7207512,49.3198377 L17.2911441,49.3198377 C16.8493163,49.3198377 16.4911441,48.9616655 16.4911441,48.5198377 C16.4911441,48.3956416 16.5200601,48.2731512 16.5756023,48.1620668 L23.2904059,34.7324597 C23.4879973,34.3372769 23.9685357,34.1770974 24.3637185,34.3746888 C24.5185404,34.4520997 24.6440784,34.5776377 24.7214894,34.7324597 Z",
+  id: "Triangle",
+  stroke: "#556089",
+  strokeWidth: "2",
+  fill: "#FFADAD",
+  transform: "translate(24.005948, 41.310607) rotate(318.000000) translate(-24.005948, -41.310607) "
+}), react_1.default.createElement("path", {
+  d: "M115.835224,111.808902 L122.550027,125.238509 C122.747619,125.633692 122.587439,126.11423 122.192256,126.311822 C122.081172,126.367364 121.958682,126.39628 121.834486,126.39628 L108.404878,126.39628 C107.963051,126.39628 107.604878,126.038108 107.604878,125.59628 C107.604878,125.472084 107.633794,125.349593 107.689337,125.238509 L114.40414,111.808902 C114.601732,111.413719 115.08227,111.25354 115.477453,111.451131 C115.632275,111.528542 115.757813,111.65408 115.835224,111.808902 Z",
+  id: "Triangle",
+  stroke: "#556089",
+  strokeWidth: "2",
+  fill: "#FFADAD",
+  transform: "translate(115.119682, 118.387049) rotate(478.000000) translate(-115.119682, -118.387049) "
+}), react_1.default.createElement("path", {
+  d: "M34.9738004,23.2674676 L30.3130971,25.7177443 C29.7264836,26.0261453 29.000931,25.8006095 28.69253,25.213996 C28.5697231,24.9804034 28.5273455,24.7128417 28.5719577,24.4527325 L29.4620729,19.2629632 C29.5288384,18.8736903 29.3997802,18.4764901 29.1169569,18.2008055 L25.3463688,14.5253904 C24.8717885,14.0627889 24.8620777,13.303053 25.3246791,12.8284727 C25.5088895,12.6394924 25.7502604,12.5165078 26.0114248,12.4785583 L31.2222495,11.7213812 C31.6131017,11.664587 31.9509804,11.4191038 32.1257748,11.0649316 L34.4561264,6.34312348 C34.7494332,5.74881909 35.4689842,5.50481229 36.0632886,5.79811905 C36.2999437,5.91491533 36.4914967,6.10646836 36.608293,6.34312348 L38.9386446,11.0649316 C39.1134391,11.4191038 39.4513178,11.664587 39.8421699,11.7213812 L45.0529946,12.4785583 C45.7088485,12.5738595 46.1632662,13.1827909 46.0679651,13.8386447 C46.0300156,14.0998092 45.907031,14.3411801 45.7180507,14.5253904 L41.9474625,18.2008055 C41.6646392,18.4764901 41.535581,18.8736903 41.6023466,19.2629632 L42.4924617,24.4527325 C42.6044949,25.1059363 42.1657895,25.7262834 41.5125858,25.8383166 C41.2524766,25.8829288 40.9849149,25.8405512 40.7513223,25.7177443 L36.0906191,23.2674676 C35.7410302,23.0836779 35.3233892,23.0836779 34.9738004,23.2674676 Z",
+  id: "Star",
+  stroke: "#556089",
+  strokeWidth: "2",
+  fill: "#FFE102",
+  transform: "translate(35.532237, 15.596923) rotate(8.000000) translate(-35.532237, -15.596923) "
+})), react_1.default.createElement("g", {
+  id: "Smiley-Face",
+  transform: "translate(31.193846, 81.146154)",
+  stroke: "#556089"
+}, react_1.default.createElement("circle", {
+  id: "Oval-4",
+  strokeWidth: "2",
+  fill: "#FFE102",
+  cx: "13.8053846",
+  cy: "13.8053846",
+  r: "13.8053846"
+}), react_1.default.createElement("path", {
+  d: "M11.3341977,9.32283353 C11.3341977,7.98418027 10.2490048,6.89898738 8.91035156,6.89898738 C7.5716983,6.89898738 6.48650541,7.98418027 6.48650541,9.32283353",
+  id: "Oval-4",
+  strokeWidth: "1.8",
+  strokeLinecap: "round"
+}), react_1.default.createElement("path", {
+  d: "M20.4446154,9.37923077 C20.4446154,8.0405775 19.3594225,6.95538462 18.0207692,6.95538462 C16.682116,6.95538462 15.5969231,8.0405775 15.5969231,9.37923077",
+  id: "Oval-4",
+  strokeWidth: "1.8",
+  strokeLinecap: "round"
+}), react_1.default.createElement("path", {
+  d: "M13.8053846,23.0465875 C18.2869629,23.0465875 21.92,19.4135505 21.92,14.9319721 C21.92,14.2832021 19.2151282,13.9428011 13.8053846,13.9107692 C8.39564103,13.9707008 5.69076923,14.3111018 5.69076923,14.9319721 C5.69076923,19.4135505 9.32380629,23.0465875 13.8053846,23.0465875 Z",
+  id: "Oval-4",
+  strokeWidth: "2",
+  fill: "#556089"
+}), react_1.default.createElement("path", {
+  d: "M21.2953813,18.0594695 C21.7117938,16.7134394 21.92,15.6709402 21.92,14.9319721 C21.92,14.2832021 19.2151282,13.9428011 13.8053846,13.9107692 C8.39564103,13.9707008 5.69076923,14.3111018 5.69076923,14.9319721 C5.69076923,15.6335294 5.87906868,16.6270618 6.25566757,17.9125695 L21.2953813,18.0594695 Z",
+  id: "Oval-4",
+  strokeWidth: "2",
+  fill: "#F4F5F9"
+})))))))));
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/Services/icons/PhoneIcon.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/Services/icons/PhoneIcon.js"); } }(); 
+
+/***/ }),
+
+/***/ "../../components/lib/components/Services/icons/ServersIcon.js":
+/*!*****************************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/Services/icons/ServersIcon.js ***!
+  \*****************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+const react_1 = __importDefault(__webpack_require__(/*! react */ "../../../node_modules/react/index.js"));
+
+exports.ServersIcon = props => react_1.default.createElement("svg", Object.assign({
+  viewBox: "0 0 141 140"
+}, props), react_1.default.createElement("g", {
+  id: "Page-1",
+  stroke: "none",
+  strokeWidth: "1",
+  fill: "none",
+  fillRule: "evenodd"
+}, react_1.default.createElement("g", {
+  id: "Landing-Page",
+  transform: "translate(-236.000000, -1436.000000)",
+  stroke: "#556089"
+}, react_1.default.createElement("g", {
+  id: "Services",
+  transform: "translate(238.000000, 1052.000000)"
+}, react_1.default.createElement("g", {
+  id: "Group-6"
+}, react_1.default.createElement("g", {
+  id: "Group-7",
+  transform: "translate(0.000000, 386.000000)"
+}, react_1.default.createElement("g", {
+  id: "Devops-Icon"
+}, react_1.default.createElement("g", {
+  id: "Group-6",
+  strokeWidth: "1",
+  fillRule: "evenodd",
+  transform: "translate(68.059579, 68.045502) rotate(-19.000000) translate(-68.059579, -68.045502) translate(-0.018882, -0.032960)",
+  fill: "#DFE3F2"
+}, react_1.default.createElement("circle", {
+  id: "Oval-2",
+  strokeWidth: "2.4",
+  cx: "68.0784615",
+  cy: "68.0784615",
+  r: "68.0784615"
+})), react_1.default.createElement("circle", {
+  id: "Oval-3",
+  strokeWidth: "2",
+  cx: "92.3169231",
+  cy: "21.2876923",
+  r: "8.22"
+}), react_1.default.createElement("circle", {
+  id: "Oval-3",
+  strokeWidth: "2",
+  cx: "45.9476923",
+  cy: "114.236923",
+  r: "8.22"
+}), react_1.default.createElement("path", {
+  d: "M131.802133,68.1194419 L138.516937,81.5490491 C138.714528,81.9442319 138.554349,82.4247703 138.159166,82.6223617 C138.048082,82.6779039 137.925591,82.70682 137.801395,82.70682 L124.371788,82.70682 C123.92996,82.70682 123.571788,82.3486478 123.571788,81.90682 C123.571788,81.7826239 123.600704,81.6601334 123.656246,81.5490491 L130.37105,68.1194419 C130.568641,67.7242591 131.04918,67.5640797 131.444362,67.7616711 C131.599184,67.839082 131.724722,67.96462 131.802133,68.1194419 Z",
+  id: "Triangle",
+  strokeWidth: "2",
+  fill: "#FFADAD",
+  fillRule: "evenodd",
+  transform: "translate(131.086592, 74.697589) rotate(820.000000) translate(-131.086592, -74.697589) "
+}), react_1.default.createElement("rect", {
+  id: "Rectangle-3",
+  strokeWidth: "2.4",
+  fill: "#F4F5F9",
+  fillRule: "evenodd",
+  x: "7.73384615",
+  y: "23.12",
+  width: "121.110769",
+  height: "28.1615385"
+}), react_1.default.createElement("circle", {
+  id: "Oval-5",
+  strokeWidth: "2.4",
+  fill: "#FFADAD",
+  fillRule: "evenodd",
+  cx: "113.393846",
+  cy: "37.9384615",
+  r: "4.42615385"
+}), react_1.default.createElement("circle", {
+  id: "Oval-5",
+  strokeWidth: "2.4",
+  fill: "#95D58E",
+  fillRule: "evenodd",
+  cx: "113.393846",
+  cy: "37.9384615",
+  r: "4.42615385"
+}), react_1.default.createElement("path", {
+  d: "M18.2315385,37.6223077 L62.2823077,37.6223077",
+  id: "Line",
+  strokeWidth: "3",
+  strokeLinecap: "round"
+}), react_1.default.createElement("path", {
+  d: "M71.1346154,37.6223077 L83.7807692,37.6223077",
+  id: "Line",
+  strokeWidth: "3",
+  strokeLinecap: "round"
+}), react_1.default.createElement("rect", {
+  id: "Rectangle-3",
+  strokeWidth: "2.4",
+  fill: "#F4F5F9",
+  fillRule: "evenodd",
+  x: "7.73384615",
+  y: "55.7892308",
+  width: "121.110769",
+  height: "28.1615385"
+}), react_1.default.createElement("circle", {
+  id: "Oval-5",
+  strokeWidth: "2.4",
+  fill: "#95D58E",
+  fillRule: "evenodd",
+  cx: "113.393846",
+  cy: "70.1861538",
+  r: "4.42615385"
+}), react_1.default.createElement("rect", {
+  id: "Rectangle-3",
+  strokeWidth: "2.4",
+  fill: "#F4F5F9",
+  fillRule: "evenodd",
+  x: "7.73384615",
+  y: "88.88",
+  width: "121.110769",
+  height: "28.1615385"
+}), react_1.default.createElement("circle", {
+  id: "Oval-5",
+  strokeWidth: "2.4",
+  fill: "#95D58E",
+  fillRule: "evenodd",
+  cx: "113.393846",
+  cy: "103.066154",
+  r: "4.42615385"
+}), react_1.default.createElement("path", {
+  d: "M18.4423077,69.0269231 L62.4930769,69.0269231",
+  id: "Line",
+  strokeWidth: "3",
+  strokeLinecap: "round"
+}), react_1.default.createElement("path", {
+  d: "M71.3453846,69.0269231 L83.9915385,69.0269231",
+  id: "Line",
+  strokeWidth: "3",
+  strokeLinecap: "round"
+}), react_1.default.createElement("path", {
+  d: "M18.4423077,102.75 L62.4930769,102.75",
+  id: "Line",
+  strokeWidth: "3",
+  strokeLinecap: "round"
+}), react_1.default.createElement("path", {
+  d: "M71.3453846,102.75 L83.9915385,102.75",
+  id: "Line",
+  strokeWidth: "3",
+  strokeLinecap: "round"
+}), react_1.default.createElement("path", {
+  d: "M108.4011,117.646428 L103.740396,120.096705 C103.153783,120.405106 102.42823,120.17957 102.119829,119.592956 C101.997022,119.359364 101.954645,119.091802 101.999257,118.831693 L102.889372,113.641923 C102.956138,113.252651 102.827079,112.85545 102.544256,112.579766 L98.773668,108.904351 C98.2990877,108.441749 98.2893769,107.682013 98.7519784,107.207433 C98.9361887,107.018453 99.1775596,106.895468 99.438724,106.857519 L104.649549,106.100341 C105.040401,106.043547 105.37828,105.798064 105.553074,105.443892 L107.883426,100.722084 C108.176732,100.127779 108.896283,99.8837725 109.490588,100.177079 C109.727243,100.293876 109.918796,100.485429 110.035592,100.722084 L112.365944,105.443892 C112.540738,105.798064 112.878617,106.043547 113.269469,106.100341 L118.480294,106.857519 C119.136148,106.95282 119.590565,107.561751 119.495264,108.217605 C119.457315,108.478769 119.33433,108.72014 119.14535,108.904351 L115.374762,112.579766 C115.091938,112.85545 114.96288,113.252651 115.029646,113.641923 L115.919761,118.831693 C116.031794,119.484897 115.593089,120.105244 114.939885,120.217277 C114.679776,120.261889 114.412214,120.219511 114.178622,120.096705 L109.517918,117.646428 C109.168329,117.462638 108.750688,117.462638 108.4011,117.646428 Z",
+  id: "Star",
+  strokeWidth: "2",
+  fill: "#FFE102",
+  fillRule: "evenodd",
+  transform: "translate(108.959536, 109.975883) rotate(8.000000) translate(-108.959536, -109.975883) "
+}), react_1.default.createElement("path", {
+  d: "M30.0582271,19.3922304 L36.7730307,32.8218375 C36.9706221,33.2170203 36.8104426,33.6975588 36.4152598,33.8951502 C36.3041755,33.9506924 36.181685,33.9796084 36.0574889,33.9796084 L22.6278818,33.9796084 C22.186054,33.9796084 21.8278818,33.6214362 21.8278818,33.1796084 C21.8278818,33.0554123 21.8567978,32.9329219 21.91234,32.8218375 L28.6271436,19.3922304 C28.824735,18.9970476 29.3052734,18.8368681 29.7004562,19.0344595 C29.8552781,19.1118705 29.9808161,19.2374085 30.0582271,19.3922304 Z",
+  id: "Triangle",
+  strokeWidth: "2",
+  fill: "#FFADAD",
+  fillRule: "evenodd",
+  transform: "translate(29.342685, 25.970378) rotate(593.000000) translate(-29.342685, -25.970378) "
+}))))))));
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/Services/icons/ServersIcon.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/Services/icons/ServersIcon.js"); } }(); 
+
+/***/ }),
+
+/***/ "../../components/lib/components/Services/icons/WebDevIcon.js":
+/*!****************************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/Services/icons/WebDevIcon.js ***!
+  \****************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+const react_1 = __importDefault(__webpack_require__(/*! react */ "../../../node_modules/react/index.js"));
+
+exports.WebDevIcon = props => react_1.default.createElement("svg", Object.assign({
+  viewBox: "0 0 132 131"
+}, props), react_1.default.createElement("g", {
+  id: "Page-1",
+  stroke: "none",
+  strokeWidth: "1",
+  fill: "none",
+  fillRule: "evenodd"
+}, react_1.default.createElement("g", {
+  id: "Landing-Page",
+  transform: "translate(-236.000000, -1247.000000)"
+}, react_1.default.createElement("g", {
+  id: "Services",
+  transform: "translate(238.000000, 1052.000000)"
+}, react_1.default.createElement("g", {
+  id: "Group-8",
+  transform: "translate(0.000000, 197.000000)"
+}, react_1.default.createElement("g", {
+  id: "Web-Dev-Icon"
+}, react_1.default.createElement("g", {
+  id: "Group-6",
+  strokeWidth: "1",
+  fillRule: "evenodd",
+  transform: "translate(63.393455, 63.380343) rotate(-19.000000) translate(-63.393455, -63.380343) translate(-0.017588, -0.030700)",
+  fill: "#DFE3F2",
+  stroke: "#556089"
+}, react_1.default.createElement("circle", {
+  id: "Oval-2",
+  strokeWidth: "3",
+  cx: "63.4110429",
+  cy: "63.4110429",
+  r: "63.4110429"
+})), react_1.default.createElement("circle", {
+  id: "Oval-3",
+  stroke: "#556089",
+  strokeWidth: "2.5",
+  cx: "42.797546",
+  cy: "19.8282209",
+  r: "7.65644172"
+}), react_1.default.createElement("circle", {
+  id: "Oval-3",
+  stroke: "#556089",
+  strokeWidth: "2.5",
+  cx: "85.791411",
+  cy: "110.134969",
+  r: "7.65644172"
+}), react_1.default.createElement("path", {
+  d: "M122.9938,63.9050989 L128.835889,75.5892763 C129.082878,76.0832548 128.882654,76.6839278 128.388676,76.9309171 C128.24982,77.0003448 128.096707,77.0364899 127.941462,77.0364899 L116.257285,77.0364899 C115.705,77.0364899 115.257285,76.5887746 115.257285,76.0364899 C115.257285,75.8812448 115.29343,75.7281317 115.362857,75.5892763 L121.204946,63.9050989 C121.451935,63.4111204 122.052608,63.210896 122.546587,63.4578853 C122.740114,63.554649 122.897037,63.7115714 122.9938,63.9050989 Z",
+  id: "Triangle",
+  stroke: "#556089",
+  strokeWidth: "2.5",
+  fill: "#FFADAD",
+  fillRule: "evenodd",
+  transform: "translate(122.099373, 69.576367) rotate(820.000000) translate(-122.099373, -69.576367) "
+}), react_1.default.createElement("rect", {
+  id: "Rectangle-3",
+  stroke: "#556089",
+  strokeWidth: "3",
+  fill: "#F4F5F9",
+  fillRule: "evenodd",
+  x: "7.58588957",
+  y: "21.9171779",
+  width: "112.042945",
+  height: "88.2883436"
+}), react_1.default.createElement("g", {
+  id: "Reflection",
+  strokeWidth: "1",
+  fillRule: "evenodd",
+  transform: "translate(-3.533742, 20.417178)"
+}, react_1.default.createElement("polygon", {
+  id: "Path-2",
+  fill: "#ECEDF0",
+  transform: "translate(67.311733, 43.361963) rotate(19.000000) translate(-67.311733, -43.361963) ",
+  points: "2.20005862 26.2815248 125.158794 39.3444308 132.423408 60.4424016 8.98980246 46.0003727"
+}), react_1.default.createElement("polygon", {
+  id: "Path-2",
+  fill: "#ECEDF0",
+  transform: "translate(66.928826, 59.611963) rotate(19.000000) translate(-66.928826, -59.611963) ",
+  points: "4.34779429 49.8810465 127.306529 62.9439524 129.509857 69.3428799 6.0762516 54.900851"
+}), react_1.default.createElement("rect", {
+  id: "Rectangle-3",
+  stroke: "#556089",
+  strokeWidth: "3",
+  x: "11.1196319",
+  y: "1.5",
+  width: "112.042945",
+  height: "88.2883436"
+})), react_1.default.createElement("path", {
+  d: "M108.44774,23.0974925 L104.970051,24.9258217 C104.236785,25.3113229 103.329844,25.0294031 102.944343,24.2961363 C102.790834,24.0041455 102.737862,23.6696934 102.793627,23.344557 L103.457807,19.4720936 C103.541264,18.9855025 103.379941,18.4890022 103.026412,18.1443965 L100.212902,15.4019027 C99.6196771,14.8236509 99.6075386,13.873981 100.18579,13.2807556 C100.416053,13.0445301 100.717767,12.8907994 101.044222,12.8433626 L104.932397,12.2783778 C105.420962,12.2073851 105.84331,11.9005311 106.061803,11.4578159 L107.800648,7.93453228 C108.167281,7.19165179 109.06672,6.8866433 109.8096,7.25327674 C110.105419,7.39927209 110.344861,7.63871338 110.490856,7.93453228 L112.2297,11.4578159 C112.448193,11.9005311 112.870542,12.2073851 113.359107,12.2783778 L117.247281,12.8433626 C118.067099,12.962489 118.635121,13.7236533 118.515994,14.5434706 C118.468558,14.8699262 118.314827,15.1716398 118.078601,15.4019027 L115.265092,18.1443965 C114.911563,18.4890022 114.75024,18.9855025 114.833697,19.4720936 L115.497877,23.344557 C115.637918,24.1610617 115.089536,24.9364955 114.273032,25.0765371 C113.947895,25.1323023 113.613443,25.0793303 113.321452,24.9258217 L109.843764,23.0974925 C109.406778,22.8677554 108.884726,22.8677554 108.44774,23.0974925 Z",
+  id: "Star",
+  stroke: "#556089",
+  strokeWidth: "2.5",
+  fill: "#FFE102",
+  fillRule: "evenodd",
+  transform: "translate(109.145777, 15.859315) rotate(8.000000) translate(-109.145777, -15.859315) "
+}), react_1.default.createElement("path", {
+  d: "M23.0864008,107.270705 L28.9284895,118.954883 C29.1754787,119.448861 28.9752544,120.049534 28.4812759,120.296523 C28.3424204,120.365951 28.1893074,120.402096 28.0340623,120.402096 L16.3498849,120.402096 C15.7976001,120.402096 15.3498849,119.954381 15.3498849,119.402096 C15.3498849,119.246851 15.38603,119.093738 15.4554577,118.954883 L21.2975464,107.270705 C21.5445356,106.776727 22.1452087,106.576502 22.6391872,106.823492 C22.8327146,106.920255 22.9896371,107.077178 23.0864008,107.270705 Z",
+  id: "Triangle",
+  stroke: "#556089",
+  strokeWidth: "2.5",
+  fill: "#FFADAD",
+  fillRule: "evenodd",
+  transform: "translate(22.191974, 112.941974) rotate(593.000000) translate(-22.191974, -112.941974) "
+}), react_1.default.createElement("circle", {
+  id: "Oval-5",
+  fill: "#FFADAD",
+  fillRule: "evenodd",
+  cx: "16.6871166",
+  cy: "31.607362",
+  r: "4.12269939"
+}), react_1.default.createElement("circle", {
+  id: "Oval-5",
+  fill: "#FFE102",
+  fillRule: "evenodd",
+  cx: "28.6625767",
+  cy: "31.607362",
+  r: "4.12269939"
+}), react_1.default.createElement("circle", {
+  id: "Oval-5",
+  fill: "#95D58E",
+  fillRule: "evenodd",
+  cx: "40.6380368",
+  cy: "31.607362",
+  r: "4.12269939"
+}), react_1.default.createElement("circle", {
+  id: "Oval-5",
+  fill: "#95D58E",
+  fillRule: "evenodd",
+  cx: "40.6380368",
+  cy: "31.607362",
+  r: "4.12269939"
+}), react_1.default.createElement("path", {
+  d: "M14.6257669,45.2515337 L40.5398773,45.2515337",
+  id: "Line",
+  stroke: "#556089",
+  strokeWidth: "3.75",
+  strokeLinecap: "round"
+}), react_1.default.createElement("path", {
+  d: "M47.803681,45.2515337 L59.3865031,45.2515337",
+  id: "Line",
+  stroke: "#556089",
+  strokeWidth: "3.75",
+  strokeLinecap: "round"
+}), react_1.default.createElement("path", {
+  d: "M66.6503067,45.2515337 L70.9693252,45.2515337",
+  id: "Line",
+  stroke: "#556089",
+  strokeWidth: "3.75",
+  strokeLinecap: "round"
+}), react_1.default.createElement("path", {
+  d: "M14.6257669,53.8895706 L35.0429448,53.8895706",
+  id: "Line",
+  stroke: "#556089",
+  strokeWidth: "3.75",
+  strokeLinecap: "round"
+}), react_1.default.createElement("path", {
+  d: "M14.6257669,63.1165644 L52.7116564,63.1165644",
+  id: "Line",
+  stroke: "#556089",
+  strokeWidth: "3.75",
+  strokeLinecap: "round"
+}), react_1.default.createElement("path", {
+  d: "M14.6257669,63.1165644 L52.7116564,63.1165644",
+  id: "Line",
+  stroke: "#556089",
+  strokeWidth: "3.75",
+  strokeLinecap: "round"
+}), react_1.default.createElement("path", {
+  d: "M59.9754601,62.9202454 L74.1104294,62.9202454",
+  id: "Line",
+  stroke: "#556089",
+  strokeWidth: "3.75",
+  strokeLinecap: "round"
+}), react_1.default.createElement("path", {
+  d: "M81.3742331,62.9202454 L90.0122699,62.9202454",
+  id: "Line",
+  stroke: "#556089",
+  strokeWidth: "3.75",
+  strokeLinecap: "round"
+}), react_1.default.createElement("path", {
+  d: "M42.3067485,53.8895706 L48.7852761,53.8895706",
+  id: "Line",
+  stroke: "#556089",
+  strokeWidth: "3.75",
+  strokeLinecap: "round"
+}), react_1.default.createElement("path", {
+  d: "M56.0490798,53.8895706 L80,53.8895706",
+  id: "Line",
+  stroke: "#556089",
+  strokeWidth: "3.75",
+  strokeLinecap: "round"
+})))))));
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/Services/icons/WebDevIcon.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/Services/icons/WebDevIcon.js"); } }(); 
+
+/***/ }),
+
+/***/ "../../components/lib/components/Services/icons/index.js":
+/*!***********************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/Services/icons/index.js ***!
+  \***********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function __export(m) {
+  for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+__export(__webpack_require__(/*! ./PhoneIcon */ "../../components/lib/components/Services/icons/PhoneIcon.js"));
+
+__export(__webpack_require__(/*! ./ServersIcon */ "../../components/lib/components/Services/icons/ServersIcon.js"));
+
+__export(__webpack_require__(/*! ./WebDevIcon */ "../../components/lib/components/Services/icons/WebDevIcon.js"));
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/Services/icons/index.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/Services/icons/index.js"); } }(); 
+
+/***/ }),
+
+/***/ "../../components/lib/components/Services/index.js":
+/*!*****************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/Services/index.js ***!
+  \*****************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function __export(m) {
+  for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+__export(__webpack_require__(/*! ./Services */ "../../components/lib/components/Services/Services.js"));
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/Services/index.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/Services/index.js"); } }(); 
+
+/***/ }),
+
+/***/ "../../components/lib/components/SideDrawer/SideDrawer.js":
+/*!************************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/SideDrawer/SideDrawer.js ***!
+  \************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importStar = this && this.__importStar || function (mod) {
+  if (mod && mod.__esModule) return mod;
+  var result = {};
+  if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+  result["default"] = mod;
+  return result;
+};
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+const react_1 = __importStar(__webpack_require__(/*! react */ "../../../node_modules/react/index.js"));
+
+const styled_components_1 = __importDefault(__webpack_require__(/*! styled-components */ "../../../node_modules/styled-components/dist/styled-components.browser.esm.js"));
+
+const styles_1 = __webpack_require__(/*! ../../styles */ "../../components/lib/styles/index.js");
+
+const polished_1 = __webpack_require__(/*! polished */ "../../../node_modules/polished/dist/polished.es.js");
+
+const clickOutside_1 = __webpack_require__(/*! ./clickOutside */ "../../components/lib/components/SideDrawer/clickOutside.js");
+
+var SideDrawerAlignment;
+
+(function (SideDrawerAlignment) {
+  SideDrawerAlignment["right"] = "right";
+  SideDrawerAlignment["left"] = "left";
+})(SideDrawerAlignment = exports.SideDrawerAlignment || (exports.SideDrawerAlignment = {}));
+
+const Background = styled_components_1.default.div.attrs(props => ({
+  style: {
+    opacity: props.open ? 1 : 0
+  }
+}))`
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: ${styles_1.opacity(styles_1.trueWhite, 0.8)};
+  pointer-events: none;
+  transition: 250ms opacity ease-in-out 100ms;
+`;
+const Container = styled_components_1.default.div.attrs(props => ({
+  style: {
+    transform: `translateX(
+       ${props.open ? '0%' : translateX[props.alignment]}
+    )`
+  }
+}))`
+  z-index: 1000;
+  position: fixed;
+  width: 60vw;
+  height: 100vh;
+  background-color: ${styles_1.trueBlack};
+  right: ${props => props.alignment === SideDrawerAlignment.right && '0'};
+  left: ${props => props.alignment === SideDrawerAlignment.left && '0'};
+  top: 0;
+  transition: 0.5s ${polished_1.timingFunctions('easeInOutCubic')};
+`;
+const translateX = {
+  [SideDrawerAlignment.right]: '100%',
+  [SideDrawerAlignment.left]: '-100%'
+};
+
+exports.SideDrawer = ({
+  className,
+  children,
+  open = false,
+  alignment = SideDrawerAlignment.right,
+  onClickOutside
+}) => {
+  const clickOutsideCallback = react_1.useCallback(() => {
+    if (open && onClickOutside) {
+      onClickOutside();
+    }
+  }, [onClickOutside, open]);
+  const ref = clickOutside_1.useClickOutside(clickOutsideCallback);
+  return react_1.default.createElement(react_1.default.Fragment, null, react_1.default.createElement(Background, {
+    open: open
+  }), react_1.default.createElement(Container, {
+    ref: ref,
+    alignment: alignment,
+    open: open,
+    className: className
+  }, children));
+};
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/SideDrawer/SideDrawer.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/SideDrawer/SideDrawer.js"); } }(); 
+
+/***/ }),
+
+/***/ "../../components/lib/components/SideDrawer/clickOutside.js":
+/*!**************************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/SideDrawer/clickOutside.js ***!
+  \**************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+const react_1 = __webpack_require__(/*! react */ "../../../node_modules/react/index.js");
+
+exports.useClickOutside = onClickOutside => {
+  const domNode = react_1.useRef();
+
+  const handleClickOutside = e => {
+    if (domNode && domNode.current.contains(e.target)) {
+      return;
+    }
+
+    onClickOutside();
+  };
+
+  react_1.useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [onClickOutside]);
+  return domNode;
+};
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/SideDrawer/clickOutside.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/SideDrawer/clickOutside.js"); } }(); 
+
+/***/ }),
+
+/***/ "../../components/lib/components/SideDrawer/index.js":
+/*!*******************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/SideDrawer/index.js ***!
+  \*******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function __export(m) {
+  for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+__export(__webpack_require__(/*! ./SideDrawer */ "../../components/lib/components/SideDrawer/SideDrawer.js"));
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/SideDrawer/index.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/SideDrawer/index.js"); } }(); 
 
 /***/ }),
 
@@ -48196,6 +56733,101 @@ __export(__webpack_require__(/*! ./Text */ "../../components/lib/components/Text
 
 /***/ }),
 
+/***/ "../../components/lib/components/TextArea/TextArea.js":
+/*!********************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/TextArea/TextArea.js ***!
+  \********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+const noop_1 = __importDefault(__webpack_require__(/*! lodash/noop */ "../../../node_modules/lodash/noop.js"));
+
+const react_1 = __importDefault(__webpack_require__(/*! react */ "../../../node_modules/react/index.js"));
+
+const styled_components_1 = __importDefault(__webpack_require__(/*! styled-components */ "../../../node_modules/styled-components/dist/styled-components.browser.esm.js"));
+
+const styles_1 = __webpack_require__(/*! ../../styles */ "../../components/lib/styles/index.js");
+
+const Input_1 = __webpack_require__(/*! ../Input */ "../../components/lib/components/Input/index.js");
+
+const StyledTextArea = styled_components_1.default.textarea`
+  color: ${styles_1.trueBlack};
+  font-family: 'Red Hat Text', sans-serif;
+  font-size: 16px;
+  outline: 0;
+  border: 0;
+  background-color: ${styles_1.transparent};
+  padding: 0;
+  resize: none;
+  width: 100%;
+  height: 100%;
+
+  &::placeholder {
+    color: ${props => props.placeholderTextColor};
+  }
+`;
+
+exports.TextArea = ({
+  value,
+  placeholder,
+  style,
+  className,
+  placeholderTextColor = Input_1.defaultInputPlaceholderTexColor,
+  autoFocus = true,
+  onChangeValue = noop_1.default,
+  onBlur = noop_1.default,
+  onFocus = noop_1.default
+}) => react_1.default.createElement(StyledTextArea, {
+  placeholderTextColor: placeholderTextColor,
+  className: className,
+  style: style,
+  value: value,
+  onChange: e => onChangeValue(e.target.value),
+  placeholder: placeholder,
+  autoFocus: autoFocus,
+  onBlur: onBlur,
+  onFocus: onFocus
+});
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/TextArea/TextArea.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/TextArea/TextArea.js"); } }(); 
+
+/***/ }),
+
+/***/ "../../components/lib/components/TextArea/index.js":
+/*!*****************************************************************************************************!*\
+  !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/TextArea/index.js ***!
+  \*****************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function __export(m) {
+  for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+__export(__webpack_require__(/*! ./TextArea */ "../../components/lib/components/TextArea/TextArea.js"));
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/TextArea/index.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/TextArea/index.js"); } }(); 
+
+/***/ }),
+
 /***/ "../../components/lib/components/ViewButton/ViewButton.js":
 /*!************************************************************************************************************!*\
   !*** /Users/jon/Projects/portfolio-components/packages/components/lib/components/ViewButton/ViewButton.js ***!
@@ -48327,14 +56959,30 @@ function __export(m) {
 
 Object.defineProperty(exports, "__esModule", {
   value: true
-}); // text
+}); // Text
 
 __export(__webpack_require__(/*! ./Text */ "../../components/lib/components/Text/index.js"));
 
-__export(__webpack_require__(/*! ./Heading */ "../../components/lib/components/Heading/index.js")); // logos
+__export(__webpack_require__(/*! ./Heading */ "../../components/lib/components/Heading/index.js"));
+
+__export(__webpack_require__(/*! ./Input */ "../../components/lib/components/Input/index.js"));
+
+__export(__webpack_require__(/*! ./TextArea */ "../../components/lib/components/TextArea/index.js"));
+
+__export(__webpack_require__(/*! ./SectionHeader */ "../../components/lib/components/SectionHeader/index.js")); // Logos
 
 
-__export(__webpack_require__(/*! ./OpenGovLogo */ "../../components/lib/components/OpenGovLogo/index.js")); // UI
+__export(__webpack_require__(/*! ./OpenGovLogo */ "../../components/lib/components/OpenGovLogo/index.js"));
+
+__export(__webpack_require__(/*! ./OpenGovEmblem */ "../../components/lib/components/OpenGovEmblem/index.js"));
+
+__export(__webpack_require__(/*! ./LaserlikeLogo */ "../../components/lib/components/LaserlikeLogo/index.js"));
+
+__export(__webpack_require__(/*! ./BarkdLogo */ "../../components/lib/components/BarkdLogo/index.js"));
+
+__export(__webpack_require__(/*! ./AnimatedJonLogo */ "../../components/lib/components/AnimatedJonLogo/index.js"));
+
+__export(__webpack_require__(/*! ./JonLogo */ "../../components/lib/components/JonLogo/index.js")); // UI
 
 
 __export(__webpack_require__(/*! ./CaseStudyCard */ "../../components/lib/components/CaseStudyCard/index.js"));
@@ -48343,7 +56991,29 @@ __export(__webpack_require__(/*! ./ViewButton */ "../../components/lib/component
 
 __export(__webpack_require__(/*! ./BrowserFrame */ "../../components/lib/components/BrowserFrame/index.js"));
 
+__export(__webpack_require__(/*! ./PhoneFrame */ "../../components/lib/components/PhoneFrame/index.js"));
+
 __export(__webpack_require__(/*! ./Tag */ "../../components/lib/components/Tag/index.js"));
+
+__export(__webpack_require__(/*! ./CheckList */ "../../components/lib/components/CheckList/index.js"));
+
+__export(__webpack_require__(/*! ./Navigation */ "../../components/lib/components/Navigation/index.js"));
+
+__export(__webpack_require__(/*! ./Button */ "../../components/lib/components/Button/index.js"));
+
+__export(__webpack_require__(/*! ./Services */ "../../components/lib/components/Services/index.js"));
+
+__export(__webpack_require__(/*! ./Hero */ "../../components/lib/components/Hero/index.js"));
+
+__export(__webpack_require__(/*! ./LoadingBanner */ "../../components/lib/components/LoadingBanner/index.js"));
+
+__export(__webpack_require__(/*! ./Footer */ "../../components/lib/components/Footer/index.js"));
+
+__export(__webpack_require__(/*! ./About */ "../../components/lib/components/About/index.js"));
+
+__export(__webpack_require__(/*! ./Form */ "../../components/lib/components/Form/index.js"));
+
+__export(__webpack_require__(/*! ./SideDrawer */ "../../components/lib/components/SideDrawer/index.js"));
  void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/components/index.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/components/index.js"); } }(); 
 
 /***/ }),
@@ -48445,8 +57115,9 @@ exports.barkdDarkBlue = '#081018'; // default theme
 exports.darkGreen = '#24474A';
 exports.lightTan = '#FFF0D5';
 exports.tan = '#D0A55D';
-exports.blue = '#3B58B9';
-exports.offWhite = '#f3f3f4';
+exports.mediumBlue = '#e0e1ea';
+exports.blue = '#556089';
+exports.offWhite = '#F4F5F9';
  void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/styles/colors.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/styles/colors.js"); } }(); 
 
 /***/ }),
@@ -48492,7 +57163,52 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.unit = 7;
+exports.maxWidth = 1024;
  void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/components/lib/styles/units.js"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/components/lib/styles/units.js"); } }(); 
+
+/***/ }),
+
+/***/ "../assets/images/about_image.jpg":
+/*!****************************************!*\
+  !*** ../assets/images/about_image.jpg ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "about_image.jpg";
+
+/***/ }),
+
+/***/ "../assets/images/barkdScreenshot.png":
+/*!********************************************!*\
+  !*** ../assets/images/barkdScreenshot.png ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "barkdScreenshot.png";
+
+/***/ }),
+
+/***/ "../assets/images/laserlikeScreenshot.png":
+/*!************************************************!*\
+  !*** ../assets/images/laserlikeScreenshot.png ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "laserlikeScreenshot.png";
+
+/***/ }),
+
+/***/ "../assets/images/openGovScreenshot.png":
+/*!**********************************************!*\
+  !*** ../assets/images/openGovScreenshot.png ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "openGovScreenshot.png";
 
 /***/ }),
 
@@ -48503,8 +57219,260 @@ exports.unit = 7;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var _interopRequireDefault=__webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../../../node_modules/@babel/runtime/helpers/interopRequireDefault.js");Object.defineProperty(exports,"__esModule",{value:true});exports.App=void 0;var _taggedTemplateLiteralLoose2=_interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/taggedTemplateLiteralLoose */ "../../../node_modules/@babel/runtime/helpers/taggedTemplateLiteralLoose.js"));var _react=_interopRequireDefault(__webpack_require__(/*! react */ "../../../node_modules/react/index.js"));var _root=__webpack_require__(/*! react-hot-loader/root */ "../../../node_modules/react-hot-loader/root.js");var _components=__webpack_require__(/*! @portfolio/components */ "../../components/lib/index.js");var _styledComponents=_interopRequireDefault(__webpack_require__(/*! styled-components */ "../../../node_modules/styled-components/dist/styled-components.browser.esm.js"));var _jsxFileName="/Users/jon/Projects/portfolio-components/packages/web/src/app.tsx";function _templateObject5(){var data=(0,_taggedTemplateLiteralLoose2.default)(["\n  position: absolute;\n  top: 0;\n  right: 0;\n  opacity: 0.08;\n  z-index: -1;\n  width: 35%;\n  max-width: 320px;\n"]);_templateObject5=function _templateObject5(){return data;};return data;}function _templateObject4(){var data=(0,_taggedTemplateLiteralLoose2.default)(["\n  height: 450px;\n"]);_templateObject4=function _templateObject4(){return data;};return data;}function _templateObject3(){var data=(0,_taggedTemplateLiteralLoose2.default)(["\n  background-color: ",";\n"]);_templateObject3=function _templateObject3(){return data;};return data;}function _templateObject2(){var data=(0,_taggedTemplateLiteralLoose2.default)(["\n  max-width: 1024px;\n"]);_templateObject2=function _templateObject2(){return data;};return data;}function _templateObject(){var data=(0,_taggedTemplateLiteralLoose2.default)(["\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n\n  & > *:not(:first-child) {\n    margin-top: ","px;\n  }\n"]);_templateObject=function _templateObject(){return data;};return data;}var Container=_styledComponents.default.div(_templateObject(),unit*7);var BaseCaseStudyCard=(0,_styledComponents.default)(_components.CaseStudyCard)(_templateObject2());var OpenGovCaseStudyCard=(0,_styledComponents.default)(BaseCaseStudyCard)(_templateObject3(),_components.openGovBlue);var OpenGovBrowser=(0,_styledComponents.default)(_components.BrowserFrame)(_templateObject4());var StyledOpenGovEmblem=(0,_styledComponents.default)(_components.OpenGovEmblem)(_templateObject5());var App=(0,_root.hot)(function(){return _react.default.createElement(_react.default.Fragment,null,_react.default.createElement(OpenGovCaseStudyCard,{__source:{fileName:_jsxFileName,lineNumber:47,columnNumber:5}},_react.default.createElement(_components.CaseStudyCard.ImageContent,{__source:{fileName:_jsxFileName,lineNumber:48,columnNumber:7}},_react.default.createElement(OpenGovBrowser,{__source:{fileName:_jsxFileName,lineNumber:49,columnNumber:9}},_react.default.createElement("div",{__source:{fileName:_jsxFileName,lineNumber:50,columnNumber:11}}))),_react.default.createElement(_components.CaseStudyCard.TextContent,{__source:{fileName:_jsxFileName,lineNumber:53,columnNumber:7}},_react.default.createElement(_components.CaseStudyCard.Logo,{__source:{fileName:_jsxFileName,lineNumber:54,columnNumber:9}},_react.default.createElement(_components.OpenGovLogo,{contentStyle:"light",__source:{fileName:_jsxFileName,lineNumber:55,columnNumber:11}})),_react.default.createElement(_components.CaseStudyCard.Title,{__source:{fileName:_jsxFileName,lineNumber:57,columnNumber:9}},"Accelerating the future of open governments"),_react.default.createElement(_components.CaseStudyCard.Body,{__source:{fileName:_jsxFileName,lineNumber:60,columnNumber:9}},"I worked with OpenGov to accelerate feature development for their next generation reporting platform."),_react.default.createElement(_components.CaseStudyCard.ViewCaseStudyButton,{__source:{fileName:_jsxFileName,lineNumber:64,columnNumber:9}},"View Case Study"),_react.default.createElement(_components.CaseStudyCard.Tags,{__source:{fileName:_jsxFileName,lineNumber:67,columnNumber:9}},_react.default.createElement(_components.Tag,{__source:{fileName:_jsxFileName,lineNumber:68,columnNumber:11}},"React"),_react.default.createElement(_components.Tag,{__source:{fileName:_jsxFileName,lineNumber:69,columnNumber:11}},"Typescript"),_react.default.createElement(_components.Tag,{__source:{fileName:_jsxFileName,lineNumber:70,columnNumber:11}},"D3"))),_react.default.createElement(StyledOpenGovEmblem,{__source:{fileName:_jsxFileName,lineNumber:73,columnNumber:7}})));});exports.App=App;
+var _interopRequireDefault=__webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../../../node_modules/@babel/runtime/helpers/interopRequireDefault.js");Object.defineProperty(exports,"__esModule",{value:true});exports.App=void 0;var _taggedTemplateLiteralLoose2=_interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/taggedTemplateLiteralLoose */ "../../../node_modules/@babel/runtime/helpers/taggedTemplateLiteralLoose.js"));var _components=__webpack_require__(/*! @portfolio/components */ "../../components/lib/index.js");var _react=_interopRequireDefault(__webpack_require__(/*! react */ "../../../node_modules/react/index.js"));var _root=__webpack_require__(/*! react-hot-loader/root */ "../../../node_modules/react-hot-loader/root.js");var _styledComponents=_interopRequireDefault(__webpack_require__(/*! styled-components */ "../../../node_modules/styled-components/dist/styled-components.browser.esm.js"));var _about_image=_interopRequireDefault(__webpack_require__(/*! ../assets/images/about_image.jpg */ "../assets/images/about_image.jpg"));var _components2=__webpack_require__(/*! ./components */ "../src/components/index.ts");var _jsxFileName="/Users/jon/Projects/portfolio-components/packages/web/src/app.tsx";function _templateObject3(){var data=(0,_taggedTemplateLiteralLoose2.default)(["\n  max-width: 1024px;\n  padding: ","px 0;\n  background-color: ",";\n  border-radius: ","px;\n  position: relative;\n  width: 100%;\n  max-width: 1024px;\n  padding: ","px ","px;\n"]);_templateObject3=function _templateObject3(){return data;};return data;}function _templateObject2(){var data=(0,_taggedTemplateLiteralLoose2.default)(["\n  background-image: url(",");\n  background-size: cover;\n"]);_templateObject2=function _templateObject2(){return data;};return data;}function _templateObject(){var data=(0,_taggedTemplateLiteralLoose2.default)(["\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n\n  & > * {\n    width: 100%;\n  }\n"]);_templateObject=function _templateObject(){return data;};return data;}var Container=_styledComponents.default.div(_templateObject());var AboutImage=_styledComponents.default.div(_templateObject2(),_about_image.default);var ContactForm=(0,_styledComponents.default)(_components.Form)(_templateObject3(),_components.unit*15,_components.trueWhite,_components.unit*2,_components.unit*15,_components.unit*17);var App=(0,_root.hot)(function(){return _react.default.createElement(_react.default.Fragment,null,_react.default.createElement(Container,{__source:{fileName:_jsxFileName,lineNumber:51,columnNumber:5}},_react.default.createElement(_components2.Navbar,{__source:{fileName:_jsxFileName,lineNumber:52,columnNumber:7}}),_react.default.createElement(_components2.HeroSection,{__source:{fileName:_jsxFileName,lineNumber:53,columnNumber:7}}),_react.default.createElement(_components2.CaseStudies,{__source:{fileName:_jsxFileName,lineNumber:54,columnNumber:7}}),_react.default.createElement(_components2.ServicesSection,{__source:{fileName:_jsxFileName,lineNumber:55,columnNumber:7}}),_react.default.createElement(_components.About,{__source:{fileName:_jsxFileName,lineNumber:57,columnNumber:7}},_react.default.createElement(_components.About.TextContent,{__source:{fileName:_jsxFileName,lineNumber:58,columnNumber:9}},_react.default.createElement(_components.About.Title,{__source:{fileName:_jsxFileName,lineNumber:59,columnNumber:11}},"About me..."),_react.default.createElement(_components.About.Body,{__source:{fileName:_jsxFileName,lineNumber:60,columnNumber:11}},"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")),_react.default.createElement(_components.About.ImageContent,{__source:{fileName:_jsxFileName,lineNumber:70,columnNumber:9}},_react.default.createElement(AboutImage,{__source:{fileName:_jsxFileName,lineNumber:71,columnNumber:11}}))),_react.default.createElement(ContactForm,{contentStyle:"dark",__source:{fileName:_jsxFileName,lineNumber:75,columnNumber:7}},_react.default.createElement(_components.Form.Title,{__source:{fileName:_jsxFileName,lineNumber:76,columnNumber:9}},"Let's work together!"),_react.default.createElement(_components.Form.Note,{__source:{fileName:_jsxFileName,lineNumber:77,columnNumber:9}},"Want to chat? Shoot me an email at",' ',_react.default.createElement("a",{href:"mailto:jpbrennecke@gmail.com",target:"_blank",__source:{fileName:_jsxFileName,lineNumber:79,columnNumber:11}},"jpbrennecke@gmail.com")),_react.default.createElement(_components.Form.Field,{__source:{fileName:_jsxFileName,lineNumber:83,columnNumber:9}},_react.default.createElement(_components.Form.Label,{__source:{fileName:_jsxFileName,lineNumber:84,columnNumber:11}},"Name & Company"),_react.default.createElement(_components.Form.Input,{autoFocus:false,name:"name",placeholder:"John from Google...",__source:{fileName:_jsxFileName,lineNumber:85,columnNumber:11}})),_react.default.createElement(_components.Form.Field,{__source:{fileName:_jsxFileName,lineNumber:91,columnNumber:9}},_react.default.createElement(_components.Form.Label,{__source:{fileName:_jsxFileName,lineNumber:92,columnNumber:11}},"Email"),_react.default.createElement(_components.Form.Input,{autoFocus:false,name:"email",placeholder:"john@google.com",__source:{fileName:_jsxFileName,lineNumber:93,columnNumber:11}})),_react.default.createElement(_components.Form.Field,{__source:{fileName:_jsxFileName,lineNumber:99,columnNumber:9}},_react.default.createElement(_components.Form.Label,{__source:{fileName:_jsxFileName,lineNumber:100,columnNumber:11}},"Project Description"),_react.default.createElement(_components.Form.TextArea,{autoFocus:false,placeholder:"We need help redesigning our app...",__source:{fileName:_jsxFileName,lineNumber:101,columnNumber:11}})),_react.default.createElement(_components.Form.Button,{variant:"primary",size:"large",__source:{fileName:_jsxFileName,lineNumber:106,columnNumber:9}},"Send")),_react.default.createElement(_components2.FooterSection,{__source:{fileName:_jsxFileName,lineNumber:111,columnNumber:7}})),_react.default.createElement(_components.LoadingBanner,{contentStyle:"dark",__source:{fileName:_jsxFileName,lineNumber:113,columnNumber:5}}));});exports.App=App;
  void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/web/src/app.tsx"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/web/src/app.tsx"); } }(); 
+
+/***/ }),
+
+/***/ "../src/components/Capabilities/Capabilities.tsx":
+/*!*******************************************************!*\
+  !*** ../src/components/Capabilities/Capabilities.tsx ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _interopRequireDefault=__webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../../../node_modules/@babel/runtime/helpers/interopRequireDefault.js");Object.defineProperty(exports,"__esModule",{value:true});exports.Capabilities=void 0;var _taggedTemplateLiteralLoose2=_interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/taggedTemplateLiteralLoose */ "../../../node_modules/@babel/runtime/helpers/taggedTemplateLiteralLoose.js"));var _react=_interopRequireDefault(__webpack_require__(/*! react */ "../../../node_modules/react/index.js"));var _components=__webpack_require__(/*! @portfolio/components */ "../../components/lib/index.js");var _styledComponents=_interopRequireDefault(__webpack_require__(/*! styled-components */ "../../../node_modules/styled-components/dist/styled-components.browser.esm.js"));var _jsxFileName="/Users/jon/Projects/portfolio-components/packages/web/src/components/Capabilities/Capabilities.tsx";function _templateObject3(){var data=(0,_taggedTemplateLiteralLoose2.default)(["\n  padding: ","px ","px;\n  max-width: ","px;\n"]);_templateObject3=function _templateObject3(){return data;};return data;}function _templateObject2(){var data=(0,_taggedTemplateLiteralLoose2.default)(["\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  padding: 0 ","px;\n"]);_templateObject2=function _templateObject2(){return data;};return data;}function _templateObject(){var data=(0,_taggedTemplateLiteralLoose2.default)(["\n  padding: 0 0 ","px 0;\n"]);_templateObject=function _templateObject(){return data;};return data;}var StyledSectionHeader=(0,_styledComponents.default)(_components.SectionHeader)(_templateObject(),_components.unit*15);var CheckListContainer=_styledComponents.default.div(_templateObject2(),_components.unit*3);var Container=_styledComponents.default.div(_templateObject3(),_components.unit*15,_components.unit*5,_components.maxWidth);var Capabilities=function Capabilities(){return _react.default.createElement(Container,{__source:{fileName:_jsxFileName,lineNumber:27,columnNumber:3}},_react.default.createElement(StyledSectionHeader,{__source:{fileName:_jsxFileName,lineNumber:28,columnNumber:5}},_react.default.createElement(_components.SectionHeader.SubTitle,{__source:{fileName:_jsxFileName,lineNumber:29,columnNumber:7}},"What I do best"),_react.default.createElement(_components.SectionHeader.Title,{__source:{fileName:_jsxFileName,lineNumber:30,columnNumber:7}},"Capabilities")),_react.default.createElement(CheckListContainer,{__source:{fileName:_jsxFileName,lineNumber:32,columnNumber:5}},_react.default.createElement(_components.CheckList,{__source:{fileName:_jsxFileName,lineNumber:33,columnNumber:7}},_react.default.createElement(_components.CheckList.Item,{__source:{fileName:_jsxFileName,lineNumber:34,columnNumber:9}},"Mobile App Development"),_react.default.createElement(_components.CheckList.Item,{__source:{fileName:_jsxFileName,lineNumber:35,columnNumber:9}},"Mobile App Design"),_react.default.createElement(_components.CheckList.Item,{__source:{fileName:_jsxFileName,lineNumber:36,columnNumber:9}},"Wireframing"),_react.default.createElement(_components.CheckList.Item,{__source:{fileName:_jsxFileName,lineNumber:37,columnNumber:9}},"Web Development"),_react.default.createElement(_components.CheckList.Item,{__source:{fileName:_jsxFileName,lineNumber:38,columnNumber:9}},"Web Design"),_react.default.createElement(_components.CheckList.Item,{__source:{fileName:_jsxFileName,lineNumber:39,columnNumber:9}},"Consulting & Strategy"))));};exports.Capabilities=Capabilities;
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/web/src/components/Capabilities/Capabilities.tsx"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/web/src/components/Capabilities/Capabilities.tsx"); } }(); 
+
+/***/ }),
+
+/***/ "../src/components/Capabilities/index.ts":
+/*!***********************************************!*\
+  !*** ../src/components/Capabilities/index.ts ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+Object.defineProperty(exports,"__esModule",{value:true});var _Capabilities=__webpack_require__(/*! ./Capabilities */ "../src/components/Capabilities/Capabilities.tsx");Object.keys(_Capabilities).forEach(function(key){if(key==="default"||key==="__esModule")return;Object.defineProperty(exports,key,{enumerable:true,get:function get(){return _Capabilities[key];}});});
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/web/src/components/Capabilities/index.ts"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/web/src/components/Capabilities/index.ts"); } }(); 
+
+/***/ }),
+
+/***/ "../src/components/CaseStudies/BarkdCaseStudy/BarkdCaseStudy.tsx":
+/*!***********************************************************************!*\
+  !*** ../src/components/CaseStudies/BarkdCaseStudy/BarkdCaseStudy.tsx ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _interopRequireDefault=__webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../../../node_modules/@babel/runtime/helpers/interopRequireDefault.js");Object.defineProperty(exports,"__esModule",{value:true});exports.BarkdCaseStudy=void 0;var _taggedTemplateLiteralLoose2=_interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/taggedTemplateLiteralLoose */ "../../../node_modules/@babel/runtime/helpers/taggedTemplateLiteralLoose.js"));var _components=__webpack_require__(/*! @portfolio/components */ "../../components/lib/index.js");var _react=_interopRequireDefault(__webpack_require__(/*! react */ "../../../node_modules/react/index.js"));var _styledComponents=_interopRequireDefault(__webpack_require__(/*! styled-components */ "../../../node_modules/styled-components/dist/styled-components.browser.esm.js"));var _BaseCaseStudyCard=__webpack_require__(/*! ../BaseCaseStudyCard */ "../src/components/CaseStudies/BaseCaseStudyCard/index.ts");var _barkdScreenshot=_interopRequireDefault(__webpack_require__(/*! ../../../../assets/images/barkdScreenshot.png */ "../assets/images/barkdScreenshot.png"));var _jsxFileName="/Users/jon/Projects/portfolio-components/packages/web/src/components/CaseStudies/BarkdCaseStudy/BarkdCaseStudy.tsx";function _templateObject(){var data=(0,_taggedTemplateLiteralLoose2.default)(["\n  background-color: ",";\n"]);_templateObject=function _templateObject(){return data;};return data;}var BarkdCaseStudyCard=(0,_styledComponents.default)(_BaseCaseStudyCard.BaseCaseStudyCard)(_templateObject(),_components.barkdDarkBlue);var BarkdScreenshot=function BarkdScreenshot(){return _react.default.createElement("image",{mask:"url(#mask-10)",x:"3",y:"3",width:"744",href:_barkdScreenshot.default,__source:{fileName:_jsxFileName,lineNumber:19,columnNumber:3}});};var BarkdCaseStudy=function BarkdCaseStudy(){return _react.default.createElement(BarkdCaseStudyCard,{__source:{fileName:_jsxFileName,lineNumber:23,columnNumber:3}},_react.default.createElement(_components.CaseStudyCard.ImageContent,{__source:{fileName:_jsxFileName,lineNumber:24,columnNumber:5}},_react.default.createElement(_components.PhoneFrame,{__source:{fileName:_jsxFileName,lineNumber:25,columnNumber:7}},_react.default.createElement(BarkdScreenshot,{__source:{fileName:_jsxFileName,lineNumber:26,columnNumber:9}}))),_react.default.createElement(_components.CaseStudyCard.TextContent,{__source:{fileName:_jsxFileName,lineNumber:29,columnNumber:5}},_react.default.createElement(_components.CaseStudyCard.Logo,{__source:{fileName:_jsxFileName,lineNumber:30,columnNumber:7}},_react.default.createElement(_components.BarkdLogo,{contentStyle:"light",__source:{fileName:_jsxFileName,lineNumber:31,columnNumber:9}})),_react.default.createElement(_components.CaseStudyCard.Title,{__source:{fileName:_jsxFileName,lineNumber:33,columnNumber:7}},"Building a cross-platform MVP for an early-stage startup"),_react.default.createElement(_components.CaseStudyCard.Body,{__source:{fileName:_jsxFileName,lineNumber:36,columnNumber:7}},"Starting from scratch, I worked with Barkd to create an iOS, Android and web experience for their exciting new platform"),_react.default.createElement(_components.CaseStudyCard.ViewCaseStudyButton,{__source:{fileName:_jsxFileName,lineNumber:40,columnNumber:7}},"View Case Study"),_react.default.createElement(_components.CaseStudyCard.Tags,{__source:{fileName:_jsxFileName,lineNumber:43,columnNumber:7}},_react.default.createElement(_components.Tag,{__source:{fileName:_jsxFileName,lineNumber:44,columnNumber:9}},"React Native"),_react.default.createElement(_components.Tag,{__source:{fileName:_jsxFileName,lineNumber:45,columnNumber:9}},"Typescript"),_react.default.createElement(_components.Tag,{__source:{fileName:_jsxFileName,lineNumber:46,columnNumber:9}},"Firebase"))));};exports.BarkdCaseStudy=BarkdCaseStudy;
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/web/src/components/CaseStudies/BarkdCaseStudy/BarkdCaseStudy.tsx"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/web/src/components/CaseStudies/BarkdCaseStudy/BarkdCaseStudy.tsx"); } }(); 
+
+/***/ }),
+
+/***/ "../src/components/CaseStudies/BarkdCaseStudy/index.ts":
+/*!*************************************************************!*\
+  !*** ../src/components/CaseStudies/BarkdCaseStudy/index.ts ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+Object.defineProperty(exports,"__esModule",{value:true});var _BarkdCaseStudy=__webpack_require__(/*! ./BarkdCaseStudy */ "../src/components/CaseStudies/BarkdCaseStudy/BarkdCaseStudy.tsx");Object.keys(_BarkdCaseStudy).forEach(function(key){if(key==="default"||key==="__esModule")return;Object.defineProperty(exports,key,{enumerable:true,get:function get(){return _BarkdCaseStudy[key];}});});
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/web/src/components/CaseStudies/BarkdCaseStudy/index.ts"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/web/src/components/CaseStudies/BarkdCaseStudy/index.ts"); } }(); 
+
+/***/ }),
+
+/***/ "../src/components/CaseStudies/BaseCaseStudyCard/BaseCaseStudyCard.tsx":
+/*!*****************************************************************************!*\
+  !*** ../src/components/CaseStudies/BaseCaseStudyCard/BaseCaseStudyCard.tsx ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _interopRequireDefault=__webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../../../node_modules/@babel/runtime/helpers/interopRequireDefault.js");Object.defineProperty(exports,"__esModule",{value:true});exports.BaseCaseStudyCard=void 0;var _taggedTemplateLiteralLoose2=_interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/taggedTemplateLiteralLoose */ "../../../node_modules/@babel/runtime/helpers/taggedTemplateLiteralLoose.js"));var _styledComponents=_interopRequireDefault(__webpack_require__(/*! styled-components */ "../../../node_modules/styled-components/dist/styled-components.browser.esm.js"));var _components=__webpack_require__(/*! @portfolio/components */ "../../components/lib/index.js");function _templateObject(){var data=(0,_taggedTemplateLiteralLoose2.default)(["\n  transition: 300ms transform ease-in-out;\n\n  &:hover {\n    transform: scale(1.025);\n  }\n"]);_templateObject=function _templateObject(){return data;};return data;}var BaseCaseStudyCard=(0,_styledComponents.default)(_components.CaseStudyCard)(_templateObject());exports.BaseCaseStudyCard=BaseCaseStudyCard;
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/web/src/components/CaseStudies/BaseCaseStudyCard/BaseCaseStudyCard.tsx"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/web/src/components/CaseStudies/BaseCaseStudyCard/BaseCaseStudyCard.tsx"); } }(); 
+
+/***/ }),
+
+/***/ "../src/components/CaseStudies/BaseCaseStudyCard/index.ts":
+/*!****************************************************************!*\
+  !*** ../src/components/CaseStudies/BaseCaseStudyCard/index.ts ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+Object.defineProperty(exports,"__esModule",{value:true});var _BaseCaseStudyCard=__webpack_require__(/*! ./BaseCaseStudyCard */ "../src/components/CaseStudies/BaseCaseStudyCard/BaseCaseStudyCard.tsx");Object.keys(_BaseCaseStudyCard).forEach(function(key){if(key==="default"||key==="__esModule")return;Object.defineProperty(exports,key,{enumerable:true,get:function get(){return _BaseCaseStudyCard[key];}});});
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/web/src/components/CaseStudies/BaseCaseStudyCard/index.ts"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/web/src/components/CaseStudies/BaseCaseStudyCard/index.ts"); } }(); 
+
+/***/ }),
+
+/***/ "../src/components/CaseStudies/CaseStudies.tsx":
+/*!*****************************************************!*\
+  !*** ../src/components/CaseStudies/CaseStudies.tsx ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _interopRequireDefault=__webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../../../node_modules/@babel/runtime/helpers/interopRequireDefault.js");Object.defineProperty(exports,"__esModule",{value:true});exports.CaseStudies=void 0;var _taggedTemplateLiteralLoose2=_interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/taggedTemplateLiteralLoose */ "../../../node_modules/@babel/runtime/helpers/taggedTemplateLiteralLoose.js"));var _components=__webpack_require__(/*! @portfolio/components */ "../../components/lib/index.js");var _react=_interopRequireDefault(__webpack_require__(/*! react */ "../../../node_modules/react/index.js"));var _styledComponents=_interopRequireDefault(__webpack_require__(/*! styled-components */ "../../../node_modules/styled-components/dist/styled-components.browser.esm.js"));var _BarkdCaseStudy=__webpack_require__(/*! ./BarkdCaseStudy */ "../src/components/CaseStudies/BarkdCaseStudy/index.ts");var _LaserlikeCaseStudy=__webpack_require__(/*! ./LaserlikeCaseStudy */ "../src/components/CaseStudies/LaserlikeCaseStudy/index.ts");var _OpenGovCaseStudy=__webpack_require__(/*! ./OpenGovCaseStudy */ "../src/components/CaseStudies/OpenGovCaseStudy/index.ts");var _jsxFileName="/Users/jon/Projects/portfolio-components/packages/web/src/components/CaseStudies/CaseStudies.tsx";function _templateObject2(){var data=(0,_taggedTemplateLiteralLoose2.default)(["\n  padding: ","px ","px;\n"]);_templateObject2=function _templateObject2(){return data;};return data;}function _templateObject(){var data=(0,_taggedTemplateLiteralLoose2.default)(["\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  position: relative;\n  padding: ","px 0;\n  max-width: ","px;\n\n  & > *:not(:first-child) {\n    margin-top: ","px;\n  }\n\n  &::before {\n    content: '';\n    position: absolute;\n    top: 0;\n    left: 50%;\n    bottom: 0;\n    width: 100vw;\n    background-color: ",";\n    z-index: -1;\n    transform: translateX(-50%);\n  }\n"]);_templateObject=function _templateObject(){return data;};return data;}var Container=_styledComponents.default.div(_templateObject(),_components.unit*7,_components.maxWidth,_components.unit*7,_components.offWhite);var StyledSectionHeader=(0,_styledComponents.default)(_components.SectionHeader)(_templateObject2(),_components.unit*10,_components.unit*5);var CaseStudies=function CaseStudies(){return _react.default.createElement(Container,{__source:{fileName:_jsxFileName,lineNumber:38,columnNumber:3}},_react.default.createElement(StyledSectionHeader,{__source:{fileName:_jsxFileName,lineNumber:39,columnNumber:5}},_react.default.createElement(_components.SectionHeader.SubTitle,{__source:{fileName:_jsxFileName,lineNumber:40,columnNumber:7}},"Case"),_react.default.createElement(_components.SectionHeader.Title,{__source:{fileName:_jsxFileName,lineNumber:41,columnNumber:7}},"Studies"),_react.default.createElement(_components.SectionHeader.Paragraph,{__source:{fileName:_jsxFileName,lineNumber:42,columnNumber:7}},"Check out some featured projects that I've been working on recently. Want to see more? Contact me for more information.")),_react.default.createElement(_OpenGovCaseStudy.OpenGovCaseStudy,{__source:{fileName:_jsxFileName,lineNumber:47,columnNumber:5}}),_react.default.createElement(_LaserlikeCaseStudy.LaserlikeCaseStudy,{__source:{fileName:_jsxFileName,lineNumber:48,columnNumber:5}}),_react.default.createElement(_BarkdCaseStudy.BarkdCaseStudy,{__source:{fileName:_jsxFileName,lineNumber:49,columnNumber:5}}));};exports.CaseStudies=CaseStudies;
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/web/src/components/CaseStudies/CaseStudies.tsx"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/web/src/components/CaseStudies/CaseStudies.tsx"); } }(); 
+
+/***/ }),
+
+/***/ "../src/components/CaseStudies/LaserlikeCaseStudy/LaserlikeCaseStudy.tsx":
+/*!*******************************************************************************!*\
+  !*** ../src/components/CaseStudies/LaserlikeCaseStudy/LaserlikeCaseStudy.tsx ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _interopRequireDefault=__webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../../../node_modules/@babel/runtime/helpers/interopRequireDefault.js");Object.defineProperty(exports,"__esModule",{value:true});exports.LaserlikeCaseStudy=void 0;var _taggedTemplateLiteralLoose2=_interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/taggedTemplateLiteralLoose */ "../../../node_modules/@babel/runtime/helpers/taggedTemplateLiteralLoose.js"));var _components=__webpack_require__(/*! @portfolio/components */ "../../components/lib/index.js");var _react=_interopRequireDefault(__webpack_require__(/*! react */ "../../../node_modules/react/index.js"));var _styledComponents=_interopRequireDefault(__webpack_require__(/*! styled-components */ "../../../node_modules/styled-components/dist/styled-components.browser.esm.js"));var _BaseCaseStudyCard=__webpack_require__(/*! ../BaseCaseStudyCard */ "../src/components/CaseStudies/BaseCaseStudyCard/index.ts");var _laserlikeScreenshot=_interopRequireDefault(__webpack_require__(/*! ../../../../assets/images/laserlikeScreenshot.png */ "../assets/images/laserlikeScreenshot.png"));var _jsxFileName="/Users/jon/Projects/portfolio-components/packages/web/src/components/CaseStudies/LaserlikeCaseStudy/LaserlikeCaseStudy.tsx";function _templateObject(){var data=(0,_taggedTemplateLiteralLoose2.default)(["\n  background-color: ",";\n"]);_templateObject=function _templateObject(){return data;};return data;}var LaserlikeCaseStudyCard=(0,_styledComponents.default)(_BaseCaseStudyCard.BaseCaseStudyCard)(_templateObject(),_components.laserlikeBlue);var LaserlikeScreenshot=function LaserlikeScreenshot(){return _react.default.createElement("image",{mask:"url(#mask-10)",x:"3",y:"6",width:"746",href:_laserlikeScreenshot.default,__source:{fileName:_jsxFileName,lineNumber:18,columnNumber:3}});};var LaserlikeCaseStudy=function LaserlikeCaseStudy(){return _react.default.createElement(LaserlikeCaseStudyCard,{__source:{fileName:_jsxFileName,lineNumber:28,columnNumber:3}},_react.default.createElement(_components.CaseStudyCard.TextContent,{__source:{fileName:_jsxFileName,lineNumber:29,columnNumber:5}},_react.default.createElement(_components.CaseStudyCard.Logo,{__source:{fileName:_jsxFileName,lineNumber:30,columnNumber:7}},_react.default.createElement(_components.LaserlikeLogo,{contentStyle:"light",__source:{fileName:_jsxFileName,lineNumber:31,columnNumber:9}})),_react.default.createElement(_components.CaseStudyCard.Title,{__source:{fileName:_jsxFileName,lineNumber:33,columnNumber:7}},"Automating deployments for a successful Apple acquisition"),_react.default.createElement(_components.CaseStudyCard.Body,{__source:{fileName:_jsxFileName,lineNumber:36,columnNumber:7}},"I developed fully automated infrastructure to deploy Laserlike\u2019s iOS and Android apps at the push of a button. Laserlike was acquired by Apple in 2018."),_react.default.createElement(_components.CaseStudyCard.ViewCaseStudyButton,{__source:{fileName:_jsxFileName,lineNumber:41,columnNumber:7}},"View Case Study"),_react.default.createElement(_components.CaseStudyCard.Tags,{__source:{fileName:_jsxFileName,lineNumber:44,columnNumber:7}},_react.default.createElement(_components.Tag,{__source:{fileName:_jsxFileName,lineNumber:45,columnNumber:9}},"React Native"),_react.default.createElement(_components.Tag,{__source:{fileName:_jsxFileName,lineNumber:46,columnNumber:9}},"Flow"),_react.default.createElement(_components.Tag,{__source:{fileName:_jsxFileName,lineNumber:47,columnNumber:9}},"Ansible"),_react.default.createElement(_components.Tag,{__source:{fileName:_jsxFileName,lineNumber:48,columnNumber:9}},"Jenkins"))),_react.default.createElement(_components.CaseStudyCard.ImageContent,{__source:{fileName:_jsxFileName,lineNumber:51,columnNumber:5}},_react.default.createElement(_components.PhoneFrame,{__source:{fileName:_jsxFileName,lineNumber:52,columnNumber:7}},_react.default.createElement(LaserlikeScreenshot,{__source:{fileName:_jsxFileName,lineNumber:53,columnNumber:9}}))));};exports.LaserlikeCaseStudy=LaserlikeCaseStudy;
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/web/src/components/CaseStudies/LaserlikeCaseStudy/LaserlikeCaseStudy.tsx"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/web/src/components/CaseStudies/LaserlikeCaseStudy/LaserlikeCaseStudy.tsx"); } }(); 
+
+/***/ }),
+
+/***/ "../src/components/CaseStudies/LaserlikeCaseStudy/index.ts":
+/*!*****************************************************************!*\
+  !*** ../src/components/CaseStudies/LaserlikeCaseStudy/index.ts ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+Object.defineProperty(exports,"__esModule",{value:true});var _LaserlikeCaseStudy=__webpack_require__(/*! ./LaserlikeCaseStudy */ "../src/components/CaseStudies/LaserlikeCaseStudy/LaserlikeCaseStudy.tsx");Object.keys(_LaserlikeCaseStudy).forEach(function(key){if(key==="default"||key==="__esModule")return;Object.defineProperty(exports,key,{enumerable:true,get:function get(){return _LaserlikeCaseStudy[key];}});});
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/web/src/components/CaseStudies/LaserlikeCaseStudy/index.ts"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/web/src/components/CaseStudies/LaserlikeCaseStudy/index.ts"); } }(); 
+
+/***/ }),
+
+/***/ "../src/components/CaseStudies/OpenGovCaseStudy/OpenGovCaseStudy.tsx":
+/*!***************************************************************************!*\
+  !*** ../src/components/CaseStudies/OpenGovCaseStudy/OpenGovCaseStudy.tsx ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _interopRequireDefault=__webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../../../node_modules/@babel/runtime/helpers/interopRequireDefault.js");Object.defineProperty(exports,"__esModule",{value:true});exports.OpenGovCaseStudy=void 0;var _taggedTemplateLiteralLoose2=_interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/taggedTemplateLiteralLoose */ "../../../node_modules/@babel/runtime/helpers/taggedTemplateLiteralLoose.js"));var _components=__webpack_require__(/*! @portfolio/components */ "../../components/lib/index.js");var _react=_interopRequireDefault(__webpack_require__(/*! react */ "../../../node_modules/react/index.js"));var _styledComponents=_interopRequireDefault(__webpack_require__(/*! styled-components */ "../../../node_modules/styled-components/dist/styled-components.browser.esm.js"));var _BaseCaseStudyCard=__webpack_require__(/*! ../BaseCaseStudyCard */ "../src/components/CaseStudies/BaseCaseStudyCard/index.ts");var _openGovScreenshot=_interopRequireDefault(__webpack_require__(/*! ../../../../assets/images/openGovScreenshot.png */ "../assets/images/openGovScreenshot.png"));var _jsxFileName="/Users/jon/Projects/portfolio-components/packages/web/src/components/CaseStudies/OpenGovCaseStudy/OpenGovCaseStudy.tsx";function _templateObject4(){var data=(0,_taggedTemplateLiteralLoose2.default)(["\n  background-image: url(",");\n  background-size: cover;\n  width: 100%;\n"]);_templateObject4=function _templateObject4(){return data;};return data;}function _templateObject3(){var data=(0,_taggedTemplateLiteralLoose2.default)(["\n  position: absolute;\n  top: 0;\n  right: 0;\n  opacity: 0.08;\n  z-index: -1;\n  width: 35%;\n  max-width: 320px;\n"]);_templateObject3=function _templateObject3(){return data;};return data;}function _templateObject2(){var data=(0,_taggedTemplateLiteralLoose2.default)(["\n  height: 450px;\n"]);_templateObject2=function _templateObject2(){return data;};return data;}function _templateObject(){var data=(0,_taggedTemplateLiteralLoose2.default)(["\n  background-color: ",";\n"]);_templateObject=function _templateObject(){return data;};return data;}var OpenGovCaseStudyCard=(0,_styledComponents.default)(_BaseCaseStudyCard.BaseCaseStudyCard)(_templateObject(),_components.openGovBlue);var OpenGovBrowser=(0,_styledComponents.default)(_components.BrowserFrame)(_templateObject2());var StyledOpenGovEmblem=(0,_styledComponents.default)(_components.OpenGovEmblem)(_templateObject3());var OpenGovScreenshot=_styledComponents.default.div(_templateObject4(),_openGovScreenshot.default);var OpenGovCaseStudy=function OpenGovCaseStudy(){return _react.default.createElement(OpenGovCaseStudyCard,{__source:{fileName:_jsxFileName,lineNumber:39,columnNumber:3}},_react.default.createElement(_components.CaseStudyCard.ImageContent,{__source:{fileName:_jsxFileName,lineNumber:40,columnNumber:5}},_react.default.createElement(OpenGovBrowser,{__source:{fileName:_jsxFileName,lineNumber:41,columnNumber:7}},_react.default.createElement(OpenGovScreenshot,{__source:{fileName:_jsxFileName,lineNumber:42,columnNumber:9}}))),_react.default.createElement(_components.CaseStudyCard.TextContent,{__source:{fileName:_jsxFileName,lineNumber:45,columnNumber:5}},_react.default.createElement(_components.CaseStudyCard.Logo,{__source:{fileName:_jsxFileName,lineNumber:46,columnNumber:7}},_react.default.createElement(_components.OpenGovLogo,{contentStyle:"light",__source:{fileName:_jsxFileName,lineNumber:47,columnNumber:9}})),_react.default.createElement(_components.CaseStudyCard.Title,{__source:{fileName:_jsxFileName,lineNumber:49,columnNumber:7}},"Accelerating the future of open governments"),_react.default.createElement(_components.CaseStudyCard.Body,{__source:{fileName:_jsxFileName,lineNumber:52,columnNumber:7}},"I worked with OpenGov to accelerate feature development for their next generation reporting platform."),_react.default.createElement(_components.CaseStudyCard.ViewCaseStudyButton,{__source:{fileName:_jsxFileName,lineNumber:56,columnNumber:7}},"View Case Study"),_react.default.createElement(_components.CaseStudyCard.Tags,{__source:{fileName:_jsxFileName,lineNumber:59,columnNumber:7}},_react.default.createElement(_components.Tag,{__source:{fileName:_jsxFileName,lineNumber:60,columnNumber:9}},"React"),_react.default.createElement(_components.Tag,{__source:{fileName:_jsxFileName,lineNumber:61,columnNumber:9}},"Typescript"),_react.default.createElement(_components.Tag,{__source:{fileName:_jsxFileName,lineNumber:62,columnNumber:9}},"D3"))),_react.default.createElement(StyledOpenGovEmblem,{__source:{fileName:_jsxFileName,lineNumber:65,columnNumber:5}}));};exports.OpenGovCaseStudy=OpenGovCaseStudy;
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/web/src/components/CaseStudies/OpenGovCaseStudy/OpenGovCaseStudy.tsx"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/web/src/components/CaseStudies/OpenGovCaseStudy/OpenGovCaseStudy.tsx"); } }(); 
+
+/***/ }),
+
+/***/ "../src/components/CaseStudies/OpenGovCaseStudy/index.ts":
+/*!***************************************************************!*\
+  !*** ../src/components/CaseStudies/OpenGovCaseStudy/index.ts ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+Object.defineProperty(exports,"__esModule",{value:true});var _OpenGovCaseStudy=__webpack_require__(/*! ./OpenGovCaseStudy */ "../src/components/CaseStudies/OpenGovCaseStudy/OpenGovCaseStudy.tsx");Object.keys(_OpenGovCaseStudy).forEach(function(key){if(key==="default"||key==="__esModule")return;Object.defineProperty(exports,key,{enumerable:true,get:function get(){return _OpenGovCaseStudy[key];}});});
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/web/src/components/CaseStudies/OpenGovCaseStudy/index.ts"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/web/src/components/CaseStudies/OpenGovCaseStudy/index.ts"); } }(); 
+
+/***/ }),
+
+/***/ "../src/components/CaseStudies/index.ts":
+/*!**********************************************!*\
+  !*** ../src/components/CaseStudies/index.ts ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+Object.defineProperty(exports,"__esModule",{value:true});var _CaseStudies=__webpack_require__(/*! ./CaseStudies */ "../src/components/CaseStudies/CaseStudies.tsx");Object.keys(_CaseStudies).forEach(function(key){if(key==="default"||key==="__esModule")return;Object.defineProperty(exports,key,{enumerable:true,get:function get(){return _CaseStudies[key];}});});
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/web/src/components/CaseStudies/index.ts"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/web/src/components/CaseStudies/index.ts"); } }(); 
+
+/***/ }),
+
+/***/ "../src/components/FooterSection/FooterSection.tsx":
+/*!*********************************************************!*\
+  !*** ../src/components/FooterSection/FooterSection.tsx ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _interopRequireDefault=__webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../../../node_modules/@babel/runtime/helpers/interopRequireDefault.js");Object.defineProperty(exports,"__esModule",{value:true});exports.FooterSection=void 0;var _taggedTemplateLiteralLoose2=_interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/taggedTemplateLiteralLoose */ "../../../node_modules/@babel/runtime/helpers/taggedTemplateLiteralLoose.js"));var _react=_interopRequireDefault(__webpack_require__(/*! react */ "../../../node_modules/react/index.js"));var _styledComponents=_interopRequireDefault(__webpack_require__(/*! styled-components */ "../../../node_modules/styled-components/dist/styled-components.browser.esm.js"));var _components=__webpack_require__(/*! @portfolio/components */ "../../components/lib/index.js");var _jsxFileName="/Users/jon/Projects/portfolio-components/packages/web/src/components/FooterSection/FooterSection.tsx";function _templateObject(){var data=(0,_taggedTemplateLiteralLoose2.default)([""]);_templateObject=function _templateObject(){return data;};return data;}var StyledFooter=(0,_styledComponents.default)(_components.Footer)(_templateObject());var FooterSection=function FooterSection(){return _react.default.createElement(StyledFooter,{__source:{fileName:_jsxFileName,lineNumber:8,columnNumber:3}},_react.default.createElement(_components.Footer.Logo,{__source:{fileName:_jsxFileName,lineNumber:9,columnNumber:5}}),_react.default.createElement(_components.Footer.FootNotes,{__source:{fileName:_jsxFileName,lineNumber:10,columnNumber:5}},_react.default.createElement(_components.Footer.FootNote,{__source:{fileName:_jsxFileName,lineNumber:11,columnNumber:7}},"\xA9 2020 - Jon Brennecke. All Rights Reserved."),_react.default.createElement(_components.Footer.FootNote,{__source:{fileName:_jsxFileName,lineNumber:14,columnNumber:7}},"This website is open-source on",' ',_react.default.createElement("a",{href:"https://github.com/jonbrennecke",target:"_blank",__source:{fileName:_jsxFileName,lineNumber:16,columnNumber:9}},"GitHub")),_react.default.createElement(_components.Footer.FootNote,{__source:{fileName:_jsxFileName,lineNumber:20,columnNumber:7}},"Made with \u2764 in Coeur d'Alene, Idaho")));};exports.FooterSection=FooterSection;
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/web/src/components/FooterSection/FooterSection.tsx"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/web/src/components/FooterSection/FooterSection.tsx"); } }(); 
+
+/***/ }),
+
+/***/ "../src/components/FooterSection/index.ts":
+/*!************************************************!*\
+  !*** ../src/components/FooterSection/index.ts ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+Object.defineProperty(exports,"__esModule",{value:true});var _FooterSection=__webpack_require__(/*! ./FooterSection */ "../src/components/FooterSection/FooterSection.tsx");Object.keys(_FooterSection).forEach(function(key){if(key==="default"||key==="__esModule")return;Object.defineProperty(exports,key,{enumerable:true,get:function get(){return _FooterSection[key];}});});
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/web/src/components/FooterSection/index.ts"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/web/src/components/FooterSection/index.ts"); } }(); 
+
+/***/ }),
+
+/***/ "../src/components/HeroSection/HeroSection.tsx":
+/*!*****************************************************!*\
+  !*** ../src/components/HeroSection/HeroSection.tsx ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _interopRequireDefault=__webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../../../node_modules/@babel/runtime/helpers/interopRequireDefault.js");Object.defineProperty(exports,"__esModule",{value:true});exports.HeroSection=void 0;var _taggedTemplateLiteralLoose2=_interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/taggedTemplateLiteralLoose */ "../../../node_modules/@babel/runtime/helpers/taggedTemplateLiteralLoose.js"));var _react=_interopRequireDefault(__webpack_require__(/*! react */ "../../../node_modules/react/index.js"));var _components=__webpack_require__(/*! @portfolio/components */ "../../components/lib/index.js");var _styledComponents=_interopRequireDefault(__webpack_require__(/*! styled-components */ "../../../node_modules/styled-components/dist/styled-components.browser.esm.js"));var _jsxFileName="/Users/jon/Projects/portfolio-components/packages/web/src/components/HeroSection/HeroSection.tsx";function _templateObject(){var data=(0,_taggedTemplateLiteralLoose2.default)(["\n  padding: ","px ","px;\n  height: 80vh;\n  max-width: ","px;\n"]);_templateObject=function _templateObject(){return data;};return data;}var StyledHero=(0,_styledComponents.default)(_components.Hero)(_templateObject(),_components.unit*10,_components.unit*5,_components.maxWidth);var HeroSection=function HeroSection(){return _react.default.createElement(StyledHero,{__source:{fileName:_jsxFileName,lineNumber:12,columnNumber:3}},_react.default.createElement(_components.Hero.Title,{__source:{fileName:_jsxFileName,lineNumber:13,columnNumber:5}},"Custom React Native Software Development"),_react.default.createElement(_components.Hero.SubTitle,{__source:{fileName:_jsxFileName,lineNumber:14,columnNumber:5}},"Hi, I\u2019m Jon. I am a software engineer from the Pacific Northwest. I build mobile apps and websites for companies, startups\u2014and sometimes just for fun."),_react.default.createElement(_components.Hero.ButtonGroup,{__source:{fileName:_jsxFileName,lineNumber:19,columnNumber:5}},_react.default.createElement(_components.Hero.Button,{variant:"primary",size:"large",__source:{fileName:_jsxFileName,lineNumber:20,columnNumber:7}},"Work with me")));};exports.HeroSection=HeroSection;
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/web/src/components/HeroSection/HeroSection.tsx"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/web/src/components/HeroSection/HeroSection.tsx"); } }(); 
+
+/***/ }),
+
+/***/ "../src/components/HeroSection/index.ts":
+/*!**********************************************!*\
+  !*** ../src/components/HeroSection/index.ts ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+Object.defineProperty(exports,"__esModule",{value:true});var _HeroSection=__webpack_require__(/*! ./HeroSection */ "../src/components/HeroSection/HeroSection.tsx");Object.keys(_HeroSection).forEach(function(key){if(key==="default"||key==="__esModule")return;Object.defineProperty(exports,key,{enumerable:true,get:function get(){return _HeroSection[key];}});});
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/web/src/components/HeroSection/index.ts"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/web/src/components/HeroSection/index.ts"); } }(); 
+
+/***/ }),
+
+/***/ "../src/components/Navbar/Navbar.tsx":
+/*!*******************************************!*\
+  !*** ../src/components/Navbar/Navbar.tsx ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _interopRequireDefault=__webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../../../node_modules/@babel/runtime/helpers/interopRequireDefault.js");var _interopRequireWildcard=__webpack_require__(/*! @babel/runtime/helpers/interopRequireWildcard */ "../../../node_modules/@babel/runtime/helpers/interopRequireWildcard.js");Object.defineProperty(exports,"__esModule",{value:true});exports.Navbar=void 0;var _slicedToArray2=_interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "../../../node_modules/@babel/runtime/helpers/slicedToArray.js"));var _taggedTemplateLiteralLoose2=_interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/taggedTemplateLiteralLoose */ "../../../node_modules/@babel/runtime/helpers/taggedTemplateLiteralLoose.js"));var _react=_interopRequireWildcard(__webpack_require__(/*! react */ "../../../node_modules/react/index.js"));var _styledComponents=_interopRequireDefault(__webpack_require__(/*! styled-components */ "../../../node_modules/styled-components/dist/styled-components.browser.esm.js"));var _components=__webpack_require__(/*! @portfolio/components */ "../../components/lib/index.js");var _jsxFileName="/Users/jon/Projects/portfolio-components/packages/web/src/components/Navbar/Navbar.tsx";function _templateObject2(){var data=(0,_taggedTemplateLiteralLoose2.default)(["\n  padding: ","px;\n"]);_templateObject2=function _templateObject2(){return data;};return data;}function _templateObject(){var data=(0,_taggedTemplateLiteralLoose2.default)(["\n  padding: ","px ","px 0 ","px;\n  max-width: ","px;\n"]);_templateObject=function _templateObject(){return data;};return data;}var StyledNavigation=(0,_styledComponents.default)(_components.Navigation)(_templateObject(),_components.unit*3,_components.unit*5,_components.unit*5,_components.maxWidth);var ContactForm=(0,_styledComponents.default)(_components.Form)(_templateObject2(),_components.unit*10);var Navbar=function Navbar(){var _useState=(0,_react.useState)(false),_useState2=(0,_slicedToArray2.default)(_useState,2),showMenu=_useState2[0],setShowMenu=_useState2[1];return _react.default.createElement(StyledNavigation,{__source:{fileName:_jsxFileName,lineNumber:23,columnNumber:5}},_react.default.createElement(_components.SideDrawer,{open:showMenu,alignment:"left",onClickOutside:function onClickOutside(){return setShowMenu(false);},__source:{fileName:_jsxFileName,lineNumber:24,columnNumber:7}},_react.default.createElement(ContactForm,{contentStyle:"light",__source:{fileName:_jsxFileName,lineNumber:29,columnNumber:9}},_react.default.createElement(_components.Form.Title,{__source:{fileName:_jsxFileName,lineNumber:30,columnNumber:11}},"Let's talk!"),_react.default.createElement(_components.Form.Note,{__source:{fileName:_jsxFileName,lineNumber:31,columnNumber:11}},"Want to chat? Shoot me an email at",' ',_react.default.createElement("a",{href:"mailto:jpbrennecke@gmail.com",target:"_blank",__source:{fileName:_jsxFileName,lineNumber:33,columnNumber:13}},"jpbrennecke@gmail.com")),_react.default.createElement(_components.Form.Field,{__source:{fileName:_jsxFileName,lineNumber:37,columnNumber:11}},_react.default.createElement(_components.Form.Label,{__source:{fileName:_jsxFileName,lineNumber:38,columnNumber:13}},"Name & Company"),_react.default.createElement(_components.Form.Input,{autoFocus:false,name:"name",placeholder:"John from Google...",__source:{fileName:_jsxFileName,lineNumber:39,columnNumber:13}})),_react.default.createElement(_components.Form.Field,{__source:{fileName:_jsxFileName,lineNumber:45,columnNumber:11}},_react.default.createElement(_components.Form.Label,{__source:{fileName:_jsxFileName,lineNumber:46,columnNumber:13}},"Email"),_react.default.createElement(_components.Form.Input,{autoFocus:false,name:"email",placeholder:"john@google.com",__source:{fileName:_jsxFileName,lineNumber:47,columnNumber:13}})),_react.default.createElement(_components.Form.Field,{__source:{fileName:_jsxFileName,lineNumber:53,columnNumber:11}},_react.default.createElement(_components.Form.Label,{__source:{fileName:_jsxFileName,lineNumber:54,columnNumber:13}},"Project Description"),_react.default.createElement(_components.Form.TextArea,{autoFocus:false,placeholder:"We need help redesigning our app...",__source:{fileName:_jsxFileName,lineNumber:55,columnNumber:13}})),_react.default.createElement(_components.Form.Button,{variant:"primary",size:"large",__source:{fileName:_jsxFileName,lineNumber:60,columnNumber:11}},"Send"))),_react.default.createElement(_components.Navigation.MenuButton,{onClick:function onClick(){return setShowMenu(!showMenu);},__source:{fileName:_jsxFileName,lineNumber:65,columnNumber:7}}),_react.default.createElement(_components.Navigation.Logo,{__source:{fileName:_jsxFileName,lineNumber:66,columnNumber:7}}),_react.default.createElement(_components.Navigation.Links,{__source:{fileName:_jsxFileName,lineNumber:67,columnNumber:7}},_react.default.createElement(_components.Navigation.Link,{__source:{fileName:_jsxFileName,lineNumber:68,columnNumber:9}},"Home"),_react.default.createElement(_components.Navigation.Link,{__source:{fileName:_jsxFileName,lineNumber:69,columnNumber:9}},"Case Studies"),_react.default.createElement(_components.Navigation.Link,{__source:{fileName:_jsxFileName,lineNumber:70,columnNumber:9}},"Process"),_react.default.createElement(_components.Navigation.Link,{variant:"primary",__source:{fileName:_jsxFileName,lineNumber:71,columnNumber:9}},"Contact")));};exports.Navbar=Navbar;
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/web/src/components/Navbar/Navbar.tsx"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/web/src/components/Navbar/Navbar.tsx"); } }(); 
+
+/***/ }),
+
+/***/ "../src/components/Navbar/index.ts":
+/*!*****************************************!*\
+  !*** ../src/components/Navbar/index.ts ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+Object.defineProperty(exports,"__esModule",{value:true});var _Navbar=__webpack_require__(/*! ./Navbar */ "../src/components/Navbar/Navbar.tsx");Object.keys(_Navbar).forEach(function(key){if(key==="default"||key==="__esModule")return;Object.defineProperty(exports,key,{enumerable:true,get:function get(){return _Navbar[key];}});});
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/web/src/components/Navbar/index.ts"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/web/src/components/Navbar/index.ts"); } }(); 
+
+/***/ }),
+
+/***/ "../src/components/ServicesSection/ServicesSection.tsx":
+/*!*************************************************************!*\
+  !*** ../src/components/ServicesSection/ServicesSection.tsx ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _interopRequireDefault=__webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../../../node_modules/@babel/runtime/helpers/interopRequireDefault.js");Object.defineProperty(exports,"__esModule",{value:true});exports.ServicesSection=void 0;var _taggedTemplateLiteralLoose2=_interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/taggedTemplateLiteralLoose */ "../../../node_modules/@babel/runtime/helpers/taggedTemplateLiteralLoose.js"));var _react=_interopRequireDefault(__webpack_require__(/*! react */ "../../../node_modules/react/index.js"));var _components=__webpack_require__(/*! @portfolio/components */ "../../components/lib/index.js");var _styledComponents=_interopRequireDefault(__webpack_require__(/*! styled-components */ "../../../node_modules/styled-components/dist/styled-components.browser.esm.js"));var _jsxFileName="/Users/jon/Projects/portfolio-components/packages/web/src/components/ServicesSection/ServicesSection.tsx";function _templateObject2(){var data=(0,_taggedTemplateLiteralLoose2.default)(["\n  padding: ","px 0 ","px 0;\n"]);_templateObject2=function _templateObject2(){return data;};return data;}function _templateObject(){var data=(0,_taggedTemplateLiteralLoose2.default)(["\n  padding: ","px ","px;\n  max-width: ","px;\n"]);_templateObject=function _templateObject(){return data;};return data;}var StyledServicesContainer=(0,_styledComponents.default)(_components.Services)(_templateObject(),_components.unit*15,_components.unit*5,_components.maxWidth);var StyledSectionHeader=(0,_styledComponents.default)(_components.SectionHeader)(_templateObject2(),_components.unit*7,_components.unit*15);var ServicesSection=function ServicesSection(){return _react.default.createElement(StyledServicesContainer,{__source:{fileName:_jsxFileName,lineNumber:15,columnNumber:3}},_react.default.createElement(StyledSectionHeader,{__source:{fileName:_jsxFileName,lineNumber:16,columnNumber:5}},_react.default.createElement(_components.SectionHeader.SubTitle,{__source:{fileName:_jsxFileName,lineNumber:17,columnNumber:7}},"Always at your service"),_react.default.createElement(_components.SectionHeader.Title,{__source:{fileName:_jsxFileName,lineNumber:18,columnNumber:7}},"Services"),_react.default.createElement(_components.SectionHeader.Paragraph,{__source:{fileName:_jsxFileName,lineNumber:19,columnNumber:7}},"Looking for something not mentioned here? Contact me for more information.")),_react.default.createElement(_components.Services.Item,{__source:{fileName:_jsxFileName,lineNumber:24,columnNumber:5}},_react.default.createElement(_components.Services.Icons.Phone,{__source:{fileName:_jsxFileName,lineNumber:25,columnNumber:7}}),_react.default.createElement(_components.Services.Item.Title,{__source:{fileName:_jsxFileName,lineNumber:26,columnNumber:7}},"Cross-platform mobile development"),_react.default.createElement(_components.Services.Item.Description,{__source:{fileName:_jsxFileName,lineNumber:29,columnNumber:7}},"Engage new audiences with a world-class native experience.")),_react.default.createElement(_components.Services.Item,{__source:{fileName:_jsxFileName,lineNumber:33,columnNumber:5}},_react.default.createElement(_components.Services.Icons.Web,{__source:{fileName:_jsxFileName,lineNumber:34,columnNumber:7}}),_react.default.createElement(_components.Services.Item.Title,{__source:{fileName:_jsxFileName,lineNumber:35,columnNumber:7}},"Web development"),_react.default.createElement(_components.Services.Item.Description,{__source:{fileName:_jsxFileName,lineNumber:36,columnNumber:7}},"Full-stack development for web platforms, marketing pages and everything in between.")),_react.default.createElement(_components.Services.Item,{__source:{fileName:_jsxFileName,lineNumber:41,columnNumber:5}},_react.default.createElement(_components.Services.Icons.Server,{__source:{fileName:_jsxFileName,lineNumber:42,columnNumber:7}}),_react.default.createElement(_components.Services.Item.Title,{__source:{fileName:_jsxFileName,lineNumber:43,columnNumber:7}},"Deployment, automation and QA"),_react.default.createElement(_components.Services.Item.Description,{__source:{fileName:_jsxFileName,lineNumber:44,columnNumber:7}},"Scale your team to new levels with continuous integration solutions designed just for you.")));};exports.ServicesSection=ServicesSection;
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/web/src/components/ServicesSection/ServicesSection.tsx"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/web/src/components/ServicesSection/ServicesSection.tsx"); } }(); 
+
+/***/ }),
+
+/***/ "../src/components/ServicesSection/index.ts":
+/*!**************************************************!*\
+  !*** ../src/components/ServicesSection/index.ts ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+Object.defineProperty(exports,"__esModule",{value:true});var _ServicesSection=__webpack_require__(/*! ./ServicesSection */ "../src/components/ServicesSection/ServicesSection.tsx");Object.keys(_ServicesSection).forEach(function(key){if(key==="default"||key==="__esModule")return;Object.defineProperty(exports,key,{enumerable:true,get:function get(){return _ServicesSection[key];}});});
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/web/src/components/ServicesSection/index.ts"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/web/src/components/ServicesSection/index.ts"); } }(); 
+
+/***/ }),
+
+/***/ "../src/components/index.ts":
+/*!**********************************!*\
+  !*** ../src/components/index.ts ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+Object.defineProperty(exports,"__esModule",{value:true});var _Capabilities=__webpack_require__(/*! ./Capabilities */ "../src/components/Capabilities/index.ts");Object.keys(_Capabilities).forEach(function(key){if(key==="default"||key==="__esModule")return;Object.defineProperty(exports,key,{enumerable:true,get:function get(){return _Capabilities[key];}});});var _CaseStudies=__webpack_require__(/*! ./CaseStudies */ "../src/components/CaseStudies/index.ts");Object.keys(_CaseStudies).forEach(function(key){if(key==="default"||key==="__esModule")return;Object.defineProperty(exports,key,{enumerable:true,get:function get(){return _CaseStudies[key];}});});var _Navbar=__webpack_require__(/*! ./Navbar */ "../src/components/Navbar/index.ts");Object.keys(_Navbar).forEach(function(key){if(key==="default"||key==="__esModule")return;Object.defineProperty(exports,key,{enumerable:true,get:function get(){return _Navbar[key];}});});var _ServicesSection=__webpack_require__(/*! ./ServicesSection */ "../src/components/ServicesSection/index.ts");Object.keys(_ServicesSection).forEach(function(key){if(key==="default"||key==="__esModule")return;Object.defineProperty(exports,key,{enumerable:true,get:function get(){return _ServicesSection[key];}});});var _HeroSection=__webpack_require__(/*! ./HeroSection */ "../src/components/HeroSection/index.ts");Object.keys(_HeroSection).forEach(function(key){if(key==="default"||key==="__esModule")return;Object.defineProperty(exports,key,{enumerable:true,get:function get(){return _HeroSection[key];}});});var _FooterSection=__webpack_require__(/*! ./FooterSection */ "../src/components/FooterSection/index.ts");Object.keys(_FooterSection).forEach(function(key){if(key==="default"||key==="__esModule")return;Object.defineProperty(exports,key,{enumerable:true,get:function get(){return _FooterSection[key];}});});
+ void function register() { /* react-hot-loader/webpack */ var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined; if (!reactHotLoader) { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports; /* eslint-enable camelcase, no-undef */ if (!webpackExports) { return; } if (typeof webpackExports === 'function') { reactHotLoader.register(webpackExports, 'module.exports', "/Users/jon/Projects/portfolio-components/packages/web/src/components/index.ts"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } reactHotLoader.register(namedExport, key, "/Users/jon/Projects/portfolio-components/packages/web/src/components/index.ts"); } }(); 
 
 /***/ }),
 

@@ -18,6 +18,7 @@ import {
   HeroSection,
   Navbar,
   ServicesSection,
+  ContactForm,
 } from './components';
 
 const Container = styled.div`
@@ -35,7 +36,7 @@ const AboutImage = styled.div`
   background-size: cover;
 `;
 
-const ContactForm = styled(Form)`
+const ContactFormContainer = styled(Form)`
   max-width: 1024px;
   padding: ${unit * 15}px 0;
   background-color: ${trueWhite};
@@ -72,41 +73,9 @@ export const App = hot(() => (
         </About.ImageContent>
       </About>
 
-      <ContactForm contentStyle="dark">
-        <Form.Title>Let's work together!</Form.Title>
-        <Form.Note>
-          Want to chat? Shoot me an email at{' '}
-          <a href="mailto:jpbrennecke@gmail.com" target="_blank">
-            jpbrennecke@gmail.com
-          </a>
-        </Form.Note>
-        <Form.Field>
-          <Form.Label>Name & Company</Form.Label>
-          <Form.Input
-            autoFocus={false}
-            name="name"
-            placeholder="John from Google..."
-          />
-        </Form.Field>
-        <Form.Field>
-          <Form.Label>Email</Form.Label>
-          <Form.Input
-            autoFocus={false}
-            name="email"
-            placeholder="john@google.com"
-          />
-        </Form.Field>
-        <Form.Field>
-          <Form.Label>Project Description</Form.Label>
-          <Form.TextArea
-            autoFocus={false}
-            placeholder="We need help redesigning our app..."
-          />
-        </Form.Field>
-        <Form.Button variant="primary" size="large">
-          Send
-        </Form.Button>
-      </ContactForm>
+      <ContactFormContainer contentStyle="dark">
+        <ContactForm />
+      </ContactFormContainer>
 
       <FooterSection />
     </Container>
