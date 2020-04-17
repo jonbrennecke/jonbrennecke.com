@@ -45,7 +45,7 @@ const makeNthChildAnimation = (n: number) => css`
   & > *:nth-child(${n}) {
     opacity: 0;
     animation: ${heroAnimation} 1s ${timingFunctions('easeOutQuad')} forwards
-      ${4 + n * 0.2}s;
+      ${3.25 + n * 0.2}s;
   }
 `;
 
