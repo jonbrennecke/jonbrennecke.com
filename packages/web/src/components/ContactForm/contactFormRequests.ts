@@ -17,5 +17,4 @@ export const submitContactFormResponse = async (
       body: JSON.stringify(contactForm.toJS()),
     }
   );
-  await response.json();
 };
