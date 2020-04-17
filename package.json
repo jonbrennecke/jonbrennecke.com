@@ -9,5 +9,9 @@
   "license": "MIT",
   "engines": {
     "node": "*"
+  },
+  "scripts": {
+    "compileAll": "cd packages/components && yarn compile",
+    "buildForNetlify": "cd packages/web && yarn build:production"
   }
 }
