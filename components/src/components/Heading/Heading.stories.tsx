@@ -1,4 +1,3 @@
-import { withKnobs } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
 import styled from 'styled-components';
@@ -7,7 +6,6 @@ import { Heading } from './Heading';
 const Container = styled.div``;
 
 storiesOf('UI', module)
-  .addDecorator(withKnobs)
   .add('Heading', () => (
     <Container>
       <Heading>

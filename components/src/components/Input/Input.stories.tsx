@@ -1,4 +1,3 @@
-import { withKnobs } from '@storybook/addon-knobs';
 import { useState } from '@storybook/addons';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
@@ -12,7 +11,6 @@ const Container = styled.div`
 `;
 
 storiesOf('UI', module)
-  .addDecorator(withKnobs)
   .add('Input', () => {
     const [value, setValue] = useState('');
     return (

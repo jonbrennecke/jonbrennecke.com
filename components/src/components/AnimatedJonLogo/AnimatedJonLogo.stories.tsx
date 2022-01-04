@@ -1,4 +1,3 @@
-import { withKnobs, boolean } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
 import styled from 'styled-components';
@@ -20,15 +19,22 @@ const Container = styled.div<{ logoContentStyle: JonLogoContentStyle }>`
   }
 `;
 
-storiesOf('Logos', module)
-  .addDecorator(withKnobs)
-  .add('AnimatedJonLogo', () => {
-    const logoContentStyle = boolean('Dark Content Style', true)
-      ? JonLogoContentStyle.dark
-      : JonLogoContentStyle.light;
-    return (
-      <Container logoContentStyle={logoContentStyle}>
-        <AnimatedJonLogo contentStyle={logoContentStyle} />
-      </Container>
-    );
-  });
+export function AnimatedJonLogoStory({ contentStyle }: { contentStyle: JonLogoContentStyle }) {
+  return (
+    <Container logoContentStyle={contentStyle}>
+      <AnimatedJonLogo contentStyle={contentStyle} />
+    </Container>
+  );
+}
+
+AnimatedJonLogoStory.argTypes = {
+  contentStyle: {
+    options: [JonLogoContentStyle.dark, JonLogoContentStyle.light],
+    control: { type: 'radio' },
+  }
+};
+
+export default {
+  title: "Logos/Jon",
+  component: AnimatedJonLogoStory,
+};

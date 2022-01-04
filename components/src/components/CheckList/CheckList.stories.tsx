@@ -1,10 +1,8 @@
-import { withKnobs } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { CheckList } from './CheckList';
 
 storiesOf('UI', module)
-  .addDecorator(withKnobs)
   .add('CheckList', () => (
     <CheckList>
       <CheckList.Item>Mobile App Development</CheckList.Item>

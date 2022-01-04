@@ -1,4 +1,3 @@
-import { withKnobs } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
 import styled from 'styled-components';
@@ -9,7 +8,6 @@ const Image = styled.div`
 `;
 
 storiesOf('UI', module)
-  .addDecorator(withKnobs)
   .add('About', () => (
     <About>
       <About.TextContent>

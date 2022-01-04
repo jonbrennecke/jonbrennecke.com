@@ -17,6 +17,7 @@ const windowControlYellow = '#E5C02A';
 const windowControlGreen = '#54C22C';
 const windowBorderGray = '#E6E9F2';
 
+// @ts-ignore
 const makeWindowControlButton = (color: string) => styled(WindowControlButton)`
   border-color: ${darken(color, 0.2)};
   background-color: ${color};

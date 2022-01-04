@@ -1,9 +1,7 @@
-import { withKnobs, boolean } from '@storybook/addon-knobs';
-import { storiesOf } from '@storybook/react';
 import React from 'react';
 import styled from 'styled-components';
+import { trueBlack, trueWhite } from '../../styles';
 import { BarkdLogo, BarkdLogoContentStyle } from './BarkdLogo';
-import { trueWhite, trueBlack } from '../../styles';
 
 const Container = styled.div<{ logoContentStyle: BarkdLogoContentStyle }>`
   display: flex;
@@ -19,15 +17,24 @@ const Container = styled.div<{ logoContentStyle: BarkdLogoContentStyle }>`
   }
 `;
 
-storiesOf('Logos', module)
-  .addDecorator(withKnobs)
-  .add('BarkdLogo', () => {
-    const logoContentStyle = boolean('Dark Content Style', true)
-      ? BarkdLogoContentStyle.dark
-      : BarkdLogoContentStyle.light;
+function BarkdLogoStory({ contentStyle }: { contentStyle: BarkdLogoContentStyle }) {
     return (
-      <Container logoContentStyle={logoContentStyle}>
-        <BarkdLogo contentStyle={logoContentStyle} />
+      <Container logoContentStyle={contentStyle}>
+        <BarkdLogo contentStyle={contentStyle} />
       </Container>
     );
-  });
+}
+
+export const BarkdLogoStoryWithControls = (args) => <BarkdLogoStory { ...args} />
+
+BarkdLogoStory.argTypes = {
+  contentStyle: {
+    options: [BarkdLogoContentStyle.dark, BarkdLogoContentStyle.light],
+    control: { type: 'radio' },
+  }
+};
+
+export default {
+  title: "Logos/BarkdLogo",
+  component: BarkdLogoStory,
+};
