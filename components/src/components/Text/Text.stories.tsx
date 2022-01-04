@@ -2,7 +2,7 @@ import { select, withKnobs } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
 import styled from 'styled-components';
-import { ETextWeight, Text } from '../../components';
+import { ETextWeight, Text } from '..';
 
 const Container = styled.div``;
 

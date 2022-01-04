@@ -1,7 +1,7 @@
 import { withKnobs } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
-import { OpenGovLogo } from '../';
+import { OpenGovLogo } from '..';
 import { CaseStudyCard } from './CaseStudyCard';
 import styled from 'styled-components';
 import { openGovBlue, unit, laserlikeBlue, barkdDarkBlue } from '../../styles';

@@ -2,17 +2,27 @@
   "name": "portfolio",
   "private": true,
   "workspaces": [
-    "packages/components",
-    "packages/web",
-    "packages/functions"
+    "components",
+    "web",
+    "functions"
   ],
   "license": "MIT",
   "engines": {
     "node": "*"
   },
   "scripts": {
+    "web": "yarn workspace @portfolio/web",
+    "components": "yarn workspace @portfolio/components",
     "compileAll": "cd packages/components && yarn compile",
     "buildForNetlify": "yarn compileAll && cd packages/web && yarn build:production"
   },
-  "packageManager": "yarn@3.2.0-rc.9"
+  "packageManager": "yarn@3.2.0-rc.9",
+  "devDependencies": {
+    "@types/react": "17.0.38",
+    "typescript": "4.5.4"
+  },
+  "dependencies": {
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  }
 }
