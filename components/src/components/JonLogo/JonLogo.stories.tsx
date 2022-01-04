@@ -1,5 +1,3 @@
-import { withKnobs, boolean } from '@storybook/addon-knobs';
-import { storiesOf } from '@storybook/react';
 import React from 'react';
 import styled from 'styled-components';
 import { JonLogo, JonLogoContentStyle } from './JonLogo';
