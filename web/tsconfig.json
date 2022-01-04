@@ -3,12 +3,10 @@
   "include": [
     "src/**/*",
     "pages/**/*",
-    "../types/global.d.ts"
+    "../types/global.d.ts",
+    "next-env.d.ts"
   ],
   "exclude": [
     "node_modules"
-  ],
-  "compilerOptions": {
-    "composite": true
-  }
+  ]
 }
