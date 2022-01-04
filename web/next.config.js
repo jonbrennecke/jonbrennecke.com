@@ -5,4 +5,10 @@ const withTM = require('next-transpile-modules')([
 
 module.exports = withPlugins([
   withTM,
+  {
+    experimental: {
+      // Enables the styled-components SWC transform
+      styledComponents: true
+    }
+  }
 ]);
