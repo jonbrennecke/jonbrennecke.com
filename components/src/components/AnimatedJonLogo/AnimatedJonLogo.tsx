@@ -1,5 +1,5 @@
 import { timingFunctions } from 'polished';
-import React, { useLayoutEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styled, { keyframes } from 'styled-components';
 import { opacity, trueBlack, trueWhite } from '../../styles';
 import { JonLogoContentStyle } from '../JonLogo';
@@ -78,7 +78,7 @@ const StyledPath = styled.path<{ pathLength?: number }>`
 export const AnimatedSvgPath = (props: React.SVGProps<SVGPathElement>) => {
   const ref = useRef<SVGPathElement>();
   const [pathLength, setPathLength] = useState<number>();
-  useLayoutEffect(() => {
+  useEffect(() => {
     const totalLength = ref.current?.getTotalLength();
     setPathLength(totalLength);
   }, [ref]);

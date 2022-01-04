@@ -1,21 +1,17 @@
 import {
   About,
   Form,
-  LoadingBanner,
-  unit,
-  SideDrawer,
-  trueWhite,
+  LoadingBanner, SideDrawer,
+  trueWhite, unit
 } from '@portfolio/components';
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import aboutImageURL from '../assets/images/about_image.jpg';
 import {
-  CaseStudies,
-  FooterSection,
+  CaseStudies, ContactForm, FooterSection,
   HeroSection,
   Navbar,
-  ServicesSection,
-  ContactForm,
+  ServicesSection
 } from '../src/components';
 
 const Container = styled.div`

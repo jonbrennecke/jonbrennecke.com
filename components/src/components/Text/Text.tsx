@@ -2,10 +2,6 @@ import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 import { trueBlack } from '../../styles';
 
-import CabinRegularTTF from '../../../assets/fonts/Cabin/Cabin-Regular.ttf';
-import CabinBoldTTF from '../../../assets/fonts/Cabin/Cabin-Bold.ttf';
-import CabinMediumTTF from '../../../assets/fonts/Cabin/Cabin-Medium.ttf';
-
 type ReactChild = React.ReactElement | React.ReactNode;
 
 export enum ETextWeight {
@@ -38,6 +34,11 @@ const StyledSpan = styled.span<{
   font-weight: ${props => textWeightToFontWeight(props.weight)};
   font-size: 16px;
 `;
+
+
+const CabinRegularTTF = '../../../assets/fonts/Cabin/Cabin-Regular.ttf';
+const CabinBoldTTF = '../../../assets/fonts/Cabin/Cabin-Bold.ttf';
+const CabinMediumTTF = '../../../assets/fonts/Cabin/Cabin-Medium.ttf';
 
 const GlobalFontStyle = createGlobalStyle`
   @font-face {
