@@ -12,9 +12,27 @@
     "outDir": "packages/components/lib",
     "resolveJsonModule": true,
     "allowJs": true,
-    "jsx": "react",
-    "types": ["react", "jest"]
+    "jsx": "preserve",
+    "types": [
+      "react",
+      "jest"
+    ],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "incremental": true
   },
-  "include": ["./global.d.ts", "src"],
-  "exclude": ["node_modules"]
+  "include": [
+    "./global.d.ts",
+    "src"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
