@@ -17,7 +17,7 @@ const Container = styled.div<{ logoContentStyle: BarkdLogoContentStyle }>`
   }
 `;
 
-function BarkdLogoStory({ contentStyle }: { contentStyle: BarkdLogoContentStyle }) {
+export function BarkdLogoStory({ contentStyle }: { contentStyle: BarkdLogoContentStyle }) {
     return (
       <Container logoContentStyle={contentStyle}>
         <BarkdLogo contentStyle={contentStyle} />
@@ -25,7 +25,7 @@ function BarkdLogoStory({ contentStyle }: { contentStyle: BarkdLogoContentStyle 
     );
 }
 
-export const BarkdLogoStoryWithControls = (args) => <BarkdLogoStory { ...args} />
+BarkdLogoStory.storyName = "Barkd";
 
 BarkdLogoStory.argTypes = {
   contentStyle: {
@@ -35,6 +35,6 @@ BarkdLogoStory.argTypes = {
 };
 
 export default {
-  title: "Logos/BarkdLogo",
+  title: "Logos/Barkd",
   component: BarkdLogoStory,
 };

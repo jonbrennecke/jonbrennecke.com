@@ -27,6 +27,8 @@ export function AnimatedJonLogoStory({ contentStyle }: { contentStyle: JonLogoCo
   );
 }
 
+AnimatedJonLogoStory.storyName = "Animated"
+
 AnimatedJonLogoStory.argTypes = {
   contentStyle: {
     options: [JonLogoContentStyle.dark, JonLogoContentStyle.light],
@@ -35,6 +37,6 @@ AnimatedJonLogoStory.argTypes = {
 };
 
 export default {
-  title: "Logos/Jon",
+  title: "Logos/Jon/Animated",
   component: AnimatedJonLogoStory,
 };

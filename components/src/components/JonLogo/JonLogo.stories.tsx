@@ -19,15 +19,24 @@ const Container = styled.div<{ logoContentStyle: JonLogoContentStyle }>`
   }
 `;
 
-storiesOf('Logos', module)
-  .addDecorator(withKnobs)
-  .add('JonLogo', () => {
-    const logoContentStyle = boolean('Dark Content Style', true)
-      ? JonLogoContentStyle.dark
-      : JonLogoContentStyle.light;
-    return (
-      <Container logoContentStyle={logoContentStyle}>
-        <JonLogo contentStyle={logoContentStyle} />
-      </Container>
-    );
-  });
+export function JonLogoStory({ logoContentStyle = JonLogoContentStyle.light }: { logoContentStyle: JonLogoContentStyle }) {
+  return (
+    <Container logoContentStyle={logoContentStyle}>
+      <JonLogo contentStyle={logoContentStyle} />
+    </Container>
+  );
+}
+
+JonLogoStory.storyName = "Standard"
+
+JonLogoStory.argTypes = {
+  contentStyle: {
+    options: [JonLogoContentStyle.dark, JonLogoContentStyle.light],
+    control: { type: 'radio' },
+  }
+};
+
+export default {
+  title: "Logos/Jon/Standard",
+  component: JonLogoStory,
+};
