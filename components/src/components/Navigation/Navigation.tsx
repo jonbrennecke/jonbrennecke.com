@@ -108,6 +108,7 @@ const MenuButton = styled(
   border-width: 0;
   cursor: pointer;
   grid-area: menu;
+  background: none;
 
   rect {
     stroke-width: 0;
