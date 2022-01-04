@@ -1,6 +1,7 @@
 {
+    "compileOnSave": false,
     "compilerOptions": {
-        "baseUrl": ".",
+        "baseUrl": "./",
         "module": "commonjs",
         "target": "es2015",
         "noImplicitAny": false,
@@ -13,7 +14,7 @@
         "allowJs": true,
         "jsx": "preserve",
         "types": [
-            "react",
+            "react"
         ],
         "lib": [
             "dom",
@@ -22,11 +23,26 @@
         ],
         "skipLibCheck": true,
         "forceConsistentCasingInFileNames": true,
-        "noEmit": true,
+        "noEmit": false,
         "isolatedModules": true,
-        "incremental": true
+        "incremental": true,
+        "typeRoots": [
+            "node_modules/@types",
+            "types"
+        ]
     },
     "include": [
-        "./global.d.ts",
+        "types/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ],
+    "references": [
+        {
+            "path": "./components"
+        },
+        {
+            "path": "./web"
+        }
     ]
 }

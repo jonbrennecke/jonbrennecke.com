@@ -11,6 +11,7 @@ import { BaseCaseStudyCard } from '../BaseCaseStudyCard';
 
 import barkdScreenshot from '../../../../assets/images/barkdScreenshot.png';
 
+// @ts-ignore
 const BarkdCaseStudyCard = styled(BaseCaseStudyCard)`
   background-color: ${barkdDarkBlue};
 `;

@@ -1,10 +1,14 @@
 {
   "extends": "../tsconfig.json",
   "include": [
-    "src",
-    "pages"
+    "src/**/*",
+    "pages/**/*",
+    "../types/global.d.ts"
   ],
   "exclude": [
     "node_modules"
-  ]
+  ],
+  "compilerOptions": {
+    "composite": true
+  }
 }

@@ -2,8 +2,7 @@
   "name": "@portfolio/web",
   "version": "0.0.31",
   "description": "",
-  "main": "lib/index.js",
-  "types": "./lib/index.d.ts",
+  "main": "index.js",
   "private": true,
   "scripts": {
     "format": "prettier --parser typescript --trailing-comma es5 --single-quote --write \"src/**/*.{ts,tsx,js,jsx}\"",
@@ -16,7 +15,8 @@
     "prepublish": "npm run compile",
     "start": "node -r dotenv/config ./webpack/dev-server.js",
     "build": "webpack --config ./webpack/webpack.config.js",
-    "build:production": "npm run clean && cross-env NODE_ENV=production npm run build"
+    "build:production": "npm run clean && cross-env NODE_ENV=production npm run build",
+    "tsc": "tsc"
   },
   "files": [
     "lib/"

@@ -13094,6 +13094,7 @@ __metadata:
     "@types/react": 17.0.38
     react: 17.0.2
     react-dom: 17.0.2
+    tsc: ^2.0.3
     typescript: 4.5.4
   languageName: unknown
   linkType: soft
@@ -16425,6 +16426,15 @@ __metadata:
     typescript:
       optional: true
   checksum: c2a698b85d521298fe6f2435fbf2d3dc5834b423ea25abd321805ead3f399dbeedce7ca09492d7eb005b9d2c009c6b9587055bc3ab273dc6b9e40eefd7edb5b2
+  languageName: node
+  linkType: hard
+
+"tsc@npm:^2.0.3":
+  version: 2.0.3
+  resolution: "tsc@npm:2.0.3"
+  bin:
+    tsc: bin/tsc
+  checksum: 959c0227323a35982d7180a49f67902bbce9a243c160ece1bd5002c9d67efe22037ca9808cf41f360a5db6e9699f947ba980b367ddbb6ee69e4988dc878d60b2
   languageName: node
   linkType: hard
 
