@@ -6,7 +6,7 @@ import { BarkdLogo, BarkdLogoContentStyle } from './BarkdLogo';
 const Container = styled.div<{ logoContentStyle: BarkdLogoContentStyle }>`
   display: flex;
   flex: 1;
-  background-color: ${props =>
+  background-color: ${(props) =>
     props.logoContentStyle === BarkdLogoContentStyle.dark
       ? trueWhite
       : trueBlack};
@@ -17,24 +17,28 @@ const Container = styled.div<{ logoContentStyle: BarkdLogoContentStyle }>`
   }
 `;
 
-export function BarkdLogoStory({ contentStyle }: { contentStyle: BarkdLogoContentStyle }) {
-    return (
-      <Container logoContentStyle={contentStyle}>
-        <BarkdLogo contentStyle={contentStyle} />
-      </Container>
-    );
+export function BarkdLogoStory({
+  contentStyle,
+}: {
+  contentStyle: BarkdLogoContentStyle;
+}) {
+  return (
+    <Container logoContentStyle={contentStyle}>
+      <BarkdLogo contentStyle={contentStyle} />
+    </Container>
+  );
 }
 
-BarkdLogoStory.storyName = "Barkd";
+BarkdLogoStory.storyName = 'Barkd';
 
 BarkdLogoStory.argTypes = {
   contentStyle: {
     options: [BarkdLogoContentStyle.dark, BarkdLogoContentStyle.light],
     control: { type: 'radio' },
-  }
+  },
 };
 
 export default {
-  title: "Logos/Barkd",
+  title: 'Logos/Barkd',
   component: BarkdLogoStory,
 };

@@ -3,7 +3,7 @@ import { trueWhite, trueBlack } from '../../styles';
 
 export enum OpenGovEmblemContentStyle {
   dark = 'dark',
-  light = 'light'
+  light = 'light',
 }
 
 export interface OpenGovEmblemProps {
@@ -15,7 +15,7 @@ export interface OpenGovEmblemProps {
 
 export const OpenGovEmblem = ({
   className,
-  contentStyle = OpenGovEmblemContentStyle.light
+  contentStyle = OpenGovEmblemContentStyle.light,
 }: OpenGovEmblemProps) => {
   const fillColor =
     contentStyle === OpenGovEmblemContentStyle.light ? trueWhite : trueBlack;

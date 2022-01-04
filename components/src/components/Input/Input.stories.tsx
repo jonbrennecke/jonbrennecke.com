@@ -10,23 +10,22 @@ const Container = styled.div`
   align-items: center;
 `;
 
-storiesOf('UI', module)
-  .add('Input', () => {
-    const [value, setValue] = useState('');
-    return (
-      <Container>
-        <form
-          onSubmit={(e) => {
-            alert(`Form submitted ${value}`);
-            e.preventDefault();
-          }}
-        >
-          <Input
-            placeholder="Start typing..."
-            value={value}
-            onChangeValue={setValue}
-          />
-        </form>
-      </Container>
-    );
-  });
+storiesOf('UI', module).add('Input', () => {
+  const [value, setValue] = useState('');
+  return (
+    <Container>
+      <form
+        onSubmit={(e) => {
+          alert(`Form submitted ${value}`);
+          e.preventDefault();
+        }}
+      >
+        <Input
+          placeholder="Start typing..."
+          value={value}
+          onChangeValue={setValue}
+        />
+      </form>
+    </Container>
+  );
+});

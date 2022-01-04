@@ -3,7 +3,7 @@ import { trueWhite, trueBlack } from '../../styles';
 
 export enum JonLogoContentStyle {
   dark = 'dark',
-  light = 'light'
+  light = 'light',
 }
 
 export interface JonLogoProps {
@@ -13,7 +13,7 @@ export interface JonLogoProps {
 
 export const JonLogo = ({
   className,
-  contentStyle = JonLogoContentStyle.light
+  contentStyle = JonLogoContentStyle.light,
 }: JonLogoProps) => {
   const fillColor =
     contentStyle === JonLogoContentStyle.light ? trueWhite : trueBlack;

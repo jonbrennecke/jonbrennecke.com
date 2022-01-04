@@ -19,7 +19,11 @@ const Container = styled.div<{ logoContentStyle: JonLogoContentStyle }>`
   }
 `;
 
-export function AnimatedJonLogoStory({ contentStyle }: { contentStyle: JonLogoContentStyle }) {
+export function AnimatedJonLogoStory({
+  contentStyle,
+}: {
+  contentStyle: JonLogoContentStyle;
+}) {
   return (
     <Container logoContentStyle={contentStyle}>
       <AnimatedJonLogo contentStyle={contentStyle} />
@@ -27,16 +31,16 @@ export function AnimatedJonLogoStory({ contentStyle }: { contentStyle: JonLogoCo
   );
 }
 
-AnimatedJonLogoStory.storyName = "Animated"
+AnimatedJonLogoStory.storyName = 'Animated';
 
 AnimatedJonLogoStory.argTypes = {
   contentStyle: {
     options: [JonLogoContentStyle.dark, JonLogoContentStyle.light],
     control: { type: 'radio' },
-  }
+  },
 };
 
 export default {
-  title: "Logos/Jon/Animated",
+  title: 'Logos/Jon/Animated',
   component: AnimatedJonLogoStory,
 };

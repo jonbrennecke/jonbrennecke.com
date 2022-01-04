@@ -7,7 +7,7 @@ type ReactChild = React.ReactElement | React.ReactNode;
 export enum ETextWeight {
   bold = 'bold',
   medium = 'medium',
-  regular = 'regular'
+  regular = 'regular',
 }
 
 export type ITextProps = {
@@ -22,19 +22,18 @@ const textWeightToFontWeight = (
   ({
     [ETextWeight.bold]: '700',
     [ETextWeight.medium]: '500',
-    [ETextWeight.regular]: 'normal'
+    [ETextWeight.regular]: 'normal',
   }[weight]);
 
 const StyledSpan = styled.span<{
   color: string;
   weight: ETextWeight | keyof typeof ETextWeight;
 }>`
-  color: ${props => props.color};
+  color: ${(props) => props.color};
   font-family: 'Cabin', sans-serif;
-  font-weight: ${props => textWeightToFontWeight(props.weight)};
+  font-weight: ${(props) => textWeightToFontWeight(props.weight)};
   font-size: 16px;
 `;
-
 
 const CabinRegularTTF = '../../../assets/fonts/Cabin/Cabin-Regular.ttf';
 const CabinBoldTTF = '../../../assets/fonts/Cabin/Cabin-Bold.ttf';

@@ -10,7 +10,7 @@ export interface CheckProps {
 export const Check = ({
   backgroundColor = lightTan,
   checkColor = tan,
-  className
+  className,
 }: CheckProps) => (
   <svg viewBox="0 0 38 38" className={className}>
     <g

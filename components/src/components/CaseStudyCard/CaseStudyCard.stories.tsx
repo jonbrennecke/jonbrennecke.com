@@ -51,90 +51,89 @@ const StyledOpenGovEmblem = styled(OpenGovEmblem)`
   max-width: 320px;
 `;
 
-storiesOf('UI', module)
-  .add('CaseStudyCard', () => (
-    <Container>
-      <OpenGovCaseStudyCard>
-        <CaseStudyCard.ImageContent>
-          <OpenGovBrowser>
-            <div />
-          </OpenGovBrowser>
-        </CaseStudyCard.ImageContent>
-        <CaseStudyCard.TextContent>
-          <CaseStudyCard.Logo>
-            <OpenGovLogo contentStyle="light" />
-          </CaseStudyCard.Logo>
-          <CaseStudyCard.Title>
-            Accelerating the future of open governments
-          </CaseStudyCard.Title>
-          <CaseStudyCard.Body>
-            I worked with OpenGov to accelerate feature development for their
-            next generation reporting platform.
-          </CaseStudyCard.Body>
-          <CaseStudyCard.ViewCaseStudyButton>
-            View Case Study
-          </CaseStudyCard.ViewCaseStudyButton>
-          <CaseStudyCard.Tags>
-            <Tag>React</Tag>
-            <Tag>Typescript</Tag>
-            <Tag>D3</Tag>
-          </CaseStudyCard.Tags>
-        </CaseStudyCard.TextContent>
-        <StyledOpenGovEmblem />
-      </OpenGovCaseStudyCard>
+storiesOf('UI', module).add('CaseStudyCard', () => (
+  <Container>
+    <OpenGovCaseStudyCard>
+      <CaseStudyCard.ImageContent>
+        <OpenGovBrowser>
+          <div />
+        </OpenGovBrowser>
+      </CaseStudyCard.ImageContent>
+      <CaseStudyCard.TextContent>
+        <CaseStudyCard.Logo>
+          <OpenGovLogo contentStyle="light" />
+        </CaseStudyCard.Logo>
+        <CaseStudyCard.Title>
+          Accelerating the future of open governments
+        </CaseStudyCard.Title>
+        <CaseStudyCard.Body>
+          I worked with OpenGov to accelerate feature development for their next
+          generation reporting platform.
+        </CaseStudyCard.Body>
+        <CaseStudyCard.ViewCaseStudyButton>
+          View Case Study
+        </CaseStudyCard.ViewCaseStudyButton>
+        <CaseStudyCard.Tags>
+          <Tag>React</Tag>
+          <Tag>Typescript</Tag>
+          <Tag>D3</Tag>
+        </CaseStudyCard.Tags>
+      </CaseStudyCard.TextContent>
+      <StyledOpenGovEmblem />
+    </OpenGovCaseStudyCard>
 
-      <LaserlikeCaseStudyCard>
-        <CaseStudyCard.TextContent>
-          <CaseStudyCard.Logo>
-            <LaserlikeLogo contentStyle="light" />
-          </CaseStudyCard.Logo>
-          <CaseStudyCard.Title>
-            Automating deployments for a successful Apple acquisition
-          </CaseStudyCard.Title>
-          <CaseStudyCard.Body>
-            I developed fully automated infrastructure to deploy Laserlike’s iOS
-            and Android apps at the push of a button. Laserlike was acquired by
-            Apple in 2018.
-          </CaseStudyCard.Body>
-          <CaseStudyCard.ViewCaseStudyButton>
-            View Case Study
-          </CaseStudyCard.ViewCaseStudyButton>
-          <CaseStudyCard.Tags>
-            <Tag>React Native</Tag>
-            <Tag>Flow</Tag>
-            <Tag>Ansible</Tag>
-            <Tag>Jenkins</Tag>
-          </CaseStudyCard.Tags>
-        </CaseStudyCard.TextContent>
-        <CaseStudyCard.ImageContent>
-          <PhoneFrame />
-        </CaseStudyCard.ImageContent>
-      </LaserlikeCaseStudyCard>
+    <LaserlikeCaseStudyCard>
+      <CaseStudyCard.TextContent>
+        <CaseStudyCard.Logo>
+          <LaserlikeLogo contentStyle="light" />
+        </CaseStudyCard.Logo>
+        <CaseStudyCard.Title>
+          Automating deployments for a successful Apple acquisition
+        </CaseStudyCard.Title>
+        <CaseStudyCard.Body>
+          I developed fully automated infrastructure to deploy Laserlike’s iOS
+          and Android apps at the push of a button. Laserlike was acquired by
+          Apple in 2018.
+        </CaseStudyCard.Body>
+        <CaseStudyCard.ViewCaseStudyButton>
+          View Case Study
+        </CaseStudyCard.ViewCaseStudyButton>
+        <CaseStudyCard.Tags>
+          <Tag>React Native</Tag>
+          <Tag>Flow</Tag>
+          <Tag>Ansible</Tag>
+          <Tag>Jenkins</Tag>
+        </CaseStudyCard.Tags>
+      </CaseStudyCard.TextContent>
+      <CaseStudyCard.ImageContent>
+        <PhoneFrame />
+      </CaseStudyCard.ImageContent>
+    </LaserlikeCaseStudyCard>
 
-      <BarkdCaseStudyCard>
-        <CaseStudyCard.ImageContent>
-          <PhoneFrame />
-        </CaseStudyCard.ImageContent>
-        <CaseStudyCard.TextContent>
-          <CaseStudyCard.Logo>
-            <BarkdLogo contentStyle="light" />
-          </CaseStudyCard.Logo>
-          <CaseStudyCard.Title>
-            Building a cross-platform MVP for an early-stage startup
-          </CaseStudyCard.Title>
-          <CaseStudyCard.Body>
-            Starting from scratch, I worked with Barkd to create an iOS, Android
-            and web experience for their exciting new platform
-          </CaseStudyCard.Body>
-          <CaseStudyCard.ViewCaseStudyButton>
-            View Case Study
-          </CaseStudyCard.ViewCaseStudyButton>
-          <CaseStudyCard.Tags>
-            <Tag>React Native</Tag>
-            <Tag>Typescript</Tag>
-            <Tag>Firebase</Tag>
-          </CaseStudyCard.Tags>
-        </CaseStudyCard.TextContent>
-      </BarkdCaseStudyCard>
-    </Container>
-  ));
+    <BarkdCaseStudyCard>
+      <CaseStudyCard.ImageContent>
+        <PhoneFrame />
+      </CaseStudyCard.ImageContent>
+      <CaseStudyCard.TextContent>
+        <CaseStudyCard.Logo>
+          <BarkdLogo contentStyle="light" />
+        </CaseStudyCard.Logo>
+        <CaseStudyCard.Title>
+          Building a cross-platform MVP for an early-stage startup
+        </CaseStudyCard.Title>
+        <CaseStudyCard.Body>
+          Starting from scratch, I worked with Barkd to create an iOS, Android
+          and web experience for their exciting new platform
+        </CaseStudyCard.Body>
+        <CaseStudyCard.ViewCaseStudyButton>
+          View Case Study
+        </CaseStudyCard.ViewCaseStudyButton>
+        <CaseStudyCard.Tags>
+          <Tag>React Native</Tag>
+          <Tag>Typescript</Tag>
+          <Tag>Firebase</Tag>
+        </CaseStudyCard.Tags>
+      </CaseStudyCard.TextContent>
+    </BarkdCaseStudyCard>
+  </Container>
+));

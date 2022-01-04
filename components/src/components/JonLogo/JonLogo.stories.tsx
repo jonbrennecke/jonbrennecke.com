@@ -6,7 +6,7 @@ import { trueWhite, trueBlack } from '../../styles';
 const Container = styled.div<{ logoContentStyle: JonLogoContentStyle }>`
   display: flex;
   flex: 1;
-  background-color: ${props =>
+  background-color: ${(props) =>
     props.logoContentStyle === JonLogoContentStyle.dark
       ? trueWhite
       : trueBlack};
@@ -17,7 +17,11 @@ const Container = styled.div<{ logoContentStyle: JonLogoContentStyle }>`
   }
 `;
 
-export function JonLogoStory({ logoContentStyle = JonLogoContentStyle.light }: { logoContentStyle: JonLogoContentStyle }) {
+export function JonLogoStory({
+  logoContentStyle = JonLogoContentStyle.light,
+}: {
+  logoContentStyle: JonLogoContentStyle;
+}) {
   return (
     <Container logoContentStyle={logoContentStyle}>
       <JonLogo contentStyle={logoContentStyle} />
@@ -25,16 +29,16 @@ export function JonLogoStory({ logoContentStyle = JonLogoContentStyle.light }: {
   );
 }
 
-JonLogoStory.storyName = "Standard"
+JonLogoStory.storyName = 'Standard';
 
 JonLogoStory.argTypes = {
   contentStyle: {
     options: [JonLogoContentStyle.dark, JonLogoContentStyle.light],
     control: { type: 'radio' },
-  }
+  },
 };
 
 export default {
-  title: "Logos/Jon/Standard",
+  title: 'Logos/Jon/Standard',
   component: JonLogoStory,
 };

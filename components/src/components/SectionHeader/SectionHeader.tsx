@@ -76,10 +76,11 @@ export interface SectionHeaderSubComponents {
 }
 
 export const SectionHeader: React.FC<SectionHeaderProps> &
-  SectionHeaderSubComponents = ({ className, children }: SectionHeaderProps) => (
-  <Container className={className}>
-    {children}
-  </Container>
+  SectionHeaderSubComponents = ({
+  className,
+  children,
+}: SectionHeaderProps) => (
+  <Container className={className}>{children}</Container>
 );
 
 SectionHeader.Title = Title;

@@ -3,7 +3,7 @@ import { Text, ITextProps } from '../Text';
 import styled from 'styled-components';
 import { trueWhite, unit } from '../../styles';
 
-const Arrow = styled(props => (
+const Arrow = styled((props) => (
   <svg viewBox="0 0 102 85" {...props}>
     <g
       id="Symbols"

@@ -13437,6 +13437,7 @@ __metadata:
   resolution: "portfolio@workspace:."
   dependencies:
     "@types/react": 17.0.38
+    prettier: 2.5.1
     react: 17.0.2
     react-dom: 17.0.2
     tsc: ^2.0.3
@@ -13703,7 +13704,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.2.1":
+"prettier@npm:2.5.1, prettier@npm:^2.2.1":
   version: 2.5.1
   resolution: "prettier@npm:2.5.1"
   bin:

@@ -8,7 +8,7 @@ import { trueWhite, trueBlack } from '../../styles';
 const Container = styled.div<{ logoContentStyle: LaserlikeLogoContentStyle }>`
   display: flex;
   flex: 1;
-  background-color: ${props =>
+  background-color: ${(props) =>
     props.logoContentStyle === LaserlikeLogoContentStyle.dark
       ? trueWhite
       : trueBlack};

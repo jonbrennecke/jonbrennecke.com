@@ -3,7 +3,7 @@ import { trueBlack, trueWhite } from '../../styles';
 
 export enum BarkdLogoContentStyle {
   dark = 'dark',
-  light = 'light'
+  light = 'light',
 }
 
 export interface BarkdLogoProps {
@@ -11,7 +11,7 @@ export interface BarkdLogoProps {
 }
 
 export const BarkdLogo = ({
-  contentStyle = BarkdLogoContentStyle.light
+  contentStyle = BarkdLogoContentStyle.light,
 }: BarkdLogoProps) => {
   const fillColor =
     contentStyle === BarkdLogoContentStyle.light ? trueWhite : trueBlack;

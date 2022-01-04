@@ -18,7 +18,11 @@ const Container = styled.div<{ formContentStyle: FormContentStyle }>`
   }
 `;
 
-export function FormStory({ contentStyle = FormContentStyle.light }: { contentStyle: FormContentStyle }) {
+export function FormStory({
+  contentStyle = FormContentStyle.light,
+}: {
+  contentStyle: FormContentStyle;
+}) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [description, setDescription] = useState('');
@@ -62,18 +66,18 @@ export function FormStory({ contentStyle = FormContentStyle.light }: { contentSt
       </Form>
     </Container>
   );
-};
+}
 
-FormStory.storyName = "Form";
+FormStory.storyName = 'Form';
 
 FormStory.argTypes = {
   contentStyle: {
     options: [FormContentStyle.dark, FormContentStyle.light],
     control: { type: 'radio' },
-  }
+  },
 };
 
 export default {
-  title: "UI",
+  title: 'UI',
   component: FormStory,
 };
