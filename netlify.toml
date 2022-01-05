@@ -5,4 +5,4 @@ status = 200
 
 [build]
 command = "yarn install && yarn build"
-publish = "/opt/build/repo/web/build"
+publish = "web/build"
