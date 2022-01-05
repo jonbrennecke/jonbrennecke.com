@@ -16,7 +16,8 @@
     "start": "node -r dotenv/config ./webpack/dev-server.js",
     "build": "next build && next export -o build",
     "build:production": "npm run clean && cross-env NODE_ENV=production npm run build",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "serve": "cd build && python -m SimpleHTTPServer 8000"
   },
   "files": [
     "lib/"
