@@ -13,6 +13,7 @@ export * from './BarkdLogo';
 export * from './AnimatedJonLogo';
 export * from './JonLogo';
 export * from './CurativeLogo';
+export * from './CurativeEmblem';
 
 // UI
 export * from './CaseStudyCard';

@@ -5,7 +5,7 @@ import {
   curativeBlue50,
   CurativeLogo,
   Tag,
-  trueBlack,
+  CurativeEmblem,
 } from '@portfolio/components';
 import { rgba } from 'polished';
 import React from 'react';
@@ -32,8 +32,32 @@ const BrowserScreenshot = styled.div`
   width: 100%;
 `;
 
+const EmblemContainer = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+`;
+
+const Emblem = styled(CurativeEmblem)`
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0.08;
+  z-index: -1;
+  width: 50%;
+  max-width: 400px;
+  transform: translateX(-25%) translateY(-50%) rotate(17deg);
+  pointer-events: none;
+`;
+
 export const CurativeCaseStudy = () => (
   <CurativeCaseStudyCard>
+    <EmblemContainer>
+      <Emblem />
+    </EmblemContainer>
     <CaseStudyCard.TextContent>
       <CaseStudyCard.Logo>
         <CurativeLogo contentStyle="light" />
