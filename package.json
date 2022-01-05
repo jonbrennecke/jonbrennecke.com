@@ -1,17 +1,30 @@
 {
   "name": "portfolio",
   "private": true,
-  "workspaces": {
-    "packages": [
-      "packages/*"
-    ]
-  },
+  "workspaces": [
+    "components",
+    "web",
+    "functions"
+  ],
   "license": "MIT",
   "engines": {
     "node": "*"
   },
   "scripts": {
-    "compileAll": "cd packages/components && yarn compile",
-    "buildForNetlify": "yarn compileAll && cd packages/web && yarn build:production"
+    "web": "yarn workspace @portfolio/web",
+    "components": "yarn workspace @portfolio/components",
+    "build": "yarn web build:production",
+    "prettier": "prettier --parser typescript --trailing-comma es5 --single-quote --write \"./{web,components,functions}/{src,pages}/**/*.{ts,tsx,js,jsx}\""
+  },
+  "packageManager": "yarn@3.2.0-rc.9",
+  "devDependencies": {
+    "@types/react": "17.0.38",
+    "prettier": "2.5.1",
+    "tsc": "^2.0.3",
+    "typescript": "4.5.4"
+  },
+  "dependencies": {
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
   }
 }
