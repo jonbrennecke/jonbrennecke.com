@@ -1,14 +1,14 @@
-import React from 'react';
-import styled from 'styled-components';
-import { unit, transparent, trueBlack, opacity } from '../../styles';
-import { JonLogo } from '../JonLogo';
-import { ITextProps, Text } from '../Text';
-import { Button, EButtonVariant, buttonBackgroundColors } from '../Button';
+import React, { forwardRef } from "react";
+import styled from "styled-components";
+import { unit, transparent, trueBlack, opacity, darkGreen } from "../../styles";
+import { JonLogo } from "../JonLogo";
+import { ITextProps, Text } from "../Text";
+import { Button, EButtonVariant, buttonBackgroundColors } from "../Button";
 
 const Container = styled.div`
   display: grid;
   grid-template-columns: min-content 1fr max-content;
-  grid-template-areas: 'menu logo links';
+  grid-template-areas: "menu logo links";
   align-items: center;
 `;
 
@@ -38,27 +38,58 @@ const LinkContainer = styled.li`
   }
 `;
 
+const StyledLink = styled.a`
+  background-color: transparent;
+  text-decoration: none;
+  color: ${trueBlack};
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: underline;
+  }
+`;
+
+interface LinkProps {
+  children?: ITextProps["children"];
+  href: string;
+}
+
+// forwardRef is added so that Next can wrap the link
+const Link = forwardRef(
+  (
+    { children, href }: LinkProps,
+    ref: React.ForwardedRef<HTMLAnchorElement>
+  ) => (
+    <LinkContainer>
+      <StyledLink href={href} ref={ref}>
+        <Text weight="bold">{children}</Text>
+      </StyledLink>
+    </LinkContainer>
+  )
+);
+
 const linkButtonBackgroundColors = {
   ...buttonBackgroundColors,
   [EButtonVariant.default]: transparent,
 };
 
-const LinkButton = styled(Button)`
+const StyledLinkButton = styled(Button)`
   background-color: ${(props) =>
     linkButtonBackgroundColors[props.variant || EButtonVariant.default]};
 `;
 
-interface LinkProps {
-  children?: ITextProps['children'];
+interface LinkButtonProps {
+  children?: ITextProps["children"];
   variant?: EButtonVariant | keyof typeof EButtonVariant;
-  onClick?(): void;
+  onClick(): void;
 }
 
-const Link = ({ children, variant, onClick }: LinkProps) => (
+const LinkButton = ({ children, variant, onClick }: LinkButtonProps) => (
   <LinkContainer>
-    <LinkButton variant={variant} onClick={onClick}>
+    <StyledLinkButton variant={variant} onClick={onClick}>
       {children}
-    </LinkButton>
+    </StyledLinkButton>
   </LinkContainer>
 );
 
@@ -128,6 +159,7 @@ export interface NavigationSubComponents {
   Logo: typeof Logo;
   Links: typeof Links;
   Link: typeof Link;
+  LinkButton: typeof LinkButton;
   MenuButton: typeof MenuButton;
 }
 
@@ -144,4 +176,5 @@ export const Navigation: React.FC<NavigationProps> &
 Navigation.Logo = Logo;
 Navigation.Links = Links;
 Navigation.Link = Link;
+Navigation.LinkButton = LinkButton;
 Navigation.MenuButton = MenuButton;
