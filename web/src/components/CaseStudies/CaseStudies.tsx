@@ -1,10 +1,10 @@
-import { maxWidth, offWhite, SectionHeader, unit } from "@portfolio/components";
-import React from "react";
-import styled from "styled-components";
-import { BarkdCaseStudy } from "./BarkdCaseStudy";
-import { LaserlikeCaseStudy } from "./LaserlikeCaseStudy";
-import { OpenGovCaseStudy } from "./OpenGovCaseStudy";
-import { CurativeCaseStudy } from "./CurativeCaseStudy";
+import { maxWidth, offWhite, SectionHeader, unit } from '@portfolio/components';
+import React from 'react';
+import styled from 'styled-components';
+import { BarkdCaseStudy } from './BarkdCaseStudy';
+import { LaserlikeCaseStudy } from './LaserlikeCaseStudy';
+import { OpenGovCaseStudy } from './OpenGovCaseStudy';
+import { CurativeCaseStudy } from './CurativeCaseStudy';
 
 const Container = styled.div`
   display: flex;
@@ -19,7 +19,7 @@ const Container = styled.div`
   }
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 50%;

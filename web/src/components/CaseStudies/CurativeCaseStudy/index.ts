@@ -1,1 +1,1 @@
-export * from "./CurativeCaseStudy";
+export * from './CurativeCaseStudy';

@@ -6,12 +6,12 @@ import {
   CurativeLogo,
   Tag,
   trueBlack,
-} from "@portfolio/components";
-import { rgba } from "polished";
-import React from "react";
-import styled from "styled-components";
-import screenshot from "../../../../assets/images/book.curative.com.png";
-import { BaseCaseStudyCard } from "../BaseCaseStudyCard";
+} from '@portfolio/components';
+import { rgba } from 'polished';
+import React from 'react';
+import styled from 'styled-components';
+import screenshot from '../../../../assets/images/book.curative.com.png';
+import { BaseCaseStudyCard } from '../BaseCaseStudyCard';
 
 const CurativeCaseStudyCard = styled(BaseCaseStudyCard)`
   background: linear-gradient(15deg, ${curativeBlue50}, ${curativeBlue40});

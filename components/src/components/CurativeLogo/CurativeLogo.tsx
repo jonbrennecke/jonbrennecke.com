@@ -1,9 +1,9 @@
-import React from "react";
-import { trueBlack, trueWhite } from "../../styles";
+import React from 'react';
+import { trueBlack, trueWhite } from '../../styles';
 
 export enum CurativeLogoContentStyle {
-  dark = "dark",
-  light = "light",
+  dark = 'dark',
+  light = 'light',
 }
 
 export interface CurativeLogoProps {

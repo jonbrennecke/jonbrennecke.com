@@ -4,11 +4,11 @@ import {
   Tag,
   LaserlikeLogo,
   laserlikeBlue,
-} from "@portfolio/components";
-import React from "react";
-import styled from "styled-components";
-import { BaseCaseStudyCard } from "../BaseCaseStudyCard";
-import laserlikeScreenshot from "../../../../assets/images/laserlikeScreenshot.png";
+} from '@portfolio/components';
+import React from 'react';
+import styled from 'styled-components';
+import { BaseCaseStudyCard } from '../BaseCaseStudyCard';
+import laserlikeScreenshot from '../../../../assets/images/laserlikeScreenshot.png';
 
 const LaserlikeCaseStudyCard = styled(BaseCaseStudyCard)`
   background-color: ${laserlikeBlue};

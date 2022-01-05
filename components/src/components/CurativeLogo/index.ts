@@ -1,1 +1,1 @@
-export * from "./CurativeLogo";
+export * from './CurativeLogo';

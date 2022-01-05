@@ -5,10 +5,10 @@ import {
   SideDrawer,
   trueWhite,
   unit,
-} from "@portfolio/components";
-import React, { useState } from "react";
-import styled from "styled-components";
-import aboutImageURL from "../assets/images/about_image.jpg";
+} from '@portfolio/components';
+import React, { useState } from 'react';
+import styled from 'styled-components';
+import aboutImageURL from '../assets/images/about_image.jpg';
 import {
   CaseStudies,
   ContactForm,
@@ -16,7 +16,7 @@ import {
   HeroSection,
   Navbar,
   ServicesSection,
-} from "../src/components";
+} from '../src/components';
 
 const Container = styled.div`
   display: flex;
@@ -75,14 +75,14 @@ function App() {
             <About.Title>Hi, I'm Jon</About.Title>
             <About.Body>
               I build and consult on mobile apps and websites. I have also made
-              a few independently-developed apps like{" "}
+              a few independently-developed apps like{' '}
               <a
                 href="https://apps.apple.com/us/app/boca-portrait-mode-videos/id1478361742"
                 target="_blank"
               >
                 “BOCA”
-              </a>{" "}
-              and{" "}
+              </a>{' '}
+              and{' '}
               <a
                 href="https://apps.apple.com/us/app/caption-this-video-subtitles/id1449087035"
                 target="_blank"
