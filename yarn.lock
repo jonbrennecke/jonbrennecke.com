@@ -2257,7 +2257,7 @@ __metadata:
     "@types/immutable": 3.8.7
     "@types/lodash": 4.14.149
     "@types/node": ^12.11.7
-    "@types/styled-components": 4.4.1
+    "@types/styled-components": 5.1.19
     babel-loader: ^8.0.6
     babel-preset-react-app: ^10.0.1
     d3-color: ^1.4.0
@@ -3638,15 +3638,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-native@npm:*":
-  version: 0.66.11
-  resolution: "@types/react-native@npm:0.66.11"
-  dependencies:
-    "@types/react": "*"
-  checksum: 072fd0bb041483d3d66249a190a8683b26fa9dfe1c12ed5cadfbae1fe68822eeb12087204328e0203796fe8492d8730609c6525cb6bce69b1c2b180199b620c1
-  languageName: node
-  linkType: hard
-
 "@types/react-syntax-highlighter@npm:11.0.5":
   version: 11.0.5
   resolution: "@types/react-syntax-highlighter@npm:11.0.5"
@@ -3714,15 +3705,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/styled-components@npm:4.4.1":
-  version: 4.4.1
-  resolution: "@types/styled-components@npm:4.4.1"
+"@types/styled-components@npm:5.1.19":
+  version: 5.1.19
+  resolution: "@types/styled-components@npm:5.1.19"
   dependencies:
     "@types/hoist-non-react-statics": "*"
     "@types/react": "*"
-    "@types/react-native": "*"
-    csstype: ^2.2.0
-  checksum: 9a86e331f519b768118b00f5ed32a8ee97406c249d27692f9c678f6aacc7b38dd59c6f4d9f7b6fd80f5f65e4861cd802d30a809d25df6965b8c9c65bb6267fbf
+    csstype: ^3.0.2
+  checksum: ccd2baa6c980ad176650889f2fb286edbb57f5e2b74a01d80d349f751fa7fbdb4f21ed34a893a4c417cc5731c5f0174dba5d180c3a11954996d29c2818ecab13
   languageName: node
   linkType: hard
 
@@ -6368,7 +6358,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"csstype@npm:^2.2.0, csstype@npm:^2.5.7":
+"csstype@npm:^2.5.7":
   version: 2.6.19
   resolution: "csstype@npm:2.6.19"
   checksum: 72b51ddd30ba308d08373cd890e79526efdc19a9762941845040055f75353992f2d8d4cf4db282a8e1d3d9d2a39c989c65fe32b7b2655f08d313660c4048d2d6

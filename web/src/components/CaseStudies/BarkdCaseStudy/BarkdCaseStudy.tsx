@@ -4,12 +4,12 @@ import {
   Tag,
   BarkdLogo,
   barkdDarkBlue,
-} from '@portfolio/components';
-import React from 'react';
-import styled from 'styled-components';
-import { BaseCaseStudyCard } from '../BaseCaseStudyCard';
+} from "@portfolio/components";
+import React from "react";
+import styled from "styled-components";
+import { BaseCaseStudyCard } from "../BaseCaseStudyCard";
 
-import barkdScreenshot from '../../../../assets/images/barkdScreenshot.png';
+import barkdScreenshot from "../../../../assets/images/barkdScreenshot.png";
 
 // @ts-ignore
 const BarkdCaseStudyCard = styled(BaseCaseStudyCard)`
@@ -17,7 +17,13 @@ const BarkdCaseStudyCard = styled(BaseCaseStudyCard)`
 `;
 
 const BarkdScreenshot = () => (
-  <image mask="url(#mask-10)" x="3" y="3" width="744" href={barkdScreenshot} />
+  <image
+    mask="url(#mask-10)"
+    x="3"
+    y="3"
+    width="744"
+    href={barkdScreenshot.src}
+  />
 );
 
 export const BarkdCaseStudy = () => (
