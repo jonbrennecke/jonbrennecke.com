@@ -14,7 +14,7 @@
     "test": "jest",
     "prepublish": "npm run compile",
     "start": "node -r dotenv/config ./webpack/dev-server.js",
-    "build": "next build",
+    "build": "next build && next export -o build",
     "build:production": "npm run clean && cross-env NODE_ENV=production npm run build",
     "typecheck": "tsc --noEmit"
   },
