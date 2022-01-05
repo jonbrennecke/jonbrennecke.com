@@ -50,8 +50,14 @@ export const OpenGovCaseStudy = () => (
         Accelerating the future of open governments
       </CaseStudyCard.Title>
       <CaseStudyCard.Body>
-        I worked with OpenGov to accelerate feature development for their next
-        generation reporting platform.
+        <p>
+          OpenGov's software is bringing efficiency and transparency to state
+          and local governments across the country.
+        </p>
+        <p>
+          I worked with OpenGov to accelerate development of their
+          next-generation reporting platform.
+        </p>
       </CaseStudyCard.Body>
       <CaseStudyCard.ViewCaseStudyButton>
         View Case Study
