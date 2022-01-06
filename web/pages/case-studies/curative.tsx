@@ -83,6 +83,13 @@ const BrowserContainer = styled.div`
   flex: 1;
   align-items: flex-end;
   justify-content: flex-end;
+  transition: 300ms all ease-in-out;
+
+  &:hover {
+    transform: scale(1.025);
+    perspective: 2500px;
+    perspective-origin: 0% 50%;
+  }
 `;
 
 const Column = styled.div`
@@ -120,7 +127,6 @@ function CurativeCaseStudyPage() {
                 <Browser>
                   <BrowserScreenshot />
                 </Browser>
-
                 <Phone>
                   <image
                     mask="url(#mask-10)"
