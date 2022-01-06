@@ -1,12 +1,14 @@
-import React from 'react';
-import { trueBlack, trueWhite } from '../../styles';
+import React from "react";
+import { trueBlack, trueWhite } from "../../styles";
 
 export enum CurativeLogoContentStyle {
-  dark = 'dark',
-  light = 'light',
+  dark = "dark",
+  light = "light",
 }
 
 export interface CurativeLogoProps {
+  id?: string;
+  style?: any;
   className?: string;
   contentStyle?:
     | CurativeLogoContentStyle
@@ -14,6 +16,8 @@ export interface CurativeLogoProps {
 }
 
 export const CurativeLogo = ({
+  id,
+  style,
   className,
   contentStyle = CurativeLogoContentStyle.light,
 }: CurativeLogoProps) => {
@@ -21,6 +25,8 @@ export const CurativeLogo = ({
     contentStyle === CurativeLogoContentStyle.light ? trueWhite : trueBlack;
   return (
     <svg
+      id={id}
+      style={style}
       className={className}
       viewBox="0 0 882 180"
       fill="none"

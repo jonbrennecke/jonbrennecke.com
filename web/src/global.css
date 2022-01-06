@@ -35,14 +35,14 @@ div#react-main {
 
 @font-face {
   font-family: 'Cabin';
-  src: url("../../components/assets/fonts/Cabin/Cabin-Bold.ttf") format('truetype');
+  src: url("../../components/assets/fonts/Cabin/Cabin-Medium.ttf") format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Cabin';
-  src: url("../../components/assets/fonts/Cabin/Cabin-Medium.ttf") format('truetype');
+  src: url("../../components/assets/fonts/Cabin/Cabin-Bold.ttf") format('truetype');
   font-weight: 700;
   font-style: normal;
 }
