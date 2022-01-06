@@ -1,8 +1,16 @@
 import isString from "lodash/isString";
 import noop from "lodash/noop";
+import { rgba } from "polished";
 import React from "react";
 import styled, { css } from "styled-components";
-import { blue, darkGreen, offWhite, trueWhite, unit } from "../../styles";
+import {
+  blue,
+  darkGreen,
+  offWhite,
+  trueBlack,
+  trueWhite,
+  unit,
+} from "../../styles";
 import { Text } from "../Text";
 
 type ReactChild = React.ReactElement | React.ReactNode;
@@ -36,7 +44,7 @@ export interface IStyledButton {
 
 export const buttonBackgroundColors = {
   [EButtonVariant.default]: offWhite,
-  [EButtonVariant.primary]: blue,
+  [EButtonVariant.primary]: trueBlack,
 };
 
 export const buttonTextColors = {
@@ -67,7 +75,7 @@ const defaultStyles = ({ variant, size }: IStyledButton) =>
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: ${buttonBackgroundColors[variant]};
+    background-color: ${rgba(buttonBackgroundColors[variant], 0.5)};
     border-radius: 4px;
     outline: 0;
     border-width: 0;
