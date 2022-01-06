@@ -1,7 +1,13 @@
-import { Form, LoadingBanner, SideDrawer, unit } from '@portfolio/components';
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import { ContactForm, FooterSection, Navbar } from '.';
+import {
+  ContentStyle,
+  Form,
+  LoadingBanner,
+  SideDrawer,
+  unit,
+} from "@portfolio/components";
+import React, { useState } from "react";
+import styled from "styled-components";
+import { ContactForm, FooterSection, Navbar } from ".";
 
 const Container = styled.div`
   display: flex;
@@ -18,8 +24,10 @@ const DrawerContactFormContainer = styled(Form)`
 `;
 
 export function Page({
+  contentStyle,
   children,
 }: {
+  contentStyle?: ContentStyle | keyof typeof ContentStyle;
   children: (params: { showMenu(): void }) => React.ReactNode;
 }) {
   const [showMenu, setShowMenu] = useState(false);
@@ -36,6 +44,7 @@ export function Page({
           </DrawerContactFormContainer>
         </SideDrawer>
         <Navbar
+          contentStyle={contentStyle}
           onClickMenuButton={() => setShowMenu(!showMenu)}
           onClickContactButton={() => setShowMenu(!showMenu)}
         />

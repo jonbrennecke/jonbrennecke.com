@@ -204,7 +204,7 @@ export interface NavigationSubComponents {
 export interface NavigationProps {
   children?: React.ReactChild | React.ReactChild[];
   className?: string;
-  contentStyle?: ContentStyle;
+  contentStyle?: ContentStyle | keyof typeof ContentStyle;
 }
 
 export const Navigation: React.FC<NavigationProps> &
@@ -215,7 +215,7 @@ export const Navigation: React.FC<NavigationProps> &
 }: NavigationProps) => (
   <NavigationContext.Provider
     value={{
-      contentStyle: contentStyle ?? ContentStyle.dark,
+      contentStyle: (contentStyle as ContentStyle) ?? ContentStyle.dark,
     }}
   >
     <Container className={className}>{children}</Container>

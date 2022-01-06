@@ -1,4 +1,9 @@
-import { maxWidth, Navigation, unit } from "@portfolio/components";
+import {
+  maxWidth,
+  Navigation,
+  unit,
+  ContentStyle,
+} from "@portfolio/components";
 import React from "react";
 import styled from "styled-components";
 import Link from "next/link";
@@ -9,15 +14,17 @@ const StyledNavigation = styled(Navigation)`
 `;
 
 export interface NavbarProps {
+  contentStyle?: ContentStyle | keyof typeof ContentStyle;
   onClickMenuButton(): void;
   onClickContactButton(): void;
 }
 
 export const Navbar = ({
+  contentStyle,
   onClickMenuButton,
   onClickContactButton,
 }: NavbarProps) => (
-  <StyledNavigation>
+  <StyledNavigation contentStyle={contentStyle}>
     <Navigation.MenuButton onClick={onClickMenuButton} />
     <Navigation.Logo />
     <Navigation.Links>

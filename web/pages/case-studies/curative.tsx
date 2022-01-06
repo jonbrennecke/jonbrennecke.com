@@ -100,8 +100,8 @@ const StyledText = styled(Text)`
 
 function CurativeCaseStudyPage() {
   return (
-    <Page>
-      {({ showMenu }) => (
+    <Page contentStyle="light">
+      {() => (
         <>
           <CurativeHero>
             <CurativeHeroContentContainer>
