@@ -37,14 +37,14 @@ const CurativeHero = styled.div`
 const CurativeHeroContentContainer = styled.div`
   display: flex;
   flex: 1;
-  padding: ${unit * 10}px ${unit * 5}px;
-  height: 70vh;
-  max-width: ${maxWidth}px;
+  padding: ${unit * 20}px 0 ${unit * 20}px ${unit * 10}px;
+  height: 80vh;
+  max-width: ${maxWidth + 200}px;
 `;
 
 const StyledCurativeLogo = styled(CurativeLogo)`
   width: 100%;
-  max-width: 450px;
+  max-width: 350px;
 `;
 
 const LogoContainer = styled.div`
@@ -58,16 +58,16 @@ const LogoContainer = styled.div`
 
 const Browser = styled(BrowserFrame)`
   height: 450px;
-  width: 450px;
+  width: 600px;
   position: absolute;
-  transform: rotateY(-15deg);
+  transform: rotateY(-25deg) rotateX(3deg);
   filter: drop-shadow(0px 6px 45px ${rgba(trueBlack, 0.18)});
 `;
 
 const Phone = styled(PhoneFrame)`
   width: 200px;
   position: absolute;
-  transform: rotateY(-15deg) translateZ(100px);
+  transform: rotateY(-25deg) rotateX(3deg) translateZ(200px) translateY(30px);
   filter: drop-shadow(0px 6px 45px ${rgba(trueBlack, 0.18)});
 `;
 
@@ -78,7 +78,7 @@ const BrowserScreenshot = styled.div`
 `;
 
 const BrowserContainer = styled.div`
-  perspective: 1500px;
+  perspective: 2500px;
   display: flex;
   flex: 1;
   align-items: flex-end;
