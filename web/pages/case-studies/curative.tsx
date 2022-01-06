@@ -10,12 +10,18 @@ import {
   PhoneFrame,
   trueBlack,
   trueWhite,
+  SectionHeader,
+  blue,
+  Tag,
 } from "@portfolio/components";
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import { Page } from "../../src/components";
 import browserScreenshot from "../../assets/images/book.curative.com.png";
 import laserlikeScreenshot from "../../assets/images/laserlikeScreenshot.png";
+import curativeDriveThruSiteImage from "../../assets/images/curative-drive-thru-site.jpeg";
+import curativeBrandImage from "../../assets/images/curative-brand.png";
+import curativeVanImage from "../../assets/images/curative-van.png";
 import { rgba } from "polished";
 
 const CurativeHero = styled.div`
@@ -52,7 +58,7 @@ const LogoContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  row-gap: ${unit * 4}px;
+  row-gap: ${unit * 2}px;
   padding: ${unit * 4}px 0;
 `;
 
@@ -94,6 +100,7 @@ const BrowserContainer = styled.div`
 
 const Column = styled.div`
   display: flex;
+  flex: 1;
   flex-direction: column;
 `;
 
@@ -105,6 +112,99 @@ const StyledText = styled(Text)`
   font-size: ${unit * 3}px;
 `;
 
+// TODO: move Avatar to @portfolio/components
+const AvatarContainer = styled.div`
+  display: flex;
+`;
+
+const Avatar = styled.div`
+  background-image: url("https://github.com/jonbrennecke.png");
+  background-size: cover;
+  width: 75px;
+  height: 75px;
+  border-radius: ${unit * 3}px;
+  margin-right: ${unit * 2.5}px;
+`;
+
+const AvatarText = styled(Text)`
+  color: ${blue};
+
+  * {
+    margin: ${unit * 0.5}px 0;
+  }
+
+  h2 {
+    color: ${trueBlack};
+    margin-top: 0;
+  }
+`;
+
+const BodyContentContainer = styled.div`
+  width: 100%;
+  background-color: ${trueWhite};
+`;
+
+const ContentBlockContainer = styled.section`
+  background-color: ${trueWhite};
+  padding: ${unit * 7}px ${unit * 7}px;
+  width: 100%;
+  max-width: ${maxWidth}px;
+  margin: 0 auto;
+  display: flex;
+  column-gap: ${unit * 10}px;
+
+  &:first-of-type {
+    padding-top: ${unit * 14}px;
+  }
+
+  &:last-of-type {
+    padding-bottom: ${unit * 14}px;
+  }
+`;
+
+const ContentBlockImage = styled.img`
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: ${unit}px;
+`;
+
+const ColumnImage = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: ${unit}px;
+`;
+
+const BodyText = styled(Text)`
+  font-size: ${unit * 3}px;
+
+  p:first-of-type {
+    margin-top: 0;
+  }
+
+  a {
+    color: ${blue};
+  }
+`;
+
+// TODO: make this a component in @portfolio/components (and replace the one in CaseStudyCard)
+const TagGroup = styled.div`
+  display: inline-block;
+  padding-top: ${unit * 3}px;
+
+  & > *:not(:first-child) {
+    margin-left: ${unit}px;
+  }
+`;
+
+const StyledTagGroup = styled(TagGroup)`
+  * {
+    font-weight: bold;
+    font-size: 20px;
+  }
+`;
+
 function CurativeCaseStudyPage() {
   return (
     <Page contentStyle="light">
@@ -114,14 +214,11 @@ function CurativeCaseStudyPage() {
             <CurativeHeroContentContainer>
               <LogoContainer>
                 <StyledCurativeLogo id="curativeLogo" contentStyle="light" />
-                <Column>
-                  <StyledHeading color={trueWhite}>
-                    Senior Fullstack Software Engineer
-                  </StyledHeading>
-                  <StyledText color={trueWhite}>
-                    Team Lead, Patient Experience Team
-                  </StyledText>
-                </Column>
+                <StyledTagGroup>
+                  <Tag>COVID-19 Testing</Tag>
+                  <Tag>Medical Diagnostics</Tag>
+                  <Tag>Healthcare</Tag>
+                </StyledTagGroup>
               </LogoContainer>
               <BrowserContainer>
                 <Browser>
@@ -139,6 +236,102 @@ function CurativeCaseStudyPage() {
               </BrowserContainer>
             </CurativeHeroContentContainer>
           </CurativeHero>
+          <BodyContentContainer>
+            <ContentBlockContainer>
+              <Column>
+                <AvatarContainer>
+                  <Avatar />
+                  <AvatarText>
+                    <h2>Jon Brennecke</h2>
+                    <p>
+                      <strong>Senior Fullstack Software Engineer</strong>
+                    </p>
+                    <p>Team Lead, Patient Experience Team</p>
+                  </AvatarText>
+                </AvatarContainer>
+              </Column>
+              <Column>
+                <BodyText>
+                  <p>
+                    I joined Curative in the spring of 2020, just as the
+                    COVID-19 pandemic was starting to spread across the globe.
+                  </p>
+                  <p>
+                    Curative started with a small, core engineering team and
+                    grew quickly. To date, Curative has delivered over 25
+                    million COVID-19 tests and 2 million vaccinations.
+                  </p>
+                </BodyText>
+              </Column>
+            </ContentBlockContainer>
+            <ContentBlockContainer>
+              <ContentBlockImage src={curativeDriveThruSiteImage.src} />
+            </ContentBlockContainer>
+            <ContentBlockContainer>
+              <BodyText>
+                <p>
+                  I led the Patient Experience Team to build Scheduler, the
+                  appointment booking platform on{" "}
+                  <a href="https://curative.com" target="_blank">
+                    curative.com
+                  </a>
+                  .
+                </p>
+                <p>
+                  Before Scheduler, Curative had been signing up patients with a
+                  quickly-built webapp. This didn't scale well, as demand for
+                  COVID-19 testing exploded in the height of the pandemic.
+                </p>
+                <p>
+                  I formed an engineering team and built the new Scheduler, a
+                  greenfield app using a modern React stack. The new Scheduler
+                  allowed Curative to expand operations to thousands of
+                  locations around the US.
+                </p>
+              </BodyText>
+            </ContentBlockContainer>
+            <ContentBlockContainer>
+              <SectionHeader>
+                <SectionHeader.SubTitle>COVID-19</SectionHeader.SubTitle>
+                <SectionHeader.Title>Vaccines</SectionHeader.Title>
+                <SectionHeader.Paragraph>
+                  Curative has delivered over 25 million COVID-19 tests and 2
+                  million vaccinations.
+                </SectionHeader.Paragraph>
+              </SectionHeader>
+            </ContentBlockContainer>
+            <ContentBlockContainer>
+              <Column>
+                <BodyText>
+                  <p>
+                    When vaccines for COVID-19 were about to hit the market in
+                    early 2021, Curative was among the first to build
+                    specialized software for recording vaccinations.{" "}
+                  </p>
+                  <p>
+                    I built the early prototypes of the internal tools used by
+                    Curative’s nurses and staff to record vaccinations. I also
+                    led the Patient Experience Team in building support for
+                    COVID-19 vaccinations into our software. Soon, the public
+                    could book appointments for COVID-19 vaccines on our public{" "}
+                    <a href="https://curative.com" target="_blank">
+                      curative.com
+                    </a>{" "}
+                    platform.
+                  </p>
+                  <p>
+                    Curative partnered with LA County, Massachusetts state and
+                    other governments to run large-scale drive-thru vaccination
+                    sites. To date, Curative has delivered over 2M vaccinations
+                    through the administration software that I helped build.
+                  </p>
+                </BodyText>
+              </Column>
+              <Column>
+                <ColumnImage src={curativeVanImage.src} />
+              </Column>
+            </ContentBlockContainer>
+          </BodyContentContainer>
         </>
       )}
     </Page>
