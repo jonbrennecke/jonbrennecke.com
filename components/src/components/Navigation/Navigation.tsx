@@ -1,9 +1,25 @@
-import React, { forwardRef } from "react";
+import React, { forwardRef, createContext, useContext } from "react";
 import styled from "styled-components";
-import { unit, transparent, trueBlack, opacity, darkGreen } from "../../styles";
+import { transparent, trueBlack, trueWhite, unit } from "../../styles";
+import { ContentStyle } from "../../types";
+import { Button, buttonBackgroundColors, EButtonVariant } from "../Button";
 import { JonLogo } from "../JonLogo";
 import { ITextProps, Text } from "../Text";
-import { Button, EButtonVariant, buttonBackgroundColors } from "../Button";
+
+interface NavigationContextObject {
+  contentStyle: ContentStyle;
+}
+
+const NavigationContext = createContext<NavigationContextObject>({
+  contentStyle: ContentStyle.dark,
+});
+
+const useNavigationContext = () => useContext(NavigationContext);
+
+const navigationTextColors = {
+  [ContentStyle.light]: trueWhite,
+  [ContentStyle.dark]: trueBlack,
+};
 
 const Container = styled.div`
   display: grid;
@@ -12,7 +28,20 @@ const Container = styled.div`
   align-items: center;
 `;
 
-const Logo = styled((props) => <JonLogo contentStyle="dark" {...props} />)`
+const Logo = () => {
+  const { contentStyle } = useNavigationContext();
+  return <StyledLogo contentStyle={contentStyle} />;
+};
+
+const StyledLogo = styled(JonLogo)`
+  max-width: ${unit * 15}px;
+  width: 100%;
+  position: relative;
+  top: 10px;
+  grid-area: logo;
+`;
+
+styled((props) => <JonLogo contentStyle="dark" {...props} />)`
   max-width: ${unit * 15}px;
   width: 100%;
   position: relative;
@@ -38,10 +67,10 @@ const LinkContainer = styled.li`
   }
 `;
 
-const StyledLink = styled.a`
+const StyledLink = styled.a<{ color?: string }>`
   background-color: transparent;
   text-decoration: none;
-  color: ${trueBlack};
+  color: ${(props) => props.color ?? trueBlack};
 
   &:hover,
   &:focus,
@@ -52,7 +81,7 @@ const StyledLink = styled.a`
 
 interface LinkProps {
   children?: ITextProps["children"];
-  href: string;
+  href?: string;
 }
 
 // forwardRef is added so that Next can wrap the link
@@ -60,13 +89,19 @@ const Link = forwardRef(
   (
     { children, href }: LinkProps,
     ref: React.ForwardedRef<HTMLAnchorElement>
-  ) => (
-    <LinkContainer>
-      <StyledLink href={href} ref={ref}>
-        <Text weight="bold">{children}</Text>
-      </StyledLink>
-    </LinkContainer>
-  )
+  ) => {
+    const { contentStyle } = useNavigationContext();
+    const color = navigationTextColors[contentStyle];
+    return (
+      <LinkContainer>
+        <StyledLink href={href} ref={ref} color={color}>
+          <Text weight="bold" color={color}>
+            {children}
+          </Text>
+        </StyledLink>
+      </LinkContainer>
+    );
+  }
 );
 
 const linkButtonBackgroundColors = {
@@ -96,18 +131,18 @@ const LinkButton = ({ children, variant, onClick }: LinkButtonProps) => (
 const MenuIcon = styled((props) => (
   <svg viewBox="0 0 50 22" {...props}>
     <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
-      <g transform="translate(-156.000000, -91.000000)" fill={trueBlack}>
+      <g transform="translate(-156.000000, -91.000000)">
         <g transform="translate(1, 1)">
           <g transform="translate(157.000000, 91.000000)">
             <g transform="translate(0.000000, 0.932773)">
-              <rect x="0" y="0" width="44.4" height="4.50630252" rx="2"></rect>
+              <rect x="0" y="0" width="44.4" height="4.50630252" rx="2" />
               <rect
                 x="0"
                 y="12.1323529"
                 width="30.3"
                 height="4.50630252"
                 rx="2"
-              ></rect>
+              />
             </g>
           </g>
         </g>
@@ -118,18 +153,17 @@ const MenuIcon = styled((props) => (
   width: ${unit * 6}px;
 `;
 
-const MenuButton = styled(
-  (
-    props: React.DetailedHTMLProps<
-      React.ButtonHTMLAttributes<HTMLButtonElement>,
-      HTMLButtonElement
-    >
-  ) => (
-    <button {...props}>
+const MenuButton = ({ onClick }: { onClick?(): void }) => {
+  const { contentStyle } = useNavigationContext();
+  const fillColor = navigationTextColors[contentStyle];
+  return (
+    <StyledMenuButton fill={fillColor} onClick={onClick}>
       <MenuIcon />
-    </button>
-  )
-)`
+    </StyledMenuButton>
+  );
+};
+
+const StyledMenuButton = styled.button<{ fill: string }>`
   padding: 0 ${unit * 10}px 0 0;
   max-width: 100%;
   display: flex;
@@ -140,6 +174,10 @@ const MenuButton = styled(
   cursor: pointer;
   grid-area: menu;
   background: none;
+
+  svg > * {
+    fill: ${(props) => props.fill};
+  }
 
   rect {
     stroke-width: 0;
@@ -166,11 +204,22 @@ export interface NavigationSubComponents {
 export interface NavigationProps {
   children?: React.ReactChild | React.ReactChild[];
   className?: string;
+  contentStyle?: ContentStyle;
 }
 
 export const Navigation: React.FC<NavigationProps> &
-  NavigationSubComponents = ({ children, className }: NavigationProps) => (
-  <Container className={className}>{children}</Container>
+  NavigationSubComponents = ({
+  children,
+  className,
+  contentStyle,
+}: NavigationProps) => (
+  <NavigationContext.Provider
+    value={{
+      contentStyle: contentStyle ?? ContentStyle.dark,
+    }}
+  >
+    <Container className={className}>{children}</Container>
+  </NavigationContext.Provider>
 );
 
 Navigation.Logo = Logo;

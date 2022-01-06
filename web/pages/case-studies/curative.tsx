@@ -38,14 +38,13 @@ const CurativeHeroContentContainer = styled.div`
   display: flex;
   flex: 1;
   padding: ${unit * 10}px ${unit * 5}px;
-  height: 60vh;
+  height: 70vh;
   max-width: ${maxWidth}px;
 `;
 
 const StyledCurativeLogo = styled(CurativeLogo)`
   width: 100%;
   max-width: 450px;
-  /* margin-bottom: ${unit * 4}px; */
 `;
 
 const LogoContainer = styled.div`
@@ -93,12 +92,10 @@ const Column = styled.div`
 
 const StyledHeading = styled(Heading)`
   font-size: ${unit * 4}px;
-  /* text-transform: uppercase; */
 `;
 
 const StyledText = styled(Text)`
   font-size: ${unit * 3}px;
-  /* text-transform: uppercase; */
 `;
 
 function CurativeCaseStudyPage() {
