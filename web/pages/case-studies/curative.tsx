@@ -1,28 +1,27 @@
 import {
+  blue,
+  BrowserFrame,
   curativeBlue30,
   curativeBlue50,
   CurativeLogo,
   maxWidth,
-  unit,
-  Text,
-  Heading,
-  BrowserFrame,
   PhoneFrame,
+  SectionHeader,
+  Tag,
+  Text,
   trueBlack,
   trueWhite,
-  SectionHeader,
-  blue,
-  Tag,
+  unit,
 } from "@portfolio/components";
-import React from "react";
-import styled, { keyframes } from "styled-components";
-import { Page } from "../../src/components";
-import browserScreenshot from "../../assets/images/book.curative.com.png";
-import laserlikeScreenshot from "../../assets/images/laserlikeScreenshot.png";
-import curativeDriveThruSiteImage from "../../assets/images/curative-drive-thru-site.jpeg";
-import curativeBrandImage from "../../assets/images/curative-brand.png";
-import curativeVanImage from "../../assets/images/curative-van.png";
 import { rgba } from "polished";
+import React from "react";
+import styled from "styled-components";
+import browserScreenshot from "../../assets/images/book.curative.com.png";
+import iPhoneBrowserScreenshot from "../../assets/images/book.curative.com.iPhone.png";
+import curativeDriveThruSiteImage from "../../assets/images/curative-drive-thru-site.jpeg";
+import curativeVanImage from "../../assets/images/curative-van.png";
+import laserlikeScreenshot from "../../assets/images/laserlikeScreenshot.png";
+import { Page } from "../../src/components";
 
 const CurativeHero = styled.div`
   display: flex;
@@ -102,14 +101,6 @@ const Column = styled.div`
   display: flex;
   flex: 1;
   flex-direction: column;
-`;
-
-const StyledHeading = styled(Heading)`
-  font-size: ${unit * 4}px;
-`;
-
-const StyledText = styled(Text)`
-  font-size: ${unit * 3}px;
 `;
 
 // TODO: move Avatar to @portfolio/components
@@ -230,7 +221,7 @@ function CurativeCaseStudyPage() {
                     x="3"
                     y="6"
                     width="746"
-                    href={laserlikeScreenshot.src}
+                    href={iPhoneBrowserScreenshot.src}
                   />
                 </Phone>
               </BrowserContainer>
@@ -257,9 +248,13 @@ function CurativeCaseStudyPage() {
                     COVID-19 pandemic was starting to spread across the globe.
                   </p>
                   <p>
-                    Curative started with a small, core engineering team and
-                    grew quickly. To date, Curative has delivered over 25
-                    million COVID-19 tests and 2 million vaccinations.
+                    As an early employee, I saw Curative scale up from a lab in
+                    LA to a national presence. To date, Curative has delivered
+                    over 25 million COVID-19 tests and 2 million vaccinations.
+                  </p>
+                  <p>
+                    Some of the most impactful work of my career has been at
+                    Curative, and I've launched software to millions of users.
                   </p>
                 </BodyText>
               </Column>
