@@ -39,9 +39,10 @@ export const Tag: React.FC<TagProps> & TagSubComponents = ({
 const TagGroup = styled.div`
   display: inline-block;
   padding-top: ${unit * 3}px;
+  margin: -${unit * 0.5}px;
 
-  & > *:not(:first-child) {
-    margin-left: ${unit}px;
+  & > * {
+    margin: ${unit * 0.5}px;
   }
 `;
 

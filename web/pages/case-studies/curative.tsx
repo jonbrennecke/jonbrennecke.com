@@ -59,7 +59,7 @@ const LogoContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   row-gap: ${unit * 2}px;
-  padding: ${unit * 4}px 0;
+  padding: ${unit * 4}px ${unit * 4}px ${unit * 4}px 0;
 `;
 
 const Browser = styled(BrowserFrame)`
@@ -73,6 +73,7 @@ const Browser = styled(BrowserFrame)`
 `;
 
 const Phone = styled(PhoneFrame)`
+  min-width: 150px;
   max-width: 200px;
   width: 35%;
   position: absolute;
@@ -87,17 +88,21 @@ const BrowserScreenshot = styled.div`
 `;
 
 const BrowserContainer = styled.div`
-  perspective: 2500px;
-  display: flex;
-  flex: 1;
-  align-items: flex-end;
-  justify-content: flex-end;
-  transition: 300ms all ease-in-out;
+  display: none;
 
   &:hover {
     transform: scale(1.025);
     perspective: 2500px;
     perspective-origin: 0% 50%;
+  }
+
+  @media (min-width: 768px) {
+    perspective: 2500px;
+    display: flex;
+    flex: 1;
+    align-items: flex-end;
+    justify-content: flex-end;
+    transition: 300ms all ease-in-out;
   }
 `;
 
@@ -119,7 +124,8 @@ const ContentBlockContainer = styled.section`
   max-width: ${maxWidth}px;
   margin: 0 auto;
   display: flex;
-  column-gap: ${unit * 10}px;
+  flex-direction: column;
+  row-gap: ${unit * 10}px;
 
   &:first-of-type {
     padding-top: ${unit * 14}px;
@@ -127,6 +133,12 @@ const ContentBlockContainer = styled.section`
 
   &:last-of-type {
     padding-bottom: ${unit * 14}px;
+  }
+
+  // Desktop
+  @media (min-width: 768px) {
+    flex-direction: row;
+    column-gap: ${unit * 10}px;
   }
 `;
 
@@ -233,8 +245,8 @@ function CurativeCaseStudyPage() {
             <ContentBlockContainer>
               <BodyText>
                 <p>
-                  I led the Patient Experience Team to build Scheduler, the
-                  appointment booking platform on{" "}
+                  At Curative, I led the Patient Experience Team to build
+                  Scheduler, the appointment booking platform on{" "}
                   <a href="https://curative.com" target="_blank">
                     curative.com
                   </a>
