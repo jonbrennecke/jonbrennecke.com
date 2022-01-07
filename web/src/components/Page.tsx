@@ -2,6 +2,7 @@ import {
   ContentStyle,
   Form,
   LoadingBanner,
+  LoadingBannerLogoVariant,
   SideDrawer,
   unit,
 } from "@portfolio/components";
@@ -26,7 +27,9 @@ const DrawerContactFormContainer = styled(Form)`
 export function Page({
   contentStyle,
   children,
+  logo = LoadingBannerLogoVariant.jon,
 }: {
+  logo?: LoadingBannerLogoVariant | keyof typeof LoadingBannerLogoVariant;
   contentStyle?: ContentStyle | keyof typeof ContentStyle;
   children: (params: { showMenu(): void }) => React.ReactNode;
 }) {
@@ -53,7 +56,7 @@ export function Page({
         })}
         <FooterSection />
       </Container>
-      <LoadingBanner contentStyle="dark" />
+      <LoadingBanner logo={logo} contentStyle="dark" />
     </>
   );
 }

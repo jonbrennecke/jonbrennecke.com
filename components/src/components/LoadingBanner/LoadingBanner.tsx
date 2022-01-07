@@ -60,7 +60,7 @@ const StyledAnimatedJonLogo = styled(AnimatedJonLogo)`
 `;
 
 const StyledAnimatedCurativeLogo = styled(AnimatedCurativeLogo)`
-  max-width: 320px;
+  max-width: 500px;
   width: 100%;
 `;
 
