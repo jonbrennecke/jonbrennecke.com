@@ -251,7 +251,9 @@ function CurativeCaseStudyPage() {
             </ContentBlockContainer>
             <ContentBlockContainer>
               <SectionHeader>
-                <SectionHeader.SubTitle>COVID-19</SectionHeader.SubTitle>
+                <SectionHeader.SubTitle>
+                  Software for COVID-19
+                </SectionHeader.SubTitle>
                 <SectionHeader.Title>Vaccines</SectionHeader.Title>
                 <SectionHeader.Paragraph>
                   Curative has delivered over 25 million COVID-19 tests and 2
@@ -280,9 +282,10 @@ function CurativeCaseStudyPage() {
                   </p>
                   <p>
                     Curative partnered with LA County, Massachusetts state and
-                    other governments to run large-scale drive-thru vaccination
-                    sites. To date, Curative has delivered over 2M vaccinations
-                    through the administration software that I helped build.
+                    other local governments to run large-scale drive-thru
+                    vaccination sites. To date, Curative has delivered over 2M
+                    vaccinations through the administration software that I
+                    helped build.
                   </p>
                 </BodyText>
               </Column>
