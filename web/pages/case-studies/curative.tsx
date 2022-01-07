@@ -62,15 +62,18 @@ const LogoContainer = styled.div`
 `;
 
 const Browser = styled(BrowserFrame)`
-  height: 450px;
-  width: 600px;
+  max-height: 450px;
+  max-width: 600px;
+  width: 100%;
+  height: 100%;
   position: absolute;
   transform: rotateY(-25deg) rotateX(3deg);
   filter: drop-shadow(0px 6px 45px ${rgba(trueBlack, 0.18)});
 `;
 
 const Phone = styled(PhoneFrame)`
-  width: 200px;
+  max-width: 200px;
+  width: 35%;
   position: absolute;
   transform: rotateY(-25deg) rotateX(3deg) translateZ(200px) translateY(30px);
   filter: drop-shadow(0px 6px 45px ${rgba(trueBlack, 0.18)});
