@@ -1,7 +1,8 @@
 import React from "react";
 import styled, { css } from "styled-components";
+import { colorToRGBA, trueBlack, trueWhite, unit } from "../../styles";
 import { Heading } from "../Heading";
-import { trueWhite, unit, colorToRGBA, trueBlack } from "../../styles";
+import { Tag } from "../Tag";
 import { Text } from "../Text";
 import { ViewButton } from "../ViewButton";
 
@@ -35,15 +36,6 @@ const Title = styled(Heading)`
 const Body = styled(Text)`
   font-size: ${unit * 2}px;
   color: ${trueWhite};
-`;
-
-const Tags = styled.div`
-  display: inline-block;
-  padding-top: ${unit * 3}px;
-
-  & > *:not(:first-child) {
-    margin-left: ${unit}px;
-  }
 `;
 
 const ViewCaseStudyButton = styled(ViewButton)``;
@@ -125,7 +117,7 @@ export interface CaseStudyCardSubComponents {
   Logo: typeof Logo;
   Title: typeof Title;
   Body: typeof Body;
-  Tags: typeof Tags;
+  Tags: typeof Tag.Group;
   ImageContent: typeof ImageContent;
   TextContent: typeof TextContent;
   ViewCaseStudyButton: typeof ViewCaseStudyButton;
@@ -142,7 +134,7 @@ export const CaseStudyCard: React.FC<CaseStudyCardProps> &
 CaseStudyCard.Logo = Logo;
 CaseStudyCard.Title = Title;
 CaseStudyCard.Body = Body;
-CaseStudyCard.Tags = Tags;
+CaseStudyCard.Tags = Tag.Group;
 CaseStudyCard.ImageContent = ImageContent;
 CaseStudyCard.TextContent = TextContent;
 CaseStudyCard.ViewCaseStudyButton = ViewCaseStudyButton;
