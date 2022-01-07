@@ -243,7 +243,8 @@ function CurativeCaseStudyPage() {
                   </p>
                   <p>
                     Some of the most impactful work of my career has been at
-                    Curative, and I've launched software to millions of users.
+                    Curative. And with the rest of the team there, I've launched
+                    software to millions of users.
                   </p>
                 </BodyText>
               </Column>
