@@ -1,22 +1,17 @@
-import React from 'react';
-import { trueWhite, trueBlack } from '../../styles';
-
-export enum JonLogoContentStyle {
-  dark = 'dark',
-  light = 'light',
-}
+import React from "react";
+import { trueWhite, trueBlack } from "../../styles";
+import { ContentStyle } from "../../types";
 
 export interface JonLogoProps {
-  contentStyle?: JonLogoContentStyle | keyof typeof JonLogoContentStyle;
+  contentStyle?: ContentStyle | keyof typeof ContentStyle;
   className?: string;
 }
 
 export const JonLogo = ({
   className,
-  contentStyle = JonLogoContentStyle.light,
+  contentStyle = ContentStyle.light,
 }: JonLogoProps) => {
-  const fillColor =
-    contentStyle === JonLogoContentStyle.light ? trueWhite : trueBlack;
+  const fillColor = contentStyle === ContentStyle.light ? trueWhite : trueBlack;
   return (
     <svg viewBox="0 0 405 225" className={className}>
       <g

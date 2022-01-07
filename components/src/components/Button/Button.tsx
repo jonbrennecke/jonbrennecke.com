@@ -1,16 +1,17 @@
-import isString from 'lodash/isString';
-import noop from 'lodash/noop';
-import React, { useState } from 'react';
-import styled, { css } from 'styled-components';
+import isString from "lodash/isString";
+import noop from "lodash/noop";
+import { rgba } from "polished";
+import React from "react";
+import styled, { css } from "styled-components";
 import {
   blue,
   darkGreen,
   offWhite,
+  trueBlack,
   trueWhite,
   unit,
-  lighten,
-} from '../../styles';
-import { Text } from '../Text';
+} from "../../styles";
+import { Text } from "../Text";
 
 type ReactChild = React.ReactElement | React.ReactNode;
 
@@ -18,21 +19,21 @@ export interface IButtonProps {
   variant?: EButtonVariant | keyof typeof EButtonVariant;
   size?: EButtonSize | keyof typeof EButtonSize;
   children?: ReactChild | ReactChild[];
-  style?: React.HTMLProps<HTMLButtonElement>['style'];
-  className?: React.HTMLProps<HTMLButtonElement>['className'];
+  style?: React.HTMLProps<HTMLButtonElement>["style"];
+  className?: React.HTMLProps<HTMLButtonElement>["className"];
   disabled?: boolean;
   onClick?(): void;
 }
 
 export enum EButtonVariant {
-  primary = 'primary',
-  default = 'default',
+  primary = "primary",
+  default = "default",
 }
 
 export enum EButtonSize {
-  small = 'small',
-  medium = 'medium',
-  large = 'large',
+  small = "small",
+  medium = "medium",
+  large = "large",
 }
 
 export interface IStyledButton {
@@ -43,7 +44,7 @@ export interface IStyledButton {
 
 export const buttonBackgroundColors = {
   [EButtonVariant.default]: offWhite,
-  [EButtonVariant.primary]: blue,
+  [EButtonVariant.primary]: trueBlack,
 };
 
 export const buttonTextColors = {
@@ -74,7 +75,7 @@ const defaultStyles = ({ variant, size }: IStyledButton) =>
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: ${buttonBackgroundColors[variant]};
+    background-color: ${rgba(buttonBackgroundColors[variant], 0.5)};
     border-radius: 4px;
     outline: 0;
     border-width: 0;

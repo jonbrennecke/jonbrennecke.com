@@ -1,16 +1,17 @@
-import { withKnobs, boolean } from '@storybook/addon-knobs';
-import { storiesOf } from '@storybook/react';
-import React from 'react';
-import { LoadingBannerContentStyle, LoadingBanner } from './LoadingBanner';
+import { boolean, withKnobs } from "@storybook/addon-knobs";
+import { storiesOf } from "@storybook/react";
+import React from "react";
+import { ContentStyle } from "../../types";
+import { LoadingBanner } from "./LoadingBanner";
 
-storiesOf('UI', module)
+storiesOf("UI", module)
   .addDecorator(withKnobs)
-  .add('LoadingBanner', () => (
+  .add("LoadingBanner", () => (
     <LoadingBanner
       contentStyle={
-        boolean('Dark Content Style', true)
-          ? LoadingBannerContentStyle.dark
-          : LoadingBannerContentStyle.light
+        boolean("Dark Content Style", true)
+          ? ContentStyle.dark
+          : ContentStyle.light
       }
     />
   ));

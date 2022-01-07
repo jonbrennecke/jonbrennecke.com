@@ -1,17 +1,14 @@
-import { storiesOf } from '@storybook/react';
-import React from 'react';
-import styled from 'styled-components';
-import { AnimatedJonLogo } from './AnimatedJonLogo';
-import { trueWhite, trueBlack } from '../../styles';
-import { JonLogoContentStyle } from '../JonLogo';
+import React from "react";
+import styled from "styled-components";
+import { trueBlack, trueWhite } from "../../styles";
+import { ContentStyle } from "../../types";
+import { AnimatedJonLogo } from "./AnimatedJonLogo";
 
-const Container = styled.div<{ logoContentStyle: JonLogoContentStyle }>`
+const Container = styled.div<{ logoContentStyle: ContentStyle }>`
   display: flex;
   flex: 1;
   background-color: ${(props) =>
-    props.logoContentStyle === JonLogoContentStyle.dark
-      ? trueWhite
-      : trueBlack};
+    props.logoContentStyle === ContentStyle.dark ? trueWhite : trueBlack};
 
   & > svg {
     display: flex;
@@ -22,7 +19,7 @@ const Container = styled.div<{ logoContentStyle: JonLogoContentStyle }>`
 export function AnimatedJonLogoStory({
   contentStyle,
 }: {
-  contentStyle: JonLogoContentStyle;
+  contentStyle: ContentStyle;
 }) {
   return (
     <Container logoContentStyle={contentStyle}>
@@ -31,16 +28,16 @@ export function AnimatedJonLogoStory({
   );
 }
 
-AnimatedJonLogoStory.storyName = 'Animated';
+AnimatedJonLogoStory.storyName = "Animated";
 
 AnimatedJonLogoStory.argTypes = {
   contentStyle: {
-    options: [JonLogoContentStyle.dark, JonLogoContentStyle.light],
-    control: { type: 'radio' },
+    options: [ContentStyle.dark, ContentStyle.light],
+    control: { type: "radio" },
   },
 };
 
 export default {
-  title: 'Logos/Jon/Animated',
+  title: "Logos/Jon/Animated",
   component: AnimatedJonLogoStory,
 };

@@ -1,5 +1,5 @@
-import Document from "next/document";
-import { ServerStyleSheet } from "styled-components";
+import Document from 'next/document';
+import { ServerStyleSheet } from 'styled-components';
 
 // Prevents a flash of unstyled content on initial uncached page load
 // See:

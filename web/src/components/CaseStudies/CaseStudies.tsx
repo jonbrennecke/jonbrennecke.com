@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { BarkdCaseStudy } from './BarkdCaseStudy';
 import { LaserlikeCaseStudy } from './LaserlikeCaseStudy';
 import { OpenGovCaseStudy } from './OpenGovCaseStudy';
+import { CurativeCaseStudy } from './CurativeCaseStudy';
 
 const Container = styled.div`
   display: flex;
@@ -44,6 +45,7 @@ export const CaseStudies = () => (
         Want to see more? Contact me for more information.
       </SectionHeader.Paragraph>
     </StyledSectionHeader>
+    <CurativeCaseStudy />
     <OpenGovCaseStudy />
     <LaserlikeCaseStudy />
     <BarkdCaseStudy />

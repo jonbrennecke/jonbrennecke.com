@@ -1,13 +1,14 @@
-import React from 'react';
-import styled, { keyframes } from 'styled-components';
-import { trueBlack, trueWhite } from '../../styles';
-import { AnimatedJonLogo } from '../AnimatedJonLogo';
-import { JonLogoContentStyle } from '../JonLogo';
-import { timingFunctions } from 'polished';
+import React from "react";
+import styled, { keyframes } from "styled-components";
+import { trueBlack, trueWhite } from "../../styles";
+import { ContentStyle } from "../../types";
+import { AnimatedJonLogo } from "../AnimatedJonLogo";
+import { timingFunctions } from "polished";
+import { AnimatedCurativeLogo } from "../AnimatedCurativeLogo";
 
-export enum LoadingBannerContentStyle {
-  dark = 'dark',
-  light = 'light',
+export enum LoadingBannerLogoVariant {
+  jon = "jon",
+  curative = "curative",
 }
 
 const drawerAnimation = keyframes`
@@ -33,9 +34,7 @@ const drawerChildrenAnimation = keyframes`
 `;
 
 const Container = styled.div<{
-  contentStyle:
-    | LoadingBannerContentStyle
-    | keyof typeof LoadingBannerContentStyle;
+  contentStyle: ContentStyle | keyof typeof ContentStyle;
 }>`
   position: fixed;
   top: 0;
@@ -43,13 +42,11 @@ const Container = styled.div<{
   width: 100vw;
   height: 100vh;
   background-color: ${(props) =>
-    props.contentStyle === LoadingBannerContentStyle.light
-      ? trueWhite
-      : trueBlack};
+    props.contentStyle === ContentStyle.light ? trueWhite : trueBlack};
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: ${drawerAnimation} 0.5s ${timingFunctions('easeInOutCubic')}
+  animation: ${drawerAnimation} 0.5s ${timingFunctions("easeInOutCubic")}
     forwards 3s;
 
   & > * {
@@ -62,29 +59,38 @@ const StyledAnimatedJonLogo = styled(AnimatedJonLogo)`
   width: 100%;
 `;
 
-export interface LoadingBannerProps {
-  contentStyle?:
-    | LoadingBannerContentStyle
-    | keyof typeof LoadingBannerContentStyle;
-}
+const StyledAnimatedCurativeLogo = styled(AnimatedCurativeLogo)`
+  max-width: 500px;
+  width: 100%;
+`;
 
-const logoContentStyle = (
-  contentStyle:
-    | LoadingBannerContentStyle
-    | keyof typeof LoadingBannerContentStyle
-): JonLogoContentStyle => {
+const invertContentStyle = (
+  contentStyle: ContentStyle | keyof typeof ContentStyle
+): ContentStyle => {
   switch (contentStyle) {
-    case LoadingBannerContentStyle.dark:
-      return JonLogoContentStyle.light;
+    case ContentStyle.dark:
+      return ContentStyle.light;
     default:
-      return JonLogoContentStyle.dark;
+      return ContentStyle.dark;
   }
 };
 
+export interface LoadingBannerProps {
+  contentStyle?: ContentStyle | keyof typeof ContentStyle;
+  logo?: LoadingBannerLogoVariant | keyof typeof LoadingBannerLogoVariant;
+}
+
 export const LoadingBanner = ({
-  contentStyle = LoadingBannerContentStyle.light,
+  contentStyle = ContentStyle.light,
+  logo = LoadingBannerLogoVariant.jon,
 }: LoadingBannerProps) => (
   <Container contentStyle={contentStyle}>
-    <StyledAnimatedJonLogo contentStyle={logoContentStyle(contentStyle)} />
+    {logo === LoadingBannerLogoVariant.curative ? (
+      <StyledAnimatedCurativeLogo
+        contentStyle={invertContentStyle(contentStyle)}
+      />
+    ) : (
+      <StyledAnimatedJonLogo contentStyle={invertContentStyle(contentStyle)} />
+    )}
   </Container>
 );
