@@ -20,7 +20,6 @@ import browserScreenshot from "../../assets/images/book.curative.com.png";
 import iPhoneBrowserScreenshot from "../../assets/images/book.curative.com.iPhone.png";
 import curativeDriveThruSiteImage from "../../assets/images/curative-drive-thru-site.jpeg";
 import curativeVanImage from "../../assets/images/curative-van.png";
-import laserlikeScreenshot from "../../assets/images/laserlikeScreenshot.png";
 import { Page } from "../../src/components";
 
 const CurativeHero = styled.div`
@@ -179,17 +178,7 @@ const BodyText = styled(Text)`
   }
 `;
 
-// TODO: make this a component in @portfolio/components (and replace the one in CaseStudyCard)
-const TagGroup = styled.div`
-  display: inline-block;
-  padding-top: ${unit * 3}px;
-
-  & > *:not(:first-child) {
-    margin-left: ${unit}px;
-  }
-`;
-
-const StyledTagGroup = styled(TagGroup)`
+const StyledTagGroup = styled(Tag.Group)`
   * {
     font-weight: bold;
     font-size: 20px;
