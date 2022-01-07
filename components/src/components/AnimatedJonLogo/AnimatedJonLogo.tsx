@@ -1,23 +1,21 @@
 import React from "react";
 import { trueBlack, trueWhite } from "../../styles";
 import { AnimatedSvg } from "../AnimatedSvg";
-import { JonLogoContentStyle } from "../JonLogo";
+import { ContentStyle } from "../../types";
 
 export interface AnimatedJonLogoProps {
-  contentStyle?: JonLogoContentStyle | keyof typeof JonLogoContentStyle;
+  contentStyle?: ContentStyle | keyof typeof ContentStyle;
   className?: string;
 }
 
 export const AnimatedJonLogo = ({
   className,
-  contentStyle = JonLogoContentStyle.light,
+  contentStyle = ContentStyle.light,
 }: AnimatedJonLogoProps) => {
-  const fillColor =
-    contentStyle === JonLogoContentStyle.light ? trueWhite : trueBlack;
+  const fillColor = contentStyle === ContentStyle.light ? trueWhite : trueBlack;
   return (
     <svg viewBox="0 0 407 227" className={className}>
       <g
-        id="Symbols"
         stroke="none"
         strokeWidth="2"
         fill="none"

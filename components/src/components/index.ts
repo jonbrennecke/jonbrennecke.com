@@ -14,6 +14,7 @@ export * from "./AnimatedJonLogo";
 export * from "./JonLogo";
 export * from "./CurativeLogo";
 export * from "./CurativeEmblem";
+export * from "./AnimatedCurativeLogo";
 
 // UI
 export * from "./CaseStudyCard";
