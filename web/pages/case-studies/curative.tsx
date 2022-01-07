@@ -44,6 +44,7 @@ const CurativeHeroContentContainer = styled.div`
   flex: 1;
   padding: ${unit * 20}px 0 ${unit * 20}px ${unit * 10}px;
   height: 80vh;
+  max-height: 768px;
   max-width: ${maxWidth + 200}px;
 `;
 

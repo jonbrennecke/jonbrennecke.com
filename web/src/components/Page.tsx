@@ -8,6 +8,7 @@ import {
 } from "@portfolio/components";
 import React, { useState } from "react";
 import styled from "styled-components";
+import Head from "next/head";
 import { ContactForm, FooterSection, Navbar } from ".";
 
 const Container = styled.div`
@@ -36,6 +37,10 @@ export function Page({
   const [showMenu, setShowMenu] = useState(false);
   return (
     <>
+      <Head>
+        <title>Jon Brennecke</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <Container>
         <SideDrawer
           open={showMenu}
