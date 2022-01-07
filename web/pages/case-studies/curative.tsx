@@ -12,6 +12,7 @@ import {
   trueBlack,
   trueWhite,
   unit,
+  Avatar,
 } from "@portfolio/components";
 import { rgba } from "polished";
 import React from "react";
@@ -100,33 +101,6 @@ const Column = styled.div`
   display: flex;
   flex: 1;
   flex-direction: column;
-`;
-
-// TODO: move Avatar to @portfolio/components
-const AvatarContainer = styled.div`
-  display: flex;
-`;
-
-const Avatar = styled.div`
-  background-image: url("https://github.com/jonbrennecke.png");
-  background-size: cover;
-  width: 75px;
-  height: 75px;
-  border-radius: ${unit * 3}px;
-  margin-right: ${unit * 2.5}px;
-`;
-
-const AvatarText = styled(Text)`
-  color: ${blue};
-
-  * {
-    margin: ${unit * 0.5}px 0;
-  }
-
-  h2 {
-    color: ${trueBlack};
-    margin-top: 0;
-  }
 `;
 
 const BodyContentContainer = styled.div`
@@ -219,16 +193,16 @@ function CurativeCaseStudyPage() {
           <BodyContentContainer>
             <ContentBlockContainer>
               <Column>
-                <AvatarContainer>
-                  <Avatar />
-                  <AvatarText>
+                <Avatar.Container>
+                  <Avatar src="https://github.com/jonbrennecke.png" />
+                  <Avatar.Text>
                     <h2>Jon Brennecke</h2>
                     <p>
                       <strong>Senior Fullstack Software Engineer</strong>
                     </p>
                     <p>Team Lead, Patient Experience Team</p>
-                  </AvatarText>
-                </AvatarContainer>
+                  </Avatar.Text>
+                </Avatar.Container>
               </Column>
               <Column>
                 <BodyText>
