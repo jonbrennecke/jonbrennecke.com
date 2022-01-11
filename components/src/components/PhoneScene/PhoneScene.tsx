@@ -18,16 +18,16 @@ async function setUpScene(canvas: HTMLCanvasElement, imageSource: string) {
   const scene = new THREE.Scene();
   scene.add(new THREE.HemisphereLight(0xffffff, 0xffffff, 0.5));
 
-  const pointLight = new THREE.PointLight(0xffffff, 1, 5);
+  const pointLight = new THREE.PointLight(0x56b1ff, 1, 5);
   pointLight.position.set(3, 3, 3);
   scene.add(pointLight);
 
+  const directionalLight = new THREE.DirectionalLight(0x56b1ff, 2);
+  directionalLight.position.set(1, 1, 0.5).normalize();
+  scene.add(directionalLight);
+
   const iPhoneModel = await loadiPhoneModel(imageSource);
   scene.add(iPhoneModel);
-
-  // const directionalLight = new THREE.DirectionalLight(0xffffff, 2);
-  // directionalLight.position.set(1, 1, 0.5).normalize();
-  // scene.add(directionalLight);
 
   function animate() {
     if (iPhoneModel) {
@@ -53,6 +53,7 @@ async function setUpScene(canvas: HTMLCanvasElement, imageSource: string) {
   renderer.outputEncoding = THREE.sRGBEncoding;
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
   renderer.toneMappingExposure = 1;
+  renderer.shadowMap.enabled = true;
 
   animate();
 }
