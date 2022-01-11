@@ -1,18 +1,8 @@
-import {
-  curativeBlue30,
-  curativeBlue50,
-  Heading,
-  maxWidth,
-  PhoneScene,
-  Text,
-  unit,
-  Hero,
-  trueWhite,
-} from '@portfolio/components';
-import React, { useEffect, useState } from 'react';
-import styled from 'styled-components';
-import { Page } from '../../src/components';
-import iPhoneScreenshot from '../../../assets/images/Simulator_Screen_Shot.png';
+import { Hero, maxWidth, PhoneScene, trueWhite } from "@portfolio/components";
+import React, { useEffect, useState } from "react";
+import styled from "styled-components";
+import iPhoneScreenshot from "../../../assets/images/Simulator_Screen_Shot.png";
+import { Page } from "../../src/components";
 
 const HeroContainer = styled.div`
   display: flex;
@@ -20,13 +10,13 @@ const HeroContainer = styled.div`
 
   &:before {
     position: absolute;
-    content: '';
+    content: "";
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     // TODO: use Collage Creator colors
-    background: linear-gradient(-35deg, ${curativeBlue50}, ${curativeBlue30});
+    background: linear-gradient(-35deg, #56b1ff, #56b1ff);
     z-index: -1;
   }
 `;
@@ -58,8 +48,8 @@ export default function CollageCreator() {
       setScrollY(-normalizedScrollY * Math.PI * 0.5);
     }
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
     <Page contentStyle="light">
