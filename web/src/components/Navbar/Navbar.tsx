@@ -3,10 +3,10 @@ import {
   Navigation,
   unit,
   ContentStyle,
-} from "@portfolio/components";
-import React from "react";
-import styled from "styled-components";
-import Link from "next/link";
+} from '@portfolio/components';
+import React from 'react';
+import styled from 'styled-components';
+import Link from 'next/link';
 
 const StyledNavigation = styled(Navigation)`
   padding: ${unit * 3}px ${unit * 5}px 0 ${unit * 5}px;

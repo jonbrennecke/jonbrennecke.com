@@ -1,14 +1,14 @@
-import React from "react";
-import styled, { keyframes } from "styled-components";
-import { trueBlack, trueWhite } from "../../styles";
-import { ContentStyle } from "../../types";
-import { AnimatedJonLogo } from "../AnimatedJonLogo";
-import { timingFunctions } from "polished";
-import { AnimatedCurativeLogo } from "../AnimatedCurativeLogo";
+import React from 'react';
+import styled, { keyframes } from 'styled-components';
+import { trueBlack, trueWhite } from '../../styles';
+import { ContentStyle } from '../../types';
+import { AnimatedJonLogo } from '../AnimatedJonLogo';
+import { timingFunctions } from 'polished';
+import { AnimatedCurativeLogo } from '../AnimatedCurativeLogo';
 
 export enum LoadingBannerLogoVariant {
-  jon = "jon",
-  curative = "curative",
+  jon = 'jon',
+  curative = 'curative',
 }
 
 const drawerAnimation = keyframes`
@@ -46,7 +46,7 @@ const Container = styled.div<{
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: ${drawerAnimation} 0.5s ${timingFunctions("easeInOutCubic")}
+  animation: ${drawerAnimation} 0.5s ${timingFunctions('easeInOutCubic')}
     forwards 3s;
 
   & > * {

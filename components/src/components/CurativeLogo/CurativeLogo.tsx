@@ -1,6 +1,6 @@
-import React from "react";
-import { trueBlack, trueWhite } from "../../styles";
-import { ContentStyle } from "../../types";
+import React from 'react';
+import { trueBlack, trueWhite } from '../../styles';
+import { ContentStyle } from '../../types';
 
 export interface CurativeLogoProps {
   id?: string;

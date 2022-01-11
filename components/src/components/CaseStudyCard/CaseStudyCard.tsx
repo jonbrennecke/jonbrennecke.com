@@ -1,10 +1,10 @@
-import React from "react";
-import styled, { css } from "styled-components";
-import { colorToRGBA, trueBlack, trueWhite, unit } from "../../styles";
-import { Heading } from "../Heading";
-import { Tag } from "../Tag";
-import { Text } from "../Text";
-import { ViewButton } from "../ViewButton";
+import React from 'react';
+import styled, { css } from 'styled-components';
+import { colorToRGBA, trueBlack, trueWhite, unit } from '../../styles';
+import { Heading } from '../Heading';
+import { Tag } from '../Tag';
+import { Text } from '../Text';
+import { ViewButton } from '../ViewButton';
 
 export interface CaseStudyCardProps {
   className?: string;

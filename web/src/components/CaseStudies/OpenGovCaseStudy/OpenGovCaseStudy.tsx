@@ -5,11 +5,11 @@ import {
   OpenGovEmblem,
   OpenGovLogo,
   Tag,
-} from "@portfolio/components";
-import React from "react";
-import styled from "styled-components";
-import { BaseCaseStudyCard } from "../BaseCaseStudyCard";
-import openGovScreenshot from "../../../../../assets/images/openGovScreenshot.png";
+} from '@portfolio/components';
+import React from 'react';
+import styled from 'styled-components';
+import { BaseCaseStudyCard } from '../BaseCaseStudyCard';
+import openGovScreenshot from '../../../../../assets/images/openGovScreenshot.png';
 
 const OpenGovCaseStudyCard = styled(BaseCaseStudyCard)`
   background-color: ${openGovBlue};

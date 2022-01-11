@@ -1,6 +1,6 @@
-import React from "react";
-import { Text, ITextProps } from "../Text";
-import styled from "styled-components";
+import React from 'react';
+import { Text, ITextProps } from '../Text';
+import styled from 'styled-components';
 
 const StyledText = styled(Text)`
   display: inline-block;
@@ -11,10 +11,10 @@ const StyledText = styled(Text)`
 `;
 
 export interface IHeadingProps {
-  color?: ITextProps["color"];
-  children?: ITextProps["children"];
-  style?: ITextProps["style"];
-  className?: ITextProps["className"];
+  color?: ITextProps['color'];
+  children?: ITextProps['children'];
+  style?: ITextProps['style'];
+  className?: ITextProps['className'];
 }
 
 export const Heading = ({

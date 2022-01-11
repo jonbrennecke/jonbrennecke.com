@@ -13,15 +13,15 @@ import {
   trueWhite,
   unit,
   Avatar,
-} from "@portfolio/components";
-import { rgba } from "polished";
-import React from "react";
-import styled from "styled-components";
-import iPhoneBrowserScreenshot from "../../../assets/images/book.curative.com.iPhone.png";
-import browserScreenshot from "../../../assets/images/book.curative.com.png";
-import curativeDriveThruSiteImage from "../../../assets/images/curative-drive-thru-site.jpeg";
-import curativeVanImage from "../../../assets/images/curative-van.png";
-import { Page } from "../../src/components";
+} from '@portfolio/components';
+import { rgba } from 'polished';
+import React from 'react';
+import styled from 'styled-components';
+import iPhoneBrowserScreenshot from '../../../assets/images/book.curative.com.iPhone.png';
+import browserScreenshot from '../../../assets/images/book.curative.com.png';
+import curativeDriveThruSiteImage from '../../../assets/images/curative-drive-thru-site.jpeg';
+import curativeVanImage from '../../../assets/images/curative-van.png';
+import { Page } from '../../src/components';
 
 const CurativeHero = styled.div`
   display: flex;
@@ -29,7 +29,7 @@ const CurativeHero = styled.div`
 
   &:before {
     position: absolute;
-    content: "";
+    content: '';
     top: 0;
     bottom: 0;
     left: 0;
@@ -246,7 +246,7 @@ function CurativeCaseStudyPage() {
               <BodyText>
                 <p>
                   At Curative, I led the Patient Experience Team to build
-                  Scheduler, the appointment booking platform on{" "}
+                  Scheduler, the appointment booking platform on{' '}
                   <a href="https://curative.com" target="_blank">
                     curative.com
                   </a>
@@ -283,17 +283,17 @@ function CurativeCaseStudyPage() {
                   <p>
                     When vaccines for COVID-19 were about to hit the market in
                     early 2021, Curative was among the first to build
-                    specialized software for recording vaccinations.{" "}
+                    specialized software for recording vaccinations.{' '}
                   </p>
                   <p>
                     I built the early prototypes of the internal tools used by
                     Curative’s nurses and staff to record vaccinations. I also
                     led the Patient Experience Team in building support for
                     COVID-19 vaccinations into our software. Soon, the public
-                    could book appointments for COVID-19 vaccines on our public{" "}
+                    could book appointments for COVID-19 vaccines on our public{' '}
                     <a href="https://curative.com" target="_blank">
                       curative.com
-                    </a>{" "}
+                    </a>{' '}
                     platform.
                   </p>
                   <p>

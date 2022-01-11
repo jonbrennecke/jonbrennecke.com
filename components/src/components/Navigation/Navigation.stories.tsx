@@ -1,6 +1,6 @@
-import React from "react";
-import { ContentStyle } from "../../types";
-import { Navigation } from "./Navigation";
+import React from 'react';
+import { ContentStyle } from '../../types';
+import { Navigation } from './Navigation';
 
 export function NavigationStory({
   contentStyle = ContentStyle.dark,
@@ -8,7 +8,7 @@ export function NavigationStory({
   contentStyle: ContentStyle;
 }) {
   const backgroundColor =
-    contentStyle == ContentStyle.light ? "black" : "white";
+    contentStyle == ContentStyle.light ? 'black' : 'white';
   return (
     <div style={{ backgroundColor }}>
       <Navigation contentStyle={contentStyle}>
@@ -27,16 +27,16 @@ export function NavigationStory({
   );
 }
 
-NavigationStory.storyName = "Navigation";
+NavigationStory.storyName = 'Navigation';
 
 NavigationStory.argTypes = {
   contentStyle: {
     options: [ContentStyle.dark, ContentStyle.light],
-    control: { type: "radio" },
+    control: { type: 'radio' },
   },
 };
 
 export default {
-  title: "UI/Navigation",
+  title: 'UI/Navigation',
   component: NavigationStory,
 };

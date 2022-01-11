@@ -1,8 +1,8 @@
-import React from "react";
-import styled from "styled-components";
-import { trueBlack, trueWhite } from "../../styles";
-import { ContentStyle } from "../../types";
-import { AnimatedJonLogo } from "./AnimatedJonLogo";
+import React from 'react';
+import styled from 'styled-components';
+import { trueBlack, trueWhite } from '../../styles';
+import { ContentStyle } from '../../types';
+import { AnimatedJonLogo } from './AnimatedJonLogo';
 
 const Container = styled.div<{ logoContentStyle: ContentStyle }>`
   display: flex;
@@ -28,16 +28,16 @@ export function AnimatedJonLogoStory({
   );
 }
 
-AnimatedJonLogoStory.storyName = "Animated";
+AnimatedJonLogoStory.storyName = 'Animated';
 
 AnimatedJonLogoStory.argTypes = {
   contentStyle: {
     options: [ContentStyle.dark, ContentStyle.light],
-    control: { type: "radio" },
+    control: { type: 'radio' },
   },
 };
 
 export default {
-  title: "Logos/Jon/Animated",
+  title: 'Logos/Jon/Animated',
   component: AnimatedJonLogoStory,
 };

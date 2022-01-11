@@ -15,7 +15,7 @@ const Title = styled(Heading)`
 const SubTitle = styled(Heading)`
   font-size: ${unit * 4}px;
   font-weight: normal;
-  color: #726e84;
+  color: ${(props) => props.color ?? '#726e84'};
   white-space: normal;
   overflow: visible;
   padding-top: ${unit * 3}px;

@@ -1,45 +1,48 @@
-import React, { useEffect, useRef } from "react";
-import styled from "styled-components";
-import * as THREE from "three";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+import React, { useEffect, useRef, useState } from 'react';
+import styled from 'styled-components';
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
-const WALLPAPER_OBJECT_NAME = "Body_Wallpaper_0";
+const WALLPAPER_OBJECT_NAME = 'Body_Wallpaper_0';
+const IPHONE_INITIAL_ROTATION_Y = Math.PI * 0.9;
 
 const Canvas = styled.canvas`
-  height: 500px;
-  width: 700px;
+  height: 800px;
+  width: 500px;
 `;
 
-export interface PhoneSceneProps {
-  imageSource: string;
-}
-
-async function setUpScene(canvas: HTMLCanvasElement, imageSource: string) {
+async function setUpiPhoneScene(
+  canvas: HTMLCanvasElement,
+  imageSource: string
+): Promise<THREE.Group> {
   const scene = new THREE.Scene();
-  scene.add(new THREE.HemisphereLight(0xffeeb1, 0x080820, 0.5));
+  scene.add(new THREE.HemisphereLight(0xffeeb1, 0x080820, 2));
 
-  const pointLight = new THREE.PointLight(0x56b1ff, 1, 5);
-  pointLight.position.set(3, 3, 3);
-  scene.add(pointLight);
-
-  const directionalLight = new THREE.DirectionalLight(0x56b1ff, 2);
-  directionalLight.position.set(1, 1, 0.5).normalize();
+  const directionalLight = new THREE.DirectionalLight(0x56b1ff, 0.5);
+  directionalLight.position.set(10, 2, 3);
   scene.add(directionalLight);
+
+  const directionalLight2 = new THREE.DirectionalLight(0x56b1ff, 0.5);
+  directionalLight2.position.set(-5, -2, -10);
+  scene.add(directionalLight2);
+
+  const spotLight = new THREE.SpotLight(0x56b1ff);
+  spotLight.position.set(-1, 5, 1);
+  spotLight.castShadow = true;
+  spotLight.shadow.focus = 0.5;
+  spotLight.angle = Math.PI / 4;
+  spotLight.penumbra = 0.8;
+  spotLight.decay = 1;
+  spotLight.distance = 100;
+  scene.add(spotLight);
 
   const iPhoneModel = await loadiPhoneModel(imageSource);
   scene.add(iPhoneModel);
 
-  function animate() {
-    if (iPhoneModel) {
-      iPhoneModel.rotation.y += 0.01;
-    }
-
-    renderer.render(scene, camera);
-  }
-
   const aspectRatio = canvas.clientWidth / canvas.clientHeight;
   const camera = new THREE.PerspectiveCamera(55, aspectRatio, 1, 100);
-  camera.position.set(0, 0, 8);
+  camera.position.set(0, 0, 7);
 
   const renderer = new THREE.WebGLRenderer({
     alpha: true,
@@ -55,17 +58,29 @@ async function setUpScene(canvas: HTMLCanvasElement, imageSource: string) {
   renderer.toneMappingExposure = 1;
   renderer.shadowMap.enabled = true;
 
+  const orbitControls = new OrbitControls(camera, renderer.domElement);
+  orbitControls.enableDamping = true;
+  orbitControls.dampingFactor = 0.05;
+  orbitControls.enableZoom = false;
+
+  function animate() {
+    orbitControls.update();
+    renderer.render(scene, camera);
+  }
+
   animate();
+
+  return iPhoneModel;
 }
 
 async function loadiPhoneModel(imageSource: string): Promise<THREE.Group> {
   const loader = new GLTFLoader();
-  loader.setPath("/models/apple_iphone_13_pro_max/");
-  const gltf = await loader.loadAsync("scene.gltf");
+  loader.setPath('/models/apple_iphone_13_pro_max/');
+  const gltf = await loader.loadAsync('scene.gltf');
   const model = gltf.scene;
 
   model.traverse(async (object) => {
-    if (object.name == "Body001_Screen_Glass_0") {
+    if (object.name == 'Body001_Screen_Glass_0') {
       object.removeFromParent();
     }
 
@@ -92,24 +107,47 @@ async function loadiPhoneModel(imageSource: string): Promise<THREE.Group> {
 
   model.position.set(0, 0, 0);
   model.scale.set(5, 5, 5);
-  model.rotation.y = Math.PI * 0.95;
+  model.rotation.y = IPHONE_INITIAL_ROTATION_Y;
   model.rotation.x = -Math.PI * 0.05;
   model.rotation.z = Math.PI * 0.05;
 
   return model;
 }
 
-export function PhoneScene({ imageSource }: PhoneSceneProps) {
+export interface PhoneSceneProps {
+  imageSource: string;
+  className?: string;
+  rotationY?: number;
+}
+
+export function PhoneScene({
+  rotationY = 0,
+  imageSource,
+  className,
+}: PhoneSceneProps) {
+  const [iPhoneModel, setiPhoneModel] = useState<THREE.Group | null>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
-    const canvas = canvasRef.current;
-    if (!canvas) {
+    async function asyncEffect() {
+      const canvas = canvasRef.current;
+      if (!canvas) {
+        return;
+      }
+
+      setiPhoneModel(await setUpiPhoneScene(canvas, imageSource));
+    }
+
+    asyncEffect();
+  }, [canvasRef]);
+
+  useEffect(() => {
+    if (!iPhoneModel) {
       return;
     }
 
-    setUpScene(canvas, imageSource);
-  }, [canvasRef]);
+    iPhoneModel.rotation.y = IPHONE_INITIAL_ROTATION_Y + rotationY;
+  }, [rotationY]);
 
-  return <Canvas ref={canvasRef} />;
+  return <Canvas className={className} ref={canvasRef} />;
 }

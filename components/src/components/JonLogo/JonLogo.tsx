@@ -1,6 +1,6 @@
-import React from "react";
-import { trueWhite, trueBlack } from "../../styles";
-import { ContentStyle } from "../../types";
+import React from 'react';
+import { trueWhite, trueBlack } from '../../styles';
+import { ContentStyle } from '../../types';
 
 export interface JonLogoProps {
   contentStyle?: ContentStyle | keyof typeof ContentStyle;

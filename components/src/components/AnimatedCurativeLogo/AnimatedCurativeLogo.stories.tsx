@@ -1,8 +1,8 @@
-import React from "react";
-import styled from "styled-components";
-import { trueBlack, trueWhite } from "../../styles";
-import { ContentStyle } from "../../types";
-import { AnimatedCurativeLogo } from "./AnimatedCurativeLogo";
+import React from 'react';
+import styled from 'styled-components';
+import { trueBlack, trueWhite } from '../../styles';
+import { ContentStyle } from '../../types';
+import { AnimatedCurativeLogo } from './AnimatedCurativeLogo';
 
 const Container = styled.div<{ contentStyle: ContentStyle }>`
   display: flex;
@@ -28,16 +28,16 @@ export function AnimatedCurativeLogoStory({
   );
 }
 
-AnimatedCurativeLogoStory.storyName = "Animated";
+AnimatedCurativeLogoStory.storyName = 'Animated';
 
 AnimatedCurativeLogoStory.argTypes = {
   contentStyle: {
     options: [ContentStyle.dark, ContentStyle.light],
-    control: { type: "radio" },
+    control: { type: 'radio' },
   },
 };
 
 export default {
-  title: "Logos/Curative/Animated",
+  title: 'Logos/Curative/Animated',
   component: AnimatedCurativeLogoStory,
 };

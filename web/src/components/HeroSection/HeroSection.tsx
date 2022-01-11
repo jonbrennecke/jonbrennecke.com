@@ -1,6 +1,6 @@
-import React from "react";
-import { Hero, unit, maxWidth } from "@portfolio/components";
-import styled from "styled-components";
+import React from 'react';
+import { Hero, unit, maxWidth } from '@portfolio/components';
+import styled from 'styled-components';
 
 const StyledHero = styled(Hero)`
   padding: ${unit * 10}px ${unit * 5}px;

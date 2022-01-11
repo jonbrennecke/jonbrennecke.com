@@ -1,7 +1,7 @@
-import { trueBlack, trueWhite } from "../../styles";
-import React from "react";
-import { ContentStyle } from "../../types";
-import { AnimatedSvg } from "../AnimatedSvg";
+import { trueBlack, trueWhite } from '../../styles';
+import React from 'react';
+import { ContentStyle } from '../../types';
+import { AnimatedSvg } from '../AnimatedSvg';
 
 export interface AnimatedCurativeLogoProps {
   id?: string;

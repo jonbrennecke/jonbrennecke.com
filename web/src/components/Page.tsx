@@ -5,11 +5,11 @@ import {
   LoadingBannerLogoVariant,
   SideDrawer,
   unit,
-} from "@portfolio/components";
-import React, { useState } from "react";
-import styled from "styled-components";
-import Head from "next/head";
-import { ContactForm, FooterSection, Navbar } from ".";
+} from '@portfolio/components';
+import React, { useState } from 'react';
+import styled from 'styled-components';
+import Head from 'next/head';
+import { ContactForm, FooterSection, Navbar } from '.';
 
 const Container = styled.div`
   & > * {

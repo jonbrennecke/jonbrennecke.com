@@ -1,7 +1,7 @@
-import React from "react";
-import { trueBlack, trueWhite } from "../../styles";
-import { AnimatedSvg } from "../AnimatedSvg";
-import { ContentStyle } from "../../types";
+import React from 'react';
+import { trueBlack, trueWhite } from '../../styles';
+import { AnimatedSvg } from '../AnimatedSvg';
+import { ContentStyle } from '../../types';
 
 export interface AnimatedJonLogoProps {
   contentStyle?: ContentStyle | keyof typeof ContentStyle;
