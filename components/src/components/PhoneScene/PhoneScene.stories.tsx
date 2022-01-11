@@ -1,8 +1,9 @@
 import React from "react";
 import { PhoneScene } from "./PhoneScene";
+import simulatorScreenShot from "../../../assets/images/Simulator_Screen_Shot.png";
 
 export function PhoneSceneStory() {
-  return <PhoneScene />;
+  return <PhoneScene imageSource={simulatorScreenShot} />;
 }
 
 PhoneSceneStory.storyName = "PhoneScene";
