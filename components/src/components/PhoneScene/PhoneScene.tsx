@@ -16,7 +16,7 @@ export interface PhoneSceneProps {
 
 async function setUpScene(canvas: HTMLCanvasElement, imageSource: string) {
   const scene = new THREE.Scene();
-  scene.add(new THREE.HemisphereLight(0xffffff, 0xffffff, 0.5));
+  scene.add(new THREE.HemisphereLight(0xffeeb1, 0x080820, 0.5));
 
   const pointLight = new THREE.PointLight(0x56b1ff, 1, 5);
   pointLight.position.set(3, 3, 3);
@@ -93,8 +93,8 @@ async function loadiPhoneModel(imageSource: string): Promise<THREE.Group> {
   model.position.set(0, 0, 0);
   model.scale.set(5, 5, 5);
   model.rotation.y = Math.PI * 0.95;
-  // model.rotation.x = -Math.PI * 0.05;
-  // model.rotation.z = Math.PI * 0.05;
+  model.rotation.x = -Math.PI * 0.05;
+  model.rotation.z = Math.PI * 0.05;
 
   return model;
 }
