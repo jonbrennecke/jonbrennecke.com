@@ -17,10 +17,10 @@ import {
 import { rgba } from "polished";
 import React from "react";
 import styled from "styled-components";
-import iPhoneBrowserScreenshot from "../../assets/images/book.curative.com.iPhone.png";
-import browserScreenshot from "../../assets/images/book.curative.com.png";
-import curativeDriveThruSiteImage from "../../assets/images/curative-drive-thru-site.jpeg";
-import curativeVanImage from "../../assets/images/curative-van.png";
+import iPhoneBrowserScreenshot from "../../../assets/images/book.curative.com.iPhone.png";
+import browserScreenshot from "../../../assets/images/book.curative.com.png";
+import curativeDriveThruSiteImage from "../../../assets/images/curative-drive-thru-site.jpeg";
+import curativeVanImage from "../../../assets/images/curative-van.png";
 import { Page } from "../../src/components";
 
 const CurativeHero = styled.div`

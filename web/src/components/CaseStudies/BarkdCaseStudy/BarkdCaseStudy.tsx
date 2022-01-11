@@ -4,12 +4,12 @@ import {
   Tag,
   BarkdLogo,
   barkdDarkBlue,
-} from '@portfolio/components';
-import React from 'react';
-import styled from 'styled-components';
-import { BaseCaseStudyCard } from '../BaseCaseStudyCard';
+} from "@portfolio/components";
+import React from "react";
+import styled from "styled-components";
+import { BaseCaseStudyCard } from "../BaseCaseStudyCard";
 
-import barkdScreenshot from '../../../../assets/images/barkdScreenshot.png';
+import barkdScreenshot from "../../../../../assets/images/barkdScreenshot.png";
 
 // @ts-ignore
 const BarkdCaseStudyCard = styled(BaseCaseStudyCard)`

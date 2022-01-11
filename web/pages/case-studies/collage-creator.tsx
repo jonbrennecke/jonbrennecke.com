@@ -1,7 +1,12 @@
-import { curativeBlue30, curativeBlue50 } from "@portfolio/components";
+import {
+  curativeBlue30,
+  curativeBlue50,
+  PhoneScene,
+} from "@portfolio/components";
 import React from "react";
 import styled from "styled-components";
 import { Page } from "../../src/components";
+import iPhoneScreenshot from "../../../assets/images/Simulator_Screen_Shot.png";
 
 const Hero = styled.div`
   display: flex;
@@ -20,5 +25,13 @@ const Hero = styled.div`
 `;
 
 export default function CollageCreator() {
-  return <Page contentStyle="light">{() => <Hero></Hero>}</Page>;
+  return (
+    <Page contentStyle="light">
+      {() => (
+        <Hero>
+          <PhoneScene imageSource={iPhoneScreenshot.src} />
+        </Hero>
+      )}
+    </Page>
+  );
 }

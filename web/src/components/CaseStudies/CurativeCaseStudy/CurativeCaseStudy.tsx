@@ -10,7 +10,7 @@ import {
 import { rgba } from "polished";
 import React from "react";
 import styled from "styled-components";
-import screenshot from "../../../../assets/images/book.curative.com.png";
+import screenshot from "../../../../../assets/images/book.curative.com.png";
 import { BaseCaseStudyCard } from "../BaseCaseStudyCard";
 import Link from "next/link";
 

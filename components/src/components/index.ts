@@ -34,3 +34,4 @@ export * from "./Form";
 export * from "./SideDrawer";
 export * from "./Avatar";
 export * from "./PhoneScene";
+export * from "./PhoneScene";
