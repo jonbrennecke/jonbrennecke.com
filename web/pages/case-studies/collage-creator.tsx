@@ -12,6 +12,8 @@ import collageCreatorIcon from "../../../assets/images/collage_creator_icon_tran
 import collageCreatorScreenshot from "../../../assets/images/Simulator_Screen_Shot.png";
 import { Page } from "../../src/components";
 
+import "../../../assets/models/apple_iphone_13_pro_max/scene.gltf";
+
 const HeroContainer = styled.div`
   display: flex;
   justify-content: center;
