@@ -2258,6 +2258,7 @@ __metadata:
     "@types/lodash": 4.14.149
     "@types/node": ^12.11.7
     "@types/styled-components": 5.1.19
+    "@types/three": ^0.136.1
     babel-loader: ^8.0.6
     babel-preset-react-app: ^10.0.1
     d3-color: ^1.4.0
@@ -2267,6 +2268,7 @@ __metadata:
     react: 17.0.2
     react-dom: 17.0.2
     styled-components: 5.3.3
+    three: ^0.136.0
     tsc: ^2.0.3
     typescript: 4.5.4
   languageName: unknown
@@ -3721,6 +3723,13 @@ __metadata:
   version: 1.0.8
   resolution: "@types/tapable@npm:1.0.8"
   checksum: b4b754dd0822c407b8f29ef6b766490721c276880f9e976d92ee2b3ef915f11a05a2442ae36c8978bcd872ad6bc833b0a2c4d267f2d611590668a366bad50652
+  languageName: node
+  linkType: hard
+
+"@types/three@npm:^0.136.1":
+  version: 0.136.1
+  resolution: "@types/three@npm:0.136.1"
+  checksum: 2d0792f8bb49f4af1e8486c6be7d0f07f443584ae6d7faec299c6023c375ec13492f15563385db4dd1b13f8c162724eb126d0329d64ca0c51f2876ada14b4c53
   languageName: node
   linkType: hard
 
@@ -14984,6 +14993,13 @@ __metadata:
   version: 0.2.0
   resolution: "text-table@npm:0.2.0"
   checksum: b6937a38c80c7f84d9c11dd75e49d5c44f71d95e810a3250bd1f1797fc7117c57698204adf676b71497acc205d769d65c16ae8fa10afad832ae1322630aef10a
+  languageName: node
+  linkType: hard
+
+"three@npm:^0.136.0":
+  version: 0.136.0
+  resolution: "three@npm:0.136.0"
+  checksum: 9183f83a75901edb85034fe8f6d52bf6daaece554e40d42f8eef5dead13a09e5f67548ee7cccd6c34bde42a91c5e8fa2ccb4a1b80783d7986bda4ec9f58bfe7f
   languageName: node
   linkType: hard
 

@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import { Text, ITextProps } from "../Text";
-import { unit, trueWhite, colorToRGBA } from "../../styles";
+import React from 'react';
+import styled from 'styled-components';
+import { Text, ITextProps } from '../Text';
+import { unit, trueWhite, colorToRGBA } from '../../styles';
 
 const Container = styled.div`
   padding: ${unit * 0.5}px ${unit * 2}px;
@@ -21,7 +21,7 @@ const TagText = styled(Text)`
 `;
 
 export interface TagProps {
-  children: ITextProps["children"];
+  children: ITextProps['children'];
 }
 
 interface TagSubComponents {

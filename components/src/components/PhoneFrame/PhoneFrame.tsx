@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
 export interface PhoneFrameProps {
   className?: string;
-  children?: React.SVGProps<SVGGElement>["children"];
+  children?: React.SVGProps<SVGGElement>['children'];
 }
 
 export const PhoneFrame = ({ className, children }: PhoneFrameProps) => (

@@ -1,10 +1,10 @@
-import React, { forwardRef, createContext, useContext } from "react";
-import styled from "styled-components";
-import { transparent, trueBlack, trueWhite, unit } from "../../styles";
-import { ContentStyle } from "../../types";
-import { Button, buttonBackgroundColors, EButtonVariant } from "../Button";
-import { JonLogo } from "../JonLogo";
-import { ITextProps, Text } from "../Text";
+import React, { forwardRef, createContext, useContext } from 'react';
+import styled from 'styled-components';
+import { transparent, trueBlack, trueWhite, unit } from '../../styles';
+import { ContentStyle } from '../../types';
+import { Button, buttonBackgroundColors, EButtonVariant } from '../Button';
+import { JonLogo } from '../JonLogo';
+import { ITextProps, Text } from '../Text';
 
 interface NavigationContextObject {
   contentStyle: ContentStyle;
@@ -24,7 +24,7 @@ const navigationTextColors = {
 const Container = styled.div`
   display: grid;
   grid-template-columns: min-content 1fr max-content;
-  grid-template-areas: "menu logo links";
+  grid-template-areas: 'menu logo links';
   align-items: center;
 `;
 
@@ -80,7 +80,7 @@ const StyledLink = styled.a<{ color?: string }>`
 `;
 
 interface LinkProps {
-  children?: ITextProps["children"];
+  children?: ITextProps['children'];
   href?: string;
 }
 
@@ -115,7 +115,7 @@ const StyledLinkButton = styled(Button)`
 `;
 
 interface LinkButtonProps {
-  children?: ITextProps["children"];
+  children?: ITextProps['children'];
   variant?: EButtonVariant | keyof typeof EButtonVariant;
   onClick(): void;
 }

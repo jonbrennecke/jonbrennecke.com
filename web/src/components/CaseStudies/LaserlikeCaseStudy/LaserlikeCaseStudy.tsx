@@ -8,7 +8,7 @@ import {
 import React from 'react';
 import styled from 'styled-components';
 import { BaseCaseStudyCard } from '../BaseCaseStudyCard';
-import laserlikeScreenshot from '../../../../assets/images/laserlikeScreenshot.png';
+import laserlikeScreenshot from '../../../../../assets/images/laserlikeScreenshot.png';
 
 const LaserlikeCaseStudyCard = styled(BaseCaseStudyCard)`
   background-color: ${laserlikeBlue};

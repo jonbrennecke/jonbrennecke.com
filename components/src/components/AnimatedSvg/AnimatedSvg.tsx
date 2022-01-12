@@ -1,7 +1,7 @@
-import { timingFunctions } from "polished";
-import React, { useEffect, useRef, useState } from "react";
-import styled, { keyframes } from "styled-components";
-import { opacity, trueWhite } from "../../styles";
+import { timingFunctions } from 'polished';
+import React, { useEffect, useRef, useState } from 'react';
+import styled, { keyframes } from 'styled-components';
+import { opacity, trueWhite } from '../../styles';
 
 const makeFillAnimation = (fill: string = trueWhite) => keyframes`
   from {
@@ -13,8 +13,8 @@ const makeFillAnimation = (fill: string = trueWhite) => keyframes`
   }
 `;
 
-const easeInOutQuad = timingFunctions("easeInOutQuad");
-const easeInQuad = timingFunctions("easeInQuad");
+const easeInOutQuad = timingFunctions('easeInOutQuad');
+const easeInQuad = timingFunctions('easeInQuad');
 
 const AnimatedSvgGroup = styled.g`
   fill: ${(props) => opacity(props.fill || trueWhite, 0.1)};

@@ -1,1 +1,1 @@
-export * from "./AnimatedCurativeLogo";
+export * from './AnimatedCurativeLogo';

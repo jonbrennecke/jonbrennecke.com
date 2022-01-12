@@ -3,14 +3,7 @@ import noop from "lodash/noop";
 import { rgba } from "polished";
 import React from "react";
 import styled, { css } from "styled-components";
-import {
-  blue,
-  darkGreen,
-  offWhite,
-  trueBlack,
-  trueWhite,
-  unit,
-} from "../../styles";
+import { darkGreen, offWhite, trueBlack, trueWhite, unit } from "../../styles";
 import { Text } from "../Text";
 
 type ReactChild = React.ReactElement | React.ReactNode;
@@ -34,6 +27,7 @@ export enum EButtonSize {
   small = "small",
   medium = "medium",
   large = "large",
+  extraLarge = "extraLarge",
 }
 
 export interface IStyledButton {
@@ -66,6 +60,10 @@ const buttonPadding = (size: EButtonSize | keyof typeof EButtonSize) => {
       return css`
         padding: ${2 * unit}px ${4 * unit}px;
       `;
+    case EButtonSize.extraLarge:
+      return css`
+        padding: ${3 * unit}px ${5 * unit}px;
+      `;
   }
 };
 
@@ -76,7 +74,7 @@ const defaultStyles = ({ variant, size }: IStyledButton) =>
     justify-content: center;
     text-align: center;
     background-color: ${rgba(buttonBackgroundColors[variant], 0.5)};
-    border-radius: 4px;
+    border-radius: 8px;
     outline: 0;
     border-width: 0;
     cursor: pointer;

@@ -1,8 +1,8 @@
-import React from "react";
-import styled from "styled-components";
-import { trueBlack, trueWhite } from "../../styles";
-import { ContentStyle } from "../../types";
-import { JonLogo } from "./JonLogo";
+import React from 'react';
+import styled from 'styled-components';
+import { trueBlack, trueWhite } from '../../styles';
+import { ContentStyle } from '../../types';
+import { JonLogo } from './JonLogo';
 
 const Container = styled.div<{ logoContentStyle: ContentStyle }>`
   display: flex;
@@ -28,16 +28,16 @@ export function JonLogoStory({
   );
 }
 
-JonLogoStory.storyName = "Standard";
+JonLogoStory.storyName = 'Standard';
 
 JonLogoStory.argTypes = {
   contentStyle: {
     options: [ContentStyle.dark, ContentStyle.light],
-    control: { type: "radio" },
+    control: { type: 'radio' },
   },
 };
 
 export default {
-  title: "Logos/Jon/Standard",
+  title: 'Logos/Jon/Standard',
   component: JonLogoStory,
 };

@@ -9,7 +9,7 @@ import {
 import React from 'react';
 import styled from 'styled-components';
 import { BaseCaseStudyCard } from '../BaseCaseStudyCard';
-import openGovScreenshot from '../../../../assets/images/openGovScreenshot.png';
+import openGovScreenshot from '../../../../../assets/images/openGovScreenshot.png';
 
 const OpenGovCaseStudyCard = styled(BaseCaseStudyCard)`
   background-color: ${openGovBlue};

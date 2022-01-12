@@ -1,7 +1,7 @@
-import React, { forwardRef, FC, ForwardedRef } from "react";
-import styled from "styled-components";
-import { unit, blue, trueBlack } from "../../styles";
-import { Text } from "../Text";
+import React, { forwardRef, FC, ForwardedRef } from 'react';
+import styled from 'styled-components';
+import { unit, blue, trueBlack } from '../../styles';
+import { Text } from '../Text';
 
 const AvatarContainer = styled.div`
   display: flex;
@@ -37,8 +37,7 @@ export interface AvatarSubComponents {
 }
 
 // @ts-ignore
-export const Avatar: FC<AvatarProps> &
-  AvatarSubComponents = forwardRef(
+export const Avatar: FC<AvatarProps> & AvatarSubComponents = forwardRef(
   (props, ref: ForwardedRef<HTMLImageElement>) => (
     <AvatarImage {...props} ref={ref} />
   )

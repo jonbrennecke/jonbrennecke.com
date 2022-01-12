@@ -1,5 +1,5 @@
-import React from "react";
-import { Avatar } from "./Avatar";
+import React from 'react';
+import { Avatar } from './Avatar';
 
 export function AvatarStory() {
   return (
@@ -16,9 +16,9 @@ export function AvatarStory() {
   );
 }
 
-AvatarStory.storyName = "Avatar";
+AvatarStory.storyName = 'Avatar';
 
 export default {
-  title: "UI/Avatar",
+  title: 'UI/Avatar',
   component: AvatarStory,
 };
