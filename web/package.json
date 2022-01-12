@@ -6,16 +6,17 @@
   "private": true,
   "scripts": {
     "format": "prettier --parser typescript --trailing-comma es5 --single-quote --write \"src/**/*.{ts,tsx,js,jsx}\"",
-    "clean": "rm -rf lib",
+    "clean": "rm -rf build public",
     "types": "tsc --declaration",
     "compile": "npm run build && npm run types",
     "dev": "next dev",
     "test": "jest",
     "prepublish": "npm run compile",
     "start": "yarn dev",
-    "build": "next build && next export -o build",
+    "build": "yarn clean && yarn copy-assets && next build && next export -o build",
     "typecheck": "tsc --noEmit",
-    "serve": "cd build && python -m SimpleHTTPServer 8000"
+    "serve": "cd build && python -m SimpleHTTPServer 8000",
+    "copy-assets": "cp -R ../assets public"
   },
   "files": [
     "lib/"
