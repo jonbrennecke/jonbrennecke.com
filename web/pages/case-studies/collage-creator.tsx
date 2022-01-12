@@ -1,7 +1,14 @@
-import { Hero, maxWidth, PhoneScene, trueWhite } from "@portfolio/components";
+import {
+  Hero,
+  maxWidth,
+  PhoneScene,
+  trueWhite,
+  unit,
+} from "@portfolio/components";
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import iPhoneScreenshot from "../../../assets/images/Simulator_Screen_Shot.png";
+import collageCreatorScreenshot from "../../../assets/images/Simulator_Screen_Shot.png";
+import collageCreatorIcon from "../../../assets/images/collage_creator_icon_transparent.png";
 import { Page } from "../../src/components";
 
 const HeroContainer = styled.div`
@@ -15,8 +22,7 @@ const HeroContainer = styled.div`
     bottom: 0;
     left: 0;
     right: 0;
-    // TODO: use Collage Creator colors
-    background: linear-gradient(-35deg, #56b1ff, #56b1ff);
+    background: linear-gradient(-35deg, #fff3ff, #56b1ff);
     z-index: -1;
   }
 `;
@@ -31,6 +37,12 @@ const HeroColumn = styled.div`
   display: flex;
   flex: 1;
   align-items: center;
+`;
+
+const AppIcon = styled.img`
+  height: 150px;
+  width: 150px;
+  margin-bottom: ${unit * 3}px;
 `;
 
 export default function CollageCreator() {
@@ -58,6 +70,7 @@ export default function CollageCreator() {
           <HeroCenter>
             <HeroColumn>
               <Hero>
+                <AppIcon src={collageCreatorIcon.src} />
                 <Hero.Title color={trueWhite}>Collage Creator</Hero.Title>
                 <Hero.SubTitle color={trueWhite}>
                   Collage Creator is a new app for creating collages of photos.
@@ -76,7 +89,7 @@ export default function CollageCreator() {
             </HeroColumn>
             <HeroColumn>
               <PhoneScene
-                imageSource={iPhoneScreenshot.src}
+                imageSource={collageCreatorScreenshot.src}
                 rotationY={scrollY}
               />
             </HeroColumn>
