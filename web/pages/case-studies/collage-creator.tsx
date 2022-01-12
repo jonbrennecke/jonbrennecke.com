@@ -4,6 +4,8 @@ import {
   PhoneScene,
   trueWhite,
   unit,
+  AppStoreButton,
+  trueBlack,
 } from "@portfolio/components";
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
@@ -22,7 +24,7 @@ const HeroContainer = styled.div`
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(-35deg, #fff3ff, #56b1ff);
+    background: linear-gradient(-35deg, #a6cfff, #cedffe);
     z-index: -1;
   }
 `;
@@ -64,26 +66,20 @@ export default function CollageCreator() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <Page contentStyle="light">
+    <Page>
       {() => (
         <HeroContainer>
           <HeroCenter>
             <HeroColumn>
               <Hero>
                 <AppIcon src={collageCreatorIcon.src} />
-                <Hero.Title color={trueWhite}>Collage Creator</Hero.Title>
-                <Hero.SubTitle color={trueWhite}>
+                <Hero.Title>Collage Creator</Hero.Title>
+                <Hero.SubTitle color={trueBlack}>
                   Collage Creator is a new app for creating collages of photos.
                 </Hero.SubTitle>
                 <Hero.ButtonGroup>
-                  {/* TODO: replace with a "Download from the App Store" button */}
-                  <Hero.Button
-                    variant="primary"
-                    size="large"
-                    onClick={() => {}}
-                  >
-                    Call to Action
-                  </Hero.Button>
+                  {/* TODO: onClick */}
+                  <AppStoreButton backgroundColor="black" />
                 </Hero.ButtonGroup>
               </Hero>
             </HeroColumn>
