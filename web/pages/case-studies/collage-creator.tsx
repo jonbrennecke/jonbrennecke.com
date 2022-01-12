@@ -1,16 +1,15 @@
 import {
+  AppStoreButton,
   Hero,
   maxWidth,
   PhoneScene,
-  trueWhite,
-  unit,
-  AppStoreButton,
   trueBlack,
+  unit,
 } from "@portfolio/components";
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import collageCreatorScreenshot from "../../../assets/images/Simulator_Screen_Shot.png";
 import collageCreatorIcon from "../../../assets/images/collage_creator_icon_transparent.png";
+import collageCreatorScreenshot from "../../../assets/images/Simulator_Screen_Shot.png";
 import { Page } from "../../src/components";
 
 const HeroContainer = styled.div`
@@ -33,12 +32,6 @@ const HeroCenter = styled.div`
   display: flex;
   width: 100%;
   max-width: ${maxWidth}px;
-`;
-
-const HeroColumn = styled.div`
-  display: flex;
-  flex: 1;
-  align-items: center;
 `;
 
 const AppIcon = styled.img`
@@ -70,25 +63,23 @@ export default function CollageCreator() {
       {() => (
         <HeroContainer>
           <HeroCenter>
-            <HeroColumn>
-              <Hero>
-                <AppIcon src={collageCreatorIcon.src} />
-                <Hero.Title>Collage Creator</Hero.Title>
-                <Hero.SubTitle color={trueBlack}>
-                  Collage Creator is a new app for creating collages of photos.
-                </Hero.SubTitle>
-                <Hero.ButtonGroup>
-                  {/* TODO: onClick */}
-                  <AppStoreButton backgroundColor="black" />
-                </Hero.ButtonGroup>
-              </Hero>
-            </HeroColumn>
-            <HeroColumn>
+            <Hero>
+              <AppIcon src={collageCreatorIcon.src} />
+              <Hero.Title>Collage Creator</Hero.Title>
+              <Hero.SubTitle color={trueBlack}>
+                Collage Creator is a new app for creating collages of photos.
+              </Hero.SubTitle>
+              <Hero.ButtonGroup>
+                {/* TODO: onClick */}
+                <AppStoreButton backgroundColor="black" />
+              </Hero.ButtonGroup>
+            </Hero>
+            <Hero>
               <PhoneScene
                 imageSource={collageCreatorScreenshot.src}
                 rotationY={scrollY}
               />
-            </HeroColumn>
+            </Hero>
           </HeroCenter>
         </HeroContainer>
       )}
