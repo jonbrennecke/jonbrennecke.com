@@ -1,8 +1,8 @@
-import React from "react";
-import styled from "styled-components";
-import { trueBlack, trueWhite, unit } from "../../styles";
-import { Button } from "../Button";
-import { Text } from "../Text";
+import React from 'react';
+import styled from 'styled-components';
+import { trueBlack, trueWhite, unit } from '../../styles';
+import { Button } from '../Button';
+import { Text } from '../Text';
 
 const StyledAppleLogo = styled(AppleLogo)`
   width: 16px;

@@ -1,10 +1,10 @@
-import isString from "lodash/isString";
-import noop from "lodash/noop";
-import { rgba } from "polished";
-import React from "react";
-import styled, { css } from "styled-components";
-import { darkGreen, offWhite, trueBlack, trueWhite, unit } from "../../styles";
-import { Text } from "../Text";
+import isString from 'lodash/isString';
+import noop from 'lodash/noop';
+import { rgba } from 'polished';
+import React from 'react';
+import styled, { css } from 'styled-components';
+import { darkGreen, offWhite, trueBlack, trueWhite, unit } from '../../styles';
+import { Text } from '../Text';
 
 type ReactChild = React.ReactElement | React.ReactNode;
 
@@ -12,22 +12,22 @@ export interface IButtonProps {
   variant?: EButtonVariant | keyof typeof EButtonVariant;
   size?: EButtonSize | keyof typeof EButtonSize;
   children?: ReactChild | ReactChild[];
-  style?: React.HTMLProps<HTMLButtonElement>["style"];
-  className?: React.HTMLProps<HTMLButtonElement>["className"];
+  style?: React.HTMLProps<HTMLButtonElement>['style'];
+  className?: React.HTMLProps<HTMLButtonElement>['className'];
   disabled?: boolean;
   onClick?(): void;
 }
 
 export enum EButtonVariant {
-  primary = "primary",
-  default = "default",
+  primary = 'primary',
+  default = 'default',
 }
 
 export enum EButtonSize {
-  small = "small",
-  medium = "medium",
-  large = "large",
-  extraLarge = "extraLarge",
+  small = 'small',
+  medium = 'medium',
+  large = 'large',
+  extraLarge = 'extraLarge',
 }
 
 export interface IStyledButton {
