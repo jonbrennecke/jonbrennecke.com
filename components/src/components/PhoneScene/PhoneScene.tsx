@@ -1,18 +1,18 @@
-import React, { useEffect, useRef, useState } from "react";
-import styled from "styled-components";
-import * as THREE from "three";
-import { loadGLTFScene, setUpScene } from "../../utils";
+import React, { useEffect, useRef, useState } from 'react';
+import styled from 'styled-components';
+import * as THREE from 'three';
+import { loadGLTFScene, setUpScene } from '../../utils';
 
-const WALLPAPER_OBJECT_NAME = "Body_Wallpaper_0";
+const WALLPAPER_OBJECT_NAME = 'Body_Wallpaper_0';
 const IPHONE_INITIAL_ROTATION_Y = Math.PI * 0.9;
 
 async function loadiPhoneModel(imageSource: string): Promise<THREE.Group> {
   const model = await loadGLTFScene(
-    "/models/apple_iphone_13_pro_max/scene.gltf"
+    '/models/apple_iphone_13_pro_max/scene.gltf'
   );
 
   model.traverse(async (object) => {
-    if (object.name == "Body001_Screen_Glass_0") {
+    if (object.name == 'Body001_Screen_Glass_0') {
       object.removeFromParent();
     }
 

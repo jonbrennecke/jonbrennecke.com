@@ -1,11 +1,11 @@
-import React, { useEffect, useRef, useState } from "react";
-import styled from "styled-components";
-import * as THREE from "three";
-import { loadGLTFScene, setUpScene } from "../../utils";
+import React, { useEffect, useRef, useState } from 'react';
+import styled from 'styled-components';
+import * as THREE from 'three';
+import { loadGLTFScene, setUpScene } from '../../utils';
 
 async function loadModel(): Promise<THREE.Group> {
   const model = await loadGLTFScene(
-    "/models/collage_creator_app_icon/icon.gltf"
+    '/models/collage_creator_app_icon/icon.gltf'
   );
 
   model.traverse(async (object) => {

@@ -1,13 +1,13 @@
-import React from "react";
-import { CollageCreatorAppIconScene } from "./CollageCreatorAppIconScene";
+import React from 'react';
+import { CollageCreatorAppIconScene } from './CollageCreatorAppIconScene';
 
 export function CollageCreatorAppIconSceneStory() {
   return <CollageCreatorAppIconScene />;
 }
 
-CollageCreatorAppIconSceneStory.storyName = "CollageCreatorAppIcon";
+CollageCreatorAppIconSceneStory.storyName = 'CollageCreatorAppIcon';
 
 export default {
-  title: "3D/CollageCreatorAppIcon",
+  title: '3D/CollageCreatorAppIcon',
   component: CollageCreatorAppIconSceneStory,
 };

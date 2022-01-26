@@ -1,1 +1,1 @@
-export * from "./CollageCreatorAppIconScene";
+export * from './CollageCreatorAppIconScene';

@@ -5,12 +5,12 @@ import {
   PhoneScene,
   trueBlack,
   unit,
-} from "@portfolio/components";
-import React, { useEffect, useState } from "react";
-import styled from "styled-components";
-import collageCreatorIcon from "../../../assets/images/collage_creator_icon_transparent.png";
-import collageCreatorScreenshot from "../../../assets/images/Simulator_Screen_Shot.png";
-import { Page } from "../../src/components";
+} from '@portfolio/components';
+import React, { useEffect, useState } from 'react';
+import styled from 'styled-components';
+import collageCreatorIcon from '../../../assets/images/collage_creator_icon_transparent.png';
+import collageCreatorScreenshot from '../../../assets/images/Simulator_Screen_Shot.png';
+import { Page } from '../../src/components';
 
 const HeroContainer = styled.div`
   display: flex;
@@ -18,7 +18,7 @@ const HeroContainer = styled.div`
 
   &:before {
     position: absolute;
-    content: "";
+    content: '';
     top: 0;
     bottom: 0;
     left: 0;
@@ -55,8 +55,8 @@ export default function CollageCreator() {
       setScrollY(-normalizedScrollY * Math.PI * 0.5);
     }
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
   return (
     <Page>
