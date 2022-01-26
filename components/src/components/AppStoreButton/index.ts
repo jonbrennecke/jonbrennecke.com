@@ -1,1 +1,1 @@
-export * from "./AppStoreButton";
+export * from './AppStoreButton';

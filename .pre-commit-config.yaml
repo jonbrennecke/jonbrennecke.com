@@ -13,4 +13,4 @@ repos:
         language: system
         types: [file]
         files: \.(ts|tsx|js|jsx)$
-        entry: prettier --parser typescript --trailing-comma es5 --single-quote --json-recursive-sort --write
+        entry: yarn prettier
