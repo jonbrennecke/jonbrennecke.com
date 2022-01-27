@@ -11,7 +11,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   position: relative;
-  padding: ${unit * 7}px 0;
+  padding: ${unit * 7}px ${unit * 5}px;
   max-width: ${maxWidth}px;
 
   & > *:not(:first-child) {
