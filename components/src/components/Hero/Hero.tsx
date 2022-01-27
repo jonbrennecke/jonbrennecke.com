@@ -7,7 +7,8 @@ import { Button } from '../Button';
 import { Heading } from '../Heading';
 
 const Title = styled(Heading)`
-  font-size: ${unit * 8}px;
+  font-size: ${unit * 7}px;
+  font-weight: bold;
   white-space: normal;
   padding-bottom: ${unit * 3}px;
 `;

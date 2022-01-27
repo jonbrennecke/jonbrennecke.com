@@ -26,7 +26,9 @@ export const Navbar = ({
 }: NavbarProps) => (
   <StyledNavigation contentStyle={contentStyle}>
     <Navigation.MenuButton onClick={onClickMenuButton} />
-    <Navigation.Logo />
+    <Link href="/">
+      <Navigation.Logo href="/" />
+    </Link>
     <Navigation.Links>
       <Link href="/">
         <Navigation.Link href="/">Home</Navigation.Link>

@@ -14,11 +14,10 @@ export interface HeroSectionProps {
 
 export const HeroSection = ({ onClickContactButton }: HeroSectionProps) => (
   <StyledHero>
-    <Hero.Title>Fullstack Software Development</Hero.Title>
+    <Hero.Title as="h1">Hi, I’m Jon. 👋</Hero.Title>
     <Hero.SubTitle>
-      Hi, I’m Jon. I am a software engineer from the Pacific Northwest. I build
-      mobile apps and websites for companies, startups—and sometimes just for
-      fun.
+      I am a software engineer from the Pacific Northwest. I build mobile apps
+      and websites for companies, startups—and sometimes just for fun.
     </Hero.SubTitle>
     <Hero.ButtonGroup>
       <Hero.Button

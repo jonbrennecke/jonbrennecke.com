@@ -24,8 +24,8 @@ const Logo = styled.div`
 const Title = styled(Heading)`
   font-size: ${unit * 4}px;
   color: ${trueWhite};
-  line-clamp: 2;
-  -webkit-line-clamp: 2;
+  line-clamp: 3;
+  -webkit-line-clamp: 3;
   box-orient: vertical;
   -webkit-box-orient: vertical;
   display: -webkit-box;
@@ -49,12 +49,16 @@ const darkerBorderShadowCss = css`
 `;
 
 const ImageContent = styled.div`
-  display: flex;
-  flex: 1;
-  width: 100%;
-  height: 100%;
-  transition: 250ms transform ease-in-out, 250ms filter ease-in-out;
-  ${borderShadowCss}
+  display: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    min-height: 450px;
+    transition: 250ms transform ease-in-out, 250ms filter ease-in-out;
+    ${borderShadowCss}
+  }
 
   & > * {
     position: absolute;
@@ -78,18 +82,22 @@ const TextContent = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  row-gap: ${unit * 3}px;
+  row-gap: ${unit}px;
+  flex: 1;
+  max-height: 100%;
+
+  @media (min-width: 1024px) {
+    row-gap: ${unit * 3}px;
+  }
 `;
 
 const Container = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+  display: flex;
   align-items: center;
   column-gap: ${unit * 7}px;
   perspective: 1500px;
   border-radius: ${unit}px;
-  padding: ${unit * 5}px ${unit * 7}px;
+  padding: ${unit * 5}px;
   height: 525px;
 
   &:hover {
@@ -98,7 +106,7 @@ const Container = styled.div`
       transform: rotateY(18deg) rotateX(7deg) scale(1.07);
     }
 
-    ${ImageContent}:not(:first-child) {
+    ${ImageContent}:not (:first-child) {
       ${darkerBorderShadowCss}
       transform: rotateY(-18deg) rotateX(12deg) scale(1.10);
     }
@@ -110,6 +118,14 @@ const Container = styled.div`
 
   & > ${Body} {
     margin-top: ${unit * 3}px;
+  }
+
+  & ${Tag.Group} span {
+    font-size: ${unit * 2}px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: ${unit * 5}px ${unit * 7}px;
   }
 `;
 
