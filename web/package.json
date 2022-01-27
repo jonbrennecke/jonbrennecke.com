@@ -5,7 +5,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "format": "prettier --parser typescript --trailing-comma es5 --single-quote --write \"src/**/*.{ts,tsx,js,jsx}\"",
+    "prettier": "prettier  --write \"src/**/*.{ts,tsx,js,jsx}\"",
     "clean": "rm -rf build public",
     "types": "tsc --declaration",
     "compile": "npm run build && npm run types",

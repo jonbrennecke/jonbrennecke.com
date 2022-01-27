@@ -2264,7 +2264,7 @@ __metadata:
     d3-color: ^1.4.0
     lodash: ^4.17.15
     polished: ^3.5.1
-    prettier: 1.19.1
+    prettier: 2.5.1
     react: 17.0.2
     react-dom: 17.0.2
     styled-components: 5.3.3
@@ -12664,15 +12664,6 @@ __metadata:
     universal-deep-strict-equal: ^1.2.1
     xtend: ^4.0.0
   checksum: 351e9f9a642ec47ba1853fccd97583c1a30c947778ec5b6004a4b6bb2f57e047563a3585131ffec3da810e61fbdc008f96510718d32ddb741ded3c148ae90384
-  languageName: node
-  linkType: hard
-
-"prettier@npm:1.19.1":
-  version: 1.19.1
-  resolution: "prettier@npm:1.19.1"
-  bin:
-    prettier: ./bin-prettier.js
-  checksum: bc78219e0f8173a808f4c6c8e0a137dd8ebd4fbe013e63fe1a37a82b48612f17b8ae8e18a992adf802ee2cf7428f14f084e7c2846ca5759cf4013c6e54810e1f
   languageName: node
   linkType: hard
 
