@@ -55,7 +55,7 @@ const ImageContent = styled.div`
     display: flex;
     flex: 1;
     width: 100%;
-    height: 100%;
+    min-height: 450px;
     transition: 250ms transform ease-in-out, 250ms filter ease-in-out;
     ${borderShadowCss}
   }
@@ -97,7 +97,7 @@ const Container = styled.div`
   column-gap: ${unit * 7}px;
   perspective: 1500px;
   border-radius: ${unit}px;
-  padding: ${unit * 5}px ${unit * 7}px;
+  padding: ${unit * 5}px;
   height: 525px;
 
   &:hover {
@@ -106,7 +106,7 @@ const Container = styled.div`
       transform: rotateY(18deg) rotateX(7deg) scale(1.07);
     }
 
-    ${ImageContent}:not(:first-child) {
+    ${ImageContent}:not (:first-child) {
       ${darkerBorderShadowCss}
       transform: rotateY(-18deg) rotateX(12deg) scale(1.10);
     }
@@ -122,6 +122,10 @@ const Container = styled.div`
 
   & ${Tag.Group} span {
     font-size: ${unit * 2}px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: ${unit * 5}px ${unit * 7}px;
   }
 `;
 

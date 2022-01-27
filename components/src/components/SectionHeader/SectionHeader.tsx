@@ -6,15 +6,24 @@ import { unit, blue } from '../../styles';
 
 const Container = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas:
-    'subtitle subtitle paragraph paragraph'
-    'title title paragraph paragraph';
-  padding: ${unit * 3}px 0;
+    'subtitle subtitle'
+    'title title'
+    'paragraph paragraph';
+  padding: ${unit * 3}px ${unit * 5}px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      'subtitle subtitle paragraph paragraph'
+      'title title paragraph paragraph';
+  }
 `;
 
 const Divider = styled.div`
+  display: none;
   position: relative;
   min-width: ${unit * 3}px;
   max-width: ${unit * 3}px;
@@ -30,11 +39,15 @@ const Divider = styled.div`
     background-color: ${blue};
     transform: rotate(5deg);
   }
+
+  @media (min-width: 768px) {
+    display: block;
+  }
 `;
 
 const Title = styled(Heading)`
   grid-area: title;
-  font-size: ${unit * 10}px;
+  font-size: ${unit * 7}px;
 `;
 
 const SubTitle = styled(Heading)`
@@ -45,9 +58,13 @@ const SubTitle = styled(Heading)`
 `;
 
 const ParagraphText = styled(Text)`
-  padding: ${unit * 3}px;
+  padding-bottom: ${unit * 3}px;
   font-size: 1.25em;
-  color: #726e84; // TODO
+  color: #726e84;
+
+  @media (min-width: 768px) {
+    padding: ${unit * 3}px;
+  }
 `;
 
 const ParagraphContainer = styled.div`
