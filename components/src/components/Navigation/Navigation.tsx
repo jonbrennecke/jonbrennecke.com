@@ -22,10 +22,16 @@ const navigationTextColors = {
 };
 
 const Container = styled.div`
-  display: grid;
-  grid-template-columns: min-content 1fr max-content;
-  grid-template-areas: 'menu logo links';
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+
+  @media (min-width: 640px) {
+    display: grid;
+    grid-template-columns: min-content 1fr max-content;
+    grid-template-areas: 'menu logo links';
+    align-items: center;
+  }
 `;
 
 const Logo = () => {
@@ -35,14 +41,7 @@ const Logo = () => {
 
 const StyledLogo = styled(JonLogo)`
   max-width: ${unit * 15}px;
-  width: 100%;
-  position: relative;
-  top: 10px;
-  grid-area: logo;
-`;
-
-styled((props) => <JonLogo contentStyle="dark" {...props} />)`
-  max-width: ${unit * 15}px;
+  min-width: ${unit * 10}px;
   width: 100%;
   position: relative;
   top: 10px;
@@ -50,12 +49,16 @@ styled((props) => <JonLogo contentStyle="dark" {...props} />)`
 `;
 
 const Links = styled.ul`
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  grid-area: links;
+  display: none;
+
+  @media (min-width: 640px) {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-area: links;
+  }
 `;
 
 const LinkContainer = styled.li`
