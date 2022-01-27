@@ -29,10 +29,13 @@ const Arrow = styled((props) => (
 ))`
   width: 0.75em;
   margin-left: 0.28em;
+  margin-bottom: 0.2em;
 `;
 
 const Inner = styled.div`
   position: relative;
+  display: flex;
+  align-items: center;
 `;
 
 const StyledText = styled(Text)`
