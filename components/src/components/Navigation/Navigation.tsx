@@ -34,9 +34,22 @@ const Container = styled.div`
   }
 `;
 
-const Logo = () => {
+const LogoLink = styled.a`
+  cursor: pointer;
+`;
+
+type LogoProps = Pick<
+  React.HTMLProps<HTMLAnchorElement>,
+  'className' | 'href' | 'rel'
+>;
+
+const Logo = (props: LogoProps) => {
   const { contentStyle } = useNavigationContext();
-  return <StyledLogo contentStyle={contentStyle} />;
+  return (
+    <LogoLink {...props}>
+      <StyledLogo contentStyle={contentStyle} />
+    </LogoLink>
+  );
 };
 
 const StyledLogo = styled(JonLogo)`
