@@ -26,9 +26,11 @@ export function Page({
   contentStyle,
   children,
   logo = LoadingBannerLogoVariant.jon,
+  showLoadingBanner = true,
 }: {
   logo?: LoadingBannerLogoVariant | keyof typeof LoadingBannerLogoVariant;
   contentStyle?: ContentStyle | keyof typeof ContentStyle;
+  showLoadingBanner?: boolean;
   children: (params: { showMenu(): void }) => React.ReactNode;
 }) {
   const [showMenu, setShowMenu] = useState(false);
@@ -58,7 +60,7 @@ export function Page({
         })}
         <FooterSection />
       </Container>
-      <LoadingBanner logo={logo} contentStyle="dark" />
+      {showLoadingBanner && <LoadingBanner logo={logo} contentStyle="dark" />}
     </>
   );
 }
