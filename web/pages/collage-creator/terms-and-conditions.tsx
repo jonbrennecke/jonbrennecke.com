@@ -1,11 +1,5 @@
 import React from 'react';
 import { Page } from '../../src/components';
-import styled from 'styled-components';
-import { maxWidth } from '@portfolio/components';
-
-const BodyContainer = styled.div`
-  max-width: ${maxWidth}px;
-`;
 
 const IUBENDA_TERMS_AND_CONDITIONS_URL =
   'https://www.iubenda.com/api/terms-and-conditions/70209080';
@@ -18,12 +12,12 @@ export default function CollageCreatorTermsAndConditions({
   return (
     <Page contentStyle="dark" showLoadingBanner={false}>
       {() => (
-        <BodyContainer>
+        <div className="max-w-screen-lg px-8 lg:px-0">
           <article
             className="prose mx-auto mt-32"
             dangerouslySetInnerHTML={{ __html: termsAndConditionsHTML }}
           />
-        </BodyContainer>
+        </div>
       )}
     </Page>
   );

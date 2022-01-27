@@ -1,11 +1,5 @@
-import { maxWidth } from '@portfolio/components';
 import React from 'react';
-import styled from 'styled-components';
 import { Page } from '../../src/components';
-
-const BodyContainer = styled.div`
-  max-width: ${maxWidth}px;
-`;
 
 const IUBENDA_PRIVACY_POLICY_URL =
   'https://www.iubenda.com/api/privacy-policy/70209080/no-markup';
@@ -18,12 +12,12 @@ export default function CollageCreatorPrivacyPolicyPage({
   return (
     <Page contentStyle="dark" showLoadingBanner={false}>
       {() => (
-        <BodyContainer>
+        <div className="max-w-screen-lg px-8 lg:px-0">
           <article
             className="prose mx-auto mt-32"
             dangerouslySetInnerHTML={{ __html: privacyPolicyHTML }}
           />
-        </BodyContainer>
+        </div>
       )}
     </Page>
   );
