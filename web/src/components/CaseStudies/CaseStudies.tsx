@@ -7,12 +7,15 @@ import { OpenGovCaseStudy } from './OpenGovCaseStudy';
 import { CurativeCaseStudy } from './CurativeCaseStudy';
 
 const Container = styled.div`
+  max-width: ${maxWidth}px;
   display: flex;
   flex-direction: column;
   align-items: center;
+`;
+
+const CaseStudiesList = styled.div`
   position: relative;
   padding: ${unit * 7}px ${unit * 5}px;
-  max-width: ${maxWidth}px;
 
   & > *:not(:first-child) {
     margin-top: ${unit * 7}px;
@@ -45,9 +48,11 @@ export const CaseStudies = () => (
         Want to see more? Contact me for more information.
       </SectionHeader.Paragraph>
     </StyledSectionHeader>
-    <CurativeCaseStudy />
-    <OpenGovCaseStudy />
-    <LaserlikeCaseStudy />
-    <BarkdCaseStudy />
+    <CaseStudiesList>
+      <CurativeCaseStudy />
+      <OpenGovCaseStudy />
+      <LaserlikeCaseStudy />
+      <BarkdCaseStudy />
+    </CaseStudiesList>
   </Container>
 );
