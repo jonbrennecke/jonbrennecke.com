@@ -29,8 +29,8 @@ const Logo = styled((props) => <JonLogo contentStyle="dark" {...props} />)`
 
 const FootNotes = styled.div`
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   padding-top: ${unit * 10}px;
   width: 100%;
   max-width: ${maxWidth}px;
@@ -45,6 +45,11 @@ const FootNotes = styled.div`
 
   & > *:last-child {
     padding-right: 0;
+  }
+
+  @media (min-width: 640px) {
+    flex-direction: row;
+    justify-content: space-between;
   }
 `;
 

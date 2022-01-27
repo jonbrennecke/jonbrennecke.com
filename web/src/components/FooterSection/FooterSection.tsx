@@ -1,11 +1,8 @@
 import React from 'react';
-import styled from 'styled-components';
 import { Footer } from '@portfolio/components';
 
-const StyledFooter = styled(Footer)``;
-
 export const FooterSection = () => (
-  <StyledFooter>
+  <Footer>
     <Footer.Logo />
     <Footer.FootNotes>
       <Footer.FootNote>
@@ -19,5 +16,5 @@ export const FooterSection = () => (
       </Footer.FootNote>
       <Footer.FootNote>Made with ❤ in Coeur d'Alene, Idaho</Footer.FootNote>
     </Footer.FootNotes>
-  </StyledFooter>
+  </Footer>
 );
