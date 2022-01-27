@@ -2,7 +2,7 @@ import times from 'lodash/times';
 import { timingFunctions } from 'polished';
 import React from 'react';
 import styled, { css, keyframes } from 'styled-components';
-import { unit } from '../../styles';
+import { maxWidth, unit } from '../../styles';
 import { Button } from '../Button';
 import { Heading } from '../Heading';
 
@@ -54,6 +54,8 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: ${unit * 10}px ${unit * 5}px;
+  max-width: ${maxWidth}px;
 
   ${times(5).map((n) => makeNthChildAnimation(n))}
 `;

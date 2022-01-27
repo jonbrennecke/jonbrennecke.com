@@ -43,14 +43,16 @@ type LogoProps = Pick<
   'className' | 'href' | 'rel'
 >;
 
-const Logo = (props: LogoProps) => {
-  const { contentStyle } = useNavigationContext();
-  return (
-    <LogoLink {...props}>
-      <StyledLogo contentStyle={contentStyle} />
-    </LogoLink>
-  );
-};
+const Logo = forwardRef(
+  (props: LogoProps, ref: React.ForwardedRef<HTMLAnchorElement>) => {
+    const { contentStyle } = useNavigationContext();
+    return (
+      <LogoLink {...props} ref={ref}>
+        <StyledLogo contentStyle={contentStyle} />
+      </LogoLink>
+    );
+  }
+);
 
 const StyledLogo = styled(JonLogo)`
   max-width: ${unit * 15}px;
