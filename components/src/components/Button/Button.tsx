@@ -97,6 +97,10 @@ const Container = styled.button<IStyledButton>`
   ${disabledStyles};
 `;
 
+const ButtonText = styled(Text)`
+  white-space: nowrap;
+`;
+
 export const Button = ({
   variant = EButtonVariant.default,
   size = EButtonSize.medium,
@@ -115,9 +119,9 @@ export const Button = ({
     disabled={disabled}
   >
     {isString(children) ? (
-      <Text weight="bold" color={buttonTextColors[variant]}>
+      <ButtonText weight="bold" color={buttonTextColors[variant]}>
         {children}
-      </Text>
+      </ButtonText>
     ) : (
       children
     )}
