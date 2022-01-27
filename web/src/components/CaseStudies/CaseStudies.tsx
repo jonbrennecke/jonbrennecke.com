@@ -7,19 +7,11 @@ import { OpenGovCaseStudy } from './OpenGovCaseStudy';
 import { CurativeCaseStudy } from './CurativeCaseStudy';
 
 const Container = styled.div`
+  position: relative;
   max-width: ${maxWidth}px;
   display: flex;
   flex-direction: column;
   align-items: center;
-`;
-
-const CaseStudiesList = styled.div`
-  position: relative;
-  padding: ${unit * 7}px ${unit * 5}px;
-
-  & > *:not(:first-child) {
-    margin-top: ${unit * 7}px;
-  }
 
   &::before {
     content: '';
@@ -34,8 +26,20 @@ const CaseStudiesList = styled.div`
   }
 `;
 
+const CaseStudiesList = styled.div`
+  padding: ${unit * 7}px ${unit * 5}px;
+
+  & > *:not(:first-child) {
+    margin-top: ${unit * 7}px;
+  }
+`;
+
 const StyledSectionHeader = styled(SectionHeader)`
   padding: ${unit * 10}px ${unit * 5}px;
+
+  @media (min-width: 1024px) {
+    padding: ${unit * 7}px ${unit * 10}px;
+  }
 `;
 
 export const CaseStudies = () => (

@@ -5,13 +5,18 @@ import { Heading } from '../Heading';
 import { Text } from '../Text';
 
 const ImageContentContainer = styled.div`
-  grid-area: image;
+  display: none;
 
   & > * {
     height: 100%;
     width: 50%;
     left: calc(50% + ${unit * 2.5}px);
     position: absolute;
+  }
+
+  @media (min-width: 1024px) {
+    display: block;
+    grid-area: image;
   }
 `;
 
@@ -23,8 +28,12 @@ const TextContent = styled.div`
   grid-area: text;
   display: flex;
   flex-direction: column;
-  padding: ${unit * 15}px ${unit * 7}px ${unit * 15}px 0;
+  padding: ${unit * 15}px ${unit * 7}px;
   justify-content: center;
+
+  @media (min-width: 1024px) {
+    padding: ${unit * 15}px ${unit * 7}px ${unit * 15}px 0;
+  }
 `;
 
 const Body = styled(Text)`
@@ -72,10 +81,15 @@ const Contents = styled.div`
   max-width: ${maxWidth}px;
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: auto;
-  grid-template-areas: 'text image';
+  grid-template-areas: 'text';
   column-gap: ${unit * 5}px;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'text image';
+  }
 `;
 
 export const About: React.FC<AboutProps> & AboutSubComponents = ({
