@@ -22,6 +22,13 @@ export enum FormContentStyle {
 const Title = styled(Heading)`
   font-size: ${unit * 8}px;
   padding-bottom: ${unit * 3}px;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  box-orient: vertical;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  display: -moz-box;
+  white-space: normal;
 `;
 
 const Field = styled.div`

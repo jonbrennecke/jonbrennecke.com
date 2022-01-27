@@ -17,13 +17,16 @@ const AboutImage = styled.div`
 
 const ContactFormContainer = styled(Form)`
   max-width: 1024px;
-  padding: ${unit * 15}px 0;
   background-color: ${trueWhite};
   border-radius: ${unit * 2}px;
   position: relative;
   width: 100%;
   max-width: 1024px;
-  padding: ${unit * 15}px ${unit * 17}px;
+  padding: ${unit * 7}px ${unit * 5}px;
+
+  @media (min-width: 1024px) {
+    padding: ${unit * 15}px ${unit * 17}px;
+  }
 `;
 
 function HomePage() {
