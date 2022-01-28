@@ -1,19 +1,12 @@
+import { Hero } from '@portfolio/components';
 import React from 'react';
-import { Hero, unit, maxWidth } from '@portfolio/components';
-import styled from 'styled-components';
-
-const StyledHero = styled(Hero)`
-  padding: ${unit * 10}px ${unit * 5}px;
-  height: 80vh;
-  max-width: ${maxWidth}px;
-`;
 
 export interface HeroSectionProps {
   onClickContactButton(): void;
 }
 
 export const HeroSection = ({ onClickContactButton }: HeroSectionProps) => (
-  <StyledHero>
+  <Hero>
     <Hero.Title as="h1">Hi, I’m Jon. 👋</Hero.Title>
     <Hero.SubTitle>
       I am a software engineer from the Pacific Northwest. I build mobile apps
@@ -28,5 +21,5 @@ export const HeroSection = ({ onClickContactButton }: HeroSectionProps) => (
         Work with me
       </Hero.Button>
     </Hero.ButtonGroup>
-  </StyledHero>
+  </Hero>
 );

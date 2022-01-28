@@ -62,7 +62,7 @@ export function setUpScene(
   renderer.setSize(canvas.clientWidth, canvas.clientHeight);
   renderer.setAnimationLoop(animate);
   renderer.outputEncoding = THREE.sRGBEncoding;
-  renderer.toneMapping = THREE.ACESFilmicToneMapping;
+  renderer.toneMapping = THREE.LinearToneMapping;
   renderer.toneMappingExposure = 1;
   renderer.shadowMap.enabled = true;
 
