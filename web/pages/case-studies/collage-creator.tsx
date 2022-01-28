@@ -11,7 +11,7 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import collageCreatorIcon from '../../../assets/images/collage_creator_icon_transparent.png';
 import collageCreatorMarketingImage from '../../../assets/images/collage_creator_marketing_image.png';
-import collageCreatorScreenshot from '../../../assets/images/Simulator_Screen_Shot.png';
+import collageCreatorScreenshot from '../../../assets/images/collage_creator_marketing_image_paris.png';
 import { Page } from '../../src/components';
 
 const HeroContainer = styled.div`

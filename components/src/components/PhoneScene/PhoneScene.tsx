@@ -28,7 +28,7 @@ async function loadiPhoneModel(imageSource: string): Promise<THREE.Group> {
       if (material && material instanceof THREE.Material) {
         material.map = texture;
         material.emissiveMap = texture;
-        material.emissiveIntensity = 2;
+        material.emissiveIntensity = 1;
         material.flatShading = true;
         material.blending = THREE.NoBlending;
         material.emissive = new THREE.Color(0x999999);
