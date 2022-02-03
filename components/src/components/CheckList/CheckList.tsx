@@ -1,8 +1,9 @@
+import { rgba } from 'polished';
 import React from 'react';
 import styled from 'styled-components';
-import { Text, ITextProps } from '../Text';
+import { trueWhite, unit } from '../../styles';
 import { Check } from '../Check/Check';
-import { unit, darkGreen } from '../../styles';
+import { ITextProps, Text } from '../Text';
 
 const CheckListItemContainer = styled.div`
   display: flex;
@@ -16,17 +17,21 @@ export interface CheckListItemProps {
 
 const StyledCheck = styled(Check)`
   width: ${unit * 4}px;
+  min-width: ${unit * 4}px;
   margin-right: ${unit * 2}px;
 `;
 
 const StyledText = styled(Text)`
-  color: ${darkGreen};
+  color: ${trueWhite};
   font-size: 1.25em;
 `;
 
 const CheckListItem = ({ children }: CheckListItemProps) => (
   <CheckListItemContainer>
-    <StyledCheck />
+    <StyledCheck
+      checkColor={trueWhite}
+      backgroundColor={rgba(trueWhite, 0.25)}
+    />
     <StyledText>{children}</StyledText>
   </CheckListItemContainer>
 );

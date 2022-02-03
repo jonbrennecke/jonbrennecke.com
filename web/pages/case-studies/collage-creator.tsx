@@ -1,13 +1,12 @@
 import {
   AppStoreButton,
   CheckList,
+  collageCreatorDarkRed,
+  collageCreatorLightRed,
+  collageCreatorMediumRed,
   Hero,
   maxWidth,
   PhoneScene,
-  trueBlack,
-  collageCreatorDarkRed,
-  collageCreatorMediumRed,
-  collageCreatorLightRed,
   unit,
 } from '@portfolio/components';
 import React, { useEffect, useState } from 'react';
