@@ -5,6 +5,7 @@ import { BarkdCaseStudy } from './BarkdCaseStudy';
 import { LaserlikeCaseStudy } from './LaserlikeCaseStudy';
 import { OpenGovCaseStudy } from './OpenGovCaseStudy';
 import { CurativeCaseStudy } from './CurativeCaseStudy';
+import { CollageCreatorCaseStudy } from './CollageCreatorCaseStudy';
 
 const Container = styled.div`
   position: relative;
@@ -53,6 +54,7 @@ export const CaseStudies = () => (
       </SectionHeader.Paragraph>
     </StyledSectionHeader>
     <CaseStudiesList>
+      <CollageCreatorCaseStudy />
       <CurativeCaseStudy />
       <OpenGovCaseStudy />
       <LaserlikeCaseStudy />

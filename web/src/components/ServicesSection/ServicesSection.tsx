@@ -5,6 +5,7 @@ import styled from 'styled-components';
 const StyledServicesContainer = styled(Services)`
   padding: ${unit * 15}px ${unit * 5}px;
   max-width: ${maxWidth}px;
+  margin: 0 auto;
 `;
 
 const StyledSectionHeader = styled(SectionHeader)`
