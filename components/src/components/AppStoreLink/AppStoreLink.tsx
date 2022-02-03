@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { trueBlack, trueWhite, unit } from '../../styles';
-import { Button } from '../Button';
 import { Text } from '../Text';
 
 const StyledAppleLogo = styled(AppleLogo)`
@@ -12,7 +11,7 @@ const StyledAppleLogo = styled(AppleLogo)`
   top: -1px;
 `;
 
-const StyledButton = styled(Button)<{
+const StyledLink = styled.a<{
   foregroundColor: string;
   backgroundColor: string;
 }>`
@@ -21,33 +20,39 @@ const StyledButton = styled(Button)<{
   justify-content: center;
   color: ${(props) => props.foregroundColor};
   background-color: ${(props) => props.backgroundColor};
+  padding: ${2.5 * unit}px ${5 * unit}px;
+  border-radius: 16px;
 `;
 
 const StyledText = styled(Text)`
   font-size: 24px;
 `;
 
-interface AppStoreButtonProps {
+interface AppStoreLinkProps {
   foregroundColor?: string;
   backgroundColor?: string;
+  href: string;
+  target: string;
 }
 
-export function AppStoreButton({
+export function AppStoreLink({
   foregroundColor = trueWhite,
   backgroundColor = trueBlack,
-}: AppStoreButtonProps) {
+  href,
+  target,
+}: AppStoreLinkProps) {
   return (
-    <StyledButton
-      variant="primary"
-      size="extraLarge"
+    <StyledLink
       foregroundColor={foregroundColor}
       backgroundColor={backgroundColor}
+      href={href}
+      target={target}
     >
       <StyledAppleLogo />
       <StyledText color="currentColor" weight="medium">
         Download
       </StyledText>
-    </StyledButton>
+    </StyledLink>
   );
 }
 

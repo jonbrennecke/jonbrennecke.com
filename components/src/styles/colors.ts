@@ -17,6 +17,11 @@ export const curativeBlue40 = '#2b6cfd';
 export const curativeBlue30 = '#7ca4fe';
 export const curativeOrange = '#FC5C50';
 
+// Collage Creator color theme
+export const collageCreatorLightRed = '#F96D60';
+export const collageCreatorMediumRed = '#D34258';
+export const collageCreatorDarkRed = '#B42052';
+
 // default theme
 export const darkGreen = '#24474A';
 export const lightTan = '#FFF0D5';

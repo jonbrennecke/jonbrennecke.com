@@ -38,7 +38,7 @@ async function loadiPhoneModel(imageSource: string): Promise<THREE.Group> {
   });
 
   model.position.set(0, 0, 0);
-  model.scale.set(5, 5, 5);
+  model.scale.set(1.66, 1.65, -1.65);
   model.rotation.y = IPHONE_INITIAL_ROTATION_Y;
   model.rotation.x = -Math.PI * 0.05;
   model.rotation.z = Math.PI * 0.05;
