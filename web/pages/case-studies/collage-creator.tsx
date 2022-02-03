@@ -5,6 +5,9 @@ import {
   maxWidth,
   PhoneScene,
   trueBlack,
+  collageCreatorDarkRed,
+  collageCreatorMediumRed,
+  collageCreatorLightRed,
   unit,
 } from '@portfolio/components';
 import React, { useEffect, useState } from 'react';
@@ -17,17 +20,22 @@ import { Page } from '../../src/components';
 const HeroContainer = styled.div`
   display: flex;
   justify-content: center;
-  position: relative;
 
-  &:before {
-    position: absolute;
-    content: '';
-    height: calc(100% + 100px); // add 100px to compensate for the navbar
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(-35deg, #d34258, transparent);
-    z-index: -1;
+  h1 {
+    padding-bottom: 0;
+  }
+
+  h1,
+  p {
+    color: transparent;
+    background: linear-gradient(
+      -35deg,
+      ${collageCreatorMediumRed},
+      ${collageCreatorLightRed}
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 `;
 
@@ -62,6 +70,25 @@ const MarketingImage = styled.img`
 `;
 
 const MainContentContainer = styled.div`
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(
+      -35deg,
+      ${collageCreatorDarkRed},
+      ${collageCreatorLightRed}
+    );
+    z-index: -1;
+  }
+`;
+
+const MainContentCenter = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -104,8 +131,8 @@ export default function CollageCreator() {
             <HeroCenter>
               <Hero>
                 <AppIcon src={collageCreatorIcon.src} />
-                <Hero.Title>Collage Creator</Hero.Title>
-                <Hero.SubTitle color={trueBlack}>
+                <Hero.Title as="h1">Collage Creator</Hero.Title>
+                <Hero.SubTitle as="p">
                   Arrange photos into beautiful collages with intuitive editing
                   tools
                 </Hero.SubTitle>
@@ -123,22 +150,24 @@ export default function CollageCreator() {
             </HeroCenter>
           </HeroContainer>
           <MainContentContainer>
-            <MarketingImageContainer>
-              <MarketingImage src={collageCreatorMarketingImage.src} />
-            </MarketingImageContainer>
-            <StyledCheckList>
-              <CheckList.Item>Flexible layouts</CheckList.Item>
-              <CheckList.Item>
-                Resize, rotate, zoom and move images
-              </CheckList.Item>
-              <CheckList.Item>
-                Adjust exposure, contrast and other image controls
-              </CheckList.Item>
-              <CheckList.Item>Inset borders</CheckList.Item>
-              <CheckList.Item>Smart colors</CheckList.Item>
-              <CheckList.Item>Share in 4K</CheckList.Item>
-            </StyledCheckList>
-            <AppStoreButton backgroundColor="black" />
+            <MainContentCenter>
+              <MarketingImageContainer>
+                <MarketingImage src={collageCreatorMarketingImage.src} />
+              </MarketingImageContainer>
+              <StyledCheckList>
+                <CheckList.Item>Flexible layouts</CheckList.Item>
+                <CheckList.Item>
+                  Resize, rotate, zoom and move images
+                </CheckList.Item>
+                <CheckList.Item>
+                  Adjust exposure, contrast and other image controls
+                </CheckList.Item>
+                <CheckList.Item>Inset borders</CheckList.Item>
+                <CheckList.Item>Smart colors</CheckList.Item>
+                <CheckList.Item>Share in 4K</CheckList.Item>
+              </StyledCheckList>
+              <AppStoreButton backgroundColor="black" />
+            </MainContentCenter>
           </MainContentContainer>
         </>
       )}
