@@ -1,5 +1,5 @@
 import {
-  AppStoreButton,
+  AppStoreLink,
   CheckList,
   collageCreatorDarkRed,
   collageCreatorLightRed,
@@ -15,6 +15,9 @@ import collageCreatorIcon from '../../../assets/images/collage_creator_icon_tran
 import collageCreatorMarketingImage from '../../../assets/images/collage_creator_marketing_image.png';
 import collageCreatorScreenshot from '../../../assets/images/collage_creator_marketing_image_primary.png';
 import { Page } from '../../src/components';
+
+const COLLAGE_CREATOR_APP_STORE_LINK =
+  'https://apps.apple.com/us/app/collage-creator-photo-grids/id1603000308';
 
 const HeroContainer = styled.div`
   display: flex;
@@ -136,8 +139,11 @@ export default function CollageCreator() {
                   tools
                 </Hero.SubTitle>
                 <Hero.ButtonGroup>
-                  {/* TODO: onClick */}
-                  <AppStoreButton backgroundColor="black" />
+                  <AppStoreLink
+                    backgroundColor="black"
+                    href={COLLAGE_CREATOR_APP_STORE_LINK}
+                    target="_blank"
+                  />
                 </Hero.ButtonGroup>
               </Hero>
               <Hero>
@@ -165,7 +171,11 @@ export default function CollageCreator() {
                 <CheckList.Item>Smart colors</CheckList.Item>
                 <CheckList.Item>Share in 4K</CheckList.Item>
               </StyledCheckList>
-              <AppStoreButton backgroundColor="black" />
+              <AppStoreLink
+                backgroundColor="black"
+                href={COLLAGE_CREATOR_APP_STORE_LINK}
+                target="_blank"
+              />
             </MainContentCenter>
           </MainContentContainer>
         </>

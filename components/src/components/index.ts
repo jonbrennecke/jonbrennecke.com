@@ -35,4 +35,4 @@ export * from './SideDrawer';
 export * from './Avatar';
 export * from './PhoneScene';
 export * from './PhoneScene';
-export * from './AppStoreButton';
+export * from './AppStoreLink';
