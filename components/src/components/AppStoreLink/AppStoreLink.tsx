@@ -28,7 +28,7 @@ const StyledText = styled(Text)`
   font-size: 24px;
 `;
 
-interface AppStoreButtonProps {
+interface AppStoreLinkProps {
   foregroundColor?: string;
   backgroundColor?: string;
   href: string;
@@ -40,7 +40,7 @@ export function AppStoreLink({
   backgroundColor = trueBlack,
   href,
   target,
-}: AppStoreButtonProps) {
+}: AppStoreLinkProps) {
   return (
     <StyledLink
       foregroundColor={foregroundColor}
