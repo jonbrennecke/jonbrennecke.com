@@ -1,6 +1,6 @@
 import React from 'react';
 import { PhoneScene } from './PhoneScene';
-import simulatorScreenShot from '../../../../assets/images/collage_creator_marketing_image_paris.png';
+import simulatorScreenShot from '../../../../assets/images/collage_creator_marketing_image_primary.png';
 
 export function PhoneSceneStory() {
   return <PhoneScene imageSource={simulatorScreenShot} />;

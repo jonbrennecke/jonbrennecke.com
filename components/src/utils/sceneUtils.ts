@@ -21,21 +21,21 @@ export function setUpScene(
   );
   scene.add(hemisphereLight);
 
-  const directionalLight = new THREE.DirectionalLight(0x56b1ff, 0.5);
+  const directionalLight = new THREE.DirectionalLight(0xf96d60, 0.25);
   directionalLight.position.set(10, 2, 3);
   directionalLight.shadow.bias = -0.0001;
   directionalLight.shadow.mapSize.width = 1024 * 4;
   directionalLight.shadow.mapSize.height = 1024 * 4;
   scene.add(directionalLight);
 
-  const directionalLight2 = new THREE.DirectionalLight(0x56b1ff, 0.5);
+  const directionalLight2 = new THREE.DirectionalLight(0xf96d60, 0.25);
   directionalLight2.position.set(-5, -2, -10);
   directionalLight2.shadow.bias = -0.0001;
   directionalLight2.shadow.mapSize.width = 1024 * 4;
   directionalLight2.shadow.mapSize.height = 1024 * 4;
   scene.add(directionalLight2);
 
-  const spotLight = new THREE.SpotLight(0x56b1ff);
+  const spotLight = new THREE.SpotLight(0xf96d60);
   spotLight.position.set(-1, 5, 1);
   spotLight.castShadow = true;
   spotLight.shadow.focus = 0.5;

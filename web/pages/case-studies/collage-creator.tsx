@@ -11,7 +11,7 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import collageCreatorIcon from '../../../assets/images/collage_creator_icon_transparent.png';
 import collageCreatorMarketingImage from '../../../assets/images/collage_creator_marketing_image.png';
-import collageCreatorScreenshot from '../../../assets/images/collage_creator_marketing_image_paris.png';
+import collageCreatorScreenshot from '../../../assets/images/collage_creator_marketing_image_primary.png';
 import { Page } from '../../src/components';
 
 const HeroContainer = styled.div`
@@ -26,7 +26,7 @@ const HeroContainer = styled.div`
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(-35deg, #a6cfff, #cedffe);
+    background: linear-gradient(-35deg, #d34258, transparent);
     z-index: -1;
   }
 `;
@@ -48,9 +48,11 @@ const HeroCenter = styled.div`
 `;
 
 const AppIcon = styled.img`
+  position: relative;
   height: 150px;
   width: 150px;
   margin-bottom: ${unit * 3}px;
+  left: -${unit * 2}px;
 `;
 
 const MarketingImage = styled.img`
@@ -104,8 +106,8 @@ export default function CollageCreator() {
                 <AppIcon src={collageCreatorIcon.src} />
                 <Hero.Title>Collage Creator</Hero.Title>
                 <Hero.SubTitle color={trueBlack}>
-                  Collage Creator is a new app for creating collages and photo
-                  grids.
+                  Arrange photos into beautiful collages with intuitive editing
+                  tools
                 </Hero.SubTitle>
                 <Hero.ButtonGroup>
                   {/* TODO: onClick */}
