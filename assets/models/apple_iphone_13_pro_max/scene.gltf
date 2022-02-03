@@ -3,6 +3,9 @@
         "generator" : "Khronos glTF Blender I/O v1.7.33",
         "version" : "2.0"
     },
+    "extensionsUsed" : [
+        "KHR_materials_clearcoat"
+    ],
     "scene" : 0,
     "scenes" : [
         {
@@ -295,16 +298,22 @@
         },
         {
             "doubleSided" : true,
+            "extensions" : {
+                "KHR_materials_clearcoat" : {
+                    "clearcoatFactor" : 0.28096118569374084,
+                    "clearcoatRoughnessFactor" : 0.3848983347415924
+                }
+            },
             "name" : "Body",
             "pbrMetallicRoughness" : {
                 "baseColorFactor" : [
-                    0,
-                    0,
-                    0,
+                    0.031062817201018333,
+                    0.031062817201018333,
+                    0.031062817201018333,
                     1
                 ],
-                "metallicFactor" : 0.32395923137664795,
-                "roughnessFactor" : 0.6517201066017151
+                "metallicFactor" : 0.771278977394104,
+                "roughnessFactor" : 0.48166465759277344
             }
         },
         {
@@ -380,12 +389,18 @@
         },
         {
             "doubleSided" : true,
+            "extensions" : {
+                "KHR_materials_clearcoat" : {
+                    "clearcoatFactor" : 0.20332717895507812,
+                    "clearcoatRoughnessFactor" : 0.0854528620839119
+                }
+            },
             "name" : "Camera_Frame.001",
             "pbrMetallicRoughness" : {
                 "baseColorFactor" : [
-                    0,
-                    0,
-                    0,
+                    0.013409893028438091,
+                    0.013409893028438091,
+                    0.013409893028438091,
                     1
                 ],
                 "metallicFactor" : 0.8894153237342834,
