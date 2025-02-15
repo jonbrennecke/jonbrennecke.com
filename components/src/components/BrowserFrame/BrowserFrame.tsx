@@ -60,6 +60,8 @@ const BackArrow = styled(ForwardArrow)`
 `;
 
 const browserButtonStyle = css`
+  display: flex;
+  align-items: center;
   border: 1px solid ${windowBorderGray};
   padding: 0 ${unit}px;
   border-radius: 2px;

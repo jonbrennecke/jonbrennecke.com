@@ -6,6 +6,7 @@ import { LaserlikeCaseStudy } from './LaserlikeCaseStudy';
 import { OpenGovCaseStudy } from './OpenGovCaseStudy';
 import { CurativeCaseStudy } from './CurativeCaseStudy';
 import { CollageCreatorCaseStudy } from './CollageCreatorCaseStudy';
+import { UltrasoundAICaseStudy } from './UltrasoundAICaseStudy';
 
 const Container = styled.div`
   position: relative;
@@ -54,11 +55,12 @@ export const CaseStudies = () => (
       </SectionHeader.Paragraph>
     </StyledSectionHeader>
     <CaseStudiesList>
+      <UltrasoundAICaseStudy />
       <CollageCreatorCaseStudy />
       <CurativeCaseStudy />
       <OpenGovCaseStudy />
       <LaserlikeCaseStudy />
-      <BarkdCaseStudy />
+      {/* <BarkdCaseStudy /> */}
     </CaseStudiesList>
   </Container>
 );
