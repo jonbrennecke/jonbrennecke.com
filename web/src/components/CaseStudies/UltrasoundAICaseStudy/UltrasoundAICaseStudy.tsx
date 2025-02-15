@@ -39,7 +39,7 @@ const BrowserScreenshot = styled.div`
 
 export const UltrasoundAICaseStudy = () => (
   <StyledCaseStudyCard className="bg-slate-900">
-    <CaseStudyCard.ImageContent>
+    <CaseStudyCard.ImageContent className="relative z-10">
       <Browser>
         <BrowserScreenshot />
       </Browser>
