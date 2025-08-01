@@ -16,6 +16,7 @@ import React from 'react';
 import styled from 'styled-components';
 import ultrasoundAILogo from '../../../assets/images/ultrasound_ai_logomark.png';
 import ultrasoundAIScreenshot from '../../../assets/images/ultrasound_ai_hero_screenshot_tablet.png';
+import ultrasoundAIContentScreenshot from '../../../assets/images/ultrasound_ai_content_screenshot.png';
 import { Page } from '../../src/components';
 
 const UltrasoundAIHero = styled.div`
@@ -170,6 +171,31 @@ const StyledTagGroup = styled(Tag.Group)`
   }
 `;
 
+const CTAButton = styled.a`
+  display: inline-flex;
+  align-items: center;
+  background: ${trueBlack};
+  color: ${trueWhite};
+  padding: ${unit * 3}px ${unit * 6}px;
+  border-radius: ${unit}px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: ${unit * 2.5}px;
+  transition: all 0.2s ease;
+  box-shadow: 0px 4px 15px ${rgba(trueBlack, 0.3)};
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 20px ${rgba(trueBlack, 0.4)};
+  }
+`;
+
+const CTAContainer = styled.div`
+  text-align: center;
+  margin-top: ${unit * 6}px;
+  margin-bottom: ${unit * 6}px;
+`;
+
 function UltrasoundAICaseStudyPage() {
   return (
     <Page logo="jon" contentStyle="light">
@@ -245,7 +271,7 @@ function UltrasoundAICaseStudyPage() {
               </Column>
             </ContentBlockContainer>
             <ContentBlockContainer>
-              <ContentBlockImage src={ultrasoundAIScreenshot.src} />
+              <ContentBlockImage src={ultrasoundAIContentScreenshot.src} />
             </ContentBlockContainer>
             <ContentBlockContainer>
               <BodyText>
@@ -306,9 +332,6 @@ function UltrasoundAICaseStudyPage() {
                   </p>
                 </BodyText>
               </Column>
-              <Column>
-                <ColumnImage src={ultrasoundAIScreenshot.src} />
-              </Column>
             </ContentBlockContainer>
             <ContentBlockContainer>
               <SectionHeader>
@@ -346,6 +369,17 @@ function UltrasoundAICaseStudyPage() {
                   children through enhanced imaging technology.
                 </p>
               </BodyText>
+            </ContentBlockContainer>
+            <ContentBlockContainer>
+              <CTAContainer>
+                <CTAButton
+                  href="https://aiultrasoundphotos.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Try Ultrasound AI Today →
+                </CTAButton>
+              </CTAContainer>
             </ContentBlockContainer>
           </BodyContentContainer>
         </>
