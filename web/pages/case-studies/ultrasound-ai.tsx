@@ -375,7 +375,6 @@ function UltrasoundAICaseStudyPage() {
                 <CTAButton
                   href="https://aiultrasoundphotos.com"
                   target="_blank"
-                  rel="noopener noreferrer"
                 >
                   Try Ultrasound AI Today →
                 </CTAButton>
