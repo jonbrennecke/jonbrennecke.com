@@ -38,7 +38,146 @@ const Body = styled(Text)`
   color: ${trueWhite};
 `;
 
-const ViewCaseStudyButton = styled(ViewButton)``;
+interface ViewCaseStudyButtonProps {
+  variant?: 'primary' | 'secondary';
+  children: React.ReactNode;
+  className?: string;
+  href?: string;
+  target?: string;
+  rel?: string;
+}
+
+const ViewCaseStudyButtonContainer = styled.div<{
+  variant: 'primary' | 'secondary';
+}>`
+  display: inline-flex;
+  flex-direction: row;
+  align-items: flex-end;
+  cursor: pointer;
+  transition: 200ms opacity ease-in-out;
+
+  ${({ variant }) =>
+    variant === 'secondary' &&
+    css`
+      opacity: 0.7;
+
+      &:hover {
+        opacity: 1;
+      }
+    `}
+`;
+
+const ViewCaseStudyButtonInner = styled.div`
+  position: relative;
+  display: flex;
+  align-items: center;
+`;
+
+const ViewCaseStudyButtonText = styled(Text)<{
+  variant: 'primary' | 'secondary';
+}>`
+  color: ${trueWhite};
+  padding-bottom: ${unit * 0.5}px;
+  display: inline-block;
+
+  ${({ variant }) =>
+    variant === 'secondary' &&
+    css`
+      font-size: ${unit * 1.8}px;
+    `}
+`;
+
+const ViewCaseStudyButtonArrow = styled.div<{
+  variant: 'primary' | 'secondary';
+}>`
+  width: 0.75em;
+  margin-left: 0.28em;
+  margin-bottom: 0.2em;
+  transition: 200ms transform ease-in-out;
+
+  ${({ variant }) =>
+    variant === 'secondary' &&
+    css`
+      width: 0.65em;
+    `}
+
+  svg {
+    width: 100%;
+    height: auto;
+  }
+`;
+
+const ViewCaseStudyButtonUnderline = styled.div<{
+  variant: 'primary' | 'secondary';
+}>`
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: ${trueWhite};
+
+  ${({ variant }) =>
+    variant === 'secondary' &&
+    css`
+      opacity: 0.8;
+    `}
+`;
+
+const ViewCaseStudyButtonComponent: React.FC<ViewCaseStudyButtonProps> = ({
+  variant = 'primary',
+  children,
+  className,
+  href,
+  target,
+  rel,
+}) => {
+  const content = (
+    <ViewCaseStudyButtonContainer variant={variant} className={className}>
+      <ViewCaseStudyButtonInner>
+        <ViewCaseStudyButtonText variant={variant}>
+          {children}
+        </ViewCaseStudyButtonText>
+        <ViewCaseStudyButtonArrow variant={variant}>
+          <svg viewBox="0 0 102 85">
+            <g
+              id="Symbols"
+              stroke="none"
+              strokeWidth="1"
+              fill="none"
+              fillRule="evenodd"
+            >
+              <g
+                id="Artboard"
+                transform="translate(-59.000000, -51.000000)"
+                fill="#FFFFFF"
+              >
+                <g id="Group" transform="translate(59.000000, 51.000000)">
+                  <polygon
+                    id="Path"
+                    points="73.4063316 34.9869901 0 34.9869901 0 50.0130092 73.4063316 50.0130092 49.1877684 74.3749997 59.7502177 85 102 42.4999996 96.7187753 37.1875002 59.7502177 0 49.1877684 10.6250003"
+                  ></polygon>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </ViewCaseStudyButtonArrow>
+        <ViewCaseStudyButtonUnderline variant={variant} />
+      </ViewCaseStudyButtonInner>
+    </ViewCaseStudyButtonContainer>
+  );
+
+  if (href) {
+    return (
+      <a href={href} target={target} rel={rel}>
+        {content}
+      </a>
+    );
+  }
+
+  return content;
+};
 
 const borderShadowCss = css`
   filter: drop-shadow(0px 6px 45px ${colorToRGBA(trueBlack, 0.06)});
@@ -106,7 +245,7 @@ const Container = styled.div`
       transform: rotateY(18deg) rotateX(7deg) scale(1.07);
     }
 
-    ${ImageContent}:not (:first-child) {
+    ${ImageContent}:not(:first-child) {
       ${darkerBorderShadowCss}
       transform: rotateY(-18deg) rotateX(12deg) scale(1.10);
     }
@@ -136,7 +275,7 @@ export interface CaseStudyCardSubComponents {
   Tags: typeof Tag.Group;
   ImageContent: typeof ImageContent;
   TextContent: typeof TextContent;
-  ViewCaseStudyButton: typeof ViewCaseStudyButton;
+  ViewCaseStudyButton: typeof ViewCaseStudyButtonComponent;
 }
 
 export const CaseStudyCard: React.FC<CaseStudyCardProps> &
@@ -153,4 +292,4 @@ CaseStudyCard.Body = Body;
 CaseStudyCard.Tags = Tag.Group;
 CaseStudyCard.ImageContent = ImageContent;
 CaseStudyCard.TextContent = TextContent;
-CaseStudyCard.ViewCaseStudyButton = ViewCaseStudyButton;
+CaseStudyCard.ViewCaseStudyButton = ViewCaseStudyButtonComponent;

@@ -172,7 +172,7 @@ const StyledTagGroup = styled(Tag.Group)`
 
 function UltrasoundAICaseStudyPage() {
   return (
-    <Page logo="ultrasound-ai" contentStyle="light">
+    <Page logo="jon" contentStyle="light">
       {() => (
         <>
           <UltrasoundAIHero>
@@ -312,8 +312,10 @@ function UltrasoundAICaseStudyPage() {
             </ContentBlockContainer>
             <ContentBlockContainer>
               <SectionHeader>
-                <SectionHeader.SubTitle>Impact & Growth</SectionHeader.SubTitle>
-                <SectionHeader.Title>Parental Connection</SectionHeader.Title>
+                <SectionHeader.SubTitle>
+                  Parental Connection
+                </SectionHeader.SubTitle>
+                <SectionHeader.Title>Impact & Growth</SectionHeader.Title>
                 <SectionHeader.Paragraph>
                   Helping thousands of parents connect with their unborn
                   children through AI-enhanced imaging.

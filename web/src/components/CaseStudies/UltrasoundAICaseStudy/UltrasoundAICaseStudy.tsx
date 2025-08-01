@@ -43,15 +43,6 @@ export const UltrasoundAICaseStudy = () => (
       <Browser>
         <BrowserScreenshot />
       </Browser>
-      {/* <PhoneFrame>
-        <image
-          mask="url(#mask-10)"
-          x="3"
-          y="6"
-          width="746"
-          href={screenshot.src}
-        />
-      </PhoneFrame> */}
     </CaseStudyCard.ImageContent>
 
     <CaseStudyCard.TextContent className="relative z-10">
@@ -85,6 +76,11 @@ export const UltrasoundAICaseStudy = () => (
       <a href="https://aiultrasoundphotos.com" target="self">
         <CaseStudyCard.ViewCaseStudyButton>
           Check it out at <strong>aiultrasoundphotos.com</strong>
+        </CaseStudyCard.ViewCaseStudyButton>
+      </a>
+      <a href="/case-studies/ultrasound-ai">
+        <CaseStudyCard.ViewCaseStudyButton variant="secondary">
+          See More
         </CaseStudyCard.ViewCaseStudyButton>
       </a>
       <CaseStudyCard.Tags>
