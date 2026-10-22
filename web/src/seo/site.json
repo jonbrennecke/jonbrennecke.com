@@ -1,0 +1,77 @@
+{
+  "origin": "https://jonbrennecke.com",
+  "pages": {
+    "/": {
+      "label": "Home",
+      "title": "Jon Brennecke — Software Engineer & Product Builder",
+      "description": "Jon Brennecke builds mobile apps and websites for startups and companies. Explore selected projects in AI, healthcare, and iOS app development.",
+      "socialImage": "/social/portfolio.png",
+      "socialImageAlt": "Jon Brennecke — Software Engineer & Product Builder",
+      "socialType": "website"
+    },
+    "/case-studies/ultrasound-ai": {
+      "label": "Ultrasound AI",
+      "title": "Ultrasound AI Case Study — Jon Brennecke",
+      "description": "Explore Ultrasound AI, a project by Jon Brennecke that transforms 3D ultrasound images into lifelike baby portraits.",
+      "socialImage": "/social/ultrasound-ai.png",
+      "socialImageAlt": "Ultrasound AI — From Ultrasound to Baby Portraits",
+      "socialType": "article"
+    },
+    "/case-studies/collage-creator": {
+      "label": "Collage Creator",
+      "title": "Collage Creator for iOS — Jon Brennecke",
+      "description": "Create photo collages with flexible layouts and intuitive editing tools. Explore Collage Creator, an iOS app by Jon Brennecke.",
+      "socialImage": "/social/collage-creator.png",
+      "socialImageAlt": "Collage Creator — Photo Collages for iOS",
+      "socialType": "website"
+    },
+    "/case-studies/curative": {
+      "label": "Curative",
+      "title": "Curative Engineering Case Study — Jon Brennecke",
+      "description": "How Jon Brennecke helped build Curative's COVID-19 testing and vaccination software, from patient scheduling to tools for clinical teams.",
+      "socialImage": "/social/curative.png",
+      "socialImageAlt": "Curative — Testing & Vaccination Software",
+      "socialType": "article"
+    },
+    "/caption-this/privacy-policy": {
+      "label": "Caption This Privacy Policy",
+      "title": "Caption This Privacy Policy — Jon Brennecke",
+      "description": "Caption This Privacy Policy. Read how information is handled when using the app.",
+      "socialImage": "/social/portfolio.png",
+      "socialImageAlt": "Jon Brennecke — Software Engineer & Product Builder",
+      "socialType": "website"
+    },
+    "/caption-this/terms-and-conditions": {
+      "label": "Caption This Terms and Conditions",
+      "title": "Caption This Terms and Conditions — Jon Brennecke",
+      "description": "Caption This Terms and Conditions. Read the terms governing use of the app.",
+      "socialImage": "/social/portfolio.png",
+      "socialImageAlt": "Jon Brennecke — Software Engineer & Product Builder",
+      "socialType": "website"
+    },
+    "/ultrasound-ai/privacy-policy": {
+      "label": "Ultrasound AI Privacy Policy",
+      "title": "Ultrasound AI Privacy Policy — Jon Brennecke",
+      "description": "Ultrasound AI Privacy Policy. Read how information is handled when using the app.",
+      "socialImage": "/social/portfolio.png",
+      "socialImageAlt": "Jon Brennecke — Software Engineer & Product Builder",
+      "socialType": "website"
+    },
+    "/collage-creator/privacy-policy": {
+      "label": "Collage Creator Privacy Policy",
+      "title": "Collage Creator Privacy Policy — Jon Brennecke",
+      "description": "Collage Creator Privacy Policy. Read how information is handled when using the app.",
+      "socialImage": "/social/portfolio.png",
+      "socialImageAlt": "Jon Brennecke — Software Engineer & Product Builder",
+      "socialType": "website"
+    },
+    "/collage-creator/terms-and-conditions": {
+      "label": "Collage Creator Terms and Conditions",
+      "title": "Collage Creator Terms and Conditions — Jon Brennecke",
+      "description": "Collage Creator Terms and Conditions. Read the terms governing use of the app.",
+      "socialImage": "/social/portfolio.png",
+      "socialImageAlt": "Jon Brennecke — Software Engineer & Product Builder",
+      "socialType": "website"
+    }
+  }
+}

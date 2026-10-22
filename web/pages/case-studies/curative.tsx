@@ -22,6 +22,7 @@ import browserScreenshot from '../../../assets/images/book.curative.com.png';
 import curativeDriveThruSiteImage from '../../../assets/images/curative-drive-thru-site.jpeg';
 import curativeVanImage from '../../../assets/images/curative-van.png';
 import { Page } from '../../src/components';
+import { CaseStudyHeading } from '../../src/components/CaseStudyHeading';
 
 const CurativeHero = styled.div`
   display: flex;
@@ -42,9 +43,13 @@ const CurativeHero = styled.div`
 const CurativeHeroContentContainer = styled.div`
   display: flex;
   flex: 1;
-  padding: ${unit * 20}px 0 ${unit * 20}px ${unit * 10}px;
-  height: 80vh;
-  max-height: 768px;
+  padding: ${unit * 18}px ${unit * 4}px ${unit * 10}px;
+  min-width: 0;
+
+  @media (min-width: 768px) {
+    padding: ${unit * 20}px ${unit * 5}px ${unit * 20}px ${unit * 10}px;
+    min-height: 80vh;
+  }
   max-width: ${maxWidth + 200}px;
 `;
 
@@ -59,6 +64,8 @@ const LogoContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   row-gap: ${unit * 2}px;
+  min-width: 0;
+  flex: 1;
   padding: ${unit * 4}px ${unit * 4}px ${unit * 4}px 0;
 `;
 
@@ -89,6 +96,7 @@ const BrowserScreenshot = styled.div`
 
 const BrowserContainer = styled.div`
   display: none;
+  min-width: 0;
 
   &:hover {
     transform: scale(1.025);
@@ -177,13 +185,16 @@ const StyledTagGroup = styled(Tag.Group)`
 
 function CurativeCaseStudyPage() {
   return (
-    <Page logo="curative" contentStyle="light">
+    <Page path="/case-studies/curative" logo="curative" contentStyle="light">
       {() => (
         <>
           <CurativeHero>
             <CurativeHeroContentContainer>
               <LogoContainer>
                 <StyledCurativeLogo id="curativeLogo" contentStyle="light" />
+                <CaseStudyHeading>
+                  Curative: COVID-19 Testing and Vaccination Software
+                </CaseStudyHeading>
                 <StyledTagGroup>
                   <Tag>COVID-19 Testing</Tag>
                   <Tag>Medical Diagnostics</Tag>
@@ -210,7 +221,7 @@ function CurativeCaseStudyPage() {
             <ContentBlockContainer>
               <Column>
                 <Avatar.Container>
-                  <Avatar src="https://github.com/jonbrennecke.png" />
+                  <Avatar src="https://github.com/jonbrennecke.png" alt="" />
                   <Avatar.Text>
                     <h2>Jon Brennecke</h2>
                     <p>
@@ -240,7 +251,10 @@ function CurativeCaseStudyPage() {
               </Column>
             </ContentBlockContainer>
             <ContentBlockContainer>
-              <ContentBlockImage src={curativeDriveThruSiteImage.src} />
+              <ContentBlockImage
+                src={curativeDriveThruSiteImage.src}
+                alt="Curative drive-through testing site"
+              />
             </ContentBlockContainer>
             <ContentBlockContainer>
               <BodyText>
@@ -306,7 +320,10 @@ function CurativeCaseStudyPage() {
                 </BodyText>
               </Column>
               <Column>
-                <ColumnImage src={curativeVanImage.src} />
+                <ColumnImage
+                  src={curativeVanImage.src}
+                  alt="Curative mobile testing van"
+                />
               </Column>
             </ContentBlockContainer>
           </BodyContentContainer>

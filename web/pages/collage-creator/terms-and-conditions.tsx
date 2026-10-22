@@ -7,7 +7,7 @@ export default function CollageCreatorTermsAndConditions({
   termsAndConditionsHTML: string;
 }) {
   return (
-    <Page contentStyle="dark" showLoadingBanner={false}>
+    <Page path="/collage-creator/terms-and-conditions" contentStyle="dark" showLoadingBanner={false}>
       {() => (
         <div className="max-w-screen-lg px-8 lg:px-0">
           <article

@@ -3,7 +3,7 @@ import { Page } from '../../src/components';
 
 export default function CaptionThisPrivacyPolicyPage() {
   return (
-    <Page contentStyle="dark" showLoadingBanner={false}>
+    <Page path="/caption-this/privacy-policy" contentStyle="dark" showLoadingBanner={false}>
       {() => (
         <div className="max-w-screen-lg px-8 lg:px-0">
           <article

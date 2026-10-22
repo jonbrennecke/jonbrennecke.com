@@ -7,7 +7,7 @@ export default function TermsAndConditions({
   termsAndConditionsHTML: string;
 }) {
   return (
-    <Page contentStyle="dark" showLoadingBanner={false}>
+    <Page path="/caption-this/terms-and-conditions" contentStyle="dark" showLoadingBanner={false}>
       {() => (
         <div className="max-w-screen-lg px-8 lg:px-0">
           <article
