@@ -10,6 +10,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import Head from 'next/head';
 import site from '../seo/site.json';
+import { getStructuredData, serializeStructuredData } from '../seo/structuredData';
 import { RelatedProjects } from './RelatedProjects';
 import { ContactForm, FooterSection, Navbar } from '.';
 
@@ -60,6 +61,11 @@ export function Page({
         <meta name="twitter:description" content={seo.description} key="twitter:description" />
         <meta name="twitter:image" content={socialImageUrl} key="twitter:image" />
         <meta name="twitter:image:alt" content={seo.socialImageAlt} key="twitter:image:alt" />
+        <script
+          key="structured-data"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: serializeStructuredData(getStructuredData(path)) }}
+        />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Container>
