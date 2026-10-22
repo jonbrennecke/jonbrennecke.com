@@ -1,3 +1,23 @@
+# Normalize host and protocol directly to the canonical URL.
+# Keep Netlify HTTPS enforcement enabled; its edge processing can run first.
+[[redirects]]
+from = "http://www.jonbrennecke.com/*"
+to = "https://jonbrennecke.com/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://www.jonbrennecke.com/*"
+to = "https://jonbrennecke.com/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "http://jonbrennecke.com/*"
+to = "https://jonbrennecke.com/:splat"
+status = 301
+force = true
+
 [build]
 command = "yarn install && yarn build"
 publish = "web/build"
