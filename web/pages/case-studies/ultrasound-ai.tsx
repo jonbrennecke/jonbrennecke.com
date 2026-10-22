@@ -18,6 +18,7 @@ import ultrasoundAILogo from '../../../assets/images/ultrasound_ai_logomark.png'
 import ultrasoundAIScreenshot from '../../../assets/images/ultrasound_ai_hero_screenshot_tablet.png';
 import ultrasoundAIContentScreenshot from '../../../assets/images/ultrasound_ai_content_screenshot.png';
 import { Page } from '../../src/components';
+import { CaseStudyHeading } from '../../src/components/CaseStudyHeading';
 
 const UltrasoundAIHero = styled.div`
   display: flex;
@@ -38,9 +39,13 @@ const UltrasoundAIHero = styled.div`
 const UltrasoundAIHeroContentContainer = styled.div`
   display: flex;
   flex: 1;
-  padding: ${unit * 20}px 0 ${unit * 20}px ${unit * 10}px;
-  height: 80vh;
-  max-height: 768px;
+  padding: ${unit * 18}px ${unit * 4}px ${unit * 10}px;
+  min-width: 0;
+
+  @media (min-width: 768px) {
+    padding: ${unit * 20}px ${unit * 5}px ${unit * 20}px ${unit * 10}px;
+    min-height: 80vh;
+  }
   max-width: ${maxWidth + 200}px;
 `;
 
@@ -55,6 +60,8 @@ const LogoContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   row-gap: ${unit * 2}px;
+  min-width: 0;
+  flex: 1;
   padding: ${unit * 4}px ${unit * 4}px ${unit * 4}px 0;
 `;
 
@@ -85,6 +92,7 @@ const BrowserScreenshot = styled.div`
 
 const BrowserContainer = styled.div`
   display: none;
+  min-width: 0;
 
   &:hover {
     transform: scale(1.025);
@@ -205,6 +213,7 @@ function UltrasoundAICaseStudyPage() {
             <UltrasoundAIHeroContentContainer>
               <LogoContainer>
                 <StyledUltrasoundAILogo src={ultrasoundAILogo.src} />
+                <CaseStudyHeading>Ultrasound AI: From Ultrasound to Baby Portraits</CaseStudyHeading>
                 <StyledTagGroup>
                   <Tag>AI</Tag>
                   <Tag>Healthcare</Tag>
