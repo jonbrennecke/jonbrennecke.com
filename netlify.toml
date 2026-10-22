@@ -1,3 +1,18 @@
 [build]
 command = "yarn install && yarn build"
 publish = "web/build"
+
+[build.environment]
+# Next 12's image decoder expects local WASM loading, before Node's global fetch.
+# Webpack 5 in this version also needs the legacy OpenSSL provider on modern Node.
+NODE_OPTIONS = "--no-experimental-fetch --openssl-legacy-provider"
+
+[[headers]]
+for = "/sitemap.xml"
+  [headers.values]
+  Content-Type = "application/xml; charset=utf-8"
+
+[[headers]]
+for = "/robots.txt"
+  [headers.values]
+  Content-Type = "text/plain; charset=utf-8"

@@ -1,0 +1,32 @@
+{
+  "origin": "https://jonbrennecke.com",
+  "pages": {
+    "/": {
+      "label": "Home"
+    },
+    "/case-studies/ultrasound-ai": {
+      "label": "Ultrasound AI"
+    },
+    "/case-studies/collage-creator": {
+      "label": "Collage Creator"
+    },
+    "/case-studies/curative": {
+      "label": "Curative"
+    },
+    "/caption-this/privacy-policy": {
+      "label": "Caption This Privacy Policy"
+    },
+    "/caption-this/terms-and-conditions": {
+      "label": "Caption This Terms and Conditions"
+    },
+    "/ultrasound-ai/privacy-policy": {
+      "label": "Ultrasound AI Privacy Policy"
+    },
+    "/collage-creator/privacy-policy": {
+      "label": "Collage Creator Privacy Policy"
+    },
+    "/collage-creator/terms-and-conditions": {
+      "label": "Collage Creator Terms and Conditions"
+    }
+  }
+}
