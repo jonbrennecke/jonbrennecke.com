@@ -10,6 +10,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import Head from 'next/head';
 import site from '../seo/site.json';
+import { RelatedProjects } from './RelatedProjects';
 import { ContactForm, FooterSection, Navbar } from '.';
 
 const Container = styled.div`
@@ -65,6 +66,7 @@ export function Page({
         {children({
           showMenu: () => setShowMenu(!showMenu),
         })}
+        {path.startsWith('/case-studies/') && <RelatedProjects currentPath={path} />}
         <FooterSection />
       </Container>
       {showLoadingBanner && <LoadingBanner logo={logo} contentStyle="dark" />}
