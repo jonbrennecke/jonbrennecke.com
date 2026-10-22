@@ -37,11 +37,13 @@ export function Page({
   children: (params: { showMenu(): void }) => React.ReactNode;
 }) {
   const seo = site.pages[path];
+  const canonicalUrl = new URL(path, site.origin).href;
   const [showMenu, setShowMenu] = useState(false);
   return (
     <>
       <Head>
         <title>{seo.title}</title>
+        <link rel="canonical" href={canonicalUrl} key="canonical" />
         <meta name="description" content={seo.description} key="description" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
