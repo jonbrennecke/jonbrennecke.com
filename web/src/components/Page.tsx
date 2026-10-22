@@ -42,6 +42,7 @@ export function Page({
     <>
       <Head>
         <title>{seo.title}</title>
+        <meta name="description" content={seo.description} key="description" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Container>
