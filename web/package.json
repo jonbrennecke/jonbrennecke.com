@@ -13,7 +13,7 @@
     "test": "jest",
     "prepublish": "npm run compile",
     "start": "yarn dev",
-    "build": "yarn clean && yarn copy-assets && next build && next export -o build && node scripts/generate-seo-files.js",
+    "build": "yarn clean && yarn copy-assets && node scripts/export-site.js && node scripts/generate-seo-files.js",
     "typecheck": "tsc --noEmit",
     "serve": "cd build && python -m SimpleHTTPServer 8000",
     "copy-assets": "cp -R ../assets public"
