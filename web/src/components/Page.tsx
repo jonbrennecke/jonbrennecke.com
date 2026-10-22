@@ -39,6 +39,7 @@ export function Page({
 }) {
   const seo = site.pages[path];
   const canonicalUrl = new URL(path, site.origin).href;
+  const socialImageUrl = new URL(seo.socialImage, site.origin).href;
   const [showMenu, setShowMenu] = useState(false);
   return (
     <>
@@ -46,6 +47,19 @@ export function Page({
         <title>{seo.title}</title>
         <link rel="canonical" href={canonicalUrl} key="canonical" />
         <meta name="description" content={seo.description} key="description" />
+        <meta property="og:title" content={seo.title} key="og:title" />
+        <meta property="og:description" content={seo.description} key="og:description" />
+        <meta property="og:url" content={canonicalUrl} key="og:url" />
+        <meta property="og:type" content={seo.socialType} key="og:type" />
+        <meta property="og:image" content={socialImageUrl} key="og:image" />
+        <meta property="og:image:alt" content={seo.socialImageAlt} key="og:image:alt" />
+        <meta property="og:image:width" content="1200" key="og:image:width" />
+        <meta property="og:image:height" content="630" key="og:image:height" />
+        <meta name="twitter:card" content="summary_large_image" key="twitter:card" />
+        <meta name="twitter:title" content={seo.title} key="twitter:title" />
+        <meta name="twitter:description" content={seo.description} key="twitter:description" />
+        <meta name="twitter:image" content={socialImageUrl} key="twitter:image" />
+        <meta name="twitter:image:alt" content={seo.socialImageAlt} key="twitter:image:alt" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Container>
