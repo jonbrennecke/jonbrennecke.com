@@ -37,11 +37,14 @@ const AppMarketingImage = styled.img``;
 export const CollageCreatorCaseStudy = () => (
   <StyledCaseStudyCard>
     <CaseStudyCard.ImageContent>
-      <AppMarketingImage src={appMarketingImage.src} />
+      <AppMarketingImage
+        src={appMarketingImage.src}
+        alt="Photo collage layouts in Collage Creator"
+      />
     </CaseStudyCard.ImageContent>
     <CaseStudyCard.TextContent>
       <CaseStudyCard.Logo>
-        <LogoImage src={appLogoMark.src} />
+        <LogoImage src={appLogoMark.src} alt="Collage Creator" />
       </CaseStudyCard.Logo>
       <CaseStudyCard.Title>Making collages cool again</CaseStudyCard.Title>
       <CaseStudyCard.Body>

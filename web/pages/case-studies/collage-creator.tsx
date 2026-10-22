@@ -132,7 +132,7 @@ export default function CollageCreator() {
           <HeroContainer>
             <HeroCenter>
               <Hero>
-                <AppIcon src={collageCreatorIcon.src} />
+                <AppIcon src={collageCreatorIcon.src} alt="" />
                 <Hero.Title as="h1">Collage Creator</Hero.Title>
                 <Hero.SubTitle as="p">
                   Arrange photos into beautiful collages with intuitive editing
@@ -157,7 +157,10 @@ export default function CollageCreator() {
           <MainContentContainer>
             <MainContentCenter>
               <MarketingImageContainer>
-                <MarketingImage src={collageCreatorMarketingImage.src} />
+                <MarketingImage
+                  src={collageCreatorMarketingImage.src}
+                  alt="Photo collage layouts in Collage Creator"
+                />
               </MarketingImageContainer>
               <StyledCheckList>
                 <CheckList.Item>Flexible layouts</CheckList.Item>

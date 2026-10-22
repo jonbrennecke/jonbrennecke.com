@@ -192,7 +192,9 @@ function CurativeCaseStudyPage() {
             <CurativeHeroContentContainer>
               <LogoContainer>
                 <StyledCurativeLogo id="curativeLogo" contentStyle="light" />
-                <CaseStudyHeading>Curative: COVID-19 Testing and Vaccination Software</CaseStudyHeading>
+                <CaseStudyHeading>
+                  Curative: COVID-19 Testing and Vaccination Software
+                </CaseStudyHeading>
                 <StyledTagGroup>
                   <Tag>COVID-19 Testing</Tag>
                   <Tag>Medical Diagnostics</Tag>
@@ -219,7 +221,7 @@ function CurativeCaseStudyPage() {
             <ContentBlockContainer>
               <Column>
                 <Avatar.Container>
-                  <Avatar src="https://github.com/jonbrennecke.png" />
+                  <Avatar src="https://github.com/jonbrennecke.png" alt="" />
                   <Avatar.Text>
                     <h2>Jon Brennecke</h2>
                     <p>
@@ -249,7 +251,10 @@ function CurativeCaseStudyPage() {
               </Column>
             </ContentBlockContainer>
             <ContentBlockContainer>
-              <ContentBlockImage src={curativeDriveThruSiteImage.src} />
+              <ContentBlockImage
+                src={curativeDriveThruSiteImage.src}
+                alt="Curative drive-through testing site"
+              />
             </ContentBlockContainer>
             <ContentBlockContainer>
               <BodyText>
@@ -315,7 +320,10 @@ function CurativeCaseStudyPage() {
                 </BodyText>
               </Column>
               <Column>
-                <ColumnImage src={curativeVanImage.src} />
+                <ColumnImage
+                  src={curativeVanImage.src}
+                  alt="Curative mobile testing van"
+                />
               </Column>
             </ContentBlockContainer>
           </BodyContentContainer>

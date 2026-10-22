@@ -212,8 +212,10 @@ function UltrasoundAICaseStudyPage() {
           <UltrasoundAIHero>
             <UltrasoundAIHeroContentContainer>
               <LogoContainer>
-                <StyledUltrasoundAILogo src={ultrasoundAILogo.src} />
-                <CaseStudyHeading>Ultrasound AI: From Ultrasound to Baby Portraits</CaseStudyHeading>
+                <StyledUltrasoundAILogo src={ultrasoundAILogo.src} alt="" />
+                <CaseStudyHeading>
+                  Ultrasound AI: From Ultrasound to Baby Portraits
+                </CaseStudyHeading>
                 <StyledTagGroup>
                   <Tag>AI</Tag>
                   <Tag>Healthcare</Tag>
@@ -240,7 +242,7 @@ function UltrasoundAICaseStudyPage() {
             <ContentBlockContainer>
               <Column>
                 <Avatar.Container>
-                  <Avatar src="https://github.com/jonbrennecke.png" />
+                  <Avatar src="https://github.com/jonbrennecke.png" alt="" />
                   <Avatar.Text>
                     <h2>Jon Brennecke</h2>
                     <p>
@@ -280,7 +282,10 @@ function UltrasoundAICaseStudyPage() {
               </Column>
             </ContentBlockContainer>
             <ContentBlockContainer>
-              <ContentBlockImage src={ultrasoundAIContentScreenshot.src} />
+              <ContentBlockImage
+                src={ultrasoundAIContentScreenshot.src}
+                alt="Ultrasound AI website showing ultrasound and baby portrait examples"
+              />
             </ContentBlockContainer>
             <ContentBlockContainer>
               <BodyText>

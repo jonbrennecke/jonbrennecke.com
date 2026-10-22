@@ -47,7 +47,7 @@ export const UltrasoundAICaseStudy = () => (
 
     <CaseStudyCard.TextContent className="relative z-10">
       <CaseStudyCard.Logo>
-        <LogoImage src={logoMark.src} />
+        <LogoImage src={logoMark.src} alt="Ultrasound AI" />
       </CaseStudyCard.Logo>
       <CaseStudyCard.Title>
         Create lifelike baby photos from 3D ultrasounds
