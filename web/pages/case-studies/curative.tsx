@@ -177,7 +177,7 @@ const StyledTagGroup = styled(Tag.Group)`
 
 function CurativeCaseStudyPage() {
   return (
-    <Page logo="curative" contentStyle="light">
+    <Page path="/case-studies/curative" logo="curative" contentStyle="light">
       {() => (
         <>
           <CurativeHero>

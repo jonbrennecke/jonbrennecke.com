@@ -126,7 +126,7 @@ export default function CollageCreator() {
   }, []);
 
   return (
-    <Page>
+    <Page path="/case-studies/collage-creator">
       {() => (
         <>
           <HeroContainer>

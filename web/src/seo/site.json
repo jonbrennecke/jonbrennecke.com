@@ -2,31 +2,40 @@
   "origin": "https://jonbrennecke.com",
   "pages": {
     "/": {
-      "label": "Home"
+      "label": "Home",
+      "title": "Jon Brennecke — Software Engineer & Product Builder"
     },
     "/case-studies/ultrasound-ai": {
-      "label": "Ultrasound AI"
+      "label": "Ultrasound AI",
+      "title": "Ultrasound AI Case Study — Jon Brennecke"
     },
     "/case-studies/collage-creator": {
-      "label": "Collage Creator"
+      "label": "Collage Creator",
+      "title": "Collage Creator for iOS — Jon Brennecke"
     },
     "/case-studies/curative": {
-      "label": "Curative"
+      "label": "Curative",
+      "title": "Curative Engineering Case Study — Jon Brennecke"
     },
     "/caption-this/privacy-policy": {
-      "label": "Caption This Privacy Policy"
+      "label": "Caption This Privacy Policy",
+      "title": "Caption This Privacy Policy — Jon Brennecke"
     },
     "/caption-this/terms-and-conditions": {
-      "label": "Caption This Terms and Conditions"
+      "label": "Caption This Terms and Conditions",
+      "title": "Caption This Terms and Conditions — Jon Brennecke"
     },
     "/ultrasound-ai/privacy-policy": {
-      "label": "Ultrasound AI Privacy Policy"
+      "label": "Ultrasound AI Privacy Policy",
+      "title": "Ultrasound AI Privacy Policy — Jon Brennecke"
     },
     "/collage-creator/privacy-policy": {
-      "label": "Collage Creator Privacy Policy"
+      "label": "Collage Creator Privacy Policy",
+      "title": "Collage Creator Privacy Policy — Jon Brennecke"
     },
     "/collage-creator/terms-and-conditions": {
-      "label": "Collage Creator Terms and Conditions"
+      "label": "Collage Creator Terms and Conditions",
+      "title": "Collage Creator Terms and Conditions — Jon Brennecke"
     }
   }
 }

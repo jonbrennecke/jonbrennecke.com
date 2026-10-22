@@ -9,6 +9,7 @@ import {
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import Head from 'next/head';
+import site from '../seo/site.json';
 import { ContactForm, FooterSection, Navbar } from '.';
 
 const Container = styled.div`
@@ -23,21 +24,24 @@ const DrawerContactFormContainer = styled(Form)`
 `;
 
 export function Page({
+  path,
   contentStyle,
   children,
   logo = LoadingBannerLogoVariant.jon,
   showLoadingBanner = true,
 }: {
+  path: keyof typeof site.pages;
   logo?: LoadingBannerLogoVariant | keyof typeof LoadingBannerLogoVariant;
   contentStyle?: ContentStyle | keyof typeof ContentStyle;
   showLoadingBanner?: boolean;
   children: (params: { showMenu(): void }) => React.ReactNode;
 }) {
+  const seo = site.pages[path];
   const [showMenu, setShowMenu] = useState(false);
   return (
     <>
       <Head>
-        <title>Jon Brennecke</title>
+        <title>{seo.title}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Container>

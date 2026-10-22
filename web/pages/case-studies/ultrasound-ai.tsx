@@ -198,7 +198,7 @@ const CTAContainer = styled.div`
 
 function UltrasoundAICaseStudyPage() {
   return (
-    <Page logo="jon" contentStyle="light">
+    <Page path="/case-studies/ultrasound-ai" logo="jon" contentStyle="light">
       {() => (
         <>
           <UltrasoundAIHero>

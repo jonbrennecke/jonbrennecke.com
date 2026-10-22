@@ -3,7 +3,7 @@ import { Page } from '../../src/components';
 
 export default function UltrasoundAIPrivacyPolicyPage() {
   return (
-    <Page contentStyle="dark" showLoadingBanner={false}>
+    <Page path="/ultrasound-ai/privacy-policy" contentStyle="dark" showLoadingBanner={false}>
       {() => (
         <div className="max-w-screen-lg px-8 lg:px-0">
           <article

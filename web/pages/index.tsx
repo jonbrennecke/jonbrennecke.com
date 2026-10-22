@@ -31,7 +31,7 @@ const ContactFormContainer = styled(Form)`
 
 function HomePage() {
   return (
-    <Page>
+    <Page path="/">
       {({ showMenu }) => (
         <>
           <HeroSection onClickContactButton={showMenu} />
